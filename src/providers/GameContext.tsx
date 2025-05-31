@@ -10,6 +10,13 @@ const defaultPlayer: Player = {
   name: 'Name',
   points: 0,
   missions: [],
+  missionPoints: [
+    {
+      A: 0,
+      B: 0,
+      P: 0,
+    },
+  ],
 };
 
 const defaultGame: Game = {
@@ -46,7 +53,7 @@ const GameContext = createContext<{
 
 export const GameProvider = ({ children }: { children: ReactNode }) => {
   const [game, setGame] = useState<Game>(defaultGame);
-  const { secondsA, secondsB, setActive, active } = useTimer();
+  const { secondsA, secondsB, setActive, active } = useTimer(game.finished);
 
   const nextTurn = (player: PlayerId) => {
     if (game.turn === 0) {
@@ -60,22 +67,33 @@ export const GameProvider = ({ children }: { children: ReactNode }) => {
         turn: game.phase === 'bottom' ? ((game.turn + 1) as Rating) : game.turn,
         phase: game.phase === 'top' ? 'bottom' : 'top',
         playerPlaying: player,
+        [`player${player}`]: {
+          ...game[`player${player}`],
+          missionPoints: [
+            ...game[`player${player}`].missionPoints,
+            {
+              A: 0,
+              B: 0,
+              P: 0,
+            },
+          ],
+        },
       });
       setActive(player);
     }
   };
 
-  const changeDataPlayer = (player: Partial<Player>, id: PlayerId) => {
+  const changeDataPlayer = (playerObj: Partial<Player>, id: PlayerId) => {
     setGame((prev) => ({
       ...prev,
-      [`player${id}`]: { ...prev[`player${id}`], ...player },
+      [`player${id}`]: { ...prev[`player${id}`], ...playerObj },
     }));
   };
 
   const changeGameConfig = (key: string, value: any) => {
     setGame((prev) => ({ ...prev, [key]: value }));
   };
-  console.log(game);
+
   return (
     <GameContext.Provider
       value={{

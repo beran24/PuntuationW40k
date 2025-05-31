@@ -5,7 +5,10 @@ export type Objective = {
 export type Missions = Objective[];
 
 export type Points = {
-  A?: number;
-  B?: number;
+  A: number;
+  B: number;
+  P: number;
 };
 export type MissionsPoints = Points[];
+
+export type Point = 'A' | 'B' | 'P';

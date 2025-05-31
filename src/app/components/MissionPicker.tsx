@@ -40,7 +40,7 @@ export default function MissionPicker({ player }: { player: PlayerId }) {
         onClick={() => onHandleSave()}
         disabled={!newMissions?.B || !newMissions?.A}
       >
-        Get missions
+        Save missions
       </button>
     </>
   );
