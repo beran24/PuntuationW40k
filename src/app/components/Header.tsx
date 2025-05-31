@@ -28,7 +28,12 @@ export default function Header({}) {
         <button
           className="px-4 py-2 bg-custom-button-red rounded hover:bg-custom-light-red disabled:cursor-not-allowed disabled:bg-custom-disabled-bg disabled:text-custom-disabled-text"
           onClick={() => nextTurn('A')}
-          disabled={game.playerPlaying === 'A' || game.finished}
+          disabled={
+            game.playerPlaying === 'A' ||
+            game.finished ||
+            (game.playerPlaying === 'B' &&
+              playerB?.missions?.length < game.turn)
+          }
         >
           {!game.playerPlaying ? 'Start game' : 'Next Turn'}
         </button>
@@ -57,7 +62,12 @@ export default function Header({}) {
         <button
           className="px-4 py-2 bg-custom-button-green rounded hover:bg-custom-light-green disabled:cursor-not-allowed disabled:bg-custom-disabled-bg disabled:text-custom-disabled-text"
           onClick={() => nextTurn('B')}
-          disabled={game.playerPlaying === 'B' || game.finished}
+          disabled={
+            game.playerPlaying === 'B' ||
+            game.finished ||
+            (game.playerPlaying === 'A' &&
+              playerA?.missions?.length < game.turn)
+          }
         >
           {!game.playerPlaying ? 'Start game' : 'Next Turn'}
         </button>

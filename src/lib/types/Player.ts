@@ -3,6 +3,6 @@ import { Missions, MissionsPoints } from './Missions';
 export type Player = {
   name: string;
   points: number;
-  missions?: Missions;
+  missions: Missions;
   missionPoints: MissionsPoints;
 };
