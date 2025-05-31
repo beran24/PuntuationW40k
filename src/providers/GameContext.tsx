@@ -1,0 +1,99 @@
+'use client';
+
+import React, { createContext, useContext, useState, ReactNode } from 'react';
+import type { Game, PlayerId, Rating } from '@/types/Game';
+import type { Player } from '@/types/Player';
+import useTimer from '../hooks/useTimer';
+import { Missions } from '@/types/Missions';
+
+const defaultPlayer: Player = {
+  name: 'Name',
+  points: 0,
+  missions: [],
+};
+
+const defaultGame: Game = {
+  turn: 0,
+  finished: false,
+  battleSize: 'strike-force',
+  playerA: defaultPlayer,
+  playerB: defaultPlayer,
+};
+
+const GameContext = createContext<{
+  game: Game;
+  playerA: Player;
+  playerB: Player;
+  nextTurn: (player: PlayerId) => void;
+  changeDataPlayer: (player: Partial<Player>, id: PlayerId) => void;
+  secondsA: number;
+  secondsB: number;
+  setActive: React.Dispatch<React.SetStateAction<PlayerId | null>>;
+  active: PlayerId | null;
+  changeGameConfig: (key: string, value: any) => void;
+}>({
+  game: defaultGame,
+  playerA: defaultPlayer,
+  playerB: defaultPlayer,
+  nextTurn: () => {},
+  changeDataPlayer: () => {},
+  secondsA: 0,
+  secondsB: 0,
+  setActive: () => {},
+  active: null,
+  changeGameConfig: () => {},
+});
+
+export const GameProvider = ({ children }: { children: ReactNode }) => {
+  const [game, setGame] = useState<Game>(defaultGame);
+  const { secondsA, secondsB, setActive, active } = useTimer();
+
+  const nextTurn = (player: PlayerId) => {
+    if (game.turn === 0) {
+      setGame({ ...game, turn: 1, phase: 'top', playerPlaying: player });
+      setActive(player);
+    } else if (game.turn === 5 && game.phase === 'bottom') {
+      setGame({ ...game, finished: true });
+    } else {
+      setGame({
+        ...game,
+        turn: game.phase === 'bottom' ? ((game.turn + 1) as Rating) : game.turn,
+        phase: game.phase === 'top' ? 'bottom' : 'top',
+        playerPlaying: player,
+      });
+      setActive(player);
+    }
+  };
+
+  const changeDataPlayer = (player: Partial<Player>, id: PlayerId) => {
+    setGame((prev) => ({
+      ...prev,
+      [`player${id}`]: { ...prev[`player${id}`], ...player },
+    }));
+  };
+
+  const changeGameConfig = (key: string, value: any) => {
+    setGame((prev) => ({ ...prev, [key]: value }));
+  };
+  console.log(game);
+  return (
+    <GameContext.Provider
+      value={{
+        game,
+        playerA: game.playerA,
+        playerB: game.playerB,
+        nextTurn,
+        secondsA,
+        secondsB,
+        setActive,
+        active,
+        changeGameConfig,
+        changeDataPlayer,
+      }}
+    >
+      {children}
+    </GameContext.Provider>
+  );
+};
+
+export const useGame = () => useContext(GameContext);
