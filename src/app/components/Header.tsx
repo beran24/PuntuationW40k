@@ -30,7 +30,7 @@ export default function Header({}) {
           onClick={() => nextTurn('A')}
           disabled={game.playerPlaying === 'A' || game.finished}
         >
-          Next Turn
+          {!game.playerPlaying ? 'Start game' : 'Next Turn'}
         </button>
       </div>
       <div className="px-4 w-[200px] text-center font-bold">
@@ -59,7 +59,7 @@ export default function Header({}) {
           onClick={() => nextTurn('B')}
           disabled={game.playerPlaying === 'B' || game.finished}
         >
-          Next Turn
+          {!game.playerPlaying ? 'Start game' : 'Next Turn'}
         </button>
       </div>
     </header>
