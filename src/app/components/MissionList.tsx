@@ -60,7 +60,7 @@ export default function MissionList({ player }: { player: PlayerId }) {
                 onChange={(e) =>
                   handleChangePuntuation(parseInt(e.target.value), 'P', index)
                 }
-                disabled={game.finished}
+                disabled={game.finished || index === 0} // disable primary turn 1
               />
             </div>
             <div className="flex items-center justify-between mb-1">
