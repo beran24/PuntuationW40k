@@ -12,11 +12,13 @@ export default function MissionList({ player }: { player: PlayerId }) {
     type: Point,
     index: number
   ) => {
-    const currentMissionsPoints = game[`player${player}`].missionPoints ?? [];
-    const updatedMissionPoints = currentMissionsPoints.map((mp, i) =>
-      i === index ? { ...mp, [type]: value } : mp
-    );
-    changeDataPlayer({ missionPoints: updatedMissionPoints }, player);
+    if (!isNaN(value)) {
+      const currentMissionsPoints = game[`player${player}`].missionPoints ?? [];
+      const updatedMissionPoints = currentMissionsPoints.map((mp, i) =>
+        i === index ? { ...mp, [type]: value } : mp
+      );
+      changeDataPlayer({ missionPoints: updatedMissionPoints }, player);
+    }
   };
 
   return (

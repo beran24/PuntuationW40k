@@ -50,7 +50,7 @@ export default function Footer() {
       {/* Timer A */}
       <div className="bg-custom-red flex items-center gap-4 w-1/2 justify-end px-3">
         <div className="flex items-center">
-          <div className="px-4 py-2 bg-custom-button-red rounded-l min-w-15 text-center">
+          <div className="px-2 py-2 bg-custom-button-red rounded-l min-w-10 text-center">
             {playerA.commandPoints}
           </div>
           <div className="flex flex-col ">
@@ -97,7 +97,7 @@ export default function Footer() {
               -
             </button>
           </div>
-          <div className="px-4 py-2 bg-custom-button-green rounded-r min-w-15 text-center">
+          <div className="px-2 py-2 bg-custom-button-green rounded-r min-w-10 text-center">
             {playerB.commandPoints}
           </div>
         </div>
