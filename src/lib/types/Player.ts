@@ -5,4 +5,5 @@ export type Player = {
   points: number;
   missions: Missions;
   missionPoints: MissionsPoints;
+  commandPoints: number;
 };

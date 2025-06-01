@@ -9,6 +9,7 @@ import { Missions } from '@/types/Missions';
 const defaultPlayer: Player = {
   name: 'Name',
   points: 0,
+  commandPoints: 1,
   missions: [],
   missionPoints: [
     {

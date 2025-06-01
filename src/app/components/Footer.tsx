@@ -9,8 +9,16 @@ import { PlayerId } from '@/components/lib/types/Game';
 dayjs.extend(duration);
 
 export default function Footer() {
-  const { game, playerA, playerB, secondsA, secondsB, setActive, active } =
-    useGame();
+  const {
+    game,
+    playerA,
+    playerB,
+    secondsA,
+    secondsB,
+    setActive,
+    active,
+    changeDataPlayer,
+  } = useGame();
 
   const format = (s: number) => dayjs.duration(s, 'seconds').format('HH:mm:ss');
 
@@ -27,10 +35,39 @@ export default function Footer() {
     0
   );
 
+  const onHandleCommandPoints = (type: '+' | '-', player: PlayerId) => {
+    const playerCommandPoints = game[`player${player}`].commandPoints;
+    if (type === '+') {
+      changeDataPlayer({ commandPoints: playerCommandPoints + 1 }, player);
+    }
+    if (type === '-' && playerCommandPoints > 0) {
+      changeDataPlayer({ commandPoints: playerCommandPoints - 1 }, player);
+    }
+  };
+
   return (
     <footer className="text-white h-16   flex">
       {/* Timer A */}
       <div className="bg-custom-red flex items-center gap-4 w-1/2 justify-end px-3">
+        <div className="flex items-center">
+          <div className="px-4 py-2 bg-custom-button-red rounded-l min-w-15 text-center flex">
+            {playerA.commandPoints}
+          </div>
+          <div className="flex flex-col ">
+            <button
+              className="h-5 w-[40px] bg-custom-button-red rounded-tr hover:bg-custom-light-red text-sm"
+              onClick={() => onHandleCommandPoints('+', 'A')}
+            >
+              +
+            </button>
+            <button
+              className="h-5 w-[40px] bg-custom-button-red rounded-br hover:bg-custom-light-red text-sm"
+              onClick={() => onHandleCommandPoints('-', 'A')}
+            >
+              -
+            </button>
+          </div>
+        </div>
         <div className="px-4 py-2 bg-custom-button-red rounded min-w-15 text-center">
           {totalA}
         </div>
@@ -45,6 +82,25 @@ export default function Footer() {
 
       {/* Timer B */}
       <div className="flex items-center gap-4 flex-row-reverse w-1/2 justify-end bg-custom-green px-3">
+        <div className="flex items-center">
+          <div className="flex flex-col ">
+            <button
+              className="h-5 w-[40px] bg-custom-button-green rounded-tl hover:bg-custom-light-green text-sm"
+              onClick={() => onHandleCommandPoints('+', 'B')}
+            >
+              +
+            </button>
+            <button
+              className="h-5 w-[40px] bg-custom-button-green rounded-bl hover:bg-custom-light-green text-sm"
+              onClick={() => onHandleCommandPoints('-', 'B')}
+            >
+              -
+            </button>
+          </div>
+          <div className="px-4 py-2 bg-custom-button-green rounded-r min-w-15 text-center">
+            {playerB.commandPoints}
+          </div>
+        </div>
         <div className="px-4 py-2 bg-custom-button-green rounded min-w-15 text-center">
           {totalB}
         </div>
