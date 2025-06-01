@@ -2,6 +2,13 @@ import { SecondaryMission } from '@/types/Rules';
 
 export const secondaryMissions: SecondaryMission[] = [
   {
+    id: 'area_denial',
+    name: 'Area denial',
+    history: 'It is critical that this area is dominated.',
+    ruleDescription:
+      '2VP if within 3" of center and no enemies within 3". 5VP if no enemies within 6".',
+  },
+  {
     id: 'assassination',
     name: 'Assassination',
     history:
@@ -25,12 +32,18 @@ export const secondaryMissions: SecondaryMission[] = [
       '2VP per enemy MONSTER/VEHICLE destroyed. +2VP if 15+ Wounds. +2VP if 20+ Wounds. Cumulative.',
   },
   {
-    id: 'storm_hostile_objective',
-    name: 'Storm hostile objective',
-    history:
-      'Dominate the field of battle. Storm every site of tactical import and leave the foe with no place to hide.',
+    id: 'cleanse',
+    name: 'Cleanse',
+    history: 'Cleanse tainted objectives.',
     ruleDescription:
-      '4VP if you control an objective taken from the enemy or if you control one you didn’t at the start and they had none.',
+      '2VP for cleansing one objective. 4VP for two or more. Action ends if unit still holds cleansed objective.',
+  },
+  {
+    id: 'containment',
+    name: 'Containment',
+    history: 'Trap your foes within the bounds of this battlefield.',
+    ruleDescription:
+      '3VP per battlefield edge contained (max 6VP). Requires Shooting Phase action.',
   },
   {
     id: 'cull_the_horde',
@@ -41,74 +54,11 @@ export const secondaryMissions: SecondaryMission[] = [
       '5VP per destroyed INFANTRY unit that started with 20+ models or 25+ Wounds or 20+ point-equivalent models.',
   },
   {
-    id: 'recover_assets',
-    name: 'Recover assets',
-    history: 'Scattered strategic assets must be swiftly reclaimed.',
-    ruleDescription:
-      '3VP if 2 units recover assets, 6VP if 3 units do. Action requires units in 3 different zones.',
-  },
-  {
-    id: 'area_denial',
-    name: 'Area denial',
-    history: 'It is critical that this area is dominated.',
-    ruleDescription:
-      '2VP if within 3" of center and no enemies within 3". 5VP if no enemies within 6".',
-  },
-  {
-    id: 'secure_no_mans_land',
-    name: 'Secure no man’s land',
-    history:
-      'You must advance swiftly into no man’s land and seize it before the enemy can.',
-    ruleDescription:
-      "2VP for one No Man's Land objective. 5VP for two or more.",
-  },
-  {
-    id: 'containment',
-    name: 'Containment',
-    history: 'Trap your foes within the bounds of this battlefield.',
-    ruleDescription:
-      '3VP per battlefield edge contained (max 6VP). Requires Shooting Phase action.',
-  },
-  {
-    id: 'marked_for_death',
-    name: 'Marked for death',
-    history: 'These specific enemy assets must be eliminated.',
-    ruleDescription:
-      '5VP if one or more of 3 marked units are destroyed or removed in a turn.',
-  },
-  {
-    id: 'no_prisoners',
-    name: 'No prisoners',
-    history: 'Exterminate your enemies.',
-    ruleDescription: '2VP per unit destroyed (up to 5VP).',
-  },
-  {
     id: 'defend_stronghold',
     name: 'Defend stronghold',
     history: 'You are charged with the defence of a key objective.',
     ruleDescription:
       '3VP if you control any objective in your deployment zone at end of enemy turn or battle.',
-  },
-  {
-    id: 'sabotage',
-    name: 'Sabotage',
-    history: 'Destroy enemy supply caches or assets.',
-    ruleDescription:
-      '3VP if sabotage completed outside opponent’s zone. 6VP if done inside opponent’s zone.',
-  },
-  {
-    id: 'overwhelming_force',
-    name: 'Overwhelming force',
-    history: 'Scour the enemy from the face of the battlefield.',
-    ruleDescription:
-      '3VP for each enemy unit destroyed that started within range of an objective (up to 5VP).',
-  },
-  {
-    id: 'extend_battle_lines',
-    name: 'Extend battle lines',
-    history: 'Press forward to establish a strong military presence.',
-    ruleDescription:
-      '5VP if you control objectives in your deployment zone and No Man’s Land. 2VP if you only have one unit and it holds No Man’s Land.',
   },
   {
     id: 'engage_on_all_fronts',
@@ -125,10 +75,60 @@ export const secondaryMissions: SecondaryMission[] = [
       '2VP if completed within 6" of center. 4VP if within opponent’s deployment zone.',
   },
   {
-    id: 'cleanse',
-    name: 'Cleanse',
-    history: 'Cleanse tainted objectives.',
+    id: 'extend_battle_lines',
+    name: 'Extend battle lines',
+    history: 'Press forward to establish a strong military presence.',
     ruleDescription:
-      '2VP for cleansing one objective. 4VP for two or more. Action ends if unit still holds cleansed objective.',
+      '5VP if you control objectives in your deployment zone and No Man’s Land. 2VP if you only have one unit and it holds No Man’s Land.',
+  },
+  {
+    id: 'marked_for_death',
+    name: 'Marked for death',
+    history: 'These specific enemy assets must be eliminated.',
+    ruleDescription:
+      '5VP if one or more of 3 marked units are destroyed or removed in a turn.',
+  },
+  {
+    id: 'no_prisoners',
+    name: 'No prisoners',
+    history: 'Exterminate your enemies.',
+    ruleDescription: '2VP per unit destroyed (up to 5VP).',
+  },
+  {
+    id: 'overwhelming_force',
+    name: 'Overwhelming force',
+    history: 'Scour the enemy from the face of the battlefield.',
+    ruleDescription:
+      '3VP for each enemy unit destroyed that started within range of an objective (up to 5VP).',
+  },
+  {
+    id: 'recover_assets',
+    name: 'Recover assets',
+    history: 'Scattered strategic assets must be swiftly reclaimed.',
+    ruleDescription:
+      '3VP if 2 units recover assets, 6VP if 3 units do. Action requires units in 3 different zones.',
+  },
+  {
+    id: 'sabotage',
+    name: 'Sabotage',
+    history: 'Destroy enemy supply caches or assets.',
+    ruleDescription:
+      '3VP if sabotage completed outside opponent’s zone. 6VP if done inside opponent’s zone.',
+  },
+  {
+    id: 'secure_no_mans_land',
+    name: 'Secure no man’s land',
+    history:
+      'You must advance swiftly into no man’s land and seize it before the enemy can.',
+    ruleDescription:
+      "2VP for one No Man's Land objective. 5VP for two or more.",
+  },
+  {
+    id: 'storm_hostile_objective',
+    name: 'Storm hostile objective',
+    history:
+      'Dominate the field of battle. Storm every site of tactical import and leave the foe with no place to hide.',
+    ruleDescription:
+      '4VP if you control an objective taken from the enemy or if you control one you didn’t at the start and they had none.',
   },
 ];

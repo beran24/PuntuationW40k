@@ -57,8 +57,18 @@ export const GameProvider = ({ children }: { children: ReactNode }) => {
   const { secondsA, secondsB, setActive, active } = useTimer(game.finished);
 
   const nextTurn = (player: PlayerId) => {
+    const commandPointsPlayerA = game.playerA.commandPoints;
+    const commandPointsPlayerB = game.playerB.commandPoints;
+    const opponent = player === 'A' ? 'B' : 'A';
     if (game.turn === 0) {
-      setGame({ ...game, turn: 1, phase: 'top', playerPlaying: player });
+      setGame({
+        ...game,
+        turn: 1,
+        phase: 'top',
+        playerPlaying: player,
+        playerA: { ...game.playerA, commandPoints: commandPointsPlayerA + 1 },
+        playerB: { ...game.playerB, commandPoints: commandPointsPlayerB + 1 },
+      });
       setActive(player);
     } else if (game.turn === 5 && game.phase === 'bottom') {
       setGame({ ...game, finished: true });
@@ -70,6 +80,7 @@ export const GameProvider = ({ children }: { children: ReactNode }) => {
         playerPlaying: player,
         [`player${player}`]: {
           ...game[`player${player}`],
+          commandPoints: game[`player${player}`].commandPoints + 1,
           missionPoints: [
             ...game[`player${player}`].missionPoints,
             {
@@ -78,6 +89,10 @@ export const GameProvider = ({ children }: { children: ReactNode }) => {
               P: 0,
             },
           ],
+        },
+        [`player${opponent}`]: {
+          ...game[`player${opponent}`],
+          commandPoints: game[`player${player}`].commandPoints + 1,
         },
       });
       setActive(player);
