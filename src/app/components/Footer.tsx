@@ -71,7 +71,7 @@ export default function Footer() {
         <div className="px-4 py-2 bg-custom-button-red rounded min-w-15 text-center">
           {totalA}
         </div>
-        <p className="text-4xl font-mono">{format(secondsA)}</p>
+        <p className="text-4xl font-mono hidden sm:block">{format(secondsA)}</p>
         <button
           className="px-4 py-2 bg-custom-button-red rounded hover:bg-custom-light-red w-[80px]"
           onClick={() => toggle('A')}
@@ -104,7 +104,7 @@ export default function Footer() {
         <div className="px-4 py-2 bg-custom-button-green rounded min-w-15 text-center">
           {totalB}
         </div>
-        <p className="text-4xl font-mono">{format(secondsB)}</p>
+        <p className="text-4xl font-mono hidden sm:block">{format(secondsB)}</p>
         <button
           className="px-4 py-2 bg-custom-button-green rounded hover:bg-custom-light-green w-[80px]"
           onClick={() => toggle('B')}
