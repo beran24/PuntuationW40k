@@ -31,10 +31,9 @@ export default function ConfigGame() {
       missionRules[getRandomNumber(0, missionRules.length - 1)].id
     );
   };
-
   return (
     <main className="flex-1 flex w-full header justify-center text-white">
-      <div>
+      <div className="flex flex-col gap-2">
         <div className="flex justify-center">
           <Dice onHandleClickDice={onHandleClickDice} />
         </div>
@@ -61,6 +60,11 @@ export default function ConfigGame() {
           options={primaryMissions}
           value={game.primaryMission || primaryMissions[0].id}
           onHandleChange={(value) => changeGameConfig('primaryMission', value)}
+        />
+        <img
+          src={deployments.find((d) => d.id === game.deployment)?.img}
+          alt="image_deployment"
+          className="w-[400px]"
         />
       </div>
     </main>
