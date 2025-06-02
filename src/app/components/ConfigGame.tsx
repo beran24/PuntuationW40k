@@ -30,7 +30,7 @@ export default function ConfigGame() {
 
   useEffect(() => {
     onHandleClickDice();
-  }, [onHandleClickDice]);
+  }, []);
 
   return (
     <main className="flex-1 flex w-full header justify-center text-white">
