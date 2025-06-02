@@ -4,7 +4,6 @@ import React, { createContext, useContext, useState, ReactNode } from 'react';
 import type { Game, PlayerId, Rating } from '@/types/Game';
 import type { Player } from '@/types/Player';
 import useTimer from '../hooks/useTimer';
-import { Missions } from '@/types/Missions';
 
 const defaultPlayer: Player = {
   name: 'Name',
@@ -39,7 +38,7 @@ const GameContext = createContext<{
   secondsB: number;
   setActive: React.Dispatch<React.SetStateAction<PlayerId | null>>;
   active: PlayerId | null;
-  changeGameConfig: (key: string, value: any) => void;
+  changeGameConfig: (key: string, value: string) => void;
 }>({
   game: defaultGame,
   playerA: defaultPlayer,
@@ -122,7 +121,7 @@ export const GameProvider = ({ children }: { children: ReactNode }) => {
     }));
   };
 
-  const changeGameConfig = (key: string, value: any) => {
+  const changeGameConfig = (key: string, value: string) => {
     setGame((prev) => ({ ...prev, [key]: value }));
   };
 
