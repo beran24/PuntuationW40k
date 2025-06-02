@@ -49,6 +49,17 @@ export default function Footer() {
     <footer className="text-white h-16   flex">
       {/* Timer A */}
       <div className="bg-custom-red flex items-center gap-4 w-1/2 justify-end px-3">
+        <label className="flex items-center space-x-2 cursor-pointer text-white">
+          <input
+            type="checkbox"
+            checked={playerA.warlord}
+            onChange={(e) =>
+              changeDataPlayer({ warlord: e.target.checked }, 'A')
+            }
+            className="form-checkbox h-5 w-5 text-white accent-custom-button-red"
+          />
+          <span>WL+CP</span>
+        </label>
         <div className="flex items-center">
           <div className="px-2 py-2 bg-custom-button-red rounded-l min-w-10 text-center">
             {playerA.commandPoints}
@@ -82,6 +93,17 @@ export default function Footer() {
 
       {/* Timer B */}
       <div className="flex items-center gap-4 flex-row-reverse w-1/2 justify-end bg-custom-green px-3">
+        <label className="flex items-center space-x-2 cursor-pointer text-white">
+          <input
+            type="checkbox"
+            checked={playerB.warlord}
+            onChange={(e) =>
+              changeDataPlayer({ warlord: e.target.checked }, 'B')
+            }
+            className="form-checkbox h-5 w-5 text-white accent-custom-button-green"
+          />
+          <span>WL+CP</span>
+        </label>
         <div className="flex items-center">
           <div className="flex flex-col ">
             <button

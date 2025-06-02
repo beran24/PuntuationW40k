@@ -9,7 +9,8 @@ import { Missions } from '@/types/Missions';
 const defaultPlayer: Player = {
   name: 'Name',
   points: 0,
-  commandPoints: 1,
+  commandPoints: 0,
+  warlord: false,
   missions: [],
   missionPoints: [
     {
@@ -66,8 +67,20 @@ export const GameProvider = ({ children }: { children: ReactNode }) => {
         turn: 1,
         phase: 'top',
         playerPlaying: player,
-        playerA: { ...game.playerA, commandPoints: commandPointsPlayerA + 1 },
-        playerB: { ...game.playerB, commandPoints: commandPointsPlayerB + 1 },
+        playerA: {
+          ...game.playerA,
+          commandPoints:
+            commandPointsPlayerA +
+            1 +
+            (player === 'A' && game.playerA.warlord ? 1 : 0),
+        },
+        playerB: {
+          ...game.playerB,
+          commandPoints:
+            commandPointsPlayerB +
+            1 +
+            (player === 'B' && game.playerB.warlord ? 1 : 0),
+        },
       });
       setActive(player);
     } else if (game.turn === 5 && game.phase === 'bottom') {
@@ -80,7 +93,10 @@ export const GameProvider = ({ children }: { children: ReactNode }) => {
         playerPlaying: player,
         [`player${player}`]: {
           ...game[`player${player}`],
-          commandPoints: game[`player${player}`].commandPoints + 1,
+          commandPoints:
+            game[`player${player}`].commandPoints +
+            1 +
+            (game[`player${player}`].warlord ? 1 : 0),
           missionPoints: [
             ...game[`player${player}`].missionPoints,
             {

@@ -6,4 +6,5 @@ export type Player = {
   missions: Missions;
   missionPoints: MissionsPoints;
   commandPoints: number;
+  warlord: boolean;
 };
