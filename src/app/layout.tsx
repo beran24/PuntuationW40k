@@ -14,8 +14,19 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'ScoreBoard W40K',
-  description: 'ScoreBoard W40K',
+  title: 'HammerTime - Warhammer Timer App',
+  description:
+    'The perfect Warhammer 40K match timer with CP tracking, missions and more!',
+  openGraph: {
+    title: 'HammerTime',
+    description:
+      'The perfect Warhammer 40K match timer with CP tracking, missions and more!',
+    url: 'https://hammertime.fyi',
+    images: ['/preview.png'],
+  },
+  twitter: {
+    card: 'summary_large_image',
+  },
 };
 
 export default function RootLayout({
