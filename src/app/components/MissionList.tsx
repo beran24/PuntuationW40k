@@ -1,5 +1,5 @@
 import { PlayerId } from '@/types/Game';
-import { useGame } from '@/components/providers/GameContext';
+import { useGame } from '@/providers/GameContext';
 import { secondaryMissions } from '../constants/secondaryMissions';
 import { Point } from '@/types/Missions';
 import { primaryMissions } from '../constants/primaryMissions';

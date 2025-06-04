@@ -2,7 +2,7 @@ import { PlayerId } from '@/types/Game';
 import { secondaryMissions } from '../constants/secondaryMissions';
 import Selector from './common/Selector';
 import { useState } from 'react';
-import { useGame } from '@/components/providers/GameContext';
+import { useGame } from '@/providers/GameContext';
 import { Objective } from '@/types/Missions';
 
 export default function MissionPicker({ player }: { player: PlayerId }) {

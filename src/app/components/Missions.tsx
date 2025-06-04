@@ -1,4 +1,4 @@
-import { useGame } from '@/components/providers/GameContext';
+import { useGame } from '@/providers/GameContext';
 import MissionPicker from './MissionPicker';
 import MissionList from './MissionList';
 

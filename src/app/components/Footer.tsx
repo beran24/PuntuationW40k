@@ -3,8 +3,8 @@
 import React from 'react';
 import dayjs from 'dayjs';
 import duration from 'dayjs/plugin/duration';
-import { useGame } from '@/components/providers/GameContext';
-import { PlayerId } from '@/components/lib/types/Game';
+import { useGame } from '@/providers/GameContext';
+import { PlayerId } from '@/types/Game';
 
 dayjs.extend(duration);
 

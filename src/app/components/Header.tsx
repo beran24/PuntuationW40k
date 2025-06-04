@@ -1,5 +1,5 @@
-import { PlayerId } from '@/components/lib/types/Game';
-import { useGame } from '@/components/providers/GameContext';
+import { PlayerId } from '@/types/Game';
+import { useGame } from '@/providers/GameContext';
 import React, { useState } from 'react';
 
 export default function Header({}) {
