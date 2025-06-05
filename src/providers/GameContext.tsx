@@ -1,6 +1,13 @@
 'use client';
 
-import React, { createContext, useContext, useState, ReactNode } from 'react';
+import React, {
+  createContext,
+  useContext,
+  useState,
+  ReactNode,
+  useEffect,
+  useMemo,
+} from 'react';
 import type { Game, PlayerId, Rating } from '@/types/Game';
 import type { Player } from '@/types/Player';
 import useTimer from '../hooks/useTimer';
@@ -55,6 +62,17 @@ const GameContext = createContext<{
 export const GameProvider = ({ children }: { children: ReactNode }) => {
   const [game, setGame] = useState<Game>(defaultGame);
   const { secondsA, secondsB, setActive, active } = useTimer(game.finished);
+
+  useEffect(() => {
+    const stored = localStorage.getItem('game');
+    if (stored) {
+      setGame(JSON.parse(stored));
+    }
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem('game', JSON.stringify(game));
+  }, [game]);
 
   const nextTurn = (player: PlayerId) => {
     const commandPointsPlayerA = game.playerA.commandPoints;

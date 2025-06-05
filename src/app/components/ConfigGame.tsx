@@ -29,7 +29,9 @@ export default function ConfigGame() {
   }, [changeGameConfig]);
 
   useEffect(() => {
-    onHandleClickDice();
+    if (!game.deployment) {
+      onHandleClickDice();
+    }
   }, []);
 
   return (
