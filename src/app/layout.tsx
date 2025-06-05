@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     description:
       'The perfect Warhammer 40K match timer with CP tracking, missions and more!',
     url: 'https://hammertime.fyi',
-    images: ['/preview.png'],
+    images: ['/img/preview.png'],
   },
   twitter: {
     card: 'summary_large_image',
