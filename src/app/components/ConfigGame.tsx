@@ -1,6 +1,6 @@
 'use client';
 
-import { useCallback, useEffect } from 'react';
+import { useCallback } from 'react';
 import { deployments } from '../constants/deployments';
 import { battleSizes } from '../constants/battleSize';
 import { missionRules } from '../constants/missionRules';
@@ -10,6 +10,7 @@ import Dice from './common/Dice';
 import { useGame } from '@/providers/GameContext';
 import { getRandomNumber } from '../constants/randomNumber';
 import { terrainLayouts } from '../constants/terrainLayouts';
+import MissionCard from './common/MissionCard';
 
 export default function ConfigGame() {
   const { game, changeGameConfig } = useGame();
@@ -33,9 +34,34 @@ export default function ConfigGame() {
     );
   }, [changeGameConfig]);
 
+  const primaryMission = primaryMissions.find(
+    (d) => d.id === game.primaryMission
+  );
+
+  const missionRule = missionRules.find((d) => d.id === game.missionRule);
   return (
-    <main className="flex-1 flex w-full header justify-center text-white">
-      <div className="flex flex-col gap-2">
+    <main className="flex flex-1 w-full header justify-center text-white">
+      <div className="flex flex-1 flex-col justify-center px-8">
+        <div className="flex flex-row gap-8">
+          <div className="w-1/2">
+            <MissionCard
+              type="Primary Mission"
+              title={primaryMission?.name}
+              subtitle={primaryMission?.history}
+              section={primaryMission?.ruleDescription}
+            />
+          </div>
+          <div className="w-1/2 ">
+            <MissionCard
+              type="Mission rule"
+              title={missionRule?.name}
+              subtitle={missionRule?.history}
+              section={missionRule?.ruleDescription}
+            />
+          </div>
+        </div>
+      </div>
+      <div className="flex-shrink-0 flex-col gap-2">
         <div className="flex justify-center">
           <Dice onHandleClickDice={onHandleClickDice} />
         </div>
@@ -76,13 +102,19 @@ export default function ConfigGame() {
           options={terrainLayouts}
           value={game.terrainLayout || terrainLayouts[0].id}
           onHandleChange={(value) =>
-            changeGameConfig('terrainLayaout', value as string)
+            changeGameConfig('terrainLayout', value as string)
           }
         />
         <img
           src={deployments.find((d) => d.id === game.deployment)?.img}
           alt="image_deployment"
           className="w-[400px]"
+        />
+      </div>
+      <div className="flex flex-1 flex-col justify-center px-8">
+        <img
+          src={terrainLayouts.find((d) => d.id === game.terrainLayout)?.img}
+          alt="image_deployment"
         />
       </div>
     </main>

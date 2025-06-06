@@ -42,7 +42,7 @@ export const primaryMissions = [
     history:
       'Victory here lies in dominating not only the foe, but also the landscape of the battlefield itself.',
     ruleDescription:
-      'From round 2: Units can terraform objectives (outside your deployment zone) via Action. If successful, the objective becomes terraformed. End of your Command phase: score 4VP per objective you control and 2VP for each terraformed (max 15VP/turn).',
+      ' From round 2: Units can start a Terraform action in the Shooting phase on  objective markers outside your deployment zone. If completed (at the end of your opponent’s next turn), the objective is terraformed. End of your Command phase: score 4VP per controlled objective + 2VP per terraformed (max 15VP/turn).',
   },
   {
     id: 'burden-of-trust',

@@ -37,12 +37,6 @@ const defaultGame: Game = {
   battleSize: 'strike-force',
   playerA: defaultPlayer,
   playerB: defaultPlayer,
-  deployment: deployments[getRandomNumber(0, deployments.length - 1)].id,
-  primaryMission:
-    primaryMissions[getRandomNumber(0, primaryMissions.length - 1)].id,
-  missionRule: missionRules[getRandomNumber(0, missionRules.length - 1)].id,
-  terrainLayout:
-    terrainLayouts[getRandomNumber(0, terrainLayouts.length - 1)].id,
 };
 
 const GameContext = createContext<{
@@ -77,6 +71,18 @@ export const GameProvider = ({ children }: { children: ReactNode }) => {
     const stored = localStorage.getItem('game');
     if (stored) {
       setGame(JSON.parse(stored));
+    } else {
+      const randomGame: Game = {
+        ...defaultGame,
+        deployment: deployments[getRandomNumber(0, deployments.length - 1)].id,
+        primaryMission:
+          primaryMissions[getRandomNumber(0, primaryMissions.length - 1)].id,
+        missionRule:
+          missionRules[getRandomNumber(0, missionRules.length - 1)].id,
+        terrainLayout:
+          terrainLayouts[getRandomNumber(0, terrainLayouts.length - 1)].id,
+      };
+      setGame(randomGame);
     }
   }, []);
 
