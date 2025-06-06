@@ -14,6 +14,7 @@ import { primaryMissions } from '../app/constants/primaryMissions';
 import { missionRules } from '../app/constants/missionRules';
 import { deployments } from '../app/constants/deployments';
 import { getRandomNumber } from '../app/constants/randomNumber';
+import { terrainLayouts } from '../app/constants/terrainLayouts';
 
 const defaultPlayer: Player = {
   name: 'Name',
@@ -40,6 +41,8 @@ const defaultGame: Game = {
   primaryMission:
     primaryMissions[getRandomNumber(0, primaryMissions.length - 1)].id,
   missionRule: missionRules[getRandomNumber(0, missionRules.length - 1)].id,
+  terrainLayout:
+    terrainLayouts[getRandomNumber(0, terrainLayouts.length - 1)].id,
 };
 
 const GameContext = createContext<{

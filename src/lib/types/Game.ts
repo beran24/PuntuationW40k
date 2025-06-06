@@ -11,6 +11,7 @@ export type Game = {
   deployment?: string;
   missionRule?: string;
   primaryMission?: string;
+  terrainLayout?: string;
   playerPlaying?: PlayerId;
   playerA: Player;
   playerB: Player;

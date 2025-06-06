@@ -9,6 +9,7 @@ import Selector from './common/Selector';
 import Dice from './common/Dice';
 import { useGame } from '@/providers/GameContext';
 import { getRandomNumber } from '../constants/randomNumber';
+import { terrainLayouts } from '../constants/terrainLayouts';
 
 export default function ConfigGame() {
   const { game, changeGameConfig } = useGame();
@@ -25,6 +26,10 @@ export default function ConfigGame() {
     changeGameConfig(
       'missionRule',
       missionRules[getRandomNumber(0, missionRules.length - 1)].id
+    );
+    changeGameConfig(
+      'terrainLayout',
+      terrainLayouts[getRandomNumber(0, terrainLayouts.length - 1)].id
     );
   }, [changeGameConfig]);
 
@@ -64,6 +69,14 @@ export default function ConfigGame() {
           value={game.primaryMission || primaryMissions[0].id}
           onHandleChange={(value) =>
             changeGameConfig('primaryMission', value as string)
+          }
+        />
+        <Selector
+          label="Select Terrain Layout"
+          options={terrainLayouts}
+          value={game.terrainLayout || terrainLayouts[0].id}
+          onHandleChange={(value) =>
+            changeGameConfig('terrainLayaout', value as string)
           }
         />
         <img
