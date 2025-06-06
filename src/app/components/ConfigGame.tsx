@@ -28,12 +28,6 @@ export default function ConfigGame() {
     );
   }, [changeGameConfig]);
 
-  useEffect(() => {
-    if (!game.deployment) {
-      onHandleClickDice();
-    }
-  }, []);
-
   return (
     <main className="flex-1 flex w-full header justify-center text-white">
       <div className="flex flex-col gap-2">

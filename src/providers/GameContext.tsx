@@ -10,6 +10,10 @@ import React, {
 import type { Game, PlayerId, Rating } from '@/types/Game';
 import type { Player } from '@/types/Player';
 import useTimer from '../hooks/useTimer';
+import { primaryMissions } from '../app/constants/primaryMissions';
+import { missionRules } from '../app/constants/missionRules';
+import { deployments } from '../app/constants/deployments';
+import { getRandomNumber } from '../app/constants/randomNumber';
 
 const defaultPlayer: Player = {
   name: 'Name',
@@ -32,6 +36,10 @@ const defaultGame: Game = {
   battleSize: 'strike-force',
   playerA: defaultPlayer,
   playerB: defaultPlayer,
+  deployment: deployments[getRandomNumber(0, deployments.length - 1)].id,
+  primaryMission:
+    primaryMissions[getRandomNumber(0, primaryMissions.length - 1)].id,
+  missionRule: missionRules[getRandomNumber(0, missionRules.length - 1)].id,
 };
 
 const GameContext = createContext<{
