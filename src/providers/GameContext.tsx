@@ -6,7 +6,6 @@ import React, {
   useState,
   ReactNode,
   useEffect,
-  useMemo,
 } from 'react';
 import type { Game, PlayerId, Rating } from '@/types/Game';
 import type { Player } from '@/types/Player';
