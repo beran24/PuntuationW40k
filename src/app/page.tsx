@@ -1,7 +1,12 @@
 'use client';
 import Link from 'next/link';
+import { useEffect } from 'react';
 
 export default function Landing() {
+  useEffect(() => {
+    localStorage.clear();
+  }, []);
+
   return (
     <main className="min-h-screen flex flex-col items-center justify-center px-4 text-white text-center header">
       <h1 className="text-4xl md:text-6xl font-bold mb-4">HammerTime</h1>
