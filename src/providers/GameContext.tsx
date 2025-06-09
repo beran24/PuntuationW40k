@@ -66,7 +66,6 @@ const GameContext = createContext<{
 export const GameProvider = ({ children }: { children: ReactNode }) => {
   const [game, setGame] = useState<Game>(defaultGame);
   const { secondsA, secondsB, setActive, active } = useTimer(game.finished);
-
   useEffect(() => {
     const stored = localStorage.getItem('game');
     if (stored) {
@@ -87,7 +86,7 @@ export const GameProvider = ({ children }: { children: ReactNode }) => {
   }, []);
 
   useEffect(() => {
-    localStorage.setItem('game', JSON.stringify(game));
+    if (game.deployment) localStorage.setItem('game', JSON.stringify(game));
   }, [game]);
 
   const nextTurn = (player: PlayerId) => {

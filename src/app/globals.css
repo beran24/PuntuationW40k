@@ -19,6 +19,9 @@
   --color-custom-disabled-bg: #3b3b3b;
   --color-custom-disabled-text: #aaaaaa;
   --color-custom-disabled-border: #5a5a5a;
+  --color-custom-beige: #f5efe0;
+  --color-custom-granate: #140801;
+  --color-custom-gold: #b6a46e;
 }
 
 @media (prefers-color-scheme: dark) {
