@@ -17,7 +17,7 @@ export default function Selector({
       <select
         value={value}
         onChange={(e) => onHandleChange(e.target.value)}
-        className="w-full px-3 py-2 border rounded bg-white text-black"
+        className="w-full px-3 py-2 border rounded text-black bg-custom-beige"
       >
         {options.map((o) => (
           <option key={o.id} value={o.id}>

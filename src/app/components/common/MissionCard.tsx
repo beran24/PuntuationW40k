@@ -18,10 +18,10 @@ export default function MissionCard({
       <div className="bg-custom-granate text-custom-gold text-center pt-4  text-sm font-bold tracking-wide">
         {type.toUpperCase()}
       </div>
-      <div className="bg-custom-granate text-center font-extrabold text-lg pb-4 uppercase">
+      <div className="bg-custom-granate text-center font-extrabold text-lg pb-4 uppercase text-white">
         {title}
       </div>
-      <div className="text-center italic text-sm   p-4 text-black border-b-2 border-dotted border-b-black">
+      <div className="text-center italic text-sm p-4 text-black border-b-2 border-dotted border-b-black">
         {subtitle}
       </div>
       <div className="text-black font-bold p-4  text-sm">{section}</div>
