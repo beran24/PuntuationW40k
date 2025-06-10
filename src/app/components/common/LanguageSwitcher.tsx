@@ -1,12 +1,10 @@
 'use client';
 
-import { useState } from 'react';
 import Selector from './Selector';
 import { useRouter } from 'next/navigation';
 import useCookies from '../../../hooks/useCookies';
 export default function LanguageSwitcher() {
-  const { getCookieLocale } = useCookies();
-  const [lang, setLang] = useState(getCookieLocale() || 'en');
+  const [lang, setLang] = useCookies('locale', 'en');
   const router = useRouter();
 
   const handleChange = (value: React.SetStateAction<string>) => {
