@@ -86,7 +86,7 @@ export const secondaryMissions: SecondaryMission[] = [
     name: 'Marked for death',
     history: 'These specific enemy assets must be eliminated.',
     ruleDescription:
-      '5VP if one or more of 3 marked units are destroyed or removed in a turn.',
+      'Score 5VP at the end of either player’s turn if one or more of the selected (by the opponent) enemy units were destroyed or removed from the battlefield that turn.',
   },
   {
     id: 'no_prisoners',
@@ -106,14 +106,14 @@ export const secondaryMissions: SecondaryMission[] = [
     name: 'Recover assets',
     history: 'Scattered strategic assets must be swiftly reclaimed.',
     ruleDescription:
-      '3VP if 2 units recover assets, 6VP if 3 units do. Action requires units in 3 different zones.',
+      'Perform an action during your Shooting phase with units each in a different zone: your deployment zone, No Man’s Land, or the opponent’s deployment zone. If 2 units complete the action by the end of your opponent’s turn (or the battle), score 3VP; if 3 units complete it, score 6VP.',
   },
   {
     id: 'sabotage',
     name: 'Sabotage',
     history: 'Destroy enemy supply caches or assets.',
     ruleDescription:
-      '3VP if sabotage completed outside opponent’s zone. 6VP if done inside opponent’s zone.',
+      'Perform an action during your Shooting phase with one unit inside a terrain feature and outside your deployment zone. If the unit completes the action by the end of your opponent’s next turn (or the battle), score 3VP — or 6VP if the unit was in the opponent’s deployment zone',
   },
   {
     id: 'secure_no_mans_land',

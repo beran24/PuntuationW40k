@@ -9,11 +9,13 @@ export default function Selector({
   value?: string;
   options: Rule[];
   onHandleChange: React.Dispatch<React.SetStateAction<string>>;
-  label: string;
+  label?: string;
 }>) {
   return (
     <div>
-      <label className="block text-sm font-medium mb-1">{label}</label>
+      {label && (
+        <label className="block text-sm font-medium mb-1">{label}</label>
+      )}
       <select
         value={value}
         onChange={(e) => onHandleChange(e.target.value)}

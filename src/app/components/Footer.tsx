@@ -79,7 +79,7 @@ export default function Footer() {
             </button>
           </div>
         </div>
-        <div className="px-4 py-2 bg-custom-button-red rounded min-w-15 text-center">
+        <div className="px-4 py-2 bg-custom-button-red rounded min-w-15 text-center font-bold">
           {totalA}
         </div>
         <p className="text-4xl font-mono hidden sm:block">{format(secondsA)}</p>
@@ -123,7 +123,7 @@ export default function Footer() {
             {playerB.commandPoints}
           </div>
         </div>
-        <div className="px-4 py-2 bg-custom-button-green rounded min-w-15 text-center">
+        <div className="px-4 py-2 bg-custom-button-green rounded min-w-15 text-center font-bold ">
           {totalB}
         </div>
         <p className="text-4xl font-mono hidden sm:block">{format(secondsB)}</p>
