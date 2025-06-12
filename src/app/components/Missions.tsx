@@ -5,7 +5,7 @@ import MissionList from './MissionList';
 export default function Missions() {
   const { game, playerB, playerA } = useGame();
   return (
-    <main className="flex-1 flex w-full ">
+    <main className="flex-1 flex w-full overflow-y-auto mt-16 mb-16 min-h-[calc(100vh-4rem-4rem)]">
       <div className="w-1/2 bg-custom-button-red">
         {game.playerPlaying === 'A' &&
         game.turn !== playerA?.missions?.length ? (

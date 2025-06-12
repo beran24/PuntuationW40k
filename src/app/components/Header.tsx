@@ -6,7 +6,7 @@ export default function Header({}) {
   const { game, playerA, playerB, nextTurn, changeDataPlayer } = useGame();
   const [showInput, setShowInput] = useState<PlayerId | null>();
   return (
-    <header className="text-white p-4 header flex items-center justify-between h-16">
+    <header className="fixed top-0 left-0 right-0 text-custom-beige p-4 header flex items-center justify-between h-16 ">
       <div className="flex-1 text-center flex flex-row justify-center">
         {showInput === 'A' ? (
           <input

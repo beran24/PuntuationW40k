@@ -40,7 +40,7 @@ export default function ConfigGame() {
 
   const missionRule = missionRules.find((d) => d.id === game.missionRule);
   return (
-    <main className="flex flex-1 w-full header justify-center text-white">
+    <main className="flex flex-1 w-full header justify-center text-white overflow-y-auto mt-16 mb-16 min-h-[calc(100vh-4rem-4rem)]">
       <div className="flex flex-1 flex-col justify-center px-8">
         <div className="flex flex-row gap-8">
           <div className="w-1/2">
@@ -61,7 +61,7 @@ export default function ConfigGame() {
           </div>
         </div>
       </div>
-      <div className="flex-shrink-0 flex-col gap-2">
+      <div className="flex-shrink-0 flex-col flex gap-1">
         <div className="flex justify-center">
           <Dice onHandleClickDice={onHandleClickDice} />
         </div>

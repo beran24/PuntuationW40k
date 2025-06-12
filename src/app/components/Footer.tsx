@@ -5,6 +5,7 @@ import dayjs from 'dayjs';
 import duration from 'dayjs/plugin/duration';
 import { useGame } from '@/providers/GameContext';
 import { PlayerId } from '@/types/Game';
+import getTotalPoints from '../services/points';
 
 dayjs.extend(duration);
 
@@ -26,14 +27,8 @@ export default function Footer() {
     setActive((prev) => (prev === which ? null : which));
   };
 
-  const totalA = playerA?.missionPoints.reduce(
-    (sum, m) => sum + m.A + m.B + m.P,
-    0
-  );
-  const totalB = playerB?.missionPoints.reduce(
-    (sum, m) => sum + m.A + m.B + m.P,
-    0
-  );
+  const totalA = getTotalPoints(playerA?.missionPoints);
+  const totalB = getTotalPoints(playerB?.missionPoints);
 
   const onHandleCommandPoints = (type: '+' | '-', player: PlayerId) => {
     const playerCommandPoints = game[`player${player}`].commandPoints;
@@ -46,17 +41,16 @@ export default function Footer() {
   };
 
   return (
-    <footer className="text-white h-16   flex">
-      {/* Timer A */}
+    <footer className="fixed bottom-0 left-0 right-0 text-custom-beige h-16 flex ">
       <div className="bg-custom-red flex items-center gap-4 w-1/2 justify-end px-3">
-        <label className="flex items-center space-x-2 cursor-pointer text-white">
+        <label className="flex items-center space-x-2 cursor-pointer ">
           <input
             type="checkbox"
             checked={playerA.warlord}
             onChange={(e) =>
               changeDataPlayer({ warlord: e.target.checked }, 'A')
             }
-            className="form-checkbox h-5 w-5 text-white accent-custom-button-red"
+            className="form-checkbox h-5 w-5  accent-custom-button-red"
           />
           <span>WL+CP</span>
         </label>
@@ -90,17 +84,15 @@ export default function Footer() {
           {active === 'A' ? 'Pause' : 'Play'}
         </button>
       </div>
-
-      {/* Timer B */}
       <div className="flex items-center gap-4 flex-row-reverse w-1/2 justify-end bg-custom-green px-3">
-        <label className="flex items-center space-x-2 cursor-pointer text-white">
+        <label className="flex items-center space-x-2 cursor-pointer ">
           <input
             type="checkbox"
             checked={playerB.warlord}
             onChange={(e) =>
               changeDataPlayer({ warlord: e.target.checked }, 'B')
             }
-            className="form-checkbox h-5 w-5 text-white accent-custom-button-green"
+            className="form-checkbox h-5 w-5 accent-custom-button-green"
           />
           <span>WL+CP</span>
         </label>
