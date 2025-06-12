@@ -16,6 +16,15 @@ export default function Header({}) {
               setShowInput(null);
               changeDataPlayer({ ...playerA, name: event.target.value }, 'A');
             }}
+            onKeyDown={(event) => {
+              if (event.key === 'Enter') {
+                setShowInput(null);
+                changeDataPlayer(
+                  { ...playerA, name: event.currentTarget.value },
+                  'A'
+                );
+              }
+            }}
           />
         ) : (
           <div
@@ -49,6 +58,15 @@ export default function Header({}) {
             onBlur={(event) => {
               setShowInput(null);
               changeDataPlayer({ ...playerB, name: event.target.value }, 'B');
+            }}
+            onKeyDown={(event) => {
+              if (event.key === 'Enter') {
+                setShowInput(null);
+                changeDataPlayer(
+                  { ...playerA, name: event.currentTarget.value },
+                  'A'
+                );
+              }
             }}
           />
         ) : (
