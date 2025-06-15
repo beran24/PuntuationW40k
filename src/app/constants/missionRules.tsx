@@ -1,82 +1,12 @@
 export const missionRules = [
-  {
-    id: 'inspired-leadership',
-    name: 'Inspired Leadership',
-    history:
-      'Few sights set such an inspiring example upon the battlefield than a commander leading from the very front, wreathed in glory and stained with gore.',
-    ruleDescription:
-      'While a player’s WARLORD is not within their deployment zone, each time a unit from that player’s army takes a Battle-shock test, if that player’s WARLORD is within 9" of and visible to that unit, add 1 to that test.',
-  },
-  {
-    id: 'rapid-escalation',
-    name: 'Rapid Escalation',
-    history:
-      'Armies hurl themselves recklessly into what is swiftly becoming a maelstrom of battle. With every passing moment, the flames of conflict rage higher.',
-    ruleDescription:
-      'In the first battle round, each player can set up BATTLELINE units from Strategic Reserves wholly within 6" of any battlefield edge (not in the enemy deployment zone). Points of these units cannot exceed 10% of the battle size limit.',
-  },
-  {
-    id: 'smoke-and-mirrors',
-    name: 'Smoke and Mirrors',
-    history:
-      'Be it through technological trickery, sorcerous illusion or sheer cunning, both commanders seek to outfox and outmanoeuvre the other.',
-    ruleDescription:
-      'After deployment, each player may place one of their deployed units into Strategic Reserves, regardless of limits. That unit’s points cannot exceed 25% of the total battle size.',
-  },
-  {
-    id: 'hidden-supplies',
-    name: 'Hidden Supplies',
-    history:
-      'Reconnaissance units have uncovered a hidden cache of ammunition, fuel and rations in this war zone.',
-    ruleDescription:
-      'If "The Ritual" is drawn, discard this. Place one extra objective in No Man’s Land after moving the center objective 6" toward a corner. The new one is placed 6" toward the opposite corner.',
-  },
-  {
-    id: 'raise-banners',
-    name: 'Raise Banners',
-    history:
-      'It is not enough this day simply to defeat the foe. Instead you must raise your banners high, announcing your conquests to all who witness them.',
-    ruleDescription:
-      'At the end of each player’s turn, if a BATTLELINE unit controls an objective marker, it raises a banner: score 1VP and no unit may raise a banner on it again.',
-  },
-  {
-    id: 'stalwarts',
-    name: 'Stalwarts',
-    history:
-      'This is not a time for gilded glory, but instead it is the hour when the mud-spattered, blood-drenched rank and file step forward and prove their worth.',
-    ruleDescription:
-      'BATTLELINE units can shoot after performing an Action and may perform Actions while within Engagement Range of enemies.',
-  },
-  {
-    id: 'adapt-or-die',
-    name: 'Adapt or Die',
-    history:
-      'On this changing battlefield, only a commander who can adapt their strategy swiftly and decisively stands any chance of seizing victory.',
-    ruleDescription:
-      'Fixed missions: once per battle, swap a Secondary Mission. Tactical missions: twice per battle, draw 2, keep 1, return the other to the deck.',
-  },
-  {
-    id: 'swift-action',
-    name: 'Swift Action',
-    history:
-      'Time is running out. Cataclysm approaches on an unimaginable scale. In the face of such terrors, every warrior fights with the speed and fury of desperation.',
-    ruleDescription:
-      'BATTLELINE units that Advance or Fall Back may still perform Actions this turn.',
-  },
-  {
-    id: 'fog-of-war',
-    name: 'Fog of War',
-    history:
-      'Due to strange atmospheric conditions or supernatural phenomena, confusion abounds.',
-    ruleDescription:
-      'During the first battle round, all units have Benefit of Cover. Core Stratagems (except New Orders) cannot be used.',
-  },
-  {
-    id: 'prepared-positions',
-    name: 'Prepared Positions',
-    history:
-      'This is a battle long in the offing, a fight for which both commanders have had ample time to prepare.',
-    ruleDescription:
-      'Players may use Go to Ground and Heroic Intervention Stratagems for 0CP on BATTLELINE units (but only once per Stratagem per turn).',
-  },
+  'inspired-leadership',
+  'rapid-escalation',
+  'smoke-and-mirrors',
+  'hidden-supplies',
+  'raise-banners',
+  'stalwarts',
+  'adapt-or-die',
+  'swift-action',
+  'fog-of-war',
+  'prepared-positions',
 ];

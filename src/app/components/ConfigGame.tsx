@@ -15,7 +15,8 @@ import { useTranslations } from 'next-intl';
 
 export default function ConfigGame() {
   const { game, changeGameConfig } = useGame();
-  const t = useTranslations('primaryMissions');
+  const pmt = useTranslations('primaryMissions');
+  const mrt = useTranslations('missionRules');
 
   const onHandleClickDice = useCallback(() => {
     changeGameConfig(
@@ -28,15 +29,13 @@ export default function ConfigGame() {
     );
     changeGameConfig(
       'missionRule',
-      missionRules[getRandomNumber(0, missionRules.length - 1)].id
+      missionRules[getRandomNumber(0, missionRules.length - 1)]
     );
     changeGameConfig(
       'terrainLayout',
       terrainLayouts[getRandomNumber(0, terrainLayouts.length - 1)].id
     );
   }, [changeGameConfig]);
-
-  const missionRule = missionRules.find((d) => d.id === game.missionRule);
 
   return (
     <main className="flex flex-1 w-full header justify-center text-white overflow-y-auto mt-16 mb-16 min-h-[calc(100vh-4rem-4rem)]">
@@ -46,19 +45,21 @@ export default function ConfigGame() {
             {game.primaryMission && (
               <MissionCard
                 type="Primary Mission"
-                title={t(`${game.primaryMission}.name`)}
-                subtitle={t(`${game.primaryMission}.history`)}
-                section={t(`${game.primaryMission}.ruleDescription`)}
+                title={pmt(`${game.primaryMission}.name`)}
+                subtitle={pmt(`${game.primaryMission}.history`)}
+                section={pmt(`${game.primaryMission}.ruleDescription`)}
               />
             )}
           </div>
           <div className="w-1/2 ">
-            <MissionCard
-              type="Mission rule"
-              title={missionRule?.name}
-              subtitle={missionRule?.history}
-              section={missionRule?.ruleDescription}
-            />
+            {game.missionRule && (
+              <MissionCard
+                type="Mission rule"
+                title={mrt(`${game.missionRule}.name`)}
+                subtitle={mrt(`${game.missionRule}.history`)}
+                section={mrt(`${game.missionRule}.ruleDescription`)}
+              />
+            )}
           </div>
         </div>
       </div>
@@ -84,8 +85,11 @@ export default function ConfigGame() {
         />
         <Selector
           label="Select Mission Rule"
-          options={missionRules}
-          value={game.missionRule || missionRules[0].id}
+          options={missionRules.map((mr) => ({
+            id: mr,
+            name: mrt(`${mr}.name`),
+          }))}
+          value={game.missionRule || missionRules[0]}
           onHandleChange={(value) =>
             changeGameConfig('missionRule', value as string)
           }
@@ -94,7 +98,7 @@ export default function ConfigGame() {
           label="Select Primary Mission"
           options={primaryMissionIds.map((pm) => ({
             id: pm,
-            name: t(`${pm}.name`),
+            name: pmt(`${pm}.name`),
           }))}
           value={game.primaryMission || primaryMissionIds[0]}
           onHandleChange={(value) =>

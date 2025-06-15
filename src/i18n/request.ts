@@ -9,12 +9,15 @@ export default getRequestConfig(async () => {
   const primaryMissions = (
     await import(`../messages/${locale}/primaryMissions.json`)
   ).default;
+  const missionRules = (await import(`../messages/${locale}/missionRules.json`))
+    .default;
 
   return {
     locale,
     messages: {
       dashboard,
       primaryMissions,
+      missionRules,
     },
   };
 });
