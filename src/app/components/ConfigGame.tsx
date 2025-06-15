@@ -4,16 +4,18 @@ import { useCallback } from 'react';
 import { deployments } from '../constants/deployments';
 import { battleSizes } from '../constants/battleSize';
 import { missionRules } from '../constants/missionRules';
-import { primaryMissions } from '../constants/primaryMissions';
+import { primaryMissionIds } from '../constants/primaryMissions';
 import Selector from './common/Selector';
 import Dice from './common/Dice';
 import { useGame } from '@/providers/GameContext';
 import { getRandomNumber } from '../constants/randomNumber';
 import { terrainLayouts } from '../constants/terrainLayouts';
 import MissionCard from './common/MissionCard';
+import { useTranslations } from 'next-intl';
 
 export default function ConfigGame() {
   const { game, changeGameConfig } = useGame();
+  const t = useTranslations('primaryMissions');
 
   const onHandleClickDice = useCallback(() => {
     changeGameConfig(
@@ -22,7 +24,7 @@ export default function ConfigGame() {
     );
     changeGameConfig(
       'primaryMission',
-      primaryMissions[getRandomNumber(0, primaryMissions.length - 1)].id
+      primaryMissionIds[getRandomNumber(0, primaryMissionIds.length - 1)]
     );
     changeGameConfig(
       'missionRule',
@@ -34,22 +36,21 @@ export default function ConfigGame() {
     );
   }, [changeGameConfig]);
 
-  const primaryMission = primaryMissions.find(
-    (d) => d.id === game.primaryMission
-  );
-
   const missionRule = missionRules.find((d) => d.id === game.missionRule);
+
   return (
     <main className="flex flex-1 w-full header justify-center text-white overflow-y-auto mt-16 mb-16 min-h-[calc(100vh-4rem-4rem)]">
       <div className="flex flex-1 flex-col justify-center px-8">
         <div className="flex flex-row gap-8">
           <div className="w-1/2">
-            <MissionCard
-              type="Primary Mission"
-              title={primaryMission?.name}
-              subtitle={primaryMission?.history}
-              section={primaryMission?.ruleDescription}
-            />
+            {game.primaryMission && (
+              <MissionCard
+                type="Primary Mission"
+                title={t(`${game.primaryMission}.name`)}
+                subtitle={t(`${game.primaryMission}.history`)}
+                section={t(`${game.primaryMission}.ruleDescription`)}
+              />
+            )}
           </div>
           <div className="w-1/2 ">
             <MissionCard
@@ -91,8 +92,11 @@ export default function ConfigGame() {
         />
         <Selector
           label="Select Primary Mission"
-          options={primaryMissions}
-          value={game.primaryMission || primaryMissions[0].id}
+          options={primaryMissionIds.map((pm) => ({
+            id: pm,
+            name: t(`${pm}.name`),
+          }))}
+          value={game.primaryMission || primaryMissionIds[0]}
           onHandleChange={(value) =>
             changeGameConfig('primaryMission', value as string)
           }

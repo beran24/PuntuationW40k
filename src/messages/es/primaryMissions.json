@@ -1,0 +1,47 @@
+{
+  "purge-the-foe": {
+    "name": "Purgar al Enemigo",
+    "history": "Extermina al enemigo. No les muestres piedad.",
+    "ruleDescription": "Al final de cada ronda: gana 4VP si destruiste una o más unidades enemigas. Desde la ronda 2: gana 4VP si destruiste más unidades enemigas que las que perdiste. También, al final de tu fase de mando (o tu turno en la ronda 5 si vas segundo), gana 4VP si controlas al menos un objetivo, y 4VP más si controlas más que tu oponente."
+  },
+  "linchpin": {
+    "name": "Primordial",
+    "history": "La verdadera victoria se construye sobre una base firme. Si el centro cae, todo lo demás también.",
+    "ruleDescription": "Desde la ronda 2: al final de tu fase de mando (o turno 5 si vas segundo): si no controlas el objetivo en tu zona de despliegue, gana 3VP por cada otro objetivo que controles. Si lo controlas, gana 3VP por él y 5VP por cada adicional (máx. 15VP)."
+  },
+  "scorched-earth": {
+    "name": "Tierra Quemada",
+    "history": "Lo que no se pueda asegurar debe ser reducido a cenizas.",
+    "ruleDescription": "Desde la ronda 2: las unidades pueden quemar objetivos fuera de tu zona con una Acción. Si tiene éxito, se elimina el marcador. Gana 5VP por quemar uno en Tierra de Nadie, o 10VP en la zona enemiga. También gana 5VP por cada objetivo controlado (máx. 10VP por turno)."
+  },
+  "unexploded-ordnance": {
+    "name": "Bomba sin explotar",
+    "history": "Material sin detonar bloquea tu camino. Mover estos peligros hacia el enemigo puede ser clave.",
+    "ruleDescription": "Los objetivos en Tierra de Nadie son marcadores Peligrosos. Desde la ronda 2: las unidades pueden moverlos con una Acción. Al final de cada turno: gana 8VP por cada uno en la zona enemiga, 5VP si está a 6\", y 2VP si está a 12\"."
+  },
+  "supply-drop": {
+    "name": "Lanzamiento de suministros",
+    "history": "Los suministros están en camino. Asegura las coordenadas.",
+    "ruleDescription": "Inicio: marca aleatoriamente 2 objetivos en Tierra de Nadie (Alfa y Omega). Inicio de ronda 4: elimina Alfa. Ronda 5: elimina todos excepto Omega. Desde la ronda 2: gana 5VP en rondas 2-3, 8VP en la 4, y 15VP en la 5 por cada objetivo en Tierra de Nadie que controles."
+  },
+  "terraform": {
+    "name": "Terraformar",
+    "history": "Aquí la victoria no solo requiere dominar al enemigo, sino también al campo de batalla.",
+    "ruleDescription": "Desde la ronda 2: las unidades pueden iniciar una acción de Terraformación en la fase de Disparo sobre objetivos fuera de tu zona. Si se completa (al final del turno del oponente), se terraforman. Al final de tu fase de mando: gana 4VP por cada objetivo controlado + 2VP por cada terraformado (máx. 15VP/turno)."
+  },
+  "burden-of-trust": {
+    "name": "El precio de la Confianza",
+    "history": "Los premios estratégicos deben protegerse a toda costa, tarea encomendada a unos pocos.",
+    "ruleDescription": "Desde la ronda 2: al final de tu fase de mando, gana 4VP por cada objetivo fuera de tu zona que controles. Además, asigna unidades guardianas. Al final del turno enemigo, ellos ganan 2VP por cada unidad que custodie un objetivo que controlen (si no está en shock)."
+  },
+  "take-and-hold": {
+    "name": "Ocupar y Mantener",
+    "history": "Debes asaltar ubicaciones estratégicas, asegurarlas y mantenerlas a toda costa.",
+    "ruleDescription": "Desde la ronda 2: al final de tu fase de mando (o tu turno en la ronda 5 si vas segundo), gana 5VP por cada objetivo que controles (máx. 15VP/turno)."
+  },
+  "the-ritual": {
+    "name": "El Ritual",
+    "history": "Enemigos encarnizados compiten por completar un ritual que santifique o corrompa el campo de batalla.",
+    "ruleDescription": "Durante el despliegue: elimina todos los objetivos de Tierra de Nadie excepto el más cercano al centro. Desde la ronda 2: las unidades pueden realizar una Acción para colocar un nuevo objetivo en Tierra de Nadie bajo ciertas condiciones. Gana 5VP por cada objetivo en Tierra de Nadie que controles (máx. 15VP/turno)."
+  }
+}

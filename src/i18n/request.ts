@@ -4,9 +4,17 @@ import { cookies } from 'next/headers';
 export default getRequestConfig(async () => {
   const cookieStore = await cookies();
   const locale = cookieStore.get('locale')?.value || 'en';
+  const dashboard = (await import(`../messages/${locale}/dashboard.json`))
+    .default;
+  const primaryMissions = (
+    await import(`../messages/${locale}/primaryMissions.json`)
+  ).default;
 
   return {
     locale,
-    messages: (await import(`../messages/${locale}/dashboard.json`)).default,
+    messages: {
+      dashboard,
+      primaryMissions,
+    },
   };
 });

@@ -5,7 +5,7 @@ import { useTranslations } from 'next-intl';
 import LanguageSwitcher from './components/common/LanguageSwitcher';
 
 export default function Landing() {
-  const t = useTranslations();
+  const t = useTranslations('dashboard');
 
   useEffect(() => {
     localStorage.clear();

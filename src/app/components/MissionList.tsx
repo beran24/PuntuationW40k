@@ -2,10 +2,11 @@ import { PlayerId } from '@/types/Game';
 import { useGame } from '@/providers/GameContext';
 import { secondaryMissions } from '../constants/secondaryMissions';
 import { Point } from '@/types/Missions';
-import { primaryMissions } from '../constants/primaryMissions';
+import { useTranslations } from 'next-intl';
 
 export default function MissionList({ player }: { player: PlayerId }) {
   const { game, changeDataPlayer } = useGame();
+  const t = useTranslations('primaryMissions');
 
   const handleChangePuntuation = (
     value: number,
@@ -21,7 +22,6 @@ export default function MissionList({ player }: { player: PlayerId }) {
     }
   };
 
-  const primary = primaryMissions.find((m) => m.id === game.primaryMission);
   const color = player === 'A' ? 'red' : 'green';
   const reverse = player === 'A' ? '-reverse' : '';
 
@@ -29,7 +29,7 @@ export default function MissionList({ player }: { player: PlayerId }) {
     <div className="flex flex-col gap-2 text-custom-beige">
       <div className="flex items-center gap-1 relative group font-normal px-4 py-2">
         <span className="text-sm font-medium cursor-pointer">
-          Primary: {primary?.name}
+          Primary: {t(`${game.primaryMission}.name`)}
         </span>
         <img
           src="/img/dice/info2.svg"
@@ -37,7 +37,7 @@ export default function MissionList({ player }: { player: PlayerId }) {
           className="w-5 h-5 cursor-pointer "
         />
         <div className="absolute z-10 hidden w-64 p-2 mt-1 text-sm text-white bg-gray-800 rounded shadow-lg group-hover:block">
-          {primary?.ruleDescription}
+          {t(`${game.primaryMission}.ruleDescription`)}
         </div>
       </div>
       {game[`player${player}`].missions?.map((mission, index) => {
