@@ -1,0 +1,20 @@
+{
+  "tipping-point": {
+    "name": "Punto crítico"
+  },
+  "hammer-and-anvil": {
+    "name": "Yunque y martillo"
+  },
+  "sweeping-engagement": {
+    "name": "Choque arrollador"
+  },
+  "dawn-of-war": {
+    "name": "Albor de la guerra"
+  },
+  "search-and-destroy": {
+    "name": "Busqueda y destrucción"
+  },
+  "crucible-of-battle": {
+    "name": "Crisol de la batalla"
+  }
+}

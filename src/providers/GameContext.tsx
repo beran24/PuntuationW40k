@@ -12,9 +12,9 @@ import type { Player } from '@/types/Player';
 import useTimer from '../hooks/useTimer';
 import { primaryMissionIds } from '../app/constants/primaryMissions';
 import { missionRules } from '../app/constants/missionRules';
-import { deployments } from '../app/constants/deployments';
+import { deploymentIds } from '../app/constants/deployments';
 import { getRandomNumber } from '../app/constants/randomNumber';
-import { terrainLayouts } from '../app/constants/terrainLayouts';
+import { terrainLayoutIds } from '../app/constants/terrainLayouts';
 
 const defaultPlayer: Player = {
   name: 'Name',
@@ -73,12 +73,12 @@ export const GameProvider = ({ children }: { children: ReactNode }) => {
     } else {
       const randomGame: Game = {
         ...defaultGame,
-        deployment: deployments[getRandomNumber(0, deployments.length - 1)].id,
+        deployment: deploymentIds[getRandomNumber(0, deploymentIds.length - 1)],
         primaryMission:
           primaryMissionIds[getRandomNumber(0, primaryMissionIds.length - 1)],
         missionRule: missionRules[getRandomNumber(0, missionRules.length - 1)],
         terrainLayout:
-          terrainLayouts[getRandomNumber(0, terrainLayouts.length - 1)].id,
+          terrainLayoutIds[getRandomNumber(0, terrainLayoutIds.length - 1)],
       };
       setGame(randomGame);
     }

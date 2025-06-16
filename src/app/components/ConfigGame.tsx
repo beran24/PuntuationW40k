@@ -1,15 +1,18 @@
 'use client';
 
 import { useCallback } from 'react';
-import { deployments } from '../constants/deployments';
-import { battleSizes } from '../constants/battleSize';
+import { deploymentIds, deploymentImages } from '../constants/deployments';
+import { battleSizeIds } from '../constants/battleSize';
 import { missionRules } from '../constants/missionRules';
 import { primaryMissionIds } from '../constants/primaryMissions';
 import Selector from './common/Selector';
 import Dice from './common/Dice';
 import { useGame } from '@/providers/GameContext';
 import { getRandomNumber } from '../constants/randomNumber';
-import { terrainLayouts } from '../constants/terrainLayouts';
+import {
+  terrainLayoutIds,
+  terrainLayoutImages,
+} from '../constants/terrainLayouts';
 import MissionCard from './common/MissionCard';
 import { useTranslations } from 'next-intl';
 
@@ -17,11 +20,13 @@ export default function ConfigGame() {
   const { game, changeGameConfig } = useGame();
   const pmt = useTranslations('primaryMissions');
   const mrt = useTranslations('missionRules');
+  const dt = useTranslations('deployments');
+  const cgt = useTranslations('configGame');
 
   const onHandleClickDice = useCallback(() => {
     changeGameConfig(
       'deployment',
-      deployments[getRandomNumber(0, deployments.length - 1)].id
+      deploymentIds[getRandomNumber(0, deploymentIds.length - 1)]
     );
     changeGameConfig(
       'primaryMission',
@@ -33,7 +38,7 @@ export default function ConfigGame() {
     );
     changeGameConfig(
       'terrainLayout',
-      terrainLayouts[getRandomNumber(0, terrainLayouts.length - 1)].id
+      terrainLayoutIds[getRandomNumber(0, terrainLayoutIds.length - 1)]
     );
   }, [changeGameConfig]);
 
@@ -68,23 +73,29 @@ export default function ConfigGame() {
           <Dice onHandleClickDice={onHandleClickDice} />
         </div>
         <Selector
-          label="Select Battle Size"
-          options={battleSizes}
+          label={cgt('select-bs')}
+          options={battleSizeIds.map((bs) => ({
+            id: bs,
+            name: cgt(`${bs}`),
+          }))}
           value={game.battleSize}
           onHandleChange={(value) =>
             changeGameConfig('battleSize', value as string)
           }
         />
         <Selector
-          label="Select Deployment"
-          options={deployments}
-          value={game.deployment || deployments[0].id}
+          label={cgt('select-d')}
+          options={deploymentIds.map((d) => ({
+            id: d,
+            name: dt(`${d}.name`),
+          }))}
+          value={game.deployment || deploymentIds[0]}
           onHandleChange={(value) =>
             changeGameConfig('deployment', value as string)
           }
         />
         <Selector
-          label="Select Mission Rule"
+          label={cgt('select-mr')}
           options={missionRules.map((mr) => ({
             id: mr,
             name: mrt(`${mr}.name`),
@@ -95,7 +106,7 @@ export default function ConfigGame() {
           }
         />
         <Selector
-          label="Select Primary Mission"
+          label={cgt('select-pm')}
           options={primaryMissionIds.map((pm) => ({
             id: pm,
             name: pmt(`${pm}.name`),
@@ -106,22 +117,25 @@ export default function ConfigGame() {
           }
         />
         <Selector
-          label="Select Terrain Layout"
-          options={terrainLayouts}
-          value={game.terrainLayout || terrainLayouts[0].id}
+          label={cgt('select-tl')}
+          options={terrainLayoutIds.map((tl) => ({
+            id: tl,
+            name: cgt('terrain-layout') + ' ' + tl,
+          }))}
+          value={game.terrainLayout || terrainLayoutIds[0]}
           onHandleChange={(value) =>
             changeGameConfig('terrainLayout', value as string)
           }
         />
         <img
-          src={deployments.find((d) => d.id === game.deployment)?.img}
+          src={deploymentImages[game?.deployment as string]}
           alt="image_deployment"
           className="w-[400px]"
         />
       </div>
       <div className="flex flex-1 flex-col justify-center px-8">
         <img
-          src={terrainLayouts.find((d) => d.id === game.terrainLayout)?.img}
+          src={terrainLayoutImages[game.terrainLayout as string]}
           alt="image_deployment"
         />
       </div>

@@ -1,32 +1,17 @@
-export const deployments = [
-  {
-    id: 'tipping-point',
-    name: 'Tipping point',
-    img: '/img/deployments/PN_TippingPoint.webp',
-  },
-  {
-    id: 'hammer-and-anvil',
-    name: 'Hammer and anvil',
-    img: '/img/deployments/PN_HammerAndAnvil.webp',
-  },
-  {
-    id: 'sweeping-engagement',
-    name: 'Sweeping engagement',
-    img: '/img/deployments/PN_SweepingEngagement.webp',
-  },
-  {
-    id: 'dawn-of-war',
-    name: 'Dawn of war',
-    img: '/img/deployments/PN_DawnOfWar.webp',
-  },
-  {
-    id: 'search-and-destroy',
-    name: 'Search and destroy',
-    img: '/img/deployments/PN_SearchAndDestroy.webp',
-  },
-  {
-    id: 'crucible-of-battle',
-    name: 'Crucible of battle',
-    img: '/img/deployments/PN_CrucibleOfBattle.webp',
-  },
+export const deploymentIds = [
+  'tipping-point',
+  'hammer-and-anvil',
+  'sweeping-engagement',
+  'dawn-of-war',
+  'search-and-destroy',
+  'crucible-of-battle',
 ];
+
+export const deploymentImages: Record<string, string> = {
+  'tipping-point': '/img/deployments/PN_TippingPoint.webp',
+  'hammer-and-anvil': '/img/deployments/PN_HammerAndAnvil.webp',
+  'sweeping-engagement': '/img/deployments/PN_SweepingEngagement.webp',
+  'dawn-of-war': '/img/deployments/PN_DawnOfWar.webp',
+  'search-and-destroy': '/img/deployments/PN_SearchAndDestroy.webp',
+  'crucible-of-battle': '/img/deployments/PN_CrucibleOfBattle.webp',
+};
