@@ -15,6 +15,9 @@ export default getRequestConfig(async () => {
     .default;
   const configGame = (await import(`../messages/${locale}/configGame.json`))
     .default;
+  const secondaryMissions = (
+    await import(`../messages/${locale}/secondaryMissions.json`)
+  ).default;
 
   return {
     locale,
@@ -24,6 +27,7 @@ export default getRequestConfig(async () => {
       missionRules,
       deployments,
       configGame,
+      secondaryMissions,
     },
   };
 });

@@ -1,0 +1,92 @@
+{
+  "area_denial": {
+    "name": "Negar el área",
+    "history": "Es crucial dominar esta zona.",
+    "ruleDescription": "2VP si estás a 3\" del centro y no hay enemigos a 3\". 5VP si no hay enemigos a 6\"."
+  },
+  "assassination": {
+    "name": "Asesinato",
+    "history": "El enemigo busca valor en sus campeones. Identifícalos y elimínalos sin piedad.",
+    "ruleDescription": "Fija: 4VP por cada PERSONAJE enemigo destruido. Táctica: 5VP si destruyes uno o más en un turno o todos."
+  },
+  "behind_enemy_lines": {
+    "name": "Tras las líneas enemigas",
+    "history": "Atravesad al enemigo y cortad su retirada.",
+    "ruleDescription": "3VP si una unidad (no AÉREAS ni Desmoralizadas) está en la zona enemiga. 4VP si hay dos o más."
+  },
+  "bring_it_down": {
+    "name": "Derríbalos",
+    "history": "El enemigo tiene muchas unidades blindadas. Destrúyelas.",
+    "ruleDescription": "2VP por MONSTRUO/VEHÍCULO destruido. +2VP si tenía 15+ Heridas. +2VP si tenía 20+. Acumulativo."
+  },
+  "cleanse": {
+    "name": "Purgar",
+    "history": "Purga los objetivos contaminados.",
+    "ruleDescription": "2VP por purgar un objetivo. 4VP por dos o más. La acción termina si aún lo controlas."
+  },
+  "containment": {
+    "name": "Contención",
+    "history": "Encierra al enemigo en el campo de batalla.",
+    "ruleDescription": "3VP por borde contenido (máx 6VP). Requiere acción en fase de Disparo."
+  },
+  "cull_the_horde": {
+    "name": "Mermar la horda",
+    "history": "El enemigo es numeroso. Sus filas deben reducirse.",
+    "ruleDescription": "5VP por unidad de INFANTERÍA destruida con 20+ miniaturas o 25+ Heridas o coste equivalente a 20+."
+  },
+  "defend_stronghold": {
+    "name": "Defender bastión",
+    "history": "Debes defender un objetivo clave.",
+    "ruleDescription": "3VP si controlas un objetivo en tu zona al final del turno o batalla enemigos."
+  },
+  "engage_on_all_fronts": {
+    "name": "Atacar por todos los frentes",
+    "history": "Lidera un asalto total.",
+    "ruleDescription": "2VP si hay unidades en 3 cuadrantes (no cerca del centro). 4VP por los 4."
+  },
+  "establish_locus": {
+    "name": "Establecer baliza",
+    "history": "Instala un marcador de guía o teletransporte.",
+    "ruleDescription": "2VP si se completa a 6\" del centro. 4VP si es en la zona enemiga."
+  },
+  "extend_battle_lines": {
+    "name": "Extender líneas",
+    "history": "Avanza y afianza tu presencia.",
+    "ruleDescription": "5VP si controlas objetivos en tu zona y Tierra de Nadie. 2VP si solo uno en Tierra de Nadie."
+  },
+  "marked_for_death": {
+    "name": "Marcados para morir",
+    "history": "Estos activos enemigos deben ser eliminados.",
+    "ruleDescription": "5VP al final del turno de cualquier jugador si se destruyó o retiró una unidad seleccionada por el enemigo."
+  },
+  "no_prisoners": {
+    "name": "Sin prisioneros",
+    "history": "Extermina al enemigo.",
+    "ruleDescription": "2VP por unidad destruida (máx 5VP)."
+  },
+  "overwhelming_force": {
+    "name": "Fuerza abrumadora",
+    "history": "Borra al enemigo del campo de batalla.",
+    "ruleDescription": "3VP por cada unidad destruida que empezó en un objetivo (máx 5VP)."
+  },
+  "recover_assets": {
+    "name": "Recuperar recursos",
+    "history": "Reclama activos estratégicos dispersos.",
+    "ruleDescription": "Haz una acción en fase de Disparo con unidades en zonas distintas. 3VP si 2 la completan, 6VP si son 3."
+  },
+  "sabotage": {
+    "name": "Sabotaje",
+    "history": "Destruye suministros o recursos enemigos.",
+    "ruleDescription": "Haz acción en fase de Disparo con una unidad en terreno y fuera de tu zona. 3VP si completa. 6VP si en zona enemiga."
+  },
+  "secure_no_mans_land": {
+    "name": "Asegurar Tierra de Nadie",
+    "history": "Avanza rápido y toma la Tierra de Nadie.",
+    "ruleDescription": "2VP por un objetivo. 5VP por dos o más."
+  },
+  "storm_hostile_objective": {
+    "name": "Tomar objetivo hostil",
+    "history": "Toma cada punto estratégico y deja al enemigo sin refugio.",
+    "ruleDescription": "4VP si tomas un objetivo del enemigo o uno nuevo mientras el enemigo no controla ninguno."
+  }
+}

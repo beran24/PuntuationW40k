@@ -1,0 +1,92 @@
+{
+  "area_denial": {
+    "name": "Area denial",
+    "history": "It is critical that this area is dominated.",
+    "ruleDescription": "2VP if within 3\" of center and no enemies within 3\". 5VP if no enemies within 6\"."
+  },
+  "assassination": {
+    "name": "Assassination",
+    "history": "The enemy look to their champions for courage. Identify and eliminate them with extreme prejudice.",
+    "ruleDescription": "Fixed: 4VP per enemy CHARACTER destroyed. Tactical: 5VP if one or more CHARACTERs destroyed in a turn or all destroyed."
+  },
+  "behind_enemy_lines": {
+    "name": "Behind enemy lines",
+    "history": "Break through the foe’s army and cut off their lines of escape.",
+    "ruleDescription": "3VP if one unit (not AIRCRAFT or Battle-shocked) is in enemy deployment. 4VP if two or more."
+  },
+  "bring_it_down": {
+    "name": "Bring it down",
+    "history": "The opposing army contains numerous heavily armoured units. Take any opportunity to bring them down.",
+    "ruleDescription": "2VP per enemy MONSTER/VEHICLE destroyed. +2VP if 15+ Wounds. +2VP if 20+ Wounds. Cumulative."
+  },
+  "cleanse": {
+    "name": "Cleanse",
+    "history": "Cleanse tainted objectives.",
+    "ruleDescription": "2VP for cleansing one objective. 4VP for two or more. Action ends if unit still holds cleansed objective."
+  },
+  "containment": {
+    "name": "Containment",
+    "history": "Trap your foes within the bounds of this battlefield.",
+    "ruleDescription": "3VP per battlefield edge contained (max 6VP). Requires Shooting Phase action."
+  },
+  "cull_the_horde": {
+    "name": "Cull the horde",
+    "history": "The enemy come forth in teeming masses. Their ranks must be thinned if the day is to be won.",
+    "ruleDescription": "5VP per destroyed INFANTRY unit that started with 20+ models or 25+ Wounds or 20+ point-equivalent models."
+  },
+  "defend_stronghold": {
+    "name": "Defend stronghold",
+    "history": "You are charged with the defence of a key objective.",
+    "ruleDescription": "3VP if you control any objective in your deployment zone at end of enemy turn or battle."
+  },
+  "engage_on_all_fronts": {
+    "name": "Engage on all fronts",
+    "history": "Lead an all-out assault to capture the battlefield.",
+    "ruleDescription": "2VP if units in 3 table quarters (not near center). 4VP for 4 quarters."
+  },
+  "establish_locus": {
+    "name": "Establish locus",
+    "history": "Set up a teleport homer or other guiding marker.",
+    "ruleDescription": "2VP if completed within 6\" of center. 4VP if within opponent’s deployment zone."
+  },
+  "extend_battle_lines": {
+    "name": "Extend battle lines",
+    "history": "Press forward to establish a strong military presence.",
+    "ruleDescription": "5VP if you control objectives in your deployment zone and No Man’s Land. 2VP if you only have one unit and it holds No Man’s Land."
+  },
+  "marked_for_death": {
+    "name": "Marked for death",
+    "history": "These specific enemy assets must be eliminated.",
+    "ruleDescription": "Score 5VP at the end of either player’s turn if one or more of the selected (by the opponent) enemy units were destroyed or removed from the battlefield that turn."
+  },
+  "no_prisoners": {
+    "name": "No prisoners",
+    "history": "Exterminate your enemies.",
+    "ruleDescription": "2VP per unit destroyed (up to 5VP)."
+  },
+  "overwhelming_force": {
+    "name": "Overwhelming force",
+    "history": "Scour the enemy from the face of the battlefield.",
+    "ruleDescription": "3VP for each enemy unit destroyed that started within range of an objective (up to 5VP)."
+  },
+  "recover_assets": {
+    "name": "Recover assets",
+    "history": "Scattered strategic assets must be swiftly reclaimed.",
+    "ruleDescription": "Perform an action during your Shooting phase with units each in a different zone: your deployment zone, No Man’s Land, or the opponent’s deployment zone. If 2 units complete the action by the end of your opponent’s turn (or the battle), score 3VP; if 3 units complete it, score 6VP."
+  },
+  "sabotage": {
+    "name": "Sabotage",
+    "history": "Destroy enemy supply caches or assets.",
+    "ruleDescription": "Perform an action during your Shooting phase with one unit inside a terrain feature and outside your deployment zone. If the unit completes the action by the end of your opponent’s next turn (or the battle), score 3VP — or 6VP if the unit was in the opponent’s deployment zone"
+  },
+  "secure_no_mans_land": {
+    "name": "Secure no man’s land",
+    "history": "You must advance swiftly into no man’s land and seize it before the enemy can.",
+    "ruleDescription": "2VP for one No Man's Land objective. 5VP for two or more."
+  },
+  "storm_hostile_objective": {
+    "name": "Storm hostile objective",
+    "history": "Dominate the field of battle. Storm every site of tactical import and leave the foe with no place to hide.",
+    "ruleDescription": "4VP if you control an objective taken from the enemy or if you control one you didn’t at the start and they had none."
+  }
+}

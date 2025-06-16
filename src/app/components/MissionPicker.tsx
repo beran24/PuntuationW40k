@@ -1,5 +1,5 @@
 import { PlayerId } from '@/types/Game';
-import { secondaryMissions } from '../constants/secondaryMissions';
+import { secondaryMissionIds } from '../constants/secondaryMissions';
 import Selector from './common/Selector';
 import { useState } from 'react';
 import { useGame } from '@/providers/GameContext';
@@ -7,12 +7,14 @@ import { Objective } from '@/types/Missions';
 import MissionCard from './common/MissionCard';
 import { getRandomNumber } from '../constants/randomNumber';
 import Dice from './common/Dice';
+import { useTranslations } from 'next-intl';
 
 export default function MissionPicker({ player }: { player: PlayerId }) {
+  const smt = useTranslations('secondaryMissions');
   const { game, changeDataPlayer } = useGame();
   const [newMissions, setNewMissions] = useState<Objective>({
-    A: secondaryMissions[getRandomNumber(0, secondaryMissions.length - 1)].id,
-    B: secondaryMissions[getRandomNumber(0, secondaryMissions.length - 1)].id,
+    A: secondaryMissionIds[getRandomNumber(0, secondaryMissionIds.length - 1)],
+    B: secondaryMissionIds[getRandomNumber(0, secondaryMissionIds.length - 1)],
   });
 
   const onHandleChangeMissions = (
@@ -27,13 +29,14 @@ export default function MissionPicker({ player }: { player: PlayerId }) {
     changeDataPlayer({ missions: [...currentMissions, newMissions] }, player);
   };
 
-  const missionA = secondaryMissions.find((sm) => sm.id === newMissions.A);
-  const missionB = secondaryMissions.find((sm) => sm.id === newMissions.B);
-
   const onHandleClickDice = () => {
     setNewMissions({
-      A: secondaryMissions[getRandomNumber(0, secondaryMissions.length - 1)].id,
-      B: secondaryMissions[getRandomNumber(0, secondaryMissions.length - 1)].id,
+      A: secondaryMissionIds[
+        getRandomNumber(0, secondaryMissionIds.length - 1)
+      ],
+      B: secondaryMissionIds[
+        getRandomNumber(0, secondaryMissionIds.length - 1)
+      ],
     });
   };
 
@@ -45,7 +48,10 @@ export default function MissionPicker({ player }: { player: PlayerId }) {
       <div className="flex flex-row gap-8">
         <div className="w-1/2">
           <Selector
-            options={secondaryMissions}
+            options={secondaryMissionIds.map((sm) => ({
+              id: sm,
+              name: smt(`${sm}.name`),
+            }))}
             label="Secondary Mission A"
             value={newMissions?.A}
             onHandleChange={(value) => onHandleChangeMissions('A', value)}
@@ -53,7 +59,10 @@ export default function MissionPicker({ player }: { player: PlayerId }) {
         </div>
         <div className="w-1/2">
           <Selector
-            options={secondaryMissions}
+            options={secondaryMissionIds.map((sm) => ({
+              id: sm,
+              name: smt(`${sm}.name`),
+            }))}
             label="Secondary Mission B"
             value={newMissions?.B}
             onHandleChange={(value) => onHandleChangeMissions('B', value)}
@@ -64,17 +73,17 @@ export default function MissionPicker({ player }: { player: PlayerId }) {
         <div className="w-1/2">
           <MissionCard
             type="Primary Mission"
-            title={missionA?.name}
-            subtitle={missionA?.history}
-            section={missionA?.ruleDescription}
+            title={smt(`${newMissions.A}.name`)}
+            subtitle={smt(`${newMissions.A}.history`)}
+            section={smt(`${newMissions.A}.ruleDescription`)}
           />
         </div>
         <div className="w-1/2 ">
           <MissionCard
             type="Mission rule"
-            title={missionB?.name}
-            subtitle={missionB?.history}
-            section={missionB?.ruleDescription}
+            title={smt(`${newMissions.B}.name`)}
+            subtitle={smt(`${newMissions.B}.history`)}
+            section={smt(`${newMissions.B}.ruleDescription`)}
           />
         </div>
       </div>
