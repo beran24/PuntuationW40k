@@ -24,7 +24,7 @@ export default function Landing() {
           })}
         </p>
         <Link
-          href="/scoreboard"
+          href="/scoreboard?deck=pariah-nexus"
           className="bg-custom-green hover:bg-custom-light-green text-white px-6 py-3 rounded text-lg transition"
         >
           {t('pariah_nexus_game')}

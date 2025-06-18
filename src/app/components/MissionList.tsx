@@ -29,7 +29,7 @@ export default function MissionList({ player }: { player: PlayerId }) {
     <div className="flex flex-col gap-2 text-custom-beige">
       <div className="flex items-center gap-1 relative group font-normal px-4 py-2">
         <span className="text-sm font-medium cursor-pointer">
-          Primary: {pmt(`${game.primaryMission}.name`)}
+          Primary: {pmt(`${game.deck}.${game.primaryMission}.name`)}
         </span>
         <img
           src="/img/dice/info2.svg"
@@ -37,7 +37,7 @@ export default function MissionList({ player }: { player: PlayerId }) {
           className="w-5 h-5 cursor-pointer "
         />
         <div className="absolute z-10 hidden w-64 p-2 mt-1 text-sm text-white bg-gray-800 rounded shadow-lg group-hover:block">
-          {pmt(`${game.primaryMission}.ruleDescription`)}
+          {pmt(`${game.deck}.${game.primaryMission}.ruleDescription`)}
         </div>
       </div>
       {game[`player${player}`].missions?.map((mission, index) => {
@@ -73,7 +73,7 @@ export default function MissionList({ player }: { player: PlayerId }) {
                   <div className="relative group max-w-[70%]">
                     <div className="flex items-center gap-1">
                       <span className="text-sm font-medium cursor-pointer">
-                        {smt(`${mission?.A}.name`)}
+                        {smt(`${game.deck}.${mission?.A}.name`)}
                       </span>
                       <img
                         src="/img/dice/info2.svg"
@@ -82,7 +82,7 @@ export default function MissionList({ player }: { player: PlayerId }) {
                       />
                     </div>
                     <div className="absolute z-10 hidden w-64 p-2 mt-1 text-sm text-white bg-gray-800 rounded shadow-lg group-hover:block">
-                      {smt(`${mission?.A}.ruleDescription`)}
+                      {smt(`${game.deck}.${mission?.A}.ruleDescription`)}
                     </div>
                   </div>
                   <input
@@ -108,7 +108,7 @@ export default function MissionList({ player }: { player: PlayerId }) {
                   <div className="relative group max-w-[70%]">
                     <div className="flex items-center gap-1">
                       <span className="text-sm font-medium cursor-pointer">
-                        {smt(`${mission?.B}.name`)}
+                        {smt(`${game.deck}.${mission?.B}.name`)}
                       </span>
                       <img
                         src="/img/dice/info2.svg"
@@ -117,7 +117,7 @@ export default function MissionList({ player }: { player: PlayerId }) {
                       />
                     </div>
                     <div className="absolute z-10 hidden w-64 p-2 mt-1 text-sm text-white bg-gray-800 rounded shadow-lg group-hover:block">
-                      {smt(`${mission?.B}.ruleDescription`)}
+                      {smt(`${game.deck}.${mission?.B}.ruleDescription`)}
                     </div>
                   </div>
                   <input

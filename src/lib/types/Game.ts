@@ -3,7 +3,10 @@ import { Player } from './Player';
 export type Rating = 0 | 1 | 2 | 3 | 4 | 5;
 export type Position = 'top' | 'bottom';
 export type PlayerId = 'A' | 'B';
+export type Deck = 'pariah-nexus' | 'leviathan';
+
 export type Game = {
+  deck: Deck;
   turn: Rating;
   phase?: Position;
   finished: boolean;
