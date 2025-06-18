@@ -1,17 +1,17 @@
 {
   "pariah-nexus": {
     "inspired-leadership": {
-      "name": "Liderazgo Inspirador",
+      "name": "Mando inspirador",
       "history": "Pocas cosas inspiran tanto en el campo de batalla como un comandante liderando desde el frente, envuelto en gloria y manchado de sangre.",
       "ruleDescription": "Mientras el SEÑOR DE LA GUERRA de un jugador no esté en su zona de despliegue, cada vez que una unidad de su ejército haga una prueba de Pánico, si el SEÑOR DE LA GUERRA está a 9\" y visible para esa unidad, suma 1 a la prueba."
     },
     "rapid-escalation": {
-      "name": "Escalada Rápida",
-      "history": "Los ejércitos se lanzan imprudentemente a un torbellino de batalla. Con cada momento, las llamas del conflicto arden con más intensidad.",
-      "ruleDescription": "En la primera ronda de batalla, cada jugador puede desplegar unidades de LÍNEA desde Reservas Estratégicas a 6\" de cualquier borde del campo (no en la zona enemiga). Los puntos no pueden superar el 10% del tamaño de batalla."
+      "name": "Escalada vertiginosa",
+      "history": "Los ejércitos se lanzan temerariamente a un torbellino de batalla. Con cada momento, las llamas del conflicto arden con más intensidad.",
+      "ruleDescription": "En la primera ronda de batalla, cada jugador puede desplegar unidades de LÍNEA DE BATALLA desde Reservas Estratégicas a 6\" de cualquier borde del campo (no en la zona enemiga). Los puntos no pueden superar el 10% del tamaño de batalla."
     },
     "smoke-and-mirrors": {
-      "name": "Humo y Espejos",
+      "name": "Humo y Espejismos",
       "history": "Ya sea mediante tecnología, ilusiones o pura astucia, ambos comandantes buscan engañar y maniobrar al otro.",
       "ruleDescription": "Tras el despliegue, cada jugador puede poner una unidad desplegada en Reservas Estratégicas, sin importar límites. Esa unidad no puede superar el 25% del tamaño de batalla."
     },
@@ -21,14 +21,14 @@
       "ruleDescription": "Si se roba \"El Ritual\", descártalo. Coloca un objetivo extra en Tierra de Nadie tras mover el del centro 6\" hacia una esquina. El nuevo se coloca 6\" en dirección opuesta."
     },
     "raise-banners": {
-      "name": "Izar Banderas",
+      "name": "Levantar las banderas",
       "history": "No basta con derrotar al enemigo; debes alzar tus banderas y proclamar tu conquista ante todos.",
-      "ruleDescription": "Al final del turno de cada jugador, si una unidad de LÍNEA controla un objetivo, iza una bandera: gana 1PV y no se puede izar otra en ese objetivo."
+      "ruleDescription": "Al final del turno de cada jugador, si una unidad de LÍNEA DE BATALLA controla un objetivo, iza una bandera: gana 1PV y no se puede izar otra en ese objetivo."
     },
     "stalwarts": {
       "name": "Inquebrantables",
       "history": "No es hora de gloria decorativa, sino el momento de que los soldados embarrados y ensangrentados demuestren su valía.",
-      "ruleDescription": "Las unidades de LÍNEA pueden disparar tras realizar una Acción y también hacerlo en contacto con enemigos."
+      "ruleDescription": "Las unidades de LÍNEA DE BATALLA pueden disparar tras realizar una Acción y también hacerlo en contacto con enemigos."
     },
     "adapt-or-die": {
       "name": "Adaptarse o Morir",
@@ -36,19 +36,19 @@
       "ruleDescription": "Misiones fijas: una vez por partida, cambia una Misión Secundaria. Misiones tácticas: dos veces, roba 2, elige 1 y devuelve la otra al mazo."
     },
     "swift-action": {
-      "name": "Acción Rápida",
+      "name": "Hay que espabilar",
       "history": "El tiempo se agota. Se acerca una catástrofe inimaginable. Ante tal terror, cada guerrero lucha con furia desesperada.",
-      "ruleDescription": "Las unidades de LÍNEA que Avancen o se Retiren aún pueden realizar Acciones ese turno."
+      "ruleDescription": "Las unidades de LÍNEA DE BATALLA que Avancen o se Retiren aún pueden realizar Acciones ese turno."
     },
     "fog-of-war": {
-      "name": "Niebla de Guerra",
+      "name": "Guerra entre nieblas",
       "history": "Por condiciones atmosféricas extrañas o fenómenos sobrenaturales, reina la confusión.",
       "ruleDescription": "Durante la primera ronda, todas las unidades tienen Cobertura. No se pueden usar Estratagemas Básicas (excepto Nuevas Órdenes)."
     },
     "prepared-positions": {
       "name": "Posiciones Preparadas",
       "history": "Esta batalla lleva tiempo gestándose; ambos comandantes han tenido tiempo de prepararse.",
-      "ruleDescription": "Los jugadores pueden usar Tendido y la Intervención Heroica por 0PC en unidades de LÍNEA (solo una vez por Estratagema por turno)."
+      "ruleDescription": "Los jugadores pueden usar Cuerpo a tierra y la Intervención Heroica por 0PC en unidades de LÍNEA DE BATALLA (solo una vez por Estratagema por turno)."
     }
   }
 }

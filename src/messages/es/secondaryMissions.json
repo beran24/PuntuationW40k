@@ -16,22 +16,22 @@
       "ruleDescription": "3VP si una unidad (no AÉREAS ni Desmoralizadas) está en la zona enemiga. 4VP si hay dos o más."
     },
     "bring_it_down": {
-      "name": "Derríbalos",
+      "name": "Derribadlo",
       "history": "El enemigo tiene muchas unidades blindadas. Destrúyelas.",
       "ruleDescription": "2VP por MONSTRUO/VEHÍCULO destruido. +2VP si tenía 15+ Heridas. +2VP si tenía 20+. Acumulativo."
     },
     "cleanse": {
-      "name": "Purgar",
+      "name": "Purificar",
       "history": "Purga los objetivos contaminados.",
       "ruleDescription": "2VP por purgar un objetivo. 4VP por dos o más. La acción termina si aún lo controlas."
     },
     "containment": {
-      "name": "Contención",
+      "name": "Contención y seguridad",
       "history": "Encierra al enemigo en el campo de batalla.",
       "ruleDescription": "3VP por borde contenido (máx 6VP). Requiere acción en fase de Disparo."
     },
     "cull_the_horde": {
-      "name": "Mermar la horda",
+      "name": "Destruir la horda",
       "history": "El enemigo es numeroso. Sus filas deben reducirse.",
       "ruleDescription": "5VP por unidad de INFANTERÍA destruida con 20+ miniaturas o 25+ Heridas o coste equivalente a 20+."
     },
@@ -46,7 +46,7 @@
       "ruleDescription": "2VP si hay unidades en 3 cuadrantes (no cerca del centro). 4VP por los 4."
     },
     "establish_locus": {
-      "name": "Establecer baliza",
+      "name": "Punto de referencia",
       "history": "Instala un marcador de guía o teletransporte.",
       "ruleDescription": "2VP si se completa a 6\" del centro. 4VP si es en la zona enemiga."
     },
@@ -56,7 +56,7 @@
       "ruleDescription": "5VP si controlas objetivos en tu zona y Tierra de Nadie. 2VP si solo uno en Tierra de Nadie."
     },
     "marked_for_death": {
-      "name": "Marcados para morir",
+      "name": "Marcado para la muerte",
       "history": "Estos activos enemigos deben ser eliminados.",
       "ruleDescription": "5VP al final del turno de cualquier jugador si se destruyó o retiró una unidad seleccionada por el enemigo."
     },
@@ -71,7 +71,7 @@
       "ruleDescription": "3VP por cada unidad destruida que empezó en un objetivo (máx 5VP)."
     },
     "recover_assets": {
-      "name": "Recuperar recursos",
+      "name": "Recuperar activos",
       "history": "Reclama activos estratégicos dispersos.",
       "ruleDescription": "Haz una acción en fase de Disparo con unidades en zonas distintas. 3VP si 2 la completan, 6VP si son 3."
     },

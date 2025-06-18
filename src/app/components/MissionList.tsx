@@ -2,6 +2,7 @@ import { PlayerId } from '@/types/Game';
 import { useGame } from '@/providers/GameContext';
 import { Point } from '@/types/Missions';
 import { useTranslations } from 'next-intl';
+import { secondaryMissionRules } from '../constants/secondaryMissions';
 
 export default function MissionList({ player }: { player: PlayerId }) {
   const { game, changeDataPlayer } = useGame();
@@ -92,6 +93,7 @@ export default function MissionList({ player }: { player: PlayerId }) {
                     value={game[`player${player}`].missionPoints[index].A}
                     step="1"
                     min={0}
+                    max={secondaryMissionRules[mission.A as string].max}
                     onChange={(e) =>
                       handleChangePuntuation(
                         parseInt(e.target.value),
@@ -126,6 +128,8 @@ export default function MissionList({ player }: { player: PlayerId }) {
                     placeholder="0"
                     step="1"
                     value={game[`player${player}`].missionPoints[index].B}
+                    max={secondaryMissionRules[mission.B as string].max}
+                    min={0}
                     onChange={(e) =>
                       handleChangePuntuation(
                         parseInt(e.target.value),
@@ -133,7 +137,6 @@ export default function MissionList({ player }: { player: PlayerId }) {
                         index
                       )
                     }
-                    min={0}
                     disabled={game.finished}
                   />
                 </div>

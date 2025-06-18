@@ -9,3 +9,9 @@ export type SecondaryMission = {
   history: string;
   ruleDescription: string;
 };
+
+export type SecondaryMissionRules = {
+  fixed: boolean;
+  max: number;
+  when: string;
+};
