@@ -7,7 +7,7 @@ import React, {
   ReactNode,
   useEffect,
 } from 'react';
-import type { Game, PlayerId, Rating } from '@/types/Game';
+import type { Deck, Game, PlayerId, Rating } from '@/types/Game';
 import type { Player } from '@/types/Player';
 import useTimer from '../hooks/useTimer';
 import { primaryMissionIds } from '../app/constants/primaryMissions';
@@ -15,6 +15,7 @@ import { missionRules } from '../app/constants/missionRules';
 import { deploymentIds } from '../app/constants/deployments';
 import { getRandomNumber } from '../app/constants/randomNumber';
 import { terrainLayoutIds } from '../app/constants/terrainLayouts';
+import { useSearchParams } from 'next/navigation';
 
 const defaultPlayer: Player = {
   name: 'Name',
@@ -37,6 +38,7 @@ const defaultGame: Game = {
   battleSize: 'strike-force',
   playerA: defaultPlayer,
   playerB: defaultPlayer,
+  deck: 'pariah-nexus',
 };
 
 const GameContext = createContext<{
@@ -50,6 +52,7 @@ const GameContext = createContext<{
   setActive: React.Dispatch<React.SetStateAction<PlayerId | null>>;
   active: PlayerId | null;
   changeGameConfig: (key: string, value: string) => void;
+  loading: boolean;
 }>({
   game: defaultGame,
   playerA: defaultPlayer,
@@ -61,11 +64,16 @@ const GameContext = createContext<{
   setActive: () => {},
   active: null,
   changeGameConfig: () => {},
+  loading: true,
 });
 
 export const GameProvider = ({ children }: { children: ReactNode }) => {
   const [game, setGame] = useState<Game>(defaultGame);
+  const [loading, setLoading] = useState(true);
+  const sp = useSearchParams();
+  const deck: Deck = (sp.get('deck') as Deck) || 'pariah-nexus';
   const { secondsA, secondsB, setActive, active } = useTimer(game.finished);
+
   useEffect(() => {
     const stored = localStorage.getItem('game');
     if (stored) {
@@ -73,15 +81,25 @@ export const GameProvider = ({ children }: { children: ReactNode }) => {
     } else {
       const randomGame: Game = {
         ...defaultGame,
-        deployment: deploymentIds[getRandomNumber(0, deploymentIds.length - 1)],
+        deck: deck,
+        deployment:
+          deploymentIds[deck][
+            getRandomNumber(0, deploymentIds[deck].length - 1)
+          ],
         primaryMission:
-          primaryMissionIds[getRandomNumber(0, primaryMissionIds.length - 1)],
-        missionRule: missionRules[getRandomNumber(0, missionRules.length - 1)],
+          primaryMissionIds[deck][
+            getRandomNumber(0, primaryMissionIds[deck].length - 1)
+          ],
+        missionRule:
+          missionRules[deck][getRandomNumber(0, missionRules[deck].length - 1)],
         terrainLayout:
-          terrainLayoutIds[getRandomNumber(0, terrainLayoutIds.length - 1)],
+          terrainLayoutIds[deck][
+            getRandomNumber(0, terrainLayoutIds[deck].length - 1)
+          ],
       };
       setGame(randomGame);
     }
+    setLoading(false);
   }, []);
 
   useEffect(() => {
@@ -170,6 +188,7 @@ export const GameProvider = ({ children }: { children: ReactNode }) => {
         active,
         changeGameConfig,
         changeDataPlayer,
+        loading,
       }}
     >
       {children}

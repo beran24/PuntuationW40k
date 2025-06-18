@@ -1,11 +1,16 @@
-export const deploymentIds = [
-  'tipping-point',
-  'hammer-and-anvil',
-  'sweeping-engagement',
-  'dawn-of-war',
-  'search-and-destroy',
-  'crucible-of-battle',
-];
+import { Deck } from '@/types/Game';
+
+export const deploymentIds: Record<Deck, string[]> = {
+  'pariah-nexus': [
+    'tipping-point',
+    'hammer-and-anvil',
+    'sweeping-engagement',
+    'dawn-of-war',
+    'search-and-destroy',
+    'crucible-of-battle',
+  ],
+  leviathan: [],
+};
 
 export const deploymentImages: Record<string, string> = {
   'tipping-point': '/img/deployments/PN_TippingPoint.webp',

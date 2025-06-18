@@ -26,19 +26,27 @@ export default function ConfigGame() {
   const onHandleClickDice = useCallback(() => {
     changeGameConfig(
       'deployment',
-      deploymentIds[getRandomNumber(0, deploymentIds.length - 1)]
+      deploymentIds[game.deck][
+        getRandomNumber(0, deploymentIds[game.deck].length - 1)
+      ]
     );
     changeGameConfig(
       'primaryMission',
-      primaryMissionIds[getRandomNumber(0, primaryMissionIds.length - 1)]
+      primaryMissionIds[game.deck][
+        getRandomNumber(0, primaryMissionIds[game.deck].length - 1)
+      ]
     );
     changeGameConfig(
       'missionRule',
-      missionRules[getRandomNumber(0, missionRules.length - 1)]
+      missionRules[game.deck][
+        getRandomNumber(0, missionRules[game.deck].length - 1)
+      ]
     );
     changeGameConfig(
       'terrainLayout',
-      terrainLayoutIds[getRandomNumber(0, terrainLayoutIds.length - 1)]
+      terrainLayoutIds[game.deck][
+        getRandomNumber(0, terrainLayoutIds[game.deck].length - 1)
+      ]
     );
   }, [changeGameConfig]);
 
@@ -50,9 +58,11 @@ export default function ConfigGame() {
             {game.primaryMission && (
               <MissionCard
                 type="Primary Mission"
-                title={pmt(`${game.primaryMission}.name`)}
-                subtitle={pmt(`${game.primaryMission}.history`)}
-                section={pmt(`${game.primaryMission}.ruleDescription`)}
+                title={pmt(`${game.deck}.${game.primaryMission}.name`)}
+                subtitle={pmt(`${game.deck}.${game.primaryMission}.history`)}
+                section={pmt(
+                  `${game.deck}.${game.primaryMission}.ruleDescription`
+                )}
               />
             )}
           </div>
@@ -60,9 +70,11 @@ export default function ConfigGame() {
             {game.missionRule && (
               <MissionCard
                 type="Mission rule"
-                title={mrt(`${game.missionRule}.name`)}
-                subtitle={mrt(`${game.missionRule}.history`)}
-                section={mrt(`${game.missionRule}.ruleDescription`)}
+                title={mrt(`${game.deck}.${game.missionRule}.name`)}
+                subtitle={mrt(`${game.deck}.${game.missionRule}.history`)}
+                section={mrt(
+                  `${game.deck}.${game.missionRule}.ruleDescription`
+                )}
               />
             )}
           </div>
@@ -74,7 +86,7 @@ export default function ConfigGame() {
         </div>
         <Selector
           label={cgt('select-bs')}
-          options={battleSizeIds.map((bs) => ({
+          options={battleSizeIds[game.deck].map((bs) => ({
             id: bs,
             name: cgt(`${bs}`),
           }))}
@@ -85,44 +97,44 @@ export default function ConfigGame() {
         />
         <Selector
           label={cgt('select-d')}
-          options={deploymentIds.map((d) => ({
+          options={deploymentIds[game.deck].map((d) => ({
             id: d,
             name: dt(`${d}.name`),
           }))}
-          value={game.deployment || deploymentIds[0]}
+          value={game.deployment || deploymentIds[game.deck][0]}
           onHandleChange={(value) =>
             changeGameConfig('deployment', value as string)
           }
         />
         <Selector
           label={cgt('select-mr')}
-          options={missionRules.map((mr) => ({
+          options={missionRules[game.deck].map((mr) => ({
             id: mr,
-            name: mrt(`${mr}.name`),
+            name: mrt(`${game.deck}.${mr}.name`),
           }))}
-          value={game.missionRule || missionRules[0]}
+          value={game.missionRule || missionRules[game.deck][0]}
           onHandleChange={(value) =>
             changeGameConfig('missionRule', value as string)
           }
         />
         <Selector
           label={cgt('select-pm')}
-          options={primaryMissionIds.map((pm) => ({
+          options={primaryMissionIds[game.deck].map((pm) => ({
             id: pm,
-            name: pmt(`${pm}.name`),
+            name: pmt(`${game.deck}.${pm}.name`),
           }))}
-          value={game.primaryMission || primaryMissionIds[0]}
+          value={game.primaryMission || primaryMissionIds[game.deck][0]}
           onHandleChange={(value) =>
             changeGameConfig('primaryMission', value as string)
           }
         />
         <Selector
           label={cgt('select-tl')}
-          options={terrainLayoutIds.map((tl) => ({
+          options={terrainLayoutIds[game.deck].map((tl) => ({
             id: tl,
             name: cgt('terrain-layout') + ' ' + tl,
           }))}
-          value={game.terrainLayout || terrainLayoutIds[0]}
+          value={game.terrainLayout || terrainLayoutIds[game.deck][0]}
           onHandleChange={(value) =>
             changeGameConfig('terrainLayout', value as string)
           }

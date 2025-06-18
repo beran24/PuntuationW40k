@@ -7,7 +7,8 @@ import { useGame } from '@/providers/GameContext';
 import ConfigGame from '@/components/ConfigGame';
 
 export default function Home() {
-  const { game } = useGame();
+  const { game, loading } = useGame();
+  if (loading) return null;
   return (
     <div className="min-h-screen flex flex-col">
       <Header />

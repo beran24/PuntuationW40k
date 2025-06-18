@@ -13,8 +13,12 @@ export default function MissionPicker({ player }: { player: PlayerId }) {
   const smt = useTranslations('secondaryMissions');
   const { game, changeDataPlayer } = useGame();
   const [newMissions, setNewMissions] = useState<Objective>({
-    A: secondaryMissionIds[getRandomNumber(0, secondaryMissionIds.length - 1)],
-    B: secondaryMissionIds[getRandomNumber(0, secondaryMissionIds.length - 1)],
+    A: secondaryMissionIds[game.deck][
+      getRandomNumber(0, secondaryMissionIds[game.deck].length - 1)
+    ],
+    B: secondaryMissionIds[game.deck][
+      getRandomNumber(0, secondaryMissionIds[game.deck].length - 1)
+    ],
   });
 
   const onHandleChangeMissions = (
@@ -31,11 +35,11 @@ export default function MissionPicker({ player }: { player: PlayerId }) {
 
   const onHandleClickDice = () => {
     setNewMissions({
-      A: secondaryMissionIds[
-        getRandomNumber(0, secondaryMissionIds.length - 1)
+      A: secondaryMissionIds[game.deck][
+        getRandomNumber(0, secondaryMissionIds[game.deck].length - 1)
       ],
-      B: secondaryMissionIds[
-        getRandomNumber(0, secondaryMissionIds.length - 1)
+      B: secondaryMissionIds[game.deck][
+        getRandomNumber(0, secondaryMissionIds[game.deck].length - 1)
       ],
     });
   };
@@ -48,9 +52,9 @@ export default function MissionPicker({ player }: { player: PlayerId }) {
       <div className="flex flex-row gap-8">
         <div className="w-1/2">
           <Selector
-            options={secondaryMissionIds.map((sm) => ({
+            options={secondaryMissionIds[game.deck].map((sm) => ({
               id: sm,
-              name: smt(`${sm}.name`),
+              name: smt(`${game.deck}.${sm}.name`),
             }))}
             label="Secondary Mission A"
             value={newMissions?.A}
@@ -59,9 +63,9 @@ export default function MissionPicker({ player }: { player: PlayerId }) {
         </div>
         <div className="w-1/2">
           <Selector
-            options={secondaryMissionIds.map((sm) => ({
+            options={secondaryMissionIds[game.deck].map((sm) => ({
               id: sm,
-              name: smt(`${sm}.name`),
+              name: smt(`${game.deck}.${sm}.name`),
             }))}
             label="Secondary Mission B"
             value={newMissions?.B}
@@ -73,17 +77,17 @@ export default function MissionPicker({ player }: { player: PlayerId }) {
         <div className="w-1/2">
           <MissionCard
             type="Primary Mission"
-            title={smt(`${newMissions.A}.name`)}
-            subtitle={smt(`${newMissions.A}.history`)}
-            section={smt(`${newMissions.A}.ruleDescription`)}
+            title={smt(`${game.deck}.${newMissions.A}.name`)}
+            subtitle={smt(`${game.deck}.${newMissions.A}.history`)}
+            section={smt(`${game.deck}.${newMissions.A}.ruleDescription`)}
           />
         </div>
         <div className="w-1/2 ">
           <MissionCard
             type="Mission rule"
-            title={smt(`${newMissions.B}.name`)}
-            subtitle={smt(`${newMissions.B}.history`)}
-            section={smt(`${newMissions.B}.ruleDescription`)}
+            title={smt(`${game.deck}.${newMissions.B}.name`)}
+            subtitle={smt(`${game.deck}.${newMissions.B}.history`)}
+            section={smt(`${game.deck}.${newMissions.B}.ruleDescription`)}
           />
         </div>
       </div>
