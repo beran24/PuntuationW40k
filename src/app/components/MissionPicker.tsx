@@ -33,6 +33,9 @@ export default function MissionPicker({ player }: { player: PlayerId }) {
     changeDataPlayer({ missions: [...currentMissions, newMissions] }, player);
   };
 
+  const completedMissions =
+    game[`player${player}`].missions.flatMap(({ A, B }) => [A, B]) || [];
+
   const onHandleClickDice = () => {
     setNewMissions({
       A: secondaryMissionIds[game.deck][
@@ -55,6 +58,7 @@ export default function MissionPicker({ player }: { player: PlayerId }) {
             options={secondaryMissionIds[game.deck].map((sm) => ({
               id: sm,
               name: smt(`${game.deck}.${sm}.name`),
+              completed: completedMissions.includes(sm),
             }))}
             label="Secondary Mission A"
             value={newMissions?.A}
@@ -66,6 +70,7 @@ export default function MissionPicker({ player }: { player: PlayerId }) {
             options={secondaryMissionIds[game.deck].map((sm) => ({
               id: sm,
               name: smt(`${game.deck}.${sm}.name`),
+              completed: completedMissions.includes(sm),
             }))}
             label="Secondary Mission B"
             value={newMissions?.B}

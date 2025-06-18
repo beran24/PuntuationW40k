@@ -11,6 +11,7 @@ export default function Selector({
   onHandleChange: React.Dispatch<React.SetStateAction<string>>;
   label?: string;
 }>) {
+  console.log('options', options);
   return (
     <div>
       {label && (
@@ -23,6 +24,7 @@ export default function Selector({
       >
         {options.map((o) => (
           <option key={o.id} value={o.id}>
+            {o.completed ? '🚫 ' : ''}
             {o.name}
           </option>
         ))}

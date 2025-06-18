@@ -56,7 +56,7 @@ export default function MissionList({ player }: { player: PlayerId }) {
               >
                 <input
                   type="number"
-                  className="w-full px-2 py-1 border rounded h-full text-center text-4xl"
+                  className="w-full px-2 py-1 border rounded h-full text-center text-4xl disabled:cursor-not-allowed"
                   placeholder="0"
                   value={game[`player${player}`].missionPoints[index].P}
                   step="1"
