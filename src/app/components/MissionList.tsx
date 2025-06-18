@@ -37,7 +37,7 @@ export default function MissionList({ player }: { player: PlayerId }) {
           alt="info"
           className="w-5 h-5 cursor-pointer "
         />
-        <div className="absolute z-10 hidden w-64 p-2 mt-1 text-sm text-white bg-gray-800 rounded shadow-lg group-hover:block">
+        <div className="absolute z-10 hidden w-64 p-2 mt-40 ml-33 text-sm text-white bg-gray-800 rounded shadow-lg group-hover:block">
           {pmt(`${game.deck}.${game.primaryMission}.ruleDescription`)}
         </div>
       </div>
