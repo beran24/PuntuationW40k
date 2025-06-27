@@ -1,4 +1,4 @@
-import { PlayerId } from '@/types/Game';
+import { Deck, PlayerId } from '@/types/Game';
 import { secondaryMissionIds } from '../constants/secondaryMissions';
 import Selector from './common/Selector';
 import { useState } from 'react';
@@ -9,18 +9,39 @@ import { getRandomNumber } from '../constants/randomNumber';
 import Dice from './common/Dice';
 import { useTranslations } from 'next-intl';
 
+const getNotRepeatedMissions = (
+  deck: Deck,
+  completedMissions: (string | undefined)[]
+) => {
+  const missionA = secondaryMissionIds[deck].filter(
+    (sm) => !completedMissions.includes(sm)
+  )[
+    getRandomNumber(
+      0,
+      secondaryMissionIds[deck].length - 1 - completedMissions.length
+    )
+  ];
+  return {
+    A: missionA,
+    B: secondaryMissionIds[deck].filter(
+      (sm) => sm !== missionA && !completedMissions.includes(sm)
+    )[
+      getRandomNumber(
+        0,
+        secondaryMissionIds[deck].length - 2 - completedMissions.length
+      )
+    ],
+  };
+};
+
 export default function MissionPicker({ player }: { player: PlayerId }) {
   const smt = useTranslations('secondaryMissions');
   const { game, changeDataPlayer } = useGame();
-  const [newMissions, setNewMissions] = useState<Objective>({
-    A: secondaryMissionIds[game.deck][
-      getRandomNumber(0, secondaryMissionIds[game.deck].length - 1)
-    ],
-    B: secondaryMissionIds[game.deck][
-      getRandomNumber(0, secondaryMissionIds[game.deck].length - 1)
-    ],
-  });
-
+  const completedMissions =
+    game[`player${player}`].missions.flatMap(({ A, B }) => [A, B]) || [];
+  const [newMissions, setNewMissions] = useState<Objective>(
+    getNotRepeatedMissions(game.deck, completedMissions)
+  );
   const onHandleChangeMissions = (
     key: PlayerId,
     value: React.SetStateAction<string>
@@ -33,18 +54,8 @@ export default function MissionPicker({ player }: { player: PlayerId }) {
     changeDataPlayer({ missions: [...currentMissions, newMissions] }, player);
   };
 
-  const completedMissions =
-    game[`player${player}`].missions.flatMap(({ A, B }) => [A, B]) || [];
-
   const onHandleClickDice = () => {
-    setNewMissions({
-      A: secondaryMissionIds[game.deck][
-        getRandomNumber(0, secondaryMissionIds[game.deck].length - 1)
-      ],
-      B: secondaryMissionIds[game.deck][
-        getRandomNumber(0, secondaryMissionIds[game.deck].length - 1)
-      ],
-    });
+    setNewMissions(getNotRepeatedMissions(game.deck, completedMissions));
   };
 
   return (

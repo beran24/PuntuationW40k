@@ -11,7 +11,6 @@ export default function Selector({
   onHandleChange: React.Dispatch<React.SetStateAction<string>>;
   label?: string;
 }>) {
-  console.log('options', options);
   return (
     <div>
       {label && (
