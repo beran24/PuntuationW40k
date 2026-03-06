@@ -23,6 +23,7 @@ export interface Unit {
   stats?: Array<{ stats: Stats }>;
   ranged_weapons?: Weapon[];
   melee_weapons?: Weapon[];
+  sourceFaction?: string;
 }
 
 export default function UnitDisplay({ unit }: { unit: Unit }) {
