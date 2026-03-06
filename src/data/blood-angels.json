@@ -1,0 +1,1562 @@
+[
+  {
+    "name": "Astorath",
+    "keywords": [
+      "INFANTRY",
+      "CHARACTER",
+      "EPIC HERO",
+      "FLY",
+      "JUMP PACK",
+      "IMPERIUM",
+      "TACTICUS",
+      "CHAPLAIN"
+    ],
+    "core": [
+      "Deep Strike",
+      "Leader"
+    ],
+    "faction": [
+      "Oath of Moment"
+    ],
+    "abilities": [
+      "Redeemer of the Lost: While this model is leading a unit, each time a model in that unit is destroyed by a melee attack, if that model has not fought this phase, roll one D6. On a 4+, do not remove it from play; that destroyed model can fight after the attacking model’s unit has finished making its attacks, and is then removed from play.",
+      "Mass of Doom: Each time this model’s unit makes a Charge move , until the end of the turn, melee weapons equipped by models in that unit have the [DEVASTATING WOUNDS] ability."
+    ],
+    "stats": [
+      {
+        "stats": {
+          "M": "12",
+          "T": "4",
+          "Sv": "2+",
+          "W": "5",
+          "Ld": "5+",
+          "OC": "1"
+        }
+      }
+    ],
+    "ranged_weapons": [],
+    "melee_weapons": [
+      {
+        "name": "The Executioner’s Axe",
+        "types": [
+          "devastating wounds",
+          "Precision"
+        ],
+        "range": "Melee",
+        "attacks": "6",
+        "skill": "2+",
+        "strength": "7",
+        "ap": "-3",
+        "damage": "2"
+      }
+    ],
+    "faction_logo": "BloodAngels"
+  },
+  {
+    "name": "Baal Predator",
+    "keywords": [
+      "VEHICLE",
+      "SMOKE",
+      "IMPERIUM"
+    ],
+    "core": [
+      "Deadly Demise D3"
+    ],
+    "faction": [
+      "Oath of Moment"
+    ],
+    "abilities": [
+      "Overcharged Engines: You can re-roll Advance rolls made for this model."
+    ],
+    "stats": [
+      {
+        "stats": {
+          "M": "12",
+          "T": "10",
+          "Sv": "3+",
+          "W": "11",
+          "Ld": "6+",
+          "OC": "3"
+        }
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Baal flamestorm cannon",
+        "types": [
+          "ASSAULT",
+          "IGNORES COVER",
+          "TORRENT"
+        ],
+        "range": "18",
+        "attacks": "D6+3",
+        "skill": "N/A",
+        "strength": "6",
+        "ap": "-2",
+        "damage": "2"
+      },
+      {
+        "name": "Heavy bolter",
+        "types": [
+          "assault",
+          "sustained hits 1"
+        ],
+        "range": "36",
+        "attacks": "3",
+        "skill": "3+",
+        "strength": "5",
+        "ap": "-1",
+        "damage": "2"
+      },
+      {
+        "name": "Heavy flamer",
+        "types": [
+          "assault",
+          "ignores cover",
+          "torrent"
+        ],
+        "range": "12",
+        "attacks": "D6",
+        "skill": "N/A",
+        "strength": "5",
+        "ap": "-1",
+        "damage": "1"
+      },
+      {
+        "name": "Hunter-killer missile",
+        "types": [],
+        "range": "48",
+        "attacks": "1",
+        "skill": "2+",
+        "strength": "14",
+        "ap": "-3",
+        "damage": "D6"
+      },
+      {
+        "name": "Storm bolter",
+        "types": [
+          "rapid fire 2"
+        ],
+        "range": "24",
+        "attacks": "2",
+        "skill": "3+",
+        "strength": "4",
+        "ap": "0",
+        "damage": "1"
+      },
+      {
+        "name": "Twin assault cannon",
+        "types": [
+          "ASSAULT",
+          "DEVASTATING WOUNDS",
+          "TWIN-LINKED"
+        ],
+        "range": "24",
+        "attacks": "6",
+        "skill": "3+",
+        "strength": "6",
+        "ap": "0",
+        "damage": "1"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Armoured tracks",
+        "types": [],
+        "range": "Melee",
+        "attacks": "3",
+        "skill": "4+",
+        "strength": "6",
+        "ap": "0",
+        "damage": "1"
+      }
+    ],
+    "faction_logo": "BloodAngels"
+  },
+  {
+    "name": "Blood Angels Captain",
+    "keywords": [
+      "INFANTRY",
+      "CHARACTER",
+      "GRENADES",
+      "IMPERIUM",
+      "TACTICUS",
+      "CAPTAIN"
+    ],
+    "core": [
+      "Leader"
+    ],
+    "faction": [
+      "Oath of Moment"
+    ],
+    "abilities": [
+      "Rites of Battle: Once per battle round , one unit from your army with this ability can use it when its unit is targeted with a Stratagem . If it does, reduce the CP cost of that use of that Stratagem by 1CP.",
+      "Finest Hour: Once per battle, at the start of the Fight phase , this model can use this ability. If it does, until the end of the phase, add 3 to the Attacks characteristic of melee weapons equipped by this model and those weapons have the [DEVASTATING WOUNDS] ability."
+    ],
+    "stats": [
+      {
+        "stats": {
+          "M": "6",
+          "T": "4",
+          "Sv": "3+",
+          "W": "5",
+          "Ld": "6+",
+          "OC": "1"
+        }
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Heavy bolt pistol",
+        "types": [
+          "Pistol"
+        ],
+        "range": "18",
+        "attacks": "1",
+        "skill": "2+",
+        "strength": "4",
+        "ap": "-1",
+        "damage": "1"
+      },
+      {
+        "name": "Inferno pistol",
+        "types": [
+          "melta 2",
+          "pistol"
+        ],
+        "range": "6",
+        "attacks": "1",
+        "skill": "2+",
+        "strength": "8",
+        "ap": "-4",
+        "damage": "D3"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Master-crafted chainsword",
+        "types": [],
+        "range": "Melee",
+        "attacks": "7",
+        "skill": "2+",
+        "strength": "4",
+        "ap": "-1",
+        "damage": "2"
+      },
+      {
+        "name": "Power fist",
+        "types": [],
+        "range": "Melee",
+        "attacks": "5",
+        "skill": "2+",
+        "strength": "8",
+        "ap": "-2",
+        "damage": "2"
+      },
+      {
+        "name": "Relic weapon",
+        "types": [],
+        "range": "Melee",
+        "attacks": "6",
+        "skill": "2+",
+        "strength": "5",
+        "ap": "-2",
+        "damage": "2"
+      }
+    ],
+    "faction_logo": "BloodAngels"
+  },
+  {
+    "name": "Chief Librarian Mephiston",
+    "keywords": [
+      "INFANTRY",
+      "CHARACTER",
+      "EPIC HERO",
+      "PSYKER",
+      "GRENADES",
+      "IMPERIUM",
+      "TACTICUS"
+    ],
+    "core": [
+      "Feel No Pain 4+",
+      "Fights First",
+      "Lone Operative"
+    ],
+    "faction": [
+      "Oath of Moment"
+    ],
+    "abilities": [
+      "The Quickening (Psychic): This model is eligible to declare a charge in a turn in which it Advanced .",
+      "Transfixing Gaze (Aura, Psychic): While an enemy unit is within 6\" of this model, each time that unit is selected to Fall Back , it must take a Leadership test . If that test is failed, that unit must Remain Stationary this phase instead."
+    ],
+    "stats": [
+      {
+        "stats": {
+          "M": "7",
+          "T": "5",
+          "Sv": "2+",
+          "W": "6",
+          "Ld": "6+",
+          "OC": "1"
+        }
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Fury of the Ancients – witchfire",
+        "types": [
+          "pistol",
+          "psychic",
+          "sustained hits 1"
+        ],
+        "range": "18",
+        "attacks": "3",
+        "skill": "2+",
+        "strength": "4",
+        "ap": "-1",
+        "damage": "D3"
+      },
+      {
+        "name": "Fury of the Ancients – focused witchfire",
+        "types": [
+          "hazardous",
+          "pistol",
+          "psychic",
+          "sustained hits 3"
+        ],
+        "range": "18",
+        "attacks": "3",
+        "skill": "2+",
+        "strength": "5",
+        "ap": "-2",
+        "damage": "D3"
+      },
+      {
+        "name": "Plasma pistol – standard",
+        "types": [
+          "pistol"
+        ],
+        "range": "12",
+        "attacks": "1",
+        "skill": "2+",
+        "strength": "7",
+        "ap": "-2",
+        "damage": "1"
+      },
+      {
+        "name": "Plasma pistol – supercharge",
+        "types": [
+          "hazardous",
+          "pistol"
+        ],
+        "range": "12",
+        "attacks": "1",
+        "skill": "2+",
+        "strength": "8",
+        "ap": "-3",
+        "damage": "2"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Vitarus",
+        "types": [
+          "lethal hits",
+          "psychic"
+        ],
+        "range": "Melee",
+        "attacks": "6",
+        "skill": "2+",
+        "strength": "9",
+        "ap": "-3",
+        "damage": "D3"
+      }
+    ],
+    "faction_logo": "BloodAngels"
+  },
+  {
+    "name": "Commander Dante",
+    "keywords": [
+      "INFANTRY",
+      "CHARACTER",
+      "EPIC HERO",
+      "FLY",
+      "JUMP PACK",
+      "GRENADES",
+      "IMPERIUM",
+      "TACTICUS",
+      "CHAPTER MASTER"
+    ],
+    "core": [
+      "Deep Strike",
+      "Leader"
+    ],
+    "faction": [
+      "Oath of Moment"
+    ],
+    "abilities": [
+      "Warden of the Imperium Nihilus: While this model is leading a unit, add 1 to Advance and Charge rolls made for that unit and each time a model in that unit makes an attack, add 1 to the Hit roll .",
+      "Death Mask of Sanguinius: At the start of the Fight phase , each enemy unit within 6\" of this model must take a Battle-shock test , subtracting 1 from that test when they do."
+    ],
+    "stats": [
+      {
+        "stats": {
+          "M": "12",
+          "T": "4",
+          "Sv": "2+",
+          "W": "6",
+          "Ld": "6+",
+          "OC": "1"
+        }
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Perdition Pistol",
+        "types": [
+          "melta 2",
+          "pistol",
+          "sustained hits d3"
+        ],
+        "range": "6",
+        "attacks": "1",
+        "skill": "2+",
+        "strength": "9",
+        "ap": "-4",
+        "damage": "D6"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "The Axe Mortalis",
+        "types": [
+          "lethal hits"
+        ],
+        "range": "Melee",
+        "attacks": "8",
+        "skill": "2+",
+        "strength": "8",
+        "ap": "-3",
+        "damage": "2"
+      }
+    ],
+    "faction_logo": "BloodAngels"
+  },
+  {
+    "name": "Death Company Captain",
+    "keywords": [
+      "INFANTRY",
+      "CHARACTER",
+      "GRENADES",
+      "IMPERIUM",
+      "TACTICUS",
+      "DEATH COMPANY",
+      "CAPTAIN"
+    ],
+    "core": [
+      "Feel No Pain 6+",
+      "Leader"
+    ],
+    "faction": [
+      "Oath of Moment"
+    ],
+    "abilities": [
+      "Forlorn Hero: While this model is leading a unit, unless that unit starts the battle embarked within a TRANSPORT , models in that unit have the Scouts 6\" ability.",
+      "Black Rage: Each time this model makes a melee attack, you can re-roll the Hit roll . While this model’s unit is not within 6\" of one or more friendly BLOOD ANGELS CHARACTER models, or 12\" of one or more friendly CHAPLAIN models, it cannot be selected to Fall Back and its Objective Control characteristic is 0.",
+      "Death Vision of Sanguinius: If this model is destroyed by a melee attack, after the attacking unit has finished making its attacks, you can roll one D6, adding 2 to the result if the attacking unit contains the enemy WARLORD : on a 2-3, that enemy unit suffers D3 mortal wounds ; on a 4-5, that enemy unit suffers 3 mortal wounds; on a 6+, that enemy unit suffers D3+3 mortal wounds."
+    ],
+    "stats": [
+      {
+        "stats": {
+          "M": "6",
+          "T": "4",
+          "Sv": "3+",
+          "W": "5",
+          "Ld": "6+",
+          "OC": "1"
+        }
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Heavy bolt pistol",
+        "types": [
+          "Pistol"
+        ],
+        "range": "18",
+        "attacks": "1",
+        "skill": "2+",
+        "strength": "4",
+        "ap": "-1",
+        "damage": "1"
+      },
+      {
+        "name": "Inferno pistol",
+        "types": [
+          "melta 2",
+          "pistol"
+        ],
+        "range": "6",
+        "attacks": "1",
+        "skill": "2+",
+        "strength": "8",
+        "ap": "-4",
+        "damage": "D3"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Master-crafted chainsword",
+        "types": [],
+        "range": "Melee",
+        "attacks": "7",
+        "skill": "2+",
+        "strength": "4",
+        "ap": "-1",
+        "damage": "2"
+      },
+      {
+        "name": "Power fist",
+        "types": [],
+        "range": "Melee",
+        "attacks": "5",
+        "skill": "2+",
+        "strength": "8",
+        "ap": "-2",
+        "damage": "2"
+      },
+      {
+        "name": "Relic weapon",
+        "types": [],
+        "range": "Melee",
+        "attacks": "6",
+        "skill": "2+",
+        "strength": "5",
+        "ap": "-2",
+        "damage": "2"
+      }
+    ],
+    "faction_logo": "BloodAngels"
+  },
+  {
+    "name": "Death Company Captain",
+    "variant": "with jump pack",
+    "keywords": [
+      "INFANTRY",
+      "CHARACTER",
+      "JUMP PACK",
+      "FLY",
+      "GRENADES",
+      "IMPERIUM",
+      "TACTICUS",
+      "DEATH COMPANY",
+      "CAPTAIN"
+    ],
+    "core": [
+      "Deep Strike",
+      "Feel No Pain 6+",
+      "Leader"
+    ],
+    "faction": [
+      "Oath of Moment"
+    ],
+    "abilities": [
+      "Lost to Fury: While this model is leading a unit, melee weapons equipped by models in that unit have the [SUSTAINED HITS 1] ability.",
+      "Black Rage: Each time this model makes a melee attack, you can re-roll the Hit roll . While this model’s unit is not within 6\" of one or more friendly BLOOD ANGELS CHARACTER models, or 12\" of one or more friendly CHAPLAIN models, it cannot be selected to Fall Back and its Objective Control characteristic is 0.",
+      "Death Vision of Sanguinius: If this model is destroyed by a melee attack, after the attacking unit has finished making its attacks, you can roll one D6, adding 2 to the result if the attacking unit contains the enemy WARLORD : on a 2-3, that enemy unit suffers D3 mortal wounds ; on a 4-5, that enemy unit suffers 3 mortal wounds; on a 6+, that enemy unit suffers D3+3 mortal wounds."
+    ],
+    "stats": [
+      {
+        "stats": {
+          "M": "12",
+          "T": "4",
+          "Sv": "3+",
+          "W": "5",
+          "Ld": "6+",
+          "OC": "1"
+        }
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Hand flamer",
+        "types": [
+          "ignores cover",
+          "pistol",
+          "torrent"
+        ],
+        "range": "12",
+        "attacks": "D6",
+        "skill": "N/A",
+        "strength": "3",
+        "ap": "0",
+        "damage": "1"
+      },
+      {
+        "name": "Heavy bolt pistol",
+        "types": [
+          "Pistol"
+        ],
+        "range": "18",
+        "attacks": "1",
+        "skill": "2+",
+        "strength": "4",
+        "ap": "-1",
+        "damage": "1"
+      },
+      {
+        "name": "Plasma pistol - standard",
+        "types": [
+          "Pistol"
+        ],
+        "range": "12",
+        "attacks": "1",
+        "skill": "2+",
+        "strength": "7",
+        "ap": "-2",
+        "damage": "1"
+      },
+      {
+        "name": "Plasma pistol - supercharge",
+        "types": [
+          "hazardous",
+          "pistol"
+        ],
+        "range": "12",
+        "attacks": "1",
+        "skill": "2+",
+        "strength": "8",
+        "ap": "-3",
+        "damage": "2"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Astartes chainsword",
+        "types": [],
+        "range": "Melee",
+        "attacks": "7",
+        "skill": "2+",
+        "strength": "4",
+        "ap": "-1",
+        "damage": "1"
+      },
+      {
+        "name": "Power fist",
+        "types": [],
+        "range": "Melee",
+        "attacks": "5",
+        "skill": "2+",
+        "strength": "8",
+        "ap": "-2",
+        "damage": "2"
+      },
+      {
+        "name": "Relic weapon",
+        "types": [],
+        "range": "Melee",
+        "attacks": "6",
+        "skill": "2+",
+        "strength": "5",
+        "ap": "-2",
+        "damage": "2"
+      }
+    ],
+    "faction_logo": "BloodAngels"
+  },
+  {
+    "name": "Death Company Dreadnought",
+    "keywords": [
+      "VEHICLE",
+      "WALKER",
+      "IMPERIUM",
+      "DREADNOUGHT",
+      "DEATH COMPANY",
+      "DEATH COMPANY DREADNOUGHT"
+    ],
+    "core": [
+      "Deadly Demise D3",
+      "Feel No Pain 6+"
+    ],
+    "faction": [
+      "Oath of Moment"
+    ],
+    "abilities": [
+      "Black Rage: Each time this model makes a melee attack, you can re-roll the Hit roll . While this model’s unit is not within 6\" of one or more friendly BLOOD ANGELS CHARACTER models, or 12\" of one or more friendly CHAPLAIN models, it cannot be selected to Fall Back and its Objective Control characteristic is 0.",
+      "Driven by Fury: In your opponent’s Shooting phase , each time an enemy unit has shot, if this model was hit by one or more of those attacks, it can make a Driven by Fury move. To do so, roll one D6 and add 2 to the roll: this model moves a number of inches up to the result, but must finish as close as possible to the closest enemy unit (excluding AIRCRAFT ). When doing so, this model can be moved within Engagement Range of that enemy unit. A model cannot make a Driven by Fury move while it is Battle-shocked or within Engagement Range of one or more enemy units, and can only make one Driven by Fury move per phase."
+    ],
+    "stats": [
+      {
+        "stats": {
+          "M": "8",
+          "T": "10",
+          "Sv": "2+",
+          "W": "12",
+          "Ld": "6+",
+          "OC": "4"
+        }
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Blood fist bolt rifles",
+        "types": [
+          "twin-linked"
+        ],
+        "range": "24",
+        "attacks": "4",
+        "skill": "3+",
+        "strength": "4",
+        "ap": "-1",
+        "damage": "1"
+      },
+      {
+        "name": "Twin heavy bolter",
+        "types": [
+          "sustained hits 1",
+          "twin-linked"
+        ],
+        "range": "36",
+        "attacks": "3",
+        "skill": "3+",
+        "strength": "5",
+        "ap": "-1",
+        "damage": "2"
+      },
+      {
+        "name": "Twin Icarus ironhail heavy stubber",
+        "types": [
+          "ANTI-FLY 4+",
+          "RAPID FIRE 3",
+          "TWIN-LINKED"
+        ],
+        "range": "36",
+        "attacks": "3",
+        "skill": "3+",
+        "strength": "4",
+        "ap": "0",
+        "damage": "1"
+      },
+      {
+        "name": "Twin multi-melta",
+        "types": [
+          "melta 2",
+          "twin-linked"
+        ],
+        "range": "18",
+        "attacks": "2",
+        "skill": "3+",
+        "strength": "9",
+        "ap": "-4",
+        "damage": "D6"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Blood fists",
+        "types": [
+          "twin-linked"
+        ],
+        "range": "Melee",
+        "attacks": "6",
+        "skill": "3+",
+        "strength": "12",
+        "ap": "-2",
+        "damage": "3"
+      },
+      {
+        "name": "Blood talons - strike",
+        "types": [
+          "twin-linked"
+        ],
+        "range": "Melee",
+        "attacks": "6",
+        "skill": "3+",
+        "strength": "12",
+        "ap": "-2",
+        "damage": "3"
+      },
+      {
+        "name": "Blood talons - sweep",
+        "types": [
+          "twin-linked"
+        ],
+        "range": "Melee",
+        "attacks": "10",
+        "skill": "3+",
+        "strength": "7",
+        "ap": "-2",
+        "damage": "1"
+      }
+    ],
+    "faction_logo": "BloodAngels"
+  },
+  {
+    "name": "Death Company Marines",
+    "keywords": [
+      "INFANTRY",
+      "GRENADES",
+      "IMPERIUM",
+      "TACTICUS",
+      "DEATH COMPANY"
+    ],
+    "core": [
+      "Feel No Pain 6+"
+    ],
+    "faction": [
+      "Oath of Moment"
+    ],
+    "abilities": [
+      "Black Rage: Each time this model makes a melee attack, you can re-roll the Hit roll . While this model’s unit is not within 6\" of one or more friendly BLOOD ANGELS CHARACTER models, or 12\" of one or more friendly CHAPLAIN models, it cannot be selected to Fall Back and its Objective Control characteristic is 0.",
+      "An Honourable Death in Combat: Each time a model in this unit makes an attack, that attack has the [SUSTAINED HITS 1] ability if this unit is below its Starting Strength , or the [SUSTAINED HITS 2] ability if this unit is Below Half-strength ."
+    ],
+    "stats": [
+      {
+        "stats": {
+          "M": "6",
+          "T": "4",
+          "Sv": "3+",
+          "W": "2",
+          "Ld": "6+",
+          "OC": "1"
+        }
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Hand flamer",
+        "types": [
+          "ignores cover",
+          "pistol",
+          "torrent"
+        ],
+        "range": "12",
+        "attacks": "D6",
+        "skill": "N/A",
+        "strength": "3",
+        "ap": "0",
+        "damage": "1"
+      },
+      {
+        "name": "Heavy bolt pistol",
+        "types": [
+          "pistol"
+        ],
+        "range": "18",
+        "attacks": "1",
+        "skill": "3+",
+        "strength": "4",
+        "ap": "-1",
+        "damage": "1"
+      },
+      {
+        "name": "Inferno pistol",
+        "types": [
+          "pistol",
+          "melta 2"
+        ],
+        "range": "6",
+        "attacks": "1",
+        "skill": "3+",
+        "strength": "8",
+        "ap": "-4",
+        "damage": "D3"
+      },
+      {
+        "name": "Plasma pistol – standard",
+        "types": [
+          "pistol"
+        ],
+        "range": "12",
+        "attacks": "1",
+        "skill": "3+",
+        "strength": "7",
+        "ap": "-2",
+        "damage": "1"
+      },
+      {
+        "name": "Plasma pistol – supercharge",
+        "types": [
+          "hazardous",
+          "pistol"
+        ],
+        "range": "12",
+        "attacks": "1",
+        "skill": "3+",
+        "strength": "8",
+        "ap": "-3",
+        "damage": "2"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Astartes chainsword",
+        "types": [],
+        "range": "Melee",
+        "attacks": "4",
+        "skill": "3+",
+        "strength": "4",
+        "ap": "-1",
+        "damage": "1"
+      },
+      {
+        "name": "Eviscerator",
+        "types": [
+          "sustained hits 1"
+        ],
+        "range": "Melee",
+        "attacks": "3",
+        "skill": "4+",
+        "strength": "7",
+        "ap": "-2",
+        "damage": "2"
+      },
+      {
+        "name": "Power fist",
+        "types": [],
+        "range": "Melee",
+        "attacks": "3",
+        "skill": "3+",
+        "strength": "8",
+        "ap": "-2",
+        "damage": "2"
+      },
+      {
+        "name": "Power weapon",
+        "types": [],
+        "range": "Melee",
+        "attacks": "4",
+        "skill": "3+",
+        "strength": "5",
+        "ap": "-2",
+        "damage": "1"
+      },
+      {
+        "name": "Thunder hammer",
+        "types": [
+          "devastating wounds"
+        ],
+        "range": "Melee",
+        "attacks": "3",
+        "skill": "4+",
+        "strength": "8",
+        "ap": "-2",
+        "damage": "2"
+      }
+    ],
+    "faction_logo": "BloodAngels"
+  },
+  {
+    "name": "Death Company Marines",
+    "variant": "with Bolt Rifles",
+    "keywords": [
+      "INFANTRY",
+      "GRENADES",
+      "IMPERIUM",
+      "TACTICUS",
+      "DEATH COMPANY"
+    ],
+    "core": [
+      "Feel No Pain 6+"
+    ],
+    "faction": [
+      "Oath of Moment"
+    ],
+    "abilities": [
+      "Black Rage: Each time this model makes a melee attack, you can re-roll the Hit roll . While this model’s unit is not within 6\" of one or more friendly BLOOD ANGELS CHARACTER models, or 12\" of one or more friendly CHAPLAIN models, it cannot be selected to Fall Back and its Objective Control characteristic is 0.",
+      "Visions of Heresy: Once per turn, you can target this unit with the Fire Overwatch or the Heroic Intervention Stratagem for 0CP. While resolving that Stratagem, each time a model in this unit makes a ranged attack you can re-roll the Hit roll , or you can re-roll the Charge roll made for this unit (whichever applies)."
+    ],
+    "stats": [
+      {
+        "stats": {
+          "M": "6",
+          "T": "4",
+          "Sv": "3+",
+          "W": "2",
+          "Ld": "6+",
+          "OC": "1"
+        }
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Astartes grenade launcher - frag",
+        "types": [
+          "blast"
+        ],
+        "range": "24",
+        "attacks": "D3",
+        "skill": "3+",
+        "strength": "4",
+        "ap": "0",
+        "damage": "1"
+      },
+      {
+        "name": "Astartes grenade launcher - krak",
+        "types": [],
+        "range": "24",
+        "attacks": "1",
+        "skill": "3+",
+        "strength": "9",
+        "ap": "-1",
+        "damage": "D3"
+      },
+      {
+        "name": "Bolt pistol",
+        "types": [
+          "pistol"
+        ],
+        "range": "12",
+        "attacks": "1",
+        "skill": "3+",
+        "strength": "4",
+        "ap": "0",
+        "damage": "1"
+      },
+      {
+        "name": "Bolt rifle",
+        "types": [
+          "assault",
+          "heavy"
+        ],
+        "range": "24",
+        "attacks": "2",
+        "skill": "3+",
+        "strength": "4",
+        "ap": "-1",
+        "damage": "1"
+      },
+      {
+        "name": "Hand flamer",
+        "types": [
+          "ignores cover",
+          "pistol",
+          "torrent"
+        ],
+        "range": "12",
+        "attacks": "D6",
+        "skill": "N/A",
+        "strength": "3",
+        "ap": "0",
+        "damage": "1"
+      },
+      {
+        "name": "Inferno pistol",
+        "types": [
+          "pistol",
+          "melta 2"
+        ],
+        "range": "6",
+        "attacks": "1",
+        "skill": "3+",
+        "strength": "8",
+        "ap": "-4",
+        "damage": "D3"
+      },
+      {
+        "name": "Plasma pistol – standard",
+        "types": [
+          "pistol"
+        ],
+        "range": "12",
+        "attacks": "1",
+        "skill": "3+",
+        "strength": "7",
+        "ap": "-2",
+        "damage": "1"
+      },
+      {
+        "name": "Plasma pistol – supercharge",
+        "types": [
+          "hazardous",
+          "pistol"
+        ],
+        "range": "12",
+        "attacks": "1",
+        "skill": "3+",
+        "strength": "8",
+        "ap": "-3",
+        "damage": "2"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Astartes chainsword",
+        "types": [],
+        "range": "Melee",
+        "attacks": "4",
+        "skill": "3+",
+        "strength": "4",
+        "ap": "-1",
+        "damage": "1"
+      },
+      {
+        "name": "Close combat weapon",
+        "types": [],
+        "range": "Melee",
+        "attacks": "3",
+        "skill": "3+",
+        "strength": "4",
+        "ap": "0",
+        "damage": "1"
+      },
+      {
+        "name": "Eviscerator",
+        "types": [
+          "sustained hits 1"
+        ],
+        "range": "Melee",
+        "attacks": "3",
+        "skill": "3+",
+        "strength": "7",
+        "ap": "-2",
+        "damage": "2"
+      },
+      {
+        "name": "Power fist",
+        "types": [],
+        "range": "Melee",
+        "attacks": "3",
+        "skill": "3+",
+        "strength": "8",
+        "ap": "-2",
+        "damage": "2"
+      },
+      {
+        "name": "Power weapon",
+        "types": [],
+        "range": "Melee",
+        "attacks": "4",
+        "skill": "3+",
+        "strength": "5",
+        "ap": "-2",
+        "damage": "1"
+      },
+      {
+        "name": "Thunder hammer",
+        "types": [
+          "devastating wounds"
+        ],
+        "range": "Melee",
+        "attacks": "3",
+        "skill": "4+",
+        "strength": "8",
+        "ap": "-2",
+        "damage": "2"
+      }
+    ],
+    "faction_logo": "BloodAngels"
+  },
+  {
+    "name": "Death Company Marines",
+    "variant": "With Jump Packs",
+    "keywords": [
+      "INFANTRY",
+      "FLY",
+      "JUMP PACK",
+      "GRENADES",
+      "IMPERIUM",
+      "TACTICUS",
+      "DEATH COMPANY"
+    ],
+    "core": [
+      "Deep Strike",
+      "Feel No Pain 6+"
+    ],
+    "faction": [
+      "Oath of Moment"
+    ],
+    "abilities": [
+      "Black Rage: Each time this model makes a melee attack, you can re-roll the Hit roll . While this model’s unit is not within 6\" of one or more friendly BLOOD ANGELS CHARACTER models, or 12\" of one or more friendly CHAPLAIN models, it cannot be selected to Fall Back and its Objective Control characteristic is 0.",
+      "Savage Fury: You can re-roll Charge rolls made for this unit."
+    ],
+    "stats": [
+      {
+        "stats": {
+          "M": "12",
+          "T": "4",
+          "Sv": "3+",
+          "W": "2",
+          "Ld": "6+",
+          "OC": "1"
+        }
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Hand flamer",
+        "types": [
+          "ignores cover",
+          "pistol",
+          "torrent"
+        ],
+        "range": "12",
+        "attacks": "D6",
+        "skill": "N/A",
+        "strength": "3",
+        "ap": "0",
+        "damage": "1"
+      },
+      {
+        "name": "Heavy bolt pistol",
+        "types": [
+          "pistol"
+        ],
+        "range": "18",
+        "attacks": "1",
+        "skill": "3+",
+        "strength": "4",
+        "ap": "-1",
+        "damage": "1"
+      },
+      {
+        "name": "Inferno pistol",
+        "types": [
+          "pistol",
+          "melta 2"
+        ],
+        "range": "6",
+        "attacks": "1",
+        "skill": "3+",
+        "strength": "8",
+        "ap": "-4",
+        "damage": "D3"
+      },
+      {
+        "name": "Plasma pistol – standard",
+        "types": [
+          "pistol"
+        ],
+        "range": "12",
+        "attacks": "1",
+        "skill": "3+",
+        "strength": "7",
+        "ap": "-2",
+        "damage": "1"
+      },
+      {
+        "name": "Plasma pistol – supercharge",
+        "types": [
+          "hazardous",
+          "pistol"
+        ],
+        "range": "12",
+        "attacks": "1",
+        "skill": "3+",
+        "strength": "8",
+        "ap": "-3",
+        "damage": "2"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Astartes chainsword",
+        "types": [],
+        "range": "Melee",
+        "attacks": "4",
+        "skill": "3+",
+        "strength": "4",
+        "ap": "-1",
+        "damage": "1"
+      },
+      {
+        "name": "Eviscerator",
+        "types": [
+          "sustained hits 1"
+        ],
+        "range": "Melee",
+        "attacks": "3",
+        "skill": "4+",
+        "strength": "7",
+        "ap": "-2",
+        "damage": "2"
+      },
+      {
+        "name": "Power fist",
+        "types": [],
+        "range": "Melee",
+        "attacks": "3",
+        "skill": "3+",
+        "strength": "8",
+        "ap": "-2",
+        "damage": "2"
+      },
+      {
+        "name": "Power weapon",
+        "types": [],
+        "range": "Melee",
+        "attacks": "4",
+        "skill": "3+",
+        "strength": "5",
+        "ap": "-2",
+        "damage": "1"
+      }
+    ],
+    "faction_logo": "BloodAngels"
+  },
+  {
+    "name": "Lemartes",
+    "keywords": [
+      "INFANTRY",
+      "CHARACTER",
+      "EPIC HERO",
+      "FLY",
+      "JUMP PACK",
+      "GRENADES",
+      "IMPERIUM",
+      "TACTICUS",
+      "CHAPLAIN"
+    ],
+    "core": [
+      "Deep Strike",
+      "Feel No Pain 6+",
+      "Leader"
+    ],
+    "faction": [
+      "Oath of Moment"
+    ],
+    "abilities": [
+      "Guardian of the Lost: While this model is leading a unit, each time an attack is allocated to a model in that unit, subtract 1 from the Damage characteristic of that attack.",
+      "Fury Unbound: While this model is leading a unit, melee weapons equipped by models in that unit have the [LETHAL HITS] ability"
+    ],
+    "stats": [
+      {
+        "stats": {
+          "M": "12",
+          "T": "4",
+          "Sv": "3+",
+          "W": "4",
+          "Ld": "5+",
+          "OC": "1"
+        }
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Absolvor bolt pistol",
+        "types": [
+          "pistol"
+        ],
+        "range": "18",
+        "attacks": "1",
+        "skill": "2+",
+        "strength": "5",
+        "ap": "-1",
+        "damage": "2"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "The Blood Crozius",
+        "types": [
+          "lethal hits"
+        ],
+        "range": "Melee",
+        "attacks": "5",
+        "skill": "2+",
+        "strength": "6",
+        "ap": "-2",
+        "damage": "2"
+      }
+    ],
+    "faction_logo": "BloodAngels"
+  },
+  {
+    "name": "Sanguinary Guard",
+    "keywords": [
+      "INFANTRY",
+      "FLY",
+      "JUMP PACK",
+      "GRENADES",
+      "IMPERIUM",
+      "TACTICUS"
+    ],
+    "core": [
+      "Deep Strike"
+    ],
+    "faction": [
+      "Oath of Moment"
+    ],
+    "abilities": [
+      "Angelic Visage: Each time a melee attack targets this unit, subtract 1 from the Hit roll .",
+      "Heirs of Azkaellon: While a CHARACTER model is leading this unit, each time a melee attack targets this unit, subtract 1 from the Wound roll .",
+      "Sanguinary Banner: Add 1 to the Objective Control characteristic of models in the bearer’s unit."
+    ],
+    "stats": [
+      {
+        "stats": {
+          "M": "12",
+          "T": "4",
+          "Sv": "2+",
+          "W": "3",
+          "Ld": "6+",
+          "OC": "1"
+        }
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Angelus boltgun",
+        "types": [
+          "pistol"
+        ],
+        "range": "12",
+        "attacks": "2",
+        "skill": "3+",
+        "strength": "4",
+        "ap": "0",
+        "damage": "1"
+      },
+      {
+        "name": "Inferno pistol",
+        "types": [
+          "melta 2",
+          "pistol"
+        ],
+        "range": "6",
+        "attacks": "1",
+        "skill": "3+",
+        "strength": "8",
+        "ap": "-4",
+        "damage": "D3"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Encarmine blade",
+        "types": [],
+        "range": "Melee",
+        "attacks": "4",
+        "skill": "2+",
+        "strength": "6",
+        "ap": "-3",
+        "damage": "2"
+      },
+      {
+        "name": "Encarmine spear",
+        "types": [
+          "Lance"
+        ],
+        "range": "Melee",
+        "attacks": "4",
+        "skill": "2+",
+        "strength": "6",
+        "ap": "-2",
+        "damage": "2"
+      }
+    ],
+    "faction_logo": "BloodAngels"
+  },
+  {
+    "name": "Sanguinary Priest",
+    "keywords": [
+      "INFANTRY",
+      "CHARACTER",
+      "GRENADES",
+      "IMPERIUM",
+      "TACTICUS",
+      "SANGUINARY PRIEST"
+    ],
+    "core": [
+      "Leader"
+    ],
+    "faction": [
+      "Oath of Moment"
+    ],
+    "abilities": [
+      "Sanguinary Priest: While this model is leading a unit, models in that unit have the Feel No Pain 5+ ability.",
+      "Blood Chalice: While this model is leading a unit, improve the Armour Penetration characteristic of melee weapons equipped by models in that unit by 1."
+    ],
+    "stats": [
+      {
+        "stats": {
+          "M": "6",
+          "T": "4",
+          "Sv": "3+",
+          "W": "4",
+          "Ld": "6+",
+          "OC": "1"
+        }
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Absolvor bolt pistol",
+        "types": [
+          "pistol"
+        ],
+        "range": "18",
+        "attacks": "1",
+        "skill": "3+",
+        "strength": "5",
+        "ap": "-1",
+        "damage": "2"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Astartes chainsword",
+        "types": [],
+        "range": "Melee",
+        "attacks": "5",
+        "skill": "3+",
+        "strength": "4",
+        "ap": "-1",
+        "damage": "1"
+      }
+    ],
+    "faction_logo": "BloodAngels"
+  },
+  {
+    "name": "The Sanguinor",
+    "keywords": [
+      "INFANTRY",
+      "CHARACTER",
+      "EPIC HERO",
+      "FLY",
+      "JUMP PACK",
+      "IMPERIUM",
+      "TACTICUS"
+    ],
+    "core": [
+      "Deep Strike",
+      "Fights First",
+      "Lone Operative"
+    ],
+    "faction": [
+      "Oath of Moment"
+    ],
+    "abilities": [
+      "Aura of Fervour (Aura): While a friendly ADEPTUS ASTARTES unit is within 6\" of this model, you can re-roll Battle-shock and Leadership tests taken for that unit.",
+      "Miraculous Saviour: Once per battle, at the end of your opponent’s Charge phase , if this model is still in Reserves , you can select one enemy unit that made a Charge move this phase. Set this model up on the battlefield within Engagement Range of that enemy unit."
+    ],
+    "stats": [
+      {
+        "stats": {
+          "M": "12",
+          "T": "4",
+          "Sv": "2+",
+          "W": "7",
+          "Ld": "6+",
+          "OC": "1"
+        }
+      }
+    ],
+    "ranged_weapons": [],
+    "melee_weapons": [
+      {
+        "name": "Encarmine broadsword",
+        "types": [
+          "devastating wounds"
+        ],
+        "range": "Melee",
+        "attacks": "8",
+        "skill": "2+",
+        "strength": "6",
+        "ap": "-3",
+        "damage": "2"
+      }
+    ],
+    "faction_logo": "BloodAngels"
+  }
+]

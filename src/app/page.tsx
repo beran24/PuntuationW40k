@@ -13,7 +13,57 @@ export default function Landing() {
 
   return (
     <>
-      <header className="flex header justify-end px-8 py-4">
+      <header className="flex header justify-between items-center px-4 md:px-8 py-4">
+        <nav className="flex flex-wrap gap-3">
+          <Link
+            href="/datasheets/tyranids"
+            className="bg-custom-green hover:bg-custom-light-green text-white px-3 py-2 rounded text-sm transition"
+          >
+            Tyranids
+          </Link>
+          <Link
+            href="/datasheets/world-eaters"
+            className="bg-custom-green hover:bg-custom-light-green text-white px-3 py-2 rounded text-sm transition"
+          >
+            World Eaters
+          </Link>
+          <Link
+            href="/datasheets/space-marines"
+            className="bg-custom-green hover:bg-custom-light-green text-white px-3 py-2 rounded text-sm transition"
+          >
+            Space Marines
+          </Link>
+          <Link
+            href="/datasheets/dark-angels"
+            className="bg-custom-green hover:bg-custom-light-green text-white px-3 py-2 rounded text-sm transition"
+          >
+            Dark Angels
+          </Link>
+          <Link
+            href="/datasheets/black-templars"
+            className="bg-custom-green hover:bg-custom-light-green text-white px-3 py-2 rounded text-sm transition"
+          >
+            Black Templars
+          </Link>
+          <Link
+            href="/datasheets/deathwatch"
+            className="bg-custom-green hover:bg-custom-light-green text-white px-3 py-2 rounded text-sm transition"
+          >
+            Deathwatch
+          </Link>
+          <Link
+            href="/datasheets/space-wolves"
+            className="bg-custom-green hover:bg-custom-light-green text-white px-3 py-2 rounded text-sm transition"
+          >
+            Space Wolves
+          </Link>
+          <Link
+            href="/datasheets/blood-angels"
+            className="bg-custom-green hover:bg-custom-light-green text-white px-3 py-2 rounded text-sm transition"
+          >
+            Blood Angels
+          </Link>
+        </nav>
         <LanguageSwitcher />
       </header>
       <main className="min-h-screen flex flex-col items-center justify-center px-4 text-white text-center header">
@@ -35,18 +85,6 @@ export default function Landing() {
             className="bg-custom-green hover:bg-custom-light-green text-white px-6 py-3 rounded text-lg transition"
           >
             {t('chapter_aproved_game')}
-          </Link>
-          <Link
-            href="/datasheets/tyranids"
-            className="bg-custom-green hover:bg-custom-light-green text-white px-6 py-3 rounded text-lg transition"
-          >
-            {t('tyranids')}
-          </Link>
-          <Link
-            href="/datasheets/world-eaters"
-            className="bg-custom-green hover:bg-custom-light-green text-white px-6 py-3 rounded text-lg transition"
-          >
-            World Eaters
           </Link>
         </div>
         <p className="text-sm mt-4 opacity-60">Free app</p>

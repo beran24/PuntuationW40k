@@ -7,6 +7,18 @@ import UnitDisplay, { type Unit } from '../../components/UnitDisplay';
 import LanguageSwitcher from '../../components/common/LanguageSwitcher';
 import tyranidsData from '@/data/tyranids.json';
 import worldEatersData from '@/data/world-eaters.json';
+import spaceMarinesData from '@/data/space-marines.json';
+import darkAngelsData from '@/data/dark-angels.json';
+import blackTemplarsData from '@/data/black-templars.json';
+import deathwatchData from '@/data/deathwatch.json';
+import spaceWolvesData from '@/data/space-wolves.json';
+import bloodAngelsData from '@/data/blood-angels.json';
+
+// Helper function to merge and sort units
+const mergeUnits = (...unitArrays: Unit[][]): Unit[] => {
+  const merged = unitArrays.flat();
+  return merged.sort((a, b) => a.name.localeCompare(b.name));
+};
 
 const factionData: Record<string, { name: string; units: Unit[] }> = {
   tyranids: {
@@ -16,6 +28,30 @@ const factionData: Record<string, { name: string; units: Unit[] }> = {
   'world-eaters': {
     name: 'World Eaters',
     units: worldEatersData as Unit[],
+  },
+  'space-marines': {
+    name: 'Space Marines',
+    units: spaceMarinesData as Unit[],
+  },
+  'dark-angels': {
+    name: 'Dark Angels',
+    units: mergeUnits(darkAngelsData as Unit[], spaceMarinesData as Unit[]),
+  },
+  'black-templars': {
+    name: 'Black Templars',
+    units: mergeUnits(blackTemplarsData as Unit[], spaceMarinesData as Unit[]),
+  },
+  deathwatch: {
+    name: 'Deathwatch',
+    units: mergeUnits(deathwatchData as Unit[], spaceMarinesData as Unit[]),
+  },
+  'space-wolves': {
+    name: 'Space Wolves',
+    units: mergeUnits(spaceWolvesData as Unit[], spaceMarinesData as Unit[]),
+  },
+  'blood-angels': {
+    name: 'Blood Angels',
+    units: mergeUnits(bloodAngelsData as Unit[], spaceMarinesData as Unit[]),
   },
 };
 

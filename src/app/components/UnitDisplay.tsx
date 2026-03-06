@@ -36,18 +36,6 @@ export default function UnitDisplay({ unit }: { unit: Unit }) {
 
   return (
     <div className="space-y-6">
-      {/* Unit Header */}
-      <div className="bg-gradient-to-r from-custom-red to-custom-green p-3 md:p-4 rounded">
-        <h2 className="text-xl md:text-3xl font-bold text-white">
-          {unit.name}
-        </h2>
-        {unit.variant && (
-          <p className="text-sm md:text-base text-gray-200 mt-1">
-            {unit.variant}
-          </p>
-        )}
-      </div>
-
       {/* Two Column Layout */}
       <div className="flex flex-col md:flex-row gap-6">
         {/* LEFT SIDE - 65% */}
@@ -56,26 +44,58 @@ export default function UnitDisplay({ unit }: { unit: Unit }) {
           {unit.stats && unit.stats.length > 0 && (
             <div className="bg-custom-beige rounded p-4">
               <h3 className="text-lg font-bold mb-3 text-black">Stats</h3>
-              <table className="w-full text-sm text-black">
+              <table className="w-full text-sm text-black table-fixed">
+                <colgroup>
+                  <col className="w-[40%]" />
+                  <col className="w-[10%]" />
+                  <col className="w-[10%]" />
+                  <col className="w-[10%]" />
+                  <col className="w-[10%]" />
+                  <col className="w-[10%]" />
+                  <col className="w-[10%]" />
+                </colgroup>
                 <thead>
                   <tr className="border-b-2 border-custom-green">
-                    <th className="px-2 py-2 text-left font-bold">M</th>
-                    <th className="px-2 py-2 text-left font-bold">T</th>
-                    <th className="px-2 py-2 text-left font-bold">Sv</th>
-                    <th className="px-2 py-2 text-left font-bold">W</th>
-                    <th className="px-2 py-2 text-left font-bold">Ld</th>
-                    <th className="px-2 py-2 text-left font-bold">OC</th>
+                    <th className="px-3 py-2 text-left font-bold">Name</th>
+                    <th className="px-2 py-2 text-center font-bold">M</th>
+                    <th className="px-2 py-2 text-center font-bold">T</th>
+                    <th className="px-2 py-2 text-center font-bold">Sv</th>
+                    <th className="px-2 py-2 text-center font-bold">W</th>
+                    <th className="px-2 py-2 text-center font-bold">Ld</th>
+                    <th className="px-2 py-2 text-center font-bold">OC</th>
                   </tr>
                 </thead>
                 <tbody>
                   {unit.stats.map((statBlock, idx) => (
                     <tr key={idx} className="border-t border-gray-300">
-                      <td className="px-2 py-2">{statBlock.stats.M ?? '-'}</td>
-                      <td className="px-2 py-2">{statBlock.stats.T ?? '-'}</td>
-                      <td className="px-2 py-2">{statBlock.stats.Sv ?? '-'}</td>
-                      <td className="px-2 py-2">{statBlock.stats.W ?? '-'}</td>
-                      <td className="px-2 py-2">{statBlock.stats.Ld ?? '-'}</td>
-                      <td className="px-2 py-2">{statBlock.stats.OC ?? '-'}</td>
+                      <td className="px-3 py-2">
+                        <div className="flex flex-col">
+                          <p className="font-bold truncate">{unit.name}</p>
+                          {unit.variant && (
+                            <p className="text-xs text-gray-600 truncate">
+                              {unit.variant}
+                            </p>
+                          )}
+                        </div>
+                      </td>
+                      <td className="px-2 py-2 text-center whitespace-nowrap">
+                        {statBlock.stats.M ?? '-'}
+                      </td>
+                      <td className="px-2 py-2 text-center whitespace-nowrap">
+                        {statBlock.stats.T ?? '-'}
+                      </td>
+                      <td className="px-2 py-2 text-center whitespace-nowrap">
+                        {statBlock.stats.Sv ?? '-'}
+                      </td>
+                      <td className="px-2 py-2 text-center whitespace-nowrap">
+                        {statBlock.stats.W ?? '-'}
+                      </td>
+                      <td className="px-2 py-2 text-center whitespace-nowrap">
+                        {statBlock.stats.Ld ?? '-'}
+                      </td>
+                      <td className="px-2 py-2 text-center whitespace-nowrap">
+                        {statBlock.stats.OC ?? '-'}
+                      </td>
                     </tr>
                   ))}
                 </tbody>
@@ -90,22 +110,31 @@ export default function UnitDisplay({ unit }: { unit: Unit }) {
                 Ranged Weapons
               </h3>
               <div className="overflow-x-auto">
-                <table className="w-full text-xs text-black">
+                <table className="w-full text-xs text-black table-fixed">
+                  <colgroup>
+                    <col className="w-[40%]" />
+                    <col className="w-[10%]" />
+                    <col className="w-[10%]" />
+                    <col className="w-[10%]" />
+                    <col className="w-[10%]" />
+                    <col className="w-[10%]" />
+                    <col className="w-[10%]" />
+                  </colgroup>
                   <thead>
                     <tr className="border-b-2 border-custom-red">
-                      <th className="px-2 py-2 text-left font-bold">Weapon</th>
-                      <th className="px-2 py-2 text-left font-bold">Rng</th>
-                      <th className="px-2 py-2 text-left font-bold">Att</th>
-                      <th className="px-2 py-2 text-left font-bold">Skl</th>
-                      <th className="px-2 py-2 text-left font-bold">Str</th>
-                      <th className="px-2 py-2 text-left font-bold">AP</th>
-                      <th className="px-2 py-2 text-left font-bold">Dmg</th>
+                      <th className="px-3 py-2 text-left font-bold">Weapon</th>
+                      <th className="px-2 py-2 text-center font-bold">Rng</th>
+                      <th className="px-2 py-2 text-center font-bold">Att</th>
+                      <th className="px-2 py-2 text-center font-bold">Skl</th>
+                      <th className="px-2 py-2 text-center font-bold">Str</th>
+                      <th className="px-2 py-2 text-center font-bold">AP</th>
+                      <th className="px-2 py-2 text-center font-bold">Dmg</th>
                     </tr>
                   </thead>
                   <tbody>
                     {unit.ranged_weapons.map((weapon, idx) => (
                       <tr key={idx} className="border-t border-gray-300">
-                        <td className="px-2 py-2">
+                        <td className="px-3 py-2">
                           <div className="flex items-center flex-wrap gap-1">
                             <p className="font-bold">{weapon.name}</p>
                             {weapon.types &&
@@ -120,12 +149,24 @@ export default function UnitDisplay({ unit }: { unit: Unit }) {
                               ))}
                           </div>
                         </td>
-                        <td className="px-2 py-2">{weapon.range}</td>
-                        <td className="px-2 py-2">{weapon.attacks}</td>
-                        <td className="px-2 py-2">{weapon.skill}</td>
-                        <td className="px-2 py-2">{weapon.strength}</td>
-                        <td className="px-2 py-2">{weapon.ap}</td>
-                        <td className="px-2 py-2">{weapon.damage}</td>
+                        <td className="px-2 py-2 text-center whitespace-nowrap">
+                          {weapon.range}
+                        </td>
+                        <td className="px-2 py-2 text-center whitespace-nowrap">
+                          {weapon.attacks}
+                        </td>
+                        <td className="px-2 py-2 text-center whitespace-nowrap">
+                          {weapon.skill}
+                        </td>
+                        <td className="px-2 py-2 text-center whitespace-nowrap">
+                          {weapon.strength}
+                        </td>
+                        <td className="px-2 py-2 text-center whitespace-nowrap">
+                          {weapon.ap}
+                        </td>
+                        <td className="px-2 py-2 text-center whitespace-nowrap">
+                          {weapon.damage}
+                        </td>
                       </tr>
                     ))}
                   </tbody>
@@ -141,22 +182,31 @@ export default function UnitDisplay({ unit }: { unit: Unit }) {
                 Melee Weapons
               </h3>
               <div className="overflow-x-auto">
-                <table className="w-full text-xs text-black">
+                <table className="w-full text-xs text-black table-fixed">
+                  <colgroup>
+                    <col className="w-[40%]" />
+                    <col className="w-[10%]" />
+                    <col className="w-[10%]" />
+                    <col className="w-[10%]" />
+                    <col className="w-[10%]" />
+                    <col className="w-[10%]" />
+                    <col className="w-[10%]" />
+                  </colgroup>
                   <thead>
                     <tr className="border-b-2 border-custom-green">
-                      <th className="px-2 py-2 text-left font-bold">Weapon</th>
-                      <th className="px-2 py-2 text-left font-bold">Rng</th>
-                      <th className="px-2 py-2 text-left font-bold">Att</th>
-                      <th className="px-2 py-2 text-left font-bold">Skl</th>
-                      <th className="px-2 py-2 text-left font-bold">Str</th>
-                      <th className="px-2 py-2 text-left font-bold">AP</th>
-                      <th className="px-2 py-2 text-left font-bold">Dmg</th>
+                      <th className="px-3 py-2 text-left font-bold">Weapon</th>
+                      <th className="px-2 py-2 text-center font-bold">Rng</th>
+                      <th className="px-2 py-2 text-center font-bold">Att</th>
+                      <th className="px-2 py-2 text-center font-bold">Skl</th>
+                      <th className="px-2 py-2 text-center font-bold">Str</th>
+                      <th className="px-2 py-2 text-center font-bold">AP</th>
+                      <th className="px-2 py-2 text-center font-bold">Dmg</th>
                     </tr>
                   </thead>
                   <tbody>
                     {unit.melee_weapons.map((weapon, idx) => (
                       <tr key={idx} className="border-t border-gray-300">
-                        <td className="px-2 py-2">
+                        <td className="px-3 py-2">
                           <div className="flex items-center flex-wrap gap-1">
                             <p className="font-bold">{weapon.name}</p>
                             {weapon.types &&
@@ -171,33 +221,28 @@ export default function UnitDisplay({ unit }: { unit: Unit }) {
                               ))}
                           </div>
                         </td>
-                        <td className="px-2 py-2">{weapon.range}</td>
-                        <td className="px-2 py-2">{weapon.attacks}</td>
-                        <td className="px-2 py-2">{weapon.skill}</td>
-                        <td className="px-2 py-2">{weapon.strength}</td>
-                        <td className="px-2 py-2">{weapon.ap}</td>
-                        <td className="px-2 py-2">{weapon.damage}</td>
+                        <td className="px-2 py-2 text-center whitespace-nowrap">
+                          {weapon.range}
+                        </td>
+                        <td className="px-2 py-2 text-center whitespace-nowrap">
+                          {weapon.attacks}
+                        </td>
+                        <td className="px-2 py-2 text-center whitespace-nowrap">
+                          {weapon.skill}
+                        </td>
+                        <td className="px-2 py-2 text-center whitespace-nowrap">
+                          {weapon.strength}
+                        </td>
+                        <td className="px-2 py-2 text-center whitespace-nowrap">
+                          {weapon.ap}
+                        </td>
+                        <td className="px-2 py-2 text-center whitespace-nowrap">
+                          {weapon.damage}
+                        </td>
                       </tr>
                     ))}
                   </tbody>
                 </table>
-              </div>
-            </div>
-          )}
-
-          {/* Keywords */}
-          {unit.keywords && unit.keywords.length > 0 && (
-            <div className="bg-custom-beige rounded p-4">
-              <h3 className="font-bold text-black mb-2 text-lg">Keywords</h3>
-              <div className="flex flex-wrap gap-2">
-                {unit.keywords.map((keyword, idx) => (
-                  <span
-                    key={idx}
-                    className="bg-custom-green text-white px-2 py-1 rounded text-xs font-medium"
-                  >
-                    {keyword}
-                  </span>
-                ))}
               </div>
             </div>
           )}
@@ -248,6 +293,23 @@ export default function UnitDisplay({ unit }: { unit: Unit }) {
                   <p key={idx} className="text-xs text-black leading-tight">
                     {ability}
                   </p>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {/* Keywords */}
+          {unit.keywords && unit.keywords.length > 0 && (
+            <div className="bg-custom-beige rounded p-4">
+              <h3 className="font-bold text-black mb-2 text-lg">Keywords</h3>
+              <div className="flex flex-wrap gap-2">
+                {unit.keywords.map((keyword, idx) => (
+                  <span
+                    key={idx}
+                    className="bg-custom-green text-white px-2 py-1 rounded text-xs font-medium"
+                  >
+                    {keyword}
+                  </span>
                 ))}
               </div>
             </div>

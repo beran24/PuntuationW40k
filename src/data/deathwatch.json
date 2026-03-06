@@ -1,0 +1,1676 @@
+[
+  {
+    "name": "Corvus Blackstar",
+    "keywords": [
+      "VEHICLE",
+      "AIRCRAFT",
+      "FLY",
+      "IMPERIUM",
+      "TRANSPORT"
+    ],
+    "core": [
+      "Deadly Demise D6",
+      "Hover",
+      "Stealth"
+    ],
+    "faction": [
+      "Mission Tactics",
+      "Oath of Moment"
+    ],
+    "abilities": [
+      "Blackstar Cluster Launcher: Each time this model ends a Normal move , you can select one enemy unit it moved over during that move and roll six D6: for each 5+, that unit suffers 1 mortal wound .",
+      "Auspex Array: Ranged weapons equipped by the bearer have the [IGNORES COVER] ability.",
+      "Infernum Halo-launcher: The bearer has the SMOKE keyword."
+    ],
+    "stats": [],
+    "ranged_weapons": [
+      {
+        "name": "Blackstar rocket launcher",
+        "types": [
+          "blast"
+        ],
+        "range": "30",
+        "attacks": "D6+1",
+        "skill": "3+",
+        "strength": "5",
+        "ap": "0",
+        "damage": "1"
+      },
+      {
+        "name": "Hurricane bolter",
+        "types": [
+          "rapid fire 6",
+          "twin-linked"
+        ],
+        "range": "24",
+        "attacks": "6",
+        "skill": "3+",
+        "strength": "4",
+        "ap": "0",
+        "damage": "1"
+      },
+      {
+        "name": "Stormstrike missile launcher",
+        "types": [],
+        "range": "48",
+        "attacks": "1",
+        "skill": "3+",
+        "strength": "10",
+        "ap": "-2",
+        "damage": "3"
+      },
+      {
+        "name": "Twin assault cannon",
+        "types": [
+          "devastating wounds",
+          "twin-linked"
+        ],
+        "range": "24",
+        "attacks": "6",
+        "skill": "3+",
+        "strength": "6",
+        "ap": "0",
+        "damage": "1"
+      },
+      {
+        "name": "Twin lascannon",
+        "types": [
+          "twin-linked"
+        ],
+        "range": "48",
+        "attacks": "1",
+        "skill": "3+",
+        "strength": "12",
+        "ap": "-3",
+        "damage": "D6+1"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Armoured hull",
+        "types": [],
+        "range": "Melee",
+        "attacks": "3",
+        "skill": "4+",
+        "strength": "6",
+        "ap": "0",
+        "damage": "1"
+      }
+    ],
+    "faction_logo": "Deathwatch"
+  },
+  {
+    "name": "Deathwatch Terminator Squad",
+    "keywords": [
+      "INFANTRY",
+      "IMPERIUM",
+      "TERMINATOR",
+      "KILL TEAM"
+    ],
+    "core": [
+      "Deep Strike"
+    ],
+    "faction": [
+      "Mission Tactics",
+      "Oath of Moment"
+    ],
+    "abilities": [
+      "Terminatus Assault: You can re-roll Charge rolls made for this unit. Each time this unit ends a Charge move, each enemy unit within Engagement Range of this unit must take a Battle-shock test . If that enemy unit does not have the IMPERIUM or CHAOS keywords, subtract 1 from that test.",
+      "Teleport Homer: At the start of the battle, you can set up one Teleport Homer token for this unit anywhere on the battlefield that is not within your opponent’s deployment zone. If you do, once per battle, you can target this unit with the Rapid Ingress Stratagem for 0CP, but when resolving that Stratagem, you must set this unit up within 3\" of that token and not within 9\" horizontally of one or more enemy units. That token is then removed.",
+      "Storm Shield: The bearer has a Wounds characteristic of 4."
+    ],
+    "stats": [
+      {
+        "stats": {
+          "M": "5",
+          "T": "5",
+          "Sv": "2+",
+          "W": "3",
+          "Ld": "6+",
+          "OC": "1"
+        }
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Assault cannon",
+        "types": [
+          "devastating wounds"
+        ],
+        "range": "24",
+        "attacks": "6",
+        "skill": "3+",
+        "strength": "6",
+        "ap": "0",
+        "damage": "1"
+      },
+      {
+        "name": "Cyclone missile launcher – frag",
+        "types": [
+          "blast"
+        ],
+        "range": "36",
+        "attacks": "2D6",
+        "skill": "3+",
+        "strength": "4",
+        "ap": "0",
+        "damage": "1"
+      },
+      {
+        "name": "Cyclone missile launcher – krak",
+        "types": [],
+        "range": "36",
+        "attacks": "2",
+        "skill": "3+",
+        "strength": "9",
+        "ap": "-2",
+        "damage": "D6"
+      },
+      {
+        "name": "Heavy flamer",
+        "types": [
+          "ignores cover",
+          "torrent"
+        ],
+        "range": "12",
+        "attacks": "D6",
+        "skill": "N/A",
+        "strength": "5",
+        "ap": "-1",
+        "damage": "1"
+      },
+      {
+        "name": "Plasma cannon – standard",
+        "types": [
+          "blast"
+        ],
+        "range": "36",
+        "attacks": "D3",
+        "skill": "3+",
+        "strength": "7",
+        "ap": "-2",
+        "damage": "1"
+      },
+      {
+        "name": "Plasma cannon – supercharge",
+        "types": [
+          "blast",
+          "hazardous"
+        ],
+        "range": "36",
+        "attacks": "D3",
+        "skill": "3+",
+        "strength": "8",
+        "ap": "-3",
+        "damage": "2"
+      },
+      {
+        "name": "Storm bolter",
+        "types": [
+          "rapid fire 2"
+        ],
+        "range": "24",
+        "attacks": "2",
+        "skill": "3+",
+        "strength": "4",
+        "ap": "0",
+        "damage": "1"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Chainfist",
+        "types": [
+          "anti-vehicle 3+"
+        ],
+        "range": "Melee",
+        "attacks": "3",
+        "skill": "4+",
+        "strength": "8",
+        "ap": "-2",
+        "damage": "2"
+      },
+      {
+        "name": "Power fist",
+        "types": [],
+        "range": "Melee",
+        "attacks": "3",
+        "skill": "3+",
+        "strength": "8",
+        "ap": "-2",
+        "damage": "2"
+      },
+      {
+        "name": "Power weapon",
+        "types": [],
+        "range": "Melee",
+        "attacks": "4",
+        "skill": "3+",
+        "strength": "5",
+        "ap": "-2",
+        "damage": "1"
+      },
+      {
+        "name": "Thunder hammer",
+        "types": [
+          "devastating wounds"
+        ],
+        "range": "Melee",
+        "attacks": "3",
+        "skill": "4+",
+        "strength": "8",
+        "ap": "-2",
+        "damage": "2"
+      },
+      {
+        "name": "Twin lightning claws",
+        "types": [
+          "twin-linked"
+        ],
+        "range": "Melee",
+        "attacks": "5",
+        "skill": "3+",
+        "strength": "5",
+        "ap": "-2",
+        "damage": "1"
+      }
+    ],
+    "faction_logo": "Deathwatch"
+  },
+  {
+    "name": "Deathwatch Veterans",
+    "keywords": [
+      "INFANTRY",
+      "BATTLELINE",
+      "GRENADES",
+      "IMPERIUM",
+      "KILL TEAM"
+    ],
+    "core": [],
+    "faction": [
+      "Mission Tactics",
+      "Oath of Moment"
+    ],
+    "abilities": [
+      "Death to the Alien: Each time a model in this unit makes an attack, re-roll a Hit roll of 1. If the target of that attack does not have the IMPERIUM or CHAOS keywords, you can re-roll the Hit roll instead.",
+      "Astartes Shield: The bearer has a 4+ invulnerable save ."
+    ],
+    "stats": [
+      {
+        "stats": {
+          "M": "6",
+          "T": "4",
+          "Sv": "3+",
+          "W": "2",
+          "Ld": "6+",
+          "OC": "2"
+        }
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Boltgun",
+        "types": [],
+        "range": "24",
+        "attacks": "2",
+        "skill": "3+",
+        "strength": "4",
+        "ap": "0",
+        "damage": "1"
+      },
+      {
+        "name": "Combi-weapon",
+        "types": [
+          "anti-infantry 4+",
+          "devastating wounds",
+          "rapid fire 1"
+        ],
+        "range": "24",
+        "attacks": "1",
+        "skill": "4+",
+        "strength": "4",
+        "ap": "-1",
+        "damage": "1"
+      },
+      {
+        "name": "Deathwatch shotgun",
+        "types": [
+          "assault"
+        ],
+        "range": "24",
+        "attacks": "2",
+        "skill": "3+",
+        "strength": "4",
+        "ap": "0",
+        "damage": "2"
+      },
+      {
+        "name": "Frag cannon",
+        "types": [
+          "blast",
+          "heavy",
+          "rapid fire d3"
+        ],
+        "range": "18",
+        "attacks": "D3",
+        "skill": "4+",
+        "strength": "7",
+        "ap": "-1",
+        "damage": "2"
+      },
+      {
+        "name": "Infernus heavy bolter – heavy bolter",
+        "types": [
+          "heavy",
+          "sustained hits 1"
+        ],
+        "range": "36",
+        "attacks": "3",
+        "skill": "4+",
+        "strength": "5",
+        "ap": "-1",
+        "damage": "2"
+      },
+      {
+        "name": "Infernus heavy bolter – heavy flamer",
+        "types": [
+          "ignores cover",
+          "torrent"
+        ],
+        "range": "12",
+        "attacks": "D6",
+        "skill": "N/A",
+        "strength": "5",
+        "ap": "-1",
+        "damage": "1"
+      },
+      {
+        "name": "Stalker-pattern boltgun",
+        "types": [
+          "heavy",
+          "precision"
+        ],
+        "range": "24",
+        "attacks": "1",
+        "skill": "3+",
+        "strength": "4",
+        "ap": "-1",
+        "damage": "2"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Black Shield blades",
+        "types": [
+          "twin-linked"
+        ],
+        "range": "Melee",
+        "attacks": "4",
+        "skill": "3+",
+        "strength": "5",
+        "ap": "-2",
+        "damage": "1"
+      },
+      {
+        "name": "Close combat weapon",
+        "types": [],
+        "range": "Melee",
+        "attacks": "3",
+        "skill": "3+",
+        "strength": "4",
+        "ap": "0",
+        "damage": "1"
+      },
+      {
+        "name": "Deathwatch thunder hammer",
+        "types": [
+          "devastating wounds"
+        ],
+        "range": "Melee",
+        "attacks": "3",
+        "skill": "4+",
+        "strength": "10",
+        "ap": "-2",
+        "damage": "3"
+      },
+      {
+        "name": "Power weapon",
+        "types": [],
+        "range": "Melee",
+        "attacks": "3",
+        "skill": "3+",
+        "strength": "5",
+        "ap": "-2",
+        "damage": "1"
+      },
+      {
+        "name": "Xenophase blade",
+        "types": [
+          "devastating wounds"
+        ],
+        "range": "Melee",
+        "attacks": "4",
+        "skill": "3+",
+        "strength": "5",
+        "ap": "-2",
+        "damage": "1"
+      }
+    ],
+    "faction_logo": "Deathwatch"
+  },
+  {
+    "name": "Decimus Kill Team",
+    "keywords": [
+      "INFANTRY",
+      "BATTLELINE",
+      "GRENADES",
+      "IMPERIUM",
+      "KILL TEAM"
+    ],
+    "core": [],
+    "faction": [
+      "Mission Tactics",
+      "Oath of Moment"
+    ],
+    "abilities": [
+      "Death to the Alien: Each time a model in this unit makes an attack, re-roll a Hit roll of 1. If the target of that attack does not have the IMPERIUM or CHAOS keywords, you can re-roll the Hit roll instead.",
+      "Astartes Shield: The bearer has a 4+ invulnerable save ."
+    ],
+    "stats": [
+      {
+        "stats": {
+          "M": "6",
+          "T": "4",
+          "Sv": "3+",
+          "W": "2",
+          "Ld": "6+",
+          "OC": "2"
+        },
+        "model_name": "KILL TEAM SERGEANT, DEATHWATCH VETERAN"
+      },
+      {
+        "stats": {
+          "M": "5",
+          "T": "6",
+          "Sv": "3+",
+          "W": "3",
+          "Ld": "6+",
+          "OC": "2"
+        },
+        "model_name": "GRAVIS VETERAN"
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Astartes grenade launcher – frag",
+        "types": [
+          "blast"
+        ],
+        "range": "24",
+        "attacks": "D3",
+        "skill": "3+",
+        "strength": "4",
+        "ap": "0",
+        "damage": "1"
+      },
+      {
+        "name": "Astartes grenade launcher – krak",
+        "types": [],
+        "range": "24",
+        "attacks": "1",
+        "skill": "3+",
+        "strength": "9",
+        "ap": "-2",
+        "damage": "D3"
+      },
+      {
+        "name": "Bolt pistol",
+        "types": [
+          "pistol",
+          "lethal hits"
+        ],
+        "range": "12",
+        "attacks": "1",
+        "skill": "3+",
+        "strength": "4",
+        "ap": "0",
+        "damage": "1"
+      },
+      {
+        "name": "Deathwatch marksman bolt carbine",
+        "types": [
+          "heavy",
+          "lethal hits"
+        ],
+        "range": "24",
+        "attacks": "2",
+        "skill": "3+",
+        "strength": "5",
+        "ap": "-1",
+        "damage": "1"
+      },
+      {
+        "name": "Frag cannon",
+        "types": [
+          "blast",
+          "heavy",
+          "lethal hits",
+          "rapid fire d3"
+        ],
+        "range": "18",
+        "attacks": "D3",
+        "skill": "3+",
+        "strength": "7",
+        "ap": "-2",
+        "damage": "2"
+      },
+      {
+        "name": "Hellstorm bolt rifle",
+        "types": [
+          "assault",
+          "heavy",
+          "lethal hits"
+        ],
+        "range": "30",
+        "attacks": "2",
+        "skill": "3+",
+        "strength": "5",
+        "ap": "-2",
+        "damage": "2"
+      },
+      {
+        "name": "Infernus heavy bolter – heavy bolter",
+        "types": [
+          "SUSTAINED HITS 1"
+        ],
+        "range": "36",
+        "attacks": "3",
+        "skill": "3+",
+        "strength": "5",
+        "ap": "-2",
+        "damage": "3"
+      },
+      {
+        "name": "Infernus heavy bolter – heavy flamer",
+        "types": [
+          "IGNORES COVER",
+          "TORRENT"
+        ],
+        "range": "12",
+        "attacks": "D6",
+        "skill": "N/A",
+        "strength": "5",
+        "ap": "-1",
+        "damage": "1"
+      },
+      {
+        "name": "Plasma incinerator – standard",
+        "types": [
+          "assault",
+          "heavy"
+        ],
+        "range": "24",
+        "attacks": "2",
+        "skill": "3+",
+        "strength": "7",
+        "ap": "-2",
+        "damage": "1"
+      },
+      {
+        "name": "Plasma incinerator – supercharge",
+        "types": [
+          "assault",
+          "hazardous",
+          "heavy"
+        ],
+        "range": "24",
+        "attacks": "2",
+        "skill": "3+",
+        "strength": "8",
+        "ap": "-3",
+        "damage": "2"
+      },
+      {
+        "name": "Plasma pistol - standard",
+        "types": [
+          "PISTOL"
+        ],
+        "range": "12",
+        "attacks": "1",
+        "skill": "3+",
+        "strength": "7",
+        "ap": "-2",
+        "damage": "1"
+      },
+      {
+        "name": "Plasma pistol - supercharge",
+        "types": [
+          "HAZARDOUS",
+          "PISTOL"
+        ],
+        "range": "12",
+        "attacks": "1",
+        "skill": "3+",
+        "strength": "8",
+        "ap": "-3",
+        "damage": "2"
+      },
+      {
+        "name": "Special-issue bolt pistol",
+        "types": [
+          "pistol",
+          "precision",
+          "lethal hits"
+        ],
+        "range": "18",
+        "attacks": "1",
+        "skill": "3+",
+        "strength": "4",
+        "ap": "-1",
+        "damage": "1"
+      },
+      {
+        "name": "Stalker bolt rifle",
+        "types": [
+          "heavy",
+          "lethal hits",
+          "precision"
+        ],
+        "range": "30",
+        "attacks": "2",
+        "skill": "3+",
+        "strength": "5",
+        "ap": "-2",
+        "damage": "2"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Close combat weapon",
+        "types": [],
+        "range": "Melee",
+        "attacks": "3",
+        "skill": "3+",
+        "strength": "4",
+        "ap": "0",
+        "damage": "1"
+      },
+      {
+        "name": "Combat knife",
+        "types": [
+          "precision"
+        ],
+        "range": "Melee",
+        "attacks": "4",
+        "skill": "3+",
+        "strength": "4",
+        "ap": "-1",
+        "damage": "1"
+      },
+      {
+        "name": "Heavy thunder hammer",
+        "types": [
+          "devastating wounds"
+        ],
+        "range": "Melee",
+        "attacks": "3",
+        "skill": "4+",
+        "strength": "10",
+        "ap": "-2",
+        "damage": "3"
+      },
+      {
+        "name": "Power weapon",
+        "types": [
+          "sustained hits 1"
+        ],
+        "range": "Melee",
+        "attacks": "4",
+        "skill": "3+",
+        "strength": "5",
+        "ap": "-2",
+        "damage": "2"
+      },
+      {
+        "name": "Xenophase blade",
+        "types": [
+          "devastating wounds"
+        ],
+        "range": "Melee",
+        "attacks": "4",
+        "skill": "3+",
+        "strength": "5",
+        "ap": "-2",
+        "damage": "1"
+      }
+    ],
+    "faction_logo": "Deathwatch"
+  },
+  {
+    "name": "Fortis Kill Team",
+    "keywords": [
+      "INFANTRY",
+      "GRENADES",
+      "IMPERIUM",
+      "TACTICUS",
+      "KILL TEAM"
+    ],
+    "core": [],
+    "faction": [
+      "Mission Tactics",
+      "Oath of Moment"
+    ],
+    "abilities": [
+      "Fortis Doctrines: Each time a model in this unit makes an attack that targets a unit that is below its Starting Strength , add 1 to the Hit roll . If that attack targets a unit that is Below Half-strength , add 1 to the Hit roll and add 1 to the Wound roll instead."
+    ],
+    "stats": [
+      {
+        "stats": {
+          "M": "6",
+          "T": "4",
+          "Sv": "3+",
+          "W": "2",
+          "Ld": "6+",
+          "OC": "2"
+        }
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Astartes grenade launcher – frag",
+        "types": [
+          "blast"
+        ],
+        "range": "24",
+        "attacks": "D3",
+        "skill": "3+",
+        "strength": "4",
+        "ap": "0",
+        "damage": "1"
+      },
+      {
+        "name": "Astartes grenade launcher – krak",
+        "types": [],
+        "range": "24",
+        "attacks": "1",
+        "skill": "3+",
+        "strength": "9",
+        "ap": "-2",
+        "damage": "D3"
+      },
+      {
+        "name": "Bolt pistol",
+        "types": [
+          "pistol"
+        ],
+        "range": "12",
+        "attacks": "1",
+        "skill": "3+",
+        "strength": "4",
+        "ap": "0",
+        "damage": "1"
+      },
+      {
+        "name": "Castellan launcher",
+        "types": [
+          "blast",
+          "indirect fire"
+        ],
+        "range": "36",
+        "attacks": "D3",
+        "skill": "3+",
+        "strength": "4",
+        "ap": "0",
+        "damage": "1"
+      },
+      {
+        "name": "Deathwatch bolt rifle",
+        "types": [
+          "assault",
+          "heavy",
+          "lethal hits"
+        ],
+        "range": "24",
+        "attacks": "2",
+        "skill": "3+",
+        "strength": "5",
+        "ap": "-2",
+        "damage": "1"
+      },
+      {
+        "name": "Hand flamer",
+        "types": [
+          "ignores cover",
+          "pistol",
+          "torrent"
+        ],
+        "range": "12",
+        "attacks": "D6",
+        "skill": "N/A",
+        "strength": "3",
+        "ap": "0",
+        "damage": "1"
+      },
+      {
+        "name": "Heavy bolt pistol",
+        "types": [
+          "pistol"
+        ],
+        "range": "18",
+        "attacks": "1",
+        "skill": "3+",
+        "strength": "4",
+        "ap": "-1",
+        "damage": "1"
+      },
+      {
+        "name": "Plasma incinerator – standard",
+        "types": [
+          "assault",
+          "heavy"
+        ],
+        "range": "24",
+        "attacks": "2",
+        "skill": "3+",
+        "strength": "7",
+        "ap": "-2",
+        "damage": "1"
+      },
+      {
+        "name": "Plasma incinerator – supercharge",
+        "types": [
+          "assault",
+          "hazardous",
+          "heavy"
+        ],
+        "range": "24",
+        "attacks": "2",
+        "skill": "3+",
+        "strength": "8",
+        "ap": "-3",
+        "damage": "2"
+      },
+      {
+        "name": "Plasma pistol - standard",
+        "types": [
+          "PISTOL"
+        ],
+        "range": "12",
+        "attacks": "1",
+        "skill": "3+",
+        "strength": "7",
+        "ap": "-2",
+        "damage": "1"
+      },
+      {
+        "name": "Plasma pistol - supercharge",
+        "types": [
+          "HAZARDOUS",
+          "PISTOL"
+        ],
+        "range": "12",
+        "attacks": "1",
+        "skill": "3+",
+        "strength": "8",
+        "ap": "-3",
+        "damage": "2"
+      },
+      {
+        "name": "Pyreblaster",
+        "types": [
+          "ignores cover",
+          "torrent"
+        ],
+        "range": "12",
+        "attacks": "D6",
+        "skill": "N/A",
+        "strength": "5",
+        "ap": "0",
+        "damage": "1"
+      },
+      {
+        "name": "Superfrag rocket launcher",
+        "types": [
+          "blast",
+          "heavy"
+        ],
+        "range": "48",
+        "attacks": "D6+1",
+        "skill": "4+",
+        "strength": "5",
+        "ap": "0",
+        "damage": "1"
+      },
+      {
+        "name": "Superkrak rocket launcher",
+        "types": [
+          "heavy"
+        ],
+        "range": "48",
+        "attacks": "1",
+        "skill": "4+",
+        "strength": "10",
+        "ap": "-2",
+        "damage": "D6+1"
+      },
+      {
+        "name": "Vengor launcher",
+        "types": [
+          "blast",
+          "indirect fire"
+        ],
+        "range": "48",
+        "attacks": "D6",
+        "skill": "2+",
+        "strength": "7",
+        "ap": "-1",
+        "damage": "2"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Astartes chainsword",
+        "types": [],
+        "range": "Melee",
+        "attacks": "4",
+        "skill": "3+",
+        "strength": "4",
+        "ap": "-1",
+        "damage": "1"
+      },
+      {
+        "name": "Close combat weapon",
+        "types": [],
+        "range": "Melee",
+        "attacks": "3",
+        "skill": "3+",
+        "strength": "4",
+        "ap": "0",
+        "damage": "1"
+      },
+      {
+        "name": "Power fist",
+        "types": [],
+        "range": "Melee",
+        "attacks": "3",
+        "skill": "3+",
+        "strength": "8",
+        "ap": "-2",
+        "damage": "2"
+      },
+      {
+        "name": "Power weapon",
+        "types": [],
+        "range": "Melee",
+        "attacks": "4",
+        "skill": "3+",
+        "strength": "5",
+        "ap": "-2",
+        "damage": "1"
+      },
+      {
+        "name": "Thunder hammer",
+        "types": [
+          "devastating wounds"
+        ],
+        "range": "Melee",
+        "attacks": "3",
+        "skill": "4+",
+        "strength": "8",
+        "ap": "-2",
+        "damage": "2"
+      }
+    ],
+    "faction_logo": "Deathwatch"
+  },
+  {
+    "name": "Indomitor Kill Team",
+    "keywords": [
+      "INFANTRY",
+      "GRENADES",
+      "IMPERIUM",
+      "GRAVIS",
+      "KILL TEAM"
+    ],
+    "core": [],
+    "faction": [
+      "Mission Tactics",
+      "Oath of Moment"
+    ],
+    "abilities": [
+      "Indomitor Doctrines: Each time a model in this unit makes a ranged attack that targets the closest eligible target, or makes a melee attack in a turn in which it made a Charge move , improve the Strength characteristic of that attack by 2."
+    ],
+    "stats": [
+      {
+        "stats": {
+          "M": "5",
+          "T": "6",
+          "Sv": "3+",
+          "W": "3",
+          "Ld": "6+",
+          "OC": "1"
+        }
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Auto boltstorm gauntlets",
+        "types": [
+          "twin-linked"
+        ],
+        "range": "18",
+        "attacks": "3",
+        "skill": "3+",
+        "strength": "4",
+        "ap": "0",
+        "damage": "1"
+      },
+      {
+        "name": "Bolt pistol",
+        "types": [
+          "PISTOL"
+        ],
+        "range": "12",
+        "attacks": "1",
+        "skill": "3+",
+        "strength": "4",
+        "ap": "0",
+        "damage": "1"
+      },
+      {
+        "name": "Deathwatch heavy bolt rifle",
+        "types": [
+          "assault",
+          "heavy",
+          "lethal hits"
+        ],
+        "range": "30",
+        "attacks": "2",
+        "skill": "3+",
+        "strength": "5",
+        "ap": "-2",
+        "damage": "2"
+      },
+      {
+        "name": "Deathwatch heavy bolter",
+        "types": [
+          "assault",
+          "heavy",
+          "lethal hits",
+          "sustained hits 1"
+        ],
+        "range": "36",
+        "attacks": "3",
+        "skill": "3+",
+        "strength": "5",
+        "ap": "-2",
+        "damage": "3"
+      },
+      {
+        "name": "Fragstorm grenade launcher",
+        "types": [
+          "blast"
+        ],
+        "range": "18",
+        "attacks": "D6",
+        "skill": "3+",
+        "strength": "4",
+        "ap": "0",
+        "damage": "1"
+      },
+      {
+        "name": "Flamestorm gauntlets",
+        "types": [
+          "ignores cover",
+          "torrent",
+          "twin-linked"
+        ],
+        "range": "12",
+        "attacks": "D6+1",
+        "skill": "N/A",
+        "strength": "4",
+        "ap": "0",
+        "damage": "1"
+      },
+      {
+        "name": "Melta rifle",
+        "types": [
+          "heavy",
+          "melta 2"
+        ],
+        "range": "18",
+        "attacks": "1",
+        "skill": "3+",
+        "strength": "9",
+        "ap": "-4",
+        "damage": "D6"
+      },
+      {
+        "name": "Multi-melta",
+        "types": [
+          "heavy",
+          "melta 2"
+        ],
+        "range": "18",
+        "attacks": "2",
+        "skill": "4+",
+        "strength": "9",
+        "ap": "-4",
+        "damage": "D6"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Close combat weapon",
+        "types": [],
+        "range": "Melee",
+        "attacks": "3",
+        "skill": "3+",
+        "strength": "4",
+        "ap": "0",
+        "damage": "1"
+      },
+      {
+        "name": "Twin power fists",
+        "types": [
+          "twin-linked"
+        ],
+        "range": "Melee",
+        "attacks": "3",
+        "skill": "3+",
+        "strength": "8",
+        "ap": "-2",
+        "damage": "2"
+      }
+    ],
+    "faction_logo": "Deathwatch"
+  },
+  {
+    "name": "Spectrus Kill Team",
+    "keywords": [
+      "INFANTRY",
+      "SMOKE",
+      "GRENADES",
+      "IMPERIUM",
+      "PHOBOS",
+      "KILL TEAM"
+    ],
+    "core": [
+      "Infiltrators",
+      "Scouts 6\""
+    ],
+    "faction": [
+      "Mission Tactics",
+      "Oath of Moment"
+    ],
+    "abilities": [
+      "Spectrus Doctrines: At the end of your opponent’s turn, if this unit is more than 6\" away from all enemy units, you can remove this unit from the battlefield and place it into Strategic Reserves .",
+      "Helix Gauntlet: Models in the bearer’s unit have the Feel No Pain 6+ ability.",
+      "Infiltrator Comms Array: Each time you target the bearer’s unit with a Stratagem , roll one D6: on a 5+, you gain 1CP.",
+      "Instigator Bolt Carbine: In your Shooting phase , after the bearer’s unit has shot, the bearer’s unit can make a Normal move . If it does, until the end of the turn, the bearer’s unit is not eligible to declare a charge ."
+    ],
+    "stats": [
+      {
+        "stats": {
+          "M": "6",
+          "T": "4",
+          "Sv": "3+",
+          "W": "2",
+          "Ld": "6+",
+          "OC": "1"
+        }
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Bolt pistol",
+        "types": [
+          "pistol"
+        ],
+        "range": "12",
+        "attacks": "1",
+        "skill": "3+",
+        "strength": "4",
+        "ap": "0",
+        "damage": "1"
+      },
+      {
+        "name": "Bolt sniper rifle",
+        "types": [
+          "heavy",
+          "precision"
+        ],
+        "range": "36",
+        "attacks": "1",
+        "skill": "3+",
+        "strength": "5",
+        "ap": "-2",
+        "damage": "3"
+      },
+      {
+        "name": "Deathwatch bolt carbine",
+        "types": [
+          "lethal hits",
+          "precision"
+        ],
+        "range": "24",
+        "attacks": "2",
+        "skill": "3+",
+        "strength": "5",
+        "ap": "-1",
+        "damage": "1"
+      },
+      {
+        "name": "Deathwatch marksman bolt carbine",
+        "types": [
+          "heavy",
+          "lethal hits"
+        ],
+        "range": "24",
+        "attacks": "2",
+        "skill": "3+",
+        "strength": "5",
+        "ap": "-1",
+        "damage": "1"
+      },
+      {
+        "name": "Deathwatch occulus bolt carbine",
+        "types": [
+          "assault",
+          "ignores cover",
+          "lethal hits"
+        ],
+        "range": "24",
+        "attacks": "2",
+        "skill": "3+",
+        "strength": "5",
+        "ap": "-1",
+        "damage": "1"
+      },
+      {
+        "name": "Instigator bolt carbine",
+        "types": [
+          "heavy"
+        ],
+        "range": "24",
+        "attacks": "1",
+        "skill": "3+",
+        "strength": "4",
+        "ap": "-2",
+        "damage": "2"
+      },
+      {
+        "name": "Las fusil",
+        "types": [
+          "heavy"
+        ],
+        "range": "36",
+        "attacks": "1",
+        "skill": "3+",
+        "strength": "9",
+        "ap": "-3",
+        "damage": "D6"
+      },
+      {
+        "name": "Special-issue bolt pistol",
+        "types": [
+          "pistol",
+          "precision"
+        ],
+        "range": "12",
+        "attacks": "1",
+        "skill": "3+",
+        "strength": "4",
+        "ap": "-1",
+        "damage": "1"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Close combat weapon",
+        "types": [],
+        "range": "Melee",
+        "attacks": "3",
+        "skill": "3+",
+        "strength": "4",
+        "ap": "0",
+        "damage": "1"
+      },
+      {
+        "name": "Combat knife",
+        "types": [
+          "precision"
+        ],
+        "range": "Melee",
+        "attacks": "4",
+        "skill": "3+",
+        "strength": "4",
+        "ap": "-1",
+        "damage": "1"
+      },
+      {
+        "name": "Paired combat blades",
+        "types": [
+          "sustained hits 1"
+        ],
+        "range": "Melee",
+        "attacks": "3",
+        "skill": "3+",
+        "strength": "4",
+        "ap": "-1",
+        "damage": "1"
+      }
+    ],
+    "faction_logo": "Deathwatch"
+  },
+  {
+    "name": "Talonstrike Kill Team",
+    "keywords": [
+      "INFANTRY",
+      "FLY",
+      "JUMP PACK",
+      "GRENADES",
+      "IMPERIUM",
+      "KILL TEAM"
+    ],
+    "core": [
+      "Deep Strike"
+    ],
+    "faction": [
+      "Mission Tactics",
+      "Oath of Moment"
+    ],
+    "abilities": [
+      "Talonstrike Doctrines: Each time this unit is set up on the battlefield, until the end of the turn: Improve the Armour Penetration characteristic of weapons equipped by models in this unit by 1. Melee weapons equipped by models in this unit have the [LANCE] ability."
+    ],
+    "stats": [
+      {
+        "stats": {
+          "M": "12",
+          "T": "4",
+          "Sv": "3+",
+          "W": "2",
+          "Ld": "6+",
+          "OC": "1"
+        },
+        "model_name": "KILL TEAM SERGEANT WITH JUMP PACK AND KILL TEAM INTERCESSORS WITH JUMP PACKS"
+      },
+      {
+        "stats": {
+          "M": "10",
+          "T": "6",
+          "Sv": "3+",
+          "W": "3",
+          "Ld": "6+",
+          "OC": "1"
+        },
+        "model_name": "KILL TEAM HEAVY INTERCESSORS WITH JUMP PACKS"
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Assault bolters",
+        "types": [
+          "assault",
+          "pistol",
+          "sustained hits 2",
+          "twin-linked"
+        ],
+        "range": "18",
+        "attacks": "3",
+        "skill": "3+",
+        "strength": "5",
+        "ap": "-1",
+        "damage": "2"
+      },
+      {
+        "name": "Hand flamer",
+        "types": [
+          "ignores cover",
+          "pistol",
+          "torrent"
+        ],
+        "range": "12",
+        "attacks": "D6",
+        "skill": "N/A",
+        "strength": "3",
+        "ap": "0",
+        "damage": "1"
+      },
+      {
+        "name": "Heavy bolt pistol",
+        "types": [
+          "pistol"
+        ],
+        "range": "18",
+        "attacks": "1",
+        "skill": "3+",
+        "strength": "4",
+        "ap": "-1",
+        "damage": "1"
+      },
+      {
+        "name": "Plasma exterminators – standard",
+        "types": [
+          "assault",
+          "pistol",
+          "twin-linked"
+        ],
+        "range": "18",
+        "attacks": "2",
+        "skill": "3+",
+        "strength": "7",
+        "ap": "-2",
+        "damage": "2"
+      },
+      {
+        "name": "Plasma exterminators – supercharge",
+        "types": [
+          "assault",
+          "hazardous",
+          "pistol",
+          "twin-linked"
+        ],
+        "range": "18",
+        "attacks": "2",
+        "skill": "3+",
+        "strength": "8",
+        "ap": "-3",
+        "damage": "3"
+      },
+      {
+        "name": "Plasma pistol - standard",
+        "types": [
+          "PISTOL"
+        ],
+        "range": "12",
+        "attacks": "1",
+        "skill": "3+",
+        "strength": "7",
+        "ap": "-2",
+        "damage": "1"
+      },
+      {
+        "name": "Plasma pistol - supercharge",
+        "types": [
+          "HAZARDOUS",
+          "PISTOL"
+        ],
+        "range": "12",
+        "attacks": "1",
+        "skill": "3+",
+        "strength": "8",
+        "ap": "-3",
+        "damage": "2"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Astartes chainsword",
+        "types": [],
+        "range": "Melee",
+        "attacks": "4",
+        "skill": "3+",
+        "strength": "4",
+        "ap": "-1",
+        "damage": "1"
+      },
+      {
+        "name": "Close combat weapon",
+        "types": [],
+        "range": "Melee",
+        "attacks": "3",
+        "skill": "3+",
+        "strength": "4",
+        "ap": "0",
+        "damage": "1"
+      },
+      {
+        "name": "Power fist",
+        "types": [],
+        "range": "Melee",
+        "attacks": "3",
+        "skill": "3+",
+        "strength": "8",
+        "ap": "-2",
+        "damage": "2"
+      },
+      {
+        "name": "Power weapon",
+        "types": [],
+        "range": "Melee",
+        "attacks": "4",
+        "skill": "3+",
+        "strength": "5",
+        "ap": "-2",
+        "damage": "1"
+      }
+    ],
+    "faction_logo": "Deathwatch"
+  },
+  {
+    "name": "Watch Captain Artemis",
+    "keywords": [
+      "INFANTRY",
+      "CHARACTER",
+      "EPIC HERO",
+      "GRENADES",
+      "IMPERIUM",
+      "CAPTAIN"
+    ],
+    "core": [
+      "Feel No Pain 6+",
+      "Leader"
+    ],
+    "faction": [
+      "Oath of Moment",
+      "Mission Tactics"
+    ],
+    "abilities": [
+      "Tactical Instinct: While this model is leading a unit, weapons equipped by models in that unit have the [LETHAL HITS] ability.",
+      "Unstoppable Champion: The first time this model is destroyed, roll one D6 at the end of the phase. On a 2+, set this model back up on the battlefield, as close as possible to where it was destroyed and not within Engagement Range of any enemy units, with 1 wound remaining."
+    ],
+    "stats": [
+      {
+        "stats": {
+          "M": "6",
+          "T": "4",
+          "Sv": "3+",
+          "W": "4",
+          "Ld": "6+",
+          "OC": "1"
+        }
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Hellfire Extremis",
+        "types": [
+          "anti-infantry 4+",
+          "devastating wounds",
+          "ignores cover",
+          "torrent"
+        ],
+        "range": "12",
+        "attacks": "D6",
+        "skill": "N/A",
+        "strength": "4",
+        "ap": "-1",
+        "damage": "1"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Master-crafted power weapon",
+        "types": [],
+        "range": "Melee",
+        "attacks": "6",
+        "skill": "2+",
+        "strength": "5",
+        "ap": "-2",
+        "damage": "2"
+      }
+    ],
+    "faction_logo": "Deathwatch"
+  },
+  {
+    "name": "Watch Master",
+    "keywords": [
+      "INFANTRY",
+      "CHARACTER",
+      "GRENADES",
+      "IMPERIUM",
+      "CAPTAIN"
+    ],
+    "core": [
+      "Leader"
+    ],
+    "faction": [
+      "Mission Tactics",
+      "Oath of Moment"
+    ],
+    "abilities": [
+      "Strategic Knowledge: While this model is leading a unit, that unit is eligible to shoot and declare a charge in a turn in which it Advanced or Fell Back .",
+      "Watch Master: Once per battle round , one unit from your army with this ability can use it when its unit is targeted with a Stratagem . If it does, reduce the CP cost of that use of that Stratagem by 1CP."
+    ],
+    "stats": [
+      {
+        "stats": {
+          "M": "6",
+          "T": "4",
+          "Sv": "2+",
+          "W": "5",
+          "Ld": "6+",
+          "OC": "1"
+        }
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Vigil spear",
+        "types": [],
+        "range": "24",
+        "attacks": "2",
+        "skill": "2+",
+        "strength": "4",
+        "ap": "-1",
+        "damage": "2"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Vigil spear",
+        "types": [
+          "lance"
+        ],
+        "range": "Melee",
+        "attacks": "6",
+        "skill": "2+",
+        "strength": "6",
+        "ap": "-2",
+        "damage": "D3"
+      }
+    ],
+    "faction_logo": "Deathwatch"
+  }
+]
