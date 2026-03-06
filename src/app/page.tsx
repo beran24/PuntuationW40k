@@ -23,13 +23,32 @@ export default function Landing() {
             text: (chunks) => <strong>{chunks}</strong>,
           })}
         </p>
-        <Link
-          href="/scoreboard?deck=pariah-nexus"
-          className="bg-custom-green hover:bg-custom-light-green text-white px-6 py-3 rounded text-lg transition"
-        >
-          {t('pariah_nexus_game')}
-        </Link>
-
+        <div className="gap-4 flex flex-row">
+          <Link
+            href="/scoreboard?deck=pariah-nexus"
+            className="bg-custom-green hover:bg-custom-light-green text-white px-6 py-3 rounded text-lg transition"
+          >
+            {t('pariah_nexus_game')}
+          </Link>
+          <Link
+            href="/scoreboard?deck=chapter-approved"
+            className="bg-custom-green hover:bg-custom-light-green text-white px-6 py-3 rounded text-lg transition"
+          >
+            {t('chapter_aproved_game')}
+          </Link>
+          <Link
+            href="/datasheets/tyranids"
+            className="bg-custom-green hover:bg-custom-light-green text-white px-6 py-3 rounded text-lg transition"
+          >
+            {t('tyranids')}
+          </Link>
+          <Link
+            href="/datasheets/world-eaters"
+            className="bg-custom-green hover:bg-custom-light-green text-white px-6 py-3 rounded text-lg transition"
+          >
+            World Eaters
+          </Link>
+        </div>
         <p className="text-sm mt-4 opacity-60">Free app</p>
       </main>
     </>
