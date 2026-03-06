@@ -63,6 +63,12 @@ export default function Landing() {
           >
             Blood Angels
           </Link>
+          <Link
+            href="/datasheets/adeptus-custodes"
+            className="bg-custom-green hover:bg-custom-light-green text-white px-3 py-2 rounded text-sm transition"
+          >
+            Adeptus Custodes
+          </Link>
         </nav>
         <LanguageSwitcher />
       </header>

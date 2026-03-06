@@ -14,6 +14,8 @@ import blackTemplarsData from '@/data/black-templars.json';
 import deathwatchData from '@/data/deathwatch.json';
 import spaceWolvesData from '@/data/space-wolves.json';
 import bloodAngelsData from '@/data/blood-angels.json';
+import adeptusCustodesData from '@/data/adeptus-custodes.json';
+import adeptusCustodesFwData from '@/data/adeptus-custodes-fw.json';
 
 // Helper function to merge and sort units with faction tagging
 const mergeUnits = (
@@ -89,6 +91,15 @@ const factionData: Record<string, { name: string; units: Unit[] }> = {
       bloodAngelsData as Unit[],
       'Space Marines',
       spaceMarinesData as Unit[]
+    ),
+  },
+  'adeptus-custodes': {
+    name: 'Adeptus Custodes',
+    units: mergeUnits(
+      'Adeptus Custodes',
+      adeptusCustodesData as Unit[],
+      'Adeptus Custodes FW',
+      adeptusCustodesFwData as Unit[]
     ),
   },
 };

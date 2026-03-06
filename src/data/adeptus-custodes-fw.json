@@ -1,0 +1,975 @@
+[
+  {
+    "name": "Agamatus Custodians",
+    "keywords": [
+      "MOUNTED",
+      "FLY",
+      "IMPERIUM"
+    ],
+    "core": [],
+    "faction": [
+      "Martial Ka’tah"
+    ],
+    "abilities": [
+      "Turbo-boost: Each time this unit Advances , do not make an Advance roll. Instead, until the end of the phase, add 6\" to the Move characteristic of models in this unit.",
+      "Implacable Vanguard: Once per battle, in your Shooting phase , after this unit has shot, if it is not within Engagement Range of one or more enemy units, it can make a Normal move of up to 6\". If it does, until the end of the turn, this unit is not eligible to declare a charge ."
+    ],
+    "stats": [
+      {
+        "stats": {
+          "M": "12",
+          "T": "6",
+          "Sv": "2+",
+          "W": "4",
+          "Ld": "6+",
+          "OC": "2"
+        }
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Adrathic devastator",
+        "types": [],
+        "range": "18",
+        "attacks": "1",
+        "skill": "2+",
+        "strength": "7",
+        "ap": "-2",
+        "damage": "3"
+      },
+      {
+        "name": "Lastrum bolt cannon",
+        "types": [
+          "sustained hits 1"
+        ],
+        "range": "36",
+        "attacks": "3",
+        "skill": "2+",
+        "strength": "6",
+        "ap": "-1",
+        "damage": "1"
+      },
+      {
+        "name": "Twin las-pulsar",
+        "types": [
+          "twin-linked"
+        ],
+        "range": "24",
+        "attacks": "2",
+        "skill": "2+",
+        "strength": "9",
+        "ap": "-1",
+        "damage": "2"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Interceptor lance",
+        "types": [
+          "lance"
+        ],
+        "range": "Melee",
+        "attacks": "5",
+        "skill": "2+",
+        "strength": "7",
+        "ap": "-2",
+        "damage": "2"
+      }
+    ],
+    "faction_logo": "adeptus-custodes-FW"
+  },
+  {
+    "name": "Aquilon Custodians",
+    "keywords": [
+      "INFANTRY",
+      "TERMINATOR",
+      "IMPERIUM"
+    ],
+    "core": [
+      "Deep Strike"
+    ],
+    "faction": [
+      "Martial Ka’tah"
+    ],
+    "abilities": [
+      "Heavy Assault Infantry: Each time a model in this unit makes a ranged attack that targets the closest eligible target, re-roll a Wound roll of 1.",
+      "From Golden Light: Once per battle, at the end of your opponent’s turn, if this unit is not within Engagement Range of one or more enemy units, you can remove it from the battlefield and place it into Strategic Reserves ."
+    ],
+    "stats": [
+      {
+        "stats": {
+          "M": "5",
+          "T": "7",
+          "Sv": "2+",
+          "W": "4",
+          "Ld": "6+",
+          "OC": "2"
+        }
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Infernus firepike",
+        "types": [
+          "ignores cover",
+          "torrent"
+        ],
+        "range": "12",
+        "attacks": "D6",
+        "skill": "N/A",
+        "strength": "6",
+        "ap": "-1",
+        "damage": "1"
+      },
+      {
+        "name": "Lastrum storm bolter",
+        "types": [
+          "rapid fire 2"
+        ],
+        "range": "24",
+        "attacks": "2",
+        "skill": "2+",
+        "strength": "5",
+        "ap": "-1",
+        "damage": "1"
+      },
+      {
+        "name": "Twin adrathic destructor",
+        "types": [
+          "twin-linked"
+        ],
+        "range": "18",
+        "attacks": "1",
+        "skill": "2+",
+        "strength": "6",
+        "ap": "-2",
+        "damage": "3"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Solerite power gauntlet",
+        "types": [],
+        "range": "Melee",
+        "attacks": "5",
+        "skill": "2+",
+        "strength": "8",
+        "ap": "-2",
+        "damage": "2"
+      },
+      {
+        "name": "Solerite power talon",
+        "types": [],
+        "range": "Melee",
+        "attacks": "7",
+        "skill": "2+",
+        "strength": "7",
+        "ap": "-2",
+        "damage": "1"
+      }
+    ],
+    "faction_logo": "adeptus-custodes-FW"
+  },
+  {
+    "name": "Ares Gunship",
+    "keywords": [
+      "VEHICLE",
+      "AIRCRAFT",
+      "FLY",
+      "IMPERIUM"
+    ],
+    "core": [
+      "Deadly Demise D6",
+      "Hover"
+    ],
+    "faction": [
+      "Martial Ka’tah"
+    ],
+    "abilities": [
+      "Infernus Firebombs: Each time this model ends a Normal move , you can select one enemy unit it moved over during that move. Until the end of the turn, models in that unit cannot have the Benefit of Cover . In addition, roll one D6 for each model in that unit: for each 6, that unit suffers 1 mortal wound ."
+    ],
+    "stats": [],
+    "ranged_weapons": [
+      {
+        "name": "Arachnus heavy blaze cannon",
+        "types": [],
+        "range": "36",
+        "attacks": "4",
+        "skill": "2+",
+        "strength": "12",
+        "ap": "-3",
+        "damage": "D6+1"
+      },
+      {
+        "name": "Arachnus magna-blaze cannon",
+        "types": [],
+        "range": "48",
+        "attacks": "3",
+        "skill": "2+",
+        "strength": "18",
+        "ap": "-4",
+        "damage": "D6+6"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Armoured hull",
+        "types": [],
+        "range": "Melee",
+        "attacks": "9",
+        "skill": "4+",
+        "strength": "9",
+        "ap": "0",
+        "damage": "1"
+      }
+    ],
+    "faction_logo": "adeptus-custodes-FW"
+  },
+  {
+    "name": "Caladius Grav-tank",
+    "keywords": [
+      "VEHICLE",
+      "FLY",
+      "IMPERIUM"
+    ],
+    "core": [
+      "Deadly Demise D3"
+    ],
+    "faction": [
+      "Martial Ka’tah"
+    ],
+    "abilities": [
+      "Advanced Firepower: Each time this model makes an attack with its twin iliastus accelerator cannon that targets an enemy unit (excluding MONSTERS and VEHICLES ), that attack has the [LETHAL HITS] ability. Each time this model makes an attack with its twin arachnus heavy blaze cannon that targets an enemy MONSTER or VEHICLE unit, that attack has the [LETHAL HITS] ability."
+    ],
+    "stats": [
+      {
+        "stats": {
+          "M": "10",
+          "T": "11",
+          "Sv": "2+",
+          "W": "14",
+          "Ld": "6+",
+          "OC": "4"
+        }
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Twin arachnus heavy blaze cannon",
+        "types": [
+          "twin-linked"
+        ],
+        "range": "48",
+        "attacks": "4",
+        "skill": "2+",
+        "strength": "12",
+        "ap": "-3",
+        "damage": "D6+2"
+      },
+      {
+        "name": "Twin iliastus accelerator cannon",
+        "types": [
+          "rapid fire 4",
+          "twin-linked"
+        ],
+        "range": "48",
+        "attacks": "4",
+        "skill": "2+",
+        "strength": "10",
+        "ap": "-1",
+        "damage": "3"
+      },
+      {
+        "name": "Twin lastrum bolt cannon",
+        "types": [
+          "sustained hits 1"
+        ],
+        "range": "36",
+        "attacks": "3",
+        "skill": "2+",
+        "strength": "6",
+        "ap": "-1",
+        "damage": "1"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Armoured hull",
+        "types": [],
+        "range": "Melee",
+        "attacks": "4",
+        "skill": "4+",
+        "strength": "6",
+        "ap": "0",
+        "damage": "1"
+      }
+    ],
+    "faction_logo": "adeptus-custodes-FW"
+  },
+  {
+    "name": "Contemptor-achillus Dreadnought",
+    "keywords": [
+      "VEHICLE",
+      "WALKER",
+      "IMPERIUM"
+    ],
+    "core": [
+      "Deadly Demise 1"
+    ],
+    "faction": [
+      "Martial Ka’tah"
+    ],
+    "abilities": [
+      "Dread Foe: Each time this model is selected to fight, you can select one enemy unit within Engagement Range of it and roll one D6, adding 2 to the result if this model made a Charge move this turn: on a 4-5, that enemy unit suffers D3 mortal wounds ; on a 6+, that enemy unit suffers 3 mortal wounds."
+    ],
+    "stats": [
+      {
+        "stats": {
+          "M": "6",
+          "T": "9",
+          "Sv": "2+",
+          "W": "10",
+          "Ld": "6+",
+          "OC": "3"
+        }
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Achillus dreadspear",
+        "types": [],
+        "range": "12",
+        "attacks": "1",
+        "skill": "2+",
+        "strength": "9",
+        "ap": "-2",
+        "damage": "3"
+      },
+      {
+        "name": "Infernus incinerator",
+        "types": [
+          "torrent",
+          "ignores cover"
+        ],
+        "range": "12",
+        "attacks": "D6",
+        "skill": "N/A",
+        "strength": "6",
+        "ap": "-1",
+        "damage": "1"
+      },
+      {
+        "name": "Lastrum storm bolter",
+        "types": [
+          "rapid fire 2"
+        ],
+        "range": "24",
+        "attacks": "2",
+        "skill": "2+",
+        "strength": "5",
+        "ap": "-1",
+        "damage": "1"
+      },
+      {
+        "name": "Twin adrathic destructor",
+        "types": [
+          "twin-linked"
+        ],
+        "range": "18",
+        "attacks": "1",
+        "skill": "2+",
+        "strength": "6",
+        "ap": "-2",
+        "damage": "3"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Achillus dreadspear",
+        "types": [
+          "lance"
+        ],
+        "range": "Melee",
+        "attacks": "5",
+        "skill": "2+",
+        "strength": "12",
+        "ap": "-2",
+        "damage": "D6+1"
+      }
+    ],
+    "faction_logo": "adeptus-custodes-FW"
+  },
+  {
+    "name": "Contemptor-galatus Dreadnought",
+    "keywords": [
+      "VEHICLE",
+      "WALKER",
+      "IMPERIUM"
+    ],
+    "core": [
+      "Deadly Demise 1"
+    ],
+    "faction": [
+      "Martial Ka’tah"
+    ],
+    "abilities": [
+      "Galatus Shield: Each time a melee attack targets this model, subtract 1 from the Wound roll ."
+    ],
+    "stats": [
+      {
+        "stats": {
+          "M": "6",
+          "T": "9",
+          "Sv": "2+",
+          "W": "10",
+          "Ld": "6+",
+          "OC": "3"
+        }
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Galatus warblade",
+        "types": [
+          "ignores cover",
+          "torrent",
+          "twin-linked"
+        ],
+        "range": "12",
+        "attacks": "D6",
+        "skill": "N/A",
+        "strength": "6",
+        "ap": "-1",
+        "damage": "1"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Galatus warblade",
+        "types": [],
+        "range": "Melee",
+        "attacks": "8",
+        "skill": "2+",
+        "strength": "8",
+        "ap": "-2",
+        "damage": "3"
+      }
+    ],
+    "faction_logo": "adeptus-custodes-FW"
+  },
+  {
+    "name": "Coronus Grav-carrier",
+    "keywords": [
+      "VEHICLE",
+      "TRANSPORT",
+      "FLY",
+      "IMPERIUM"
+    ],
+    "core": [
+      "Deadly Demise D6"
+    ],
+    "faction": [
+      "Martial Ka’tah"
+    ],
+    "abilities": [
+      "Fire Support: In your Shooting phase , after this model has shot, select one enemy unit hit by one or more of those attacks. Until the end of the phase, each time a friendly model that disembarked from this TRANSPORT this turn makes an attack that targets that enemy unit, you can re-roll the Wound roll ."
+    ],
+    "stats": [
+      {
+        "stats": {
+          "M": "12",
+          "T": "12",
+          "Sv": "2+",
+          "W": "16",
+          "Ld": "6+",
+          "OC": "5"
+        }
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Twin arachnus blaze cannon",
+        "types": [
+          "devastating wounds",
+          "twin-linked"
+        ],
+        "range": "24",
+        "attacks": "8",
+        "skill": "2+",
+        "strength": "5",
+        "ap": "-1",
+        "damage": "1"
+      },
+      {
+        "name": "Twin lastrum bolt cannon",
+        "types": [
+          "sustained hits 1"
+        ],
+        "range": "36",
+        "attacks": "3",
+        "skill": "2+",
+        "strength": "6",
+        "ap": "-1",
+        "damage": "1"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Armoured hull",
+        "types": [],
+        "range": "Melee",
+        "attacks": "6",
+        "skill": "4+",
+        "strength": "8",
+        "ap": "0",
+        "damage": "1"
+      }
+    ],
+    "faction_logo": "adeptus-custodes-FW"
+  },
+  {
+    "name": "Custodian Guard",
+    "variant": "With Adrasite And Pyrithite Spears",
+    "keywords": [
+      "INFANTRY",
+      "IMPERIUM"
+    ],
+    "core": [
+      "Deep Strike"
+    ],
+    "faction": [
+      "Martial Ka’tah"
+    ],
+    "abilities": [
+      "Stand Vigil: Each time a model in this unit makes an attack, re-roll a Wound roll of 1. While this unit is within range of an objective marker you control, you can re-roll the Wound roll instead.",
+      "No Foe Shall Stand: Once per battle, at the start of your Shooting phase , this unit can use this ability. If it does, until the end of the phase, ranged weapons equipped by models in this unit have the [LETHAL HITS] and [IGNORES COVER] abilities."
+    ],
+    "stats": [
+      {
+        "stats": {
+          "M": "6",
+          "T": "6",
+          "Sv": "2+",
+          "W": "3",
+          "Ld": "6+",
+          "OC": "2"
+        }
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Adrasite spear",
+        "types": [],
+        "range": "18",
+        "attacks": "1",
+        "skill": "2+",
+        "strength": "5",
+        "ap": "-2",
+        "damage": "3"
+      },
+      {
+        "name": "Pyrithite spear",
+        "types": [
+          "melta 2"
+        ],
+        "range": "12",
+        "attacks": "1",
+        "skill": "2+",
+        "strength": "9",
+        "ap": "-4",
+        "damage": "D6"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Adrasite spear",
+        "types": [],
+        "range": "Melee",
+        "attacks": "5",
+        "skill": "2+",
+        "strength": "7",
+        "ap": "-2",
+        "damage": "2"
+      },
+      {
+        "name": "Pyrithite spear",
+        "types": [],
+        "range": "Melee",
+        "attacks": "5",
+        "skill": "2+",
+        "strength": "7",
+        "ap": "-2",
+        "damage": "2"
+      }
+    ],
+    "faction_logo": "adeptus-custodes-FW"
+  },
+  {
+    "name": "Orion Assault Dropship",
+    "keywords": [
+      "VEHICLE",
+      "TRANSPORT",
+      "AIRCRAFT",
+      "FLY",
+      "IMPERIUM"
+    ],
+    "core": [
+      "Deadly Demise D6",
+      "Hover"
+    ],
+    "faction": [
+      "Martial Ka’tah"
+    ],
+    "abilities": [
+      "Assault Dropship: If a unit disembarks from this TRANSPORT before it moves, until the end of the turn, that unit is eligible to charge in a turn in which it Advanced ."
+    ],
+    "stats": [],
+    "ranged_weapons": [
+      {
+        "name": "Arachnus heavy blaze cannon",
+        "types": [],
+        "range": "36",
+        "attacks": "4",
+        "skill": "2+",
+        "strength": "12",
+        "ap": "-3",
+        "damage": "D6+1"
+      },
+      {
+        "name": "Spiculus heavy bolt launcher",
+        "types": [
+          "blast"
+        ],
+        "range": "36",
+        "attacks": "D6+6",
+        "skill": "2+",
+        "strength": "7",
+        "ap": "-1",
+        "damage": "2"
+      },
+      {
+        "name": "Twin lastrum bolt cannon",
+        "types": [
+          "sustained hits 1"
+        ],
+        "range": "36",
+        "attacks": "3",
+        "skill": "2+",
+        "strength": "6",
+        "ap": "-1",
+        "damage": "1"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Armoured hull",
+        "types": [],
+        "range": "Melee",
+        "attacks": "9",
+        "skill": "4+",
+        "strength": "9",
+        "ap": "0",
+        "damage": "1"
+      }
+    ],
+    "faction_logo": "adeptus-custodes-FW"
+  },
+  {
+    "name": "Pallas Grav-attack",
+    "keywords": [
+      "VEHICLE",
+      "FLY",
+      "IMPERIUM"
+    ],
+    "core": [
+      "Deadly Demise D3"
+    ],
+    "faction": [
+      "Martial Ka’tah"
+    ],
+    "abilities": [
+      "Merciless Hunter: In your Shooting phase , each time this model makes an attack that targets an enemy unit that is Below Half-strength , add 1 to the Wound roll ."
+    ],
+    "stats": [
+      {
+        "stats": {
+          "M": "12",
+          "T": "8",
+          "Sv": "2+",
+          "W": "9",
+          "Ld": "6+",
+          "OC": "2"
+        }
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Twin arachnus blaze cannon",
+        "types": [
+          "devastating wounds",
+          "twin-linked"
+        ],
+        "range": "24",
+        "attacks": "8",
+        "skill": "2+",
+        "strength": "5",
+        "ap": "-1",
+        "damage": "1"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Armoured hull",
+        "types": [],
+        "range": "Melee",
+        "attacks": "3",
+        "skill": "4+",
+        "strength": "6",
+        "ap": "0",
+        "damage": "1"
+      }
+    ],
+    "faction_logo": "adeptus-custodes-FW"
+  },
+  {
+    "name": "Sagittarum Custodians",
+    "keywords": [
+      "INFANTRY",
+      "IMPERIUM"
+    ],
+    "core": [
+      "Deep Strike"
+    ],
+    "faction": [
+      "Martial Ka’tah"
+    ],
+    "abilities": [
+      "Saturation Volleys: In your Shooting phase , after this unit has shot, select one enemy unit (excluding MONSTERS and VEHICLES ) hit by one or more of those attacks. Until the start of your next turn, while this unit is on the battlefield, that enemy unit is suppressed. While a unit is suppressed, each time a model in that unit makes an attack, subtract 1 from the Hit roll .",
+      "Disintegration Beams: Once per battle, at the start of your Shooting phase , this unit can use this ability. If it does, until the end of the phase, ranged weapons equipped by models in this unit have the [DEVASTATING WOUNDS] ability."
+    ],
+    "stats": [
+      {
+        "stats": {
+          "M": "6",
+          "T": "6",
+          "Sv": "2+",
+          "W": "3",
+          "Ld": "6+",
+          "OC": "2"
+        }
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Adrastus bolt caliver",
+        "types": [
+          "sustained hits 1"
+        ],
+        "range": "36",
+        "attacks": "3",
+        "skill": "2+",
+        "strength": "5",
+        "ap": "-1",
+        "damage": "2"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Misericordia",
+        "types": [],
+        "range": "Melee",
+        "attacks": "4",
+        "skill": "2+",
+        "strength": "5",
+        "ap": "-2",
+        "damage": "1"
+      }
+    ],
+    "faction_logo": "adeptus-custodes-FW"
+  },
+  {
+    "name": "Telemon Heavy Dreadnought",
+    "keywords": [
+      "VEHICLE",
+      "WALKER",
+      "IMPERIUM"
+    ],
+    "core": [
+      "Deadly Demise D3"
+    ],
+    "faction": [
+      "Martial Ka’tah"
+    ],
+    "abilities": [
+      "Guardian Eternal: Each time an attack is allocated to this model, subtract 1 from the Damage characteristic of that attack.",
+      "Devoted to Destruction: If this model is equipped with 2 Telemon caestus weapons in addition to its armoured feet weapon, add 2 to the Attacks characteristic of those Telemon caestus weapons."
+    ],
+    "stats": [
+      {
+        "stats": {
+          "M": "8",
+          "T": "10",
+          "Sv": "2+",
+          "W": "12",
+          "Ld": "6+",
+          "OC": "4"
+        }
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Arachnus storm cannon",
+        "types": [
+          "devastating wounds"
+        ],
+        "range": "24",
+        "attacks": "12",
+        "skill": "2+",
+        "strength": "6",
+        "ap": "-1",
+        "damage": "1"
+      },
+      {
+        "name": "Iliastus accelerator culverin",
+        "types": [],
+        "range": "48",
+        "attacks": "4",
+        "skill": "2+",
+        "strength": "9",
+        "ap": "-1",
+        "damage": "3"
+      },
+      {
+        "name": "Spiculus bolt launcher",
+        "types": [
+          "blast"
+        ],
+        "range": "36",
+        "attacks": "D6+3",
+        "skill": "2+",
+        "strength": "5",
+        "ap": "0",
+        "damage": "1"
+      },
+      {
+        "name": "Twin plasma projector",
+        "types": [
+          "torrent",
+          "twin-linked"
+        ],
+        "range": "12",
+        "attacks": "D3",
+        "skill": "N/A",
+        "strength": "7",
+        "ap": "-2",
+        "damage": "1"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Armoured feet",
+        "types": [],
+        "range": "Melee",
+        "attacks": "5",
+        "skill": "2+",
+        "strength": "7",
+        "ap": "0",
+        "damage": "1"
+      },
+      {
+        "name": "Telemon caestus",
+        "types": [],
+        "range": "Melee",
+        "attacks": "5",
+        "skill": "2+",
+        "strength": "12",
+        "ap": "-2",
+        "damage": "3"
+      }
+    ],
+    "faction_logo": "adeptus-custodes-FW"
+  },
+  {
+    "name": "Venatari Custodians",
+    "keywords": [
+      "INFANTRY",
+      "FLY",
+      "IMPERIUM"
+    ],
+    "core": [
+      "Deep Strike"
+    ],
+    "faction": [
+      "Martial Ka’tah"
+    ],
+    "abilities": [
+      "Strike from the Skies: This unit is eligible to shoot and declare a charge in a turn in which it Fell Back .",
+      "Swooping Dive: Once per battle, you can target this unit with the Rapid Ingress Stratagem for 0CP, and can do so even if you have already targeted a different unit with that Stratagem this phase.",
+      "Tarsis Buckler: The bearer has a Wounds characteristic of 4."
+    ],
+    "stats": [
+      {
+        "stats": {
+          "M": "10",
+          "T": "6",
+          "Sv": "2+",
+          "W": "3",
+          "Ld": "6+",
+          "OC": "2"
+        }
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Kinetic destroyer",
+        "types": [
+          "pistol",
+          "sustained hits 1"
+        ],
+        "range": "12",
+        "attacks": "2",
+        "skill": "2+",
+        "strength": "6",
+        "ap": "-1",
+        "damage": "1"
+      },
+      {
+        "name": "Venatari lance",
+        "types": [
+          "assault"
+        ],
+        "range": "24",
+        "attacks": "2",
+        "skill": "2+",
+        "strength": "4",
+        "ap": "-1",
+        "damage": "2"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Tarsis buckler",
+        "types": [],
+        "range": "Melee",
+        "attacks": "5",
+        "skill": "2+",
+        "strength": "5",
+        "ap": "-2",
+        "damage": "1"
+      },
+      {
+        "name": "Venatari lance",
+        "types": [
+          "lance"
+        ],
+        "range": "Melee",
+        "attacks": "5",
+        "skill": "2+",
+        "strength": "7",
+        "ap": "-2",
+        "damage": "2"
+      }
+    ],
+    "faction_logo": "adeptus-custodes-FW"
+  }
+]
