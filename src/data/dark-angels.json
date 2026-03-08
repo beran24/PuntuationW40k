@@ -29,7 +29,9 @@
           "Sv": "3+",
           "W": "4",
           "Ld": "5+",
-          "OC": "1"
+          "OC": "1",
+          "Inv": "4+",
+          "BaseSize": "(⌀50mm)"
         }
       }
     ],
@@ -69,7 +71,7 @@
         "damage": "1"
       }
     ],
-    "faction_logo": "DarkAngels"
+    "faction_logo": "dark-angels"
   },
   {
     "name": "Azrael",
@@ -102,7 +104,9 @@
           "Sv": "2+",
           "W": "6",
           "Ld": "6+",
-          "OC": "1"
+          "OC": "1",
+          "Inv": "4+",
+          "BaseSize": "(⌀50mm)"
         }
       }
     ],
@@ -136,7 +140,7 @@
         "damage": "2"
       }
     ],
-    "faction_logo": "DarkAngels"
+    "faction_logo": "dark-angels"
   },
   {
     "name": "Belial",
@@ -168,7 +172,9 @@
           "Sv": "2+",
           "W": "6",
           "Ld": "6+",
-          "OC": "1"
+          "OC": "1",
+          "Inv": "4+",
+          "BaseSize": "(⌀50mm)"
         }
       }
     ],
@@ -201,7 +207,472 @@
         "damage": "2"
       }
     ],
-    "faction_logo": "DarkAngels"
+    "faction_logo": "dark-angels"
+  },
+  {
+    "name": "Ezekiel",
+    "keywords": [
+      "INFANTRY",
+      "CHARACTER",
+      "EPIC HERO",
+      "PSYKER",
+      "GRENADES",
+      "IMPERIUM",
+      "DEATHWING",
+      "LIBRARIAN"
+    ],
+    "core": [
+      "Leader"
+    ],
+    "faction": [
+      "Oath of Moment"
+    ],
+    "abilities": [
+      "Psychic Hood: While this model is leading a unit, models in that unit have the Feel No Pain 4+ ability against Psychic Attacks .",
+      "Engulfing Fear (Psychic): In your Shooting phase , you can select one enemy unit within 18\" of this model. That enemy unit must take a Battle-shock test .",
+      "Book of Salvation: While this model is leading a unit, add 1 to the Attacks characteristic of melee weapons equipped by models in that unit. When this model is destroyed, each friendly ADEPTUS ASTARTES unit within 6\" of this model must take a Battle-shock test ."
+    ],
+    "stats": [
+      {
+        "stats": {
+          "M": "6",
+          "T": "4",
+          "Sv": "2+",
+          "W": "4",
+          "Ld": "6+",
+          "OC": "1",
+          "Inv": "4+",
+          "BaseSize": "(⌀25mm)"
+        }
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "The Deliverer",
+        "types": [
+          "pistol",
+          "precision"
+        ],
+        "range": "12",
+        "attacks": "1",
+        "skill": "2+",
+        "strength": "4",
+        "ap": "-1",
+        "damage": "2"
+      },
+      {
+        "name": "Mind Wipe – witchfire",
+        "types": [
+          "devastating wounds",
+          "precision",
+          "psychic"
+        ],
+        "range": "12",
+        "attacks": "1",
+        "skill": "2+",
+        "strength": "6",
+        "ap": "-2",
+        "damage": "D6"
+      },
+      {
+        "name": "Mind Wipe – focused witchfire",
+        "types": [
+          "anti-character 4+",
+          "devastating wounds",
+          "hazardous",
+          "precision",
+          "psychic"
+        ],
+        "range": "12",
+        "attacks": "1",
+        "skill": "2+",
+        "strength": "6",
+        "ap": "-2",
+        "damage": "D6"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Traitor’s Bane",
+        "types": [
+          "anti-chaos 2+",
+          "psychic"
+        ],
+        "range": "Melee",
+        "attacks": "4",
+        "skill": "2+",
+        "strength": "6",
+        "ap": "-2",
+        "damage": "D3"
+      }
+    ],
+    "faction_logo": "dark-angels"
+  },
+  {
+    "name": "Lazarus",
+    "keywords": [
+      "INFANTRY",
+      "CHARACTER",
+      "EPIC HERO",
+      "GRENADES",
+      "IMPERIUM",
+      "DEATHWING",
+      "TACTICUS",
+      "CAPTAIN"
+    ],
+    "core": [
+      "Leader"
+    ],
+    "faction": [
+      "Oath of Moment"
+    ],
+    "abilities": [
+      "Intractable Will: While this model is leading a unit, each time a model in that unit is destroyed by a melee attack, if that model has not fought this phase, roll one D6. On a 4+, do not remove it from play; that destroyed model can fight after the attacking model’s unit has finished making its attacks, and is then removed from play.",
+      "The Spiritshield Helm: This model has the Feel No Pain 3+ ability against Psychic Attacks and mortal wounds ."
+    ],
+    "stats": [
+      {
+        "stats": {
+          "M": "6",
+          "T": "4",
+          "Sv": "3+",
+          "W": "5",
+          "Ld": "6+",
+          "OC": "1",
+          "Inv": "4+",
+          "BaseSize": "(⌀40mm)"
+        }
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Bolt pistol",
+        "types": [
+          "pistol"
+        ],
+        "range": "12",
+        "attacks": "1",
+        "skill": "2+",
+        "strength": "4",
+        "ap": "0",
+        "damage": "1"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Enmity’s Edge",
+        "types": [
+          "anti-psyker 2+"
+        ],
+        "range": "Melee",
+        "attacks": "6",
+        "skill": "2+",
+        "strength": "6",
+        "ap": "-3",
+        "damage": "2"
+      }
+    ],
+    "faction_logo": "dark-angels"
+  },
+  {
+    "name": "Lion El’jonson",
+    "keywords": [
+      "MONSTER",
+      "CHARACTER",
+      "EPIC HERO",
+      "IMPERIUM",
+      "PRIMARCH"
+    ],
+    "core": [
+      "Deep Strike",
+      "Fights First"
+    ],
+    "faction": [
+      "Oath of Moment"
+    ],
+    "abilities": [
+      "Primarch of the First Legion: At the start of your Command phase , select two Primarch of the First Legion abilities. Until the start of your next Command phase, this model has those abilities.",
+      "The Emperor’s Shield: Each time an attack is allocated to this model, if the Strength characteristic of that attack is greater than the Toughness characteristic of this model, subtract 1 from the Wound roll .",
+      "Dark Angels Bodyguard: While this model is within 3\" of one or more friendly ADEPTUS ASTARTES INFANTRY units, this model has the Lone Operative ability."
+    ],
+    "stats": [
+      {
+        "stats": {
+          "M": "8",
+          "T": "9",
+          "Sv": "2+",
+          "W": "10",
+          "Ld": "5+",
+          "OC": "4",
+          "Inv": "3+",
+          "BaseSize": "(⌀60mm)"
+        }
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Arma Luminis – bolt",
+        "types": [
+          "pistol"
+        ],
+        "range": "12",
+        "attacks": "4",
+        "skill": "2+",
+        "strength": "4",
+        "ap": "-1",
+        "damage": "2"
+      },
+      {
+        "name": "Arma Luminis – plasma",
+        "types": [
+          "pistol"
+        ],
+        "range": "12",
+        "attacks": "2",
+        "skill": "2+",
+        "strength": "8",
+        "ap": "-3",
+        "damage": "2"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Fealty – strike",
+        "types": [
+          "lethal hits"
+        ],
+        "range": "Melee",
+        "attacks": "8",
+        "skill": "2+",
+        "strength": "12",
+        "ap": "-4",
+        "damage": "4"
+      },
+      {
+        "name": "Fealty – sweep",
+        "types": [
+          "sustained hits 1"
+        ],
+        "range": "Melee",
+        "attacks": "16",
+        "skill": "2+",
+        "strength": "6",
+        "ap": "-3",
+        "damage": "2"
+      }
+    ],
+    "faction_logo": "dark-angels"
+  },
+  {
+    "name": "Ravenwing Command Squad",
+    "keywords": [
+      "MOUNTED",
+      "GRENADES",
+      "IMPERIUM",
+      "RAVENWING"
+    ],
+    "core": [
+      "Leader"
+    ],
+    "faction": [
+      "Oath of Moment"
+    ],
+    "abilities": [
+      "Narthecium: While this unit contains a Ravenwing Apothecary, in your Command phase , you can return 1 destroyed model (excluding CHARACTER and INVADER ATV models) to this unit.",
+      "Astartes Banner: While this unit contains an Ravenwing Ancient, add 1 to the Objective Control characteristic of models in this unit.",
+      "Honour or Death: While this unit contains a Ravenwing Champion, add 1 to Advance and Charge rolls made for this unit and you can target this unit with the Heroic Intervention Stratagem for 0CP."
+    ],
+    "stats": [
+      {
+        "stats": {
+          "M": "12",
+          "T": "5",
+          "Sv": "3+",
+          "W": "4",
+          "Ld": "6+",
+          "OC": "2",
+          "Inv": "5+",
+          "BaseSize": "(⌀75 x 42mm)"
+        }
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Astartes grenade launcher – frag",
+        "types": [
+          "blast"
+        ],
+        "range": "24",
+        "attacks": "D3",
+        "skill": "3+",
+        "strength": "4",
+        "ap": "0",
+        "damage": "1"
+      },
+      {
+        "name": "Astartes grenade launcher – krak",
+        "types": [],
+        "range": "24",
+        "attacks": "1",
+        "skill": "3+",
+        "strength": "9",
+        "ap": "-2",
+        "damage": "D3"
+      },
+      {
+        "name": "Bolt pistol",
+        "types": [
+          "pistol"
+        ],
+        "range": "12",
+        "attacks": "1",
+        "skill": "3+",
+        "strength": "4",
+        "ap": "0",
+        "damage": "1"
+      },
+      {
+        "name": "Plasma talon – standard",
+        "types": [
+          "rapid fire 1"
+        ],
+        "range": "18",
+        "attacks": "2",
+        "skill": "3+",
+        "strength": "7",
+        "ap": "-2",
+        "damage": "1"
+      },
+      {
+        "name": "Plasma talon – supercharge",
+        "types": [
+          "hazardous",
+          "rapid fire 1"
+        ],
+        "range": "18",
+        "attacks": "2",
+        "skill": "3+",
+        "strength": "8",
+        "ap": "-3",
+        "damage": "2"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Black Knight combat weapon",
+        "types": [
+          "devastating wounds"
+        ],
+        "range": "Melee",
+        "attacks": "3",
+        "skill": "3+",
+        "strength": "5",
+        "ap": "-2",
+        "damage": "1"
+      },
+      {
+        "name": "Master-crafted power weapon",
+        "types": [],
+        "range": "Melee",
+        "attacks": "6",
+        "skill": "2+",
+        "strength": "5",
+        "ap": "-2",
+        "damage": "2"
+      }
+    ],
+    "faction_logo": "dark-angels"
+  },
+  {
+    "name": "Sammael",
+    "keywords": [
+      "MOUNTED",
+      "CHARACTER",
+      "EPIC HERO",
+      "FLY",
+      "GRENADES",
+      "IMPERIUM",
+      "RAVENWING",
+      "CAPTAIN"
+    ],
+    "core": [
+      "Leader"
+    ],
+    "faction": [
+      "Oath of Moment"
+    ],
+    "abilities": [
+      "Grand Master of the Ravenwing: While this model is leading a unit, that unit is eligible to shoot and declare a charge in a turn in which it Advanced . If that unit is already eligible to shoot and declare a charge in a turn in which it Advanced, add 1 to Advance and Charge rolls made for that unit instead.",
+      "Cut Off Their Escape: Each time an enemy unit (excluding MONSTERS and VEHICLES ) within Engagement Range of this model’s unit is selected to Fall Back , models in that enemy unit must take Desperate Escape tests as if their unit was Battle-shocked . When doing so, if that enemy unit is also Battle-shocked by other means, subtract 1 from each of those Desperate Escape tests."
+    ],
+    "stats": [
+      {
+        "stats": {
+          "M": "12",
+          "T": "5",
+          "Sv": "3+",
+          "W": "7",
+          "Ld": "6+",
+          "OC": "2",
+          "Inv": "4+",
+          "BaseSize": "(⌀60mm flying base)"
+        }
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Bolt pistol",
+        "types": [
+          "pistol"
+        ],
+        "range": "12",
+        "attacks": "1",
+        "skill": "2+",
+        "strength": "4",
+        "ap": "0",
+        "damage": "1"
+      },
+      {
+        "name": "Master-crafted plasma cannon",
+        "types": [
+          "blast"
+        ],
+        "range": "36",
+        "attacks": "D3",
+        "skill": "2+",
+        "strength": "8",
+        "ap": "-3",
+        "damage": "2"
+      },
+      {
+        "name": "Twin storm bolter",
+        "types": [
+          "rapid fire 2",
+          "twin-linked"
+        ],
+        "range": "24",
+        "attacks": "2",
+        "skill": "2+",
+        "strength": "4",
+        "ap": "0",
+        "damage": "1"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "The Raven Sword",
+        "types": [
+          "sustained hits 2"
+        ],
+        "range": "Melee",
+        "attacks": "6",
+        "skill": "2+",
+        "strength": "6",
+        "ap": "-3",
+        "damage": "2"
+      }
+    ],
+    "faction_logo": "dark-angels"
   },
   {
     "name": "Deathwing Knights",
@@ -230,7 +701,9 @@
           "Sv": "2+",
           "W": "4",
           "Ld": "6+",
-          "OC": "1"
+          "OC": "1",
+          "Inv": "4+",
+          "BaseSize": "(⌀40mm)"
         }
       }
     ],
@@ -285,7 +758,7 @@
         "damage": "2"
       }
     ],
-    "faction_logo": "DarkAngels"
+    "faction_logo": "dark-angels"
   },
   {
     "name": "Deathwing Terminator Squad",
@@ -314,7 +787,9 @@
           "Sv": "2+",
           "W": "3",
           "Ld": "6+",
-          "OC": "1"
+          "OC": "1",
+          "Inv": "4+",
+          "BaseSize": "(⌀40mm)"
         }
       }
     ],
@@ -438,104 +913,7 @@
         "damage": "1"
       }
     ],
-    "faction_logo": "DarkAngels"
-  },
-  {
-    "name": "Ezekiel",
-    "keywords": [
-      "INFANTRY",
-      "CHARACTER",
-      "EPIC HERO",
-      "PSYKER",
-      "GRENADES",
-      "IMPERIUM",
-      "DEATHWING",
-      "LIBRARIAN"
-    ],
-    "core": [
-      "Leader"
-    ],
-    "faction": [
-      "Oath of Moment"
-    ],
-    "abilities": [
-      "Psychic Hood: While this model is leading a unit, models in that unit have the Feel No Pain 4+ ability against Psychic Attacks .",
-      "Engulfing Fear (Psychic): In your Shooting phase , you can select one enemy unit within 18\" of this model. That enemy unit must take a Battle-shock test .",
-      "Book of Salvation: While this model is leading a unit, add 1 to the Attacks characteristic of melee weapons equipped by models in that unit. When this model is destroyed, each friendly ADEPTUS ASTARTES unit within 6\" of this model must take a Battle-shock test ."
-    ],
-    "stats": [
-      {
-        "stats": {
-          "M": "6",
-          "T": "4",
-          "Sv": "2+",
-          "W": "4",
-          "Ld": "6+",
-          "OC": "1"
-        }
-      }
-    ],
-    "ranged_weapons": [
-      {
-        "name": "The Deliverer",
-        "types": [
-          "pistol",
-          "precision"
-        ],
-        "range": "12",
-        "attacks": "1",
-        "skill": "2+",
-        "strength": "4",
-        "ap": "-1",
-        "damage": "2"
-      },
-      {
-        "name": "Mind Wipe – witchfire",
-        "types": [
-          "devastating wounds",
-          "precision",
-          "psychic"
-        ],
-        "range": "12",
-        "attacks": "1",
-        "skill": "2+",
-        "strength": "6",
-        "ap": "-2",
-        "damage": "D6"
-      },
-      {
-        "name": "Mind Wipe – focused witchfire",
-        "types": [
-          "anti-character 4+",
-          "devastating wounds",
-          "hazardous",
-          "precision",
-          "psychic"
-        ],
-        "range": "12",
-        "attacks": "1",
-        "skill": "2+",
-        "strength": "6",
-        "ap": "-2",
-        "damage": "D6"
-      }
-    ],
-    "melee_weapons": [
-      {
-        "name": "Traitor’s Bane",
-        "types": [
-          "anti-chaos 2+",
-          "psychic"
-        ],
-        "range": "Melee",
-        "attacks": "4",
-        "skill": "2+",
-        "strength": "6",
-        "ap": "-2",
-        "damage": "D3"
-      }
-    ],
-    "faction_logo": "DarkAngels"
+    "faction_logo": "dark-angels"
   },
   {
     "name": "Inner Circle Companions",
@@ -561,7 +939,8 @@
           "Sv": "3+",
           "W": "3",
           "Ld": "6+",
-          "OC": "2"
+          "OC": "2",
+          "BaseSize": "(⌀40mm)"
         }
       }
     ],
@@ -605,7 +984,7 @@
         "damage": "1"
       }
     ],
-    "faction_logo": "DarkAngels"
+    "faction_logo": "dark-angels"
   },
   {
     "name": "Land Speeder Vengeance",
@@ -632,7 +1011,9 @@
           "Sv": "3+",
           "W": "10",
           "Ld": "6+",
-          "OC": "3"
+          "OC": "3",
+          "Inv": "5+",
+          "BaseSize": "(⌀60mm flying base)"
         }
       }
     ],
@@ -701,158 +1082,7 @@
         "damage": "1"
       }
     ],
-    "faction_logo": "DarkAngels"
-  },
-  {
-    "name": "Lazarus",
-    "keywords": [
-      "INFANTRY",
-      "CHARACTER",
-      "EPIC HERO",
-      "GRENADES",
-      "IMPERIUM",
-      "DEATHWING",
-      "TACTICUS",
-      "CAPTAIN"
-    ],
-    "core": [
-      "Leader"
-    ],
-    "faction": [
-      "Oath of Moment"
-    ],
-    "abilities": [
-      "Intractable Will: While this model is leading a unit, each time a model in that unit is destroyed by a melee attack, if that model has not fought this phase, roll one D6. On a 4+, do not remove it from play; that destroyed model can fight after the attacking model’s unit has finished making its attacks, and is then removed from play.",
-      "The Spiritshield Helm: This model has the Feel No Pain 3+ ability against Psychic Attacks and mortal wounds ."
-    ],
-    "stats": [
-      {
-        "stats": {
-          "M": "6",
-          "T": "4",
-          "Sv": "3+",
-          "W": "5",
-          "Ld": "6+",
-          "OC": "1"
-        }
-      }
-    ],
-    "ranged_weapons": [
-      {
-        "name": "Bolt pistol",
-        "types": [
-          "pistol"
-        ],
-        "range": "12",
-        "attacks": "1",
-        "skill": "2+",
-        "strength": "4",
-        "ap": "0",
-        "damage": "1"
-      }
-    ],
-    "melee_weapons": [
-      {
-        "name": "Enmity’s Edge",
-        "types": [
-          "anti-psyker 2+"
-        ],
-        "range": "Melee",
-        "attacks": "6",
-        "skill": "2+",
-        "strength": "6",
-        "ap": "-3",
-        "damage": "2"
-      }
-    ],
-    "faction_logo": "DarkAngels"
-  },
-  {
-    "name": "Lion El’jonson",
-    "keywords": [
-      "MONSTER",
-      "CHARACTER",
-      "EPIC HERO",
-      "IMPERIUM",
-      "PRIMARCH"
-    ],
-    "core": [
-      "Deep Strike",
-      "Fights First"
-    ],
-    "faction": [
-      "Oath of Moment"
-    ],
-    "abilities": [
-      "Primarch of the First Legion: At the start of your Command phase , select two Primarch of the First Legion abilities. Until the start of your next Command phase, this model has those abilities.",
-      "The Emperor’s Shield: Each time an attack is allocated to this model, if the Strength characteristic of that attack is greater than the Toughness characteristic of this model, subtract 1 from the Wound roll .",
-      "Dark Angels Bodyguard: While this model is within 3\" of one or more friendly ADEPTUS ASTARTES INFANTRY units, this model has the Lone Operative ability."
-    ],
-    "stats": [
-      {
-        "stats": {
-          "M": "8",
-          "T": "9",
-          "Sv": "2+",
-          "W": "10",
-          "Ld": "5+",
-          "OC": "4"
-        }
-      }
-    ],
-    "ranged_weapons": [
-      {
-        "name": "Arma Luminis – bolt",
-        "types": [
-          "pistol"
-        ],
-        "range": "12",
-        "attacks": "4",
-        "skill": "2+",
-        "strength": "4",
-        "ap": "-1",
-        "damage": "2"
-      },
-      {
-        "name": "Arma Luminis – plasma",
-        "types": [
-          "pistol"
-        ],
-        "range": "12",
-        "attacks": "2",
-        "skill": "2+",
-        "strength": "8",
-        "ap": "-3",
-        "damage": "2"
-      }
-    ],
-    "melee_weapons": [
-      {
-        "name": "Fealty – strike",
-        "types": [
-          "lethal hits"
-        ],
-        "range": "Melee",
-        "attacks": "8",
-        "skill": "2+",
-        "strength": "12",
-        "ap": "-4",
-        "damage": "4"
-      },
-      {
-        "name": "Fealty – sweep",
-        "types": [
-          "sustained hits 1"
-        ],
-        "range": "Melee",
-        "attacks": "16",
-        "skill": "2+",
-        "strength": "6",
-        "ap": "-3",
-        "damage": "2"
-      }
-    ],
-    "faction_logo": "DarkAngels"
+    "faction_logo": "dark-angels"
   },
   {
     "name": "Nephilim Jetfighter",
@@ -873,7 +1103,14 @@
     "abilities": [
       "Lightning-fast Manoeuvres: Each time a ranged attack targets this model, subtract 1 from the Hit roll . If that attack was made by a model that can Fly , subtract 1 from the Wound roll as well."
     ],
-    "stats": [],
+    "stats": [
+      {
+        "stats": {
+          "Inv": "5+",
+          "BaseSize": "(⌀120 x 92mm flying base)"
+        }
+      }
+    ],
     "ranged_weapons": [
       {
         "name": "Avenger mega bolter",
@@ -935,7 +1172,7 @@
         "damage": "1"
       }
     ],
-    "faction_logo": "DarkAngels"
+    "faction_logo": "dark-angels"
   },
   {
     "name": "Ravenwing Black Knights",
@@ -960,7 +1197,9 @@
           "Sv": "3+",
           "W": "3",
           "Ld": "6+",
-          "OC": "2"
+          "OC": "2",
+          "Inv": "5+",
+          "BaseSize": "(⌀75 x 42mm)"
         }
       }
     ],
@@ -1039,125 +1278,7 @@
         "damage": "1"
       }
     ],
-    "faction_logo": "DarkAngels"
-  },
-  {
-    "name": "Ravenwing Command Squad",
-    "keywords": [
-      "MOUNTED",
-      "GRENADES",
-      "IMPERIUM",
-      "RAVENWING"
-    ],
-    "core": [
-      "Leader"
-    ],
-    "faction": [
-      "Oath of Moment"
-    ],
-    "abilities": [
-      "Narthecium: While this unit contains a Ravenwing Apothecary, in your Command phase , you can return 1 destroyed model (excluding CHARACTER and INVADER ATV models) to this unit.",
-      "Astartes Banner: While this unit contains an Ravenwing Ancient, add 1 to the Objective Control characteristic of models in this unit.",
-      "Honour or Death: While this unit contains a Ravenwing Champion, add 1 to Advance and Charge rolls made for this unit and you can target this unit with the Heroic Intervention Stratagem for 0CP."
-    ],
-    "stats": [
-      {
-        "stats": {
-          "M": "12",
-          "T": "5",
-          "Sv": "3+",
-          "W": "4",
-          "Ld": "6+",
-          "OC": "2"
-        }
-      }
-    ],
-    "ranged_weapons": [
-      {
-        "name": "Astartes grenade launcher – frag",
-        "types": [
-          "blast"
-        ],
-        "range": "24",
-        "attacks": "D3",
-        "skill": "3+",
-        "strength": "4",
-        "ap": "0",
-        "damage": "1"
-      },
-      {
-        "name": "Astartes grenade launcher – krak",
-        "types": [],
-        "range": "24",
-        "attacks": "1",
-        "skill": "3+",
-        "strength": "9",
-        "ap": "-2",
-        "damage": "D3"
-      },
-      {
-        "name": "Bolt pistol",
-        "types": [
-          "pistol"
-        ],
-        "range": "12",
-        "attacks": "1",
-        "skill": "3+",
-        "strength": "4",
-        "ap": "0",
-        "damage": "1"
-      },
-      {
-        "name": "Plasma talon – standard",
-        "types": [
-          "rapid fire 1"
-        ],
-        "range": "18",
-        "attacks": "2",
-        "skill": "3+",
-        "strength": "7",
-        "ap": "-2",
-        "damage": "1"
-      },
-      {
-        "name": "Plasma talon – supercharge",
-        "types": [
-          "hazardous",
-          "rapid fire 1"
-        ],
-        "range": "18",
-        "attacks": "2",
-        "skill": "3+",
-        "strength": "8",
-        "ap": "-3",
-        "damage": "2"
-      }
-    ],
-    "melee_weapons": [
-      {
-        "name": "Black Knight combat weapon",
-        "types": [
-          "devastating wounds"
-        ],
-        "range": "Melee",
-        "attacks": "3",
-        "skill": "3+",
-        "strength": "5",
-        "ap": "-2",
-        "damage": "1"
-      },
-      {
-        "name": "Master-crafted power weapon",
-        "types": [],
-        "range": "Melee",
-        "attacks": "6",
-        "skill": "2+",
-        "strength": "5",
-        "ap": "-2",
-        "damage": "2"
-      }
-    ],
-    "faction_logo": "DarkAngels"
+    "faction_logo": "dark-angels"
   },
   {
     "name": "Ravenwing Dark Talon",
@@ -1178,7 +1299,14 @@
     "abilities": [
       "Stasis Bomb: Once per turn, one model from your army with this ability can use it after it ends a Normal move . If it does, you can select one enemy unit (excluding AIRCRAFT ) that model moved over this phase. That unit suffers D3 mortal wounds and you must roll one D6: on a 1-3, that unit cannot Advance or Fall Back in your opponent’s next Movement phase ; on a 4-6, that unit must Remain Stationary in your opponent’s next Movement phase. Each model can only use this ability once per battle."
     ],
-    "stats": [],
+    "stats": [
+      {
+        "stats": {
+          "Inv": "5+",
+          "BaseSize": "(⌀120 x 92mm flying base)"
+        }
+      }
+    ],
     "ranged_weapons": [
       {
         "name": "Hurricane bolter",
@@ -1219,7 +1347,7 @@
         "damage": "1"
       }
     ],
-    "faction_logo": "DarkAngels"
+    "faction_logo": "dark-angels"
   },
   {
     "name": "Ravenwing Darkshroud",
@@ -1246,7 +1374,9 @@
           "Sv": "3+",
           "W": "10",
           "Ld": "6+",
-          "OC": "3"
+          "OC": "3",
+          "Inv": "5+",
+          "BaseSize": "(⌀60mm flying base)"
         }
       }
     ],
@@ -1288,95 +1418,6 @@
         "damage": "1"
       }
     ],
-    "faction_logo": "DarkAngels"
-  },
-  {
-    "name": "Sammael",
-    "keywords": [
-      "MOUNTED",
-      "CHARACTER",
-      "EPIC HERO",
-      "FLY",
-      "GRENADES",
-      "IMPERIUM",
-      "RAVENWING",
-      "CAPTAIN"
-    ],
-    "core": [
-      "Leader"
-    ],
-    "faction": [
-      "Oath of Moment"
-    ],
-    "abilities": [
-      "Grand Master of the Ravenwing: While this model is leading a unit, that unit is eligible to shoot and declare a charge in a turn in which it Advanced . If that unit is already eligible to shoot and declare a charge in a turn in which it Advanced, add 1 to Advance and Charge rolls made for that unit instead.",
-      "Cut Off Their Escape: Each time an enemy unit (excluding MONSTERS and VEHICLES ) within Engagement Range of this model’s unit is selected to Fall Back , models in that enemy unit must take Desperate Escape tests as if their unit was Battle-shocked . When doing so, if that enemy unit is also Battle-shocked by other means, subtract 1 from each of those Desperate Escape tests."
-    ],
-    "stats": [
-      {
-        "stats": {
-          "M": "12",
-          "T": "5",
-          "Sv": "3+",
-          "W": "7",
-          "Ld": "6+",
-          "OC": "2"
-        }
-      }
-    ],
-    "ranged_weapons": [
-      {
-        "name": "Bolt pistol",
-        "types": [
-          "pistol"
-        ],
-        "range": "12",
-        "attacks": "1",
-        "skill": "2+",
-        "strength": "4",
-        "ap": "0",
-        "damage": "1"
-      },
-      {
-        "name": "Master-crafted plasma cannon",
-        "types": [
-          "blast"
-        ],
-        "range": "36",
-        "attacks": "D3",
-        "skill": "2+",
-        "strength": "8",
-        "ap": "-3",
-        "damage": "2"
-      },
-      {
-        "name": "Twin storm bolter",
-        "types": [
-          "rapid fire 2",
-          "twin-linked"
-        ],
-        "range": "24",
-        "attacks": "2",
-        "skill": "2+",
-        "strength": "4",
-        "ap": "0",
-        "damage": "1"
-      }
-    ],
-    "melee_weapons": [
-      {
-        "name": "The Raven Sword",
-        "types": [
-          "sustained hits 2"
-        ],
-        "range": "Melee",
-        "attacks": "6",
-        "skill": "2+",
-        "strength": "6",
-        "ap": "-3",
-        "damage": "2"
-      }
-    ],
-    "faction_logo": "DarkAngels"
+    "faction_logo": "dark-angels"
   }
 ]

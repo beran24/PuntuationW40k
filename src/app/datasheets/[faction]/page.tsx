@@ -16,6 +16,7 @@ import spaceWolvesData from '@/data/space-wolves.json';
 import bloodAngelsData from '@/data/blood-angels.json';
 import adeptusCustodesData from '@/data/adeptus-custodes.json';
 import adeptusCustodesFwData from '@/data/adeptus-custodes-fw.json';
+import tyranidsFwData from '@/data/tyranids-fw.json';
 
 // Helper function to merge and sort units with faction tagging
 const mergeUnits = (
@@ -38,7 +39,12 @@ const mergeUnits = (
 const factionData: Record<string, { name: string; units: Unit[] }> = {
   tyranids: {
     name: 'Tyranids',
-    units: tyranidsData as Unit[],
+    units: mergeUnits(
+      'Tyranids',
+      tyranidsData as Unit[],
+      'Tyranids FW',
+      tyranidsFwData as Unit[]
+    ),
   },
   'world-eaters': {
     name: 'World Eaters',
@@ -206,7 +212,7 @@ export default function DatasheetPage() {
                 )}
                 <span>
                   {selectedUnit.name}
-                  {selectedUnit.variant ? ` - ${selectedUnit.variant}` : ''}
+                  {selectedUnit.variant ? ` ${selectedUnit.variant}` : ''}
                 </span>
               </div>
               <span className="text-gray-600">▼</span>
@@ -237,7 +243,7 @@ export default function DatasheetPage() {
                     )}
                     <span className="text-sm">
                       {unit.name}
-                      {unit.variant ? ` - ${unit.variant}` : ''}
+                      {unit.variant ? ` ${unit.variant}` : ''}
                       {unit.sourceFaction ? ` [${unit.sourceFaction}]` : ''}
                     </span>
                   </button>

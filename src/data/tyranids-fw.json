@@ -1,0 +1,142 @@
+[
+  {
+    "name": "Harridan",
+    "keywords": [
+      "MONSTER",
+      "TITANIC",
+      "FLY",
+      "AIRCRAFT",
+      "TRANSPORT",
+      "GREAT DEVOURER"
+    ],
+    "core": [
+      "Deadly Demise 2D6",
+      "Hover"
+    ],
+    "faction": [
+      "Synapse"
+    ],
+    "abilities": [
+      "Frenzied Metabolism: Each time this model is selected to shoot, you can use this ability. If you do, until the end of the phase, each time this model makes an attack, add 1 to the Wound roll . After resolving those attacks, roll one D6: on a 2+, this model suffers D3 mortal wounds ."
+    ],
+    "stats": [
+      {
+        "stats": {
+          "BaseSize": "(⌀120 x 92mm flying base)"
+        }
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Dire bio-cannon",
+        "types": [
+          "blast"
+        ],
+        "range": "48",
+        "attacks": "D6+6",
+        "skill": "3+",
+        "strength": "10",
+        "ap": "-3",
+        "damage": "3"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Gargantuan scything talons",
+        "types": [],
+        "range": "Melee",
+        "attacks": "6",
+        "skill": "3+",
+        "strength": "14",
+        "ap": "-2",
+        "damage": "D6"
+      }
+    ],
+    "faction_logo": "tyranids-FW"
+  },
+  {
+    "name": "Hierophant",
+    "keywords": [
+      "MONSTER",
+      "TITANIC",
+      "TRANSPORT",
+      "GREAT DEVOURER"
+    ],
+    "core": [
+      "Deadly Demise 2D6"
+    ],
+    "faction": [
+      "Synapse"
+    ],
+    "abilities": [
+      "Apex-beast: Each time this model makes an attack that targets a unit that is Battle-shocked , add 1 to the Hit roll .",
+      "Stalking Forward: Each time this model makes a Normal , Advance or Fall Back move, it can move over models (excluding TITANIC models) and terrain features that are 4\" or less in height as if they were not there."
+    ],
+    "stats": [
+      {
+        "stats": {
+          "M": "12",
+          "T": "14",
+          "Sv": "2+",
+          "W": "30",
+          "Ld": "8+",
+          "OC": "12",
+          "Inv": "5+",
+          "BaseSize": "(⌀Use model)"
+        }
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Bio-plasma torrent",
+        "types": [
+          "assault",
+          "torrent"
+        ],
+        "range": "12",
+        "attacks": "3D6",
+        "skill": "N/A",
+        "strength": "7",
+        "ap": "-2",
+        "damage": "1"
+      },
+      {
+        "name": "Dire bio-cannon",
+        "types": [
+          "blast"
+        ],
+        "range": "48",
+        "attacks": "D6+6",
+        "skill": "3+",
+        "strength": "10",
+        "ap": "-3",
+        "damage": "3"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Lashwhip pods",
+        "types": [
+          "extra attacks"
+        ],
+        "range": "Melee",
+        "attacks": "10",
+        "skill": "3+",
+        "strength": "5",
+        "ap": "-1",
+        "damage": "1"
+      },
+      {
+        "name": "Titanic scything talons",
+        "types": [],
+        "range": "Melee",
+        "attacks": "8",
+        "skill": "3+",
+        "strength": "20",
+        "ap": "-2",
+        "damage": "D6+1"
+      }
+    ],
+    "faction_logo": "tyranids-FW"
+  }
+]

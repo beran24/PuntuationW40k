@@ -1,6 +1,10 @@
 'use client';
 
 type Stats = Record<string, string>;
+type UnitStatBlock = {
+  stats: Stats;
+  model_name?: string;
+};
 
 interface Weapon {
   name: string;
@@ -20,13 +24,18 @@ export interface Unit {
   core?: string[];
   faction?: string[];
   abilities?: string[];
-  stats?: Array<{ stats: Stats }>;
+  stats?: UnitStatBlock[];
   ranged_weapons?: Weapon[];
   melee_weapons?: Weapon[];
   sourceFaction?: string;
 }
 
 export default function UnitDisplay({ unit }: { unit: Unit }) {
+  const formatInvSave = (inv?: string) => {
+    if (!inv) return '';
+    return `(${inv}+)`;
+  };
+
   if (!unit) {
     return (
       <div className="text-center py-8 text-gray-400">
@@ -45,7 +54,7 @@ export default function UnitDisplay({ unit }: { unit: Unit }) {
           {unit.stats && unit.stats.length > 0 && (
             <div className="bg-custom-beige rounded p-4">
               <h3 className="text-lg font-bold mb-3 text-black">Stats</h3>
-              <table className="w-full text-sm text-black table-fixed">
+              <table className="w-full text-sm leading-normal text-black table-fixed">
                 <colgroup>
                   <col className="w-[40%]" />
                   <col className="w-[10%]" />
@@ -71,7 +80,12 @@ export default function UnitDisplay({ unit }: { unit: Unit }) {
                     <tr key={idx} className="border-t border-gray-300">
                       <td className="px-3 py-2">
                         <div className="flex flex-col">
-                          <p className="font-bold truncate">{unit.name}</p>
+                          <p className="font-bold truncate">
+                            {statBlock.model_name ?? unit.name}
+                            {statBlock.stats.BaseSize
+                              ? ` ${statBlock.stats.BaseSize}`
+                              : ''}
+                          </p>
                           {unit.variant && (
                             <p className="text-xs text-gray-600 truncate">
                               {unit.variant}
@@ -86,7 +100,9 @@ export default function UnitDisplay({ unit }: { unit: Unit }) {
                         {statBlock.stats.T ?? '-'}
                       </td>
                       <td className="px-2 py-2 text-center whitespace-nowrap">
-                        {statBlock.stats.Sv ?? '-'}
+                        {statBlock.stats.Sv
+                          ? `${statBlock.stats.Sv}${statBlock.stats.Inv ? ` ${formatInvSave(statBlock.stats.Inv)}` : ''}`
+                          : '-'}
                       </td>
                       <td className="px-2 py-2 text-center whitespace-nowrap">
                         {statBlock.stats.W ?? '-'}
@@ -111,7 +127,7 @@ export default function UnitDisplay({ unit }: { unit: Unit }) {
                 Ranged Weapons
               </h3>
               <div className="overflow-x-auto">
-                <table className="w-full text-xs text-black table-fixed">
+                <table className="w-full text-sm leading-normal text-black table-fixed">
                   <colgroup>
                     <col className="w-[40%]" />
                     <col className="w-[10%]" />
@@ -124,12 +140,12 @@ export default function UnitDisplay({ unit }: { unit: Unit }) {
                   <thead>
                     <tr className="border-b-2 border-custom-red">
                       <th className="px-3 py-2 text-left font-bold">Weapon</th>
-                      <th className="px-2 py-2 text-center font-bold">Rng</th>
-                      <th className="px-2 py-2 text-center font-bold">Att</th>
-                      <th className="px-2 py-2 text-center font-bold">Skl</th>
-                      <th className="px-2 py-2 text-center font-bold">Str</th>
+                      <th className="px-2 py-2 text-center font-bold">R</th>
+                      <th className="px-2 py-2 text-center font-bold">A</th>
+                      <th className="px-2 py-2 text-center font-bold">BS</th>
+                      <th className="px-2 py-2 text-center font-bold">S</th>
                       <th className="px-2 py-2 text-center font-bold">AP</th>
-                      <th className="px-2 py-2 text-center font-bold">Dmg</th>
+                      <th className="px-2 py-2 text-center font-bold">D</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -183,7 +199,7 @@ export default function UnitDisplay({ unit }: { unit: Unit }) {
                 Melee Weapons
               </h3>
               <div className="overflow-x-auto">
-                <table className="w-full text-xs text-black table-fixed">
+                <table className="w-full text-sm leading-normal text-black table-fixed">
                   <colgroup>
                     <col className="w-[40%]" />
                     <col className="w-[10%]" />
@@ -196,12 +212,12 @@ export default function UnitDisplay({ unit }: { unit: Unit }) {
                   <thead>
                     <tr className="border-b-2 border-custom-green">
                       <th className="px-3 py-2 text-left font-bold">Weapon</th>
-                      <th className="px-2 py-2 text-center font-bold">Rng</th>
-                      <th className="px-2 py-2 text-center font-bold">Att</th>
-                      <th className="px-2 py-2 text-center font-bold">Skl</th>
-                      <th className="px-2 py-2 text-center font-bold">Str</th>
+                      <th className="px-2 py-2 text-center font-bold">R</th>
+                      <th className="px-2 py-2 text-center font-bold">A</th>
+                      <th className="px-2 py-2 text-center font-bold">WS</th>
+                      <th className="px-2 py-2 text-center font-bold">S</th>
                       <th className="px-2 py-2 text-center font-bold">AP</th>
-                      <th className="px-2 py-2 text-center font-bold">Dmg</th>
+                      <th className="px-2 py-2 text-center font-bold">D</th>
                     </tr>
                   </thead>
                   <tbody>

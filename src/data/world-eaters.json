@@ -29,7 +29,9 @@
           "Sv": "2+",
           "W": "16",
           "Ld": "5+",
-          "OC": "6"
+          "OC": "6",
+          "Inv": "4+",
+          "BaseSize": "(⌀100mm)"
         }
       }
     ],
@@ -56,182 +58,6 @@
         "attacks": "16",
         "skill": "2+",
         "strength": "7",
-        "ap": "-2",
-        "damage": "2"
-      }
-    ]
-  },
-  {
-    "name": "Blood Slaughterer",
-    "keywords": [
-      "VEHICLE",
-      "WALKER",
-      "CHAOS",
-      "KHORNE",
-      "DAEMON"
-    ],
-    "core": [
-      "Deadly Demise D3"
-    ],
-    "faction": [
-      "Blessings of Khorne"
-    ],
-    "abilities": [
-      "Scuttling Gait: Each time this unit Advances , do not make an Advance roll for it. Instead, until the end of the phase, add 6\" to the Move characteristic of models in this unit."
-    ],
-    "stats": [
-      {
-        "stats": {
-          "M": "12",
-          "T": "9",
-          "Sv": "3+",
-          "W": "10",
-          "Ld": "6+",
-          "OC": "3"
-        }
-      }
-    ],
-    "ranged_weapons": [
-      {
-        "name": "Impaler harpoon",
-        "types": [
-          "anti-monster 2+",
-          "anti-vehicle 2+"
-        ],
-        "range": "12",
-        "attacks": "1",
-        "skill": "3+",
-        "strength": "12",
-        "ap": "-2",
-        "damage": "3"
-      }
-    ],
-    "melee_weapons": [
-      {
-        "name": "Slaughter blade",
-        "types": [],
-        "range": "Melee",
-        "attacks": "5",
-        "skill": "3+",
-        "strength": "12",
-        "ap": "-3",
-        "damage": "3"
-      },
-      {
-        "name": "Twin slaughter blade",
-        "types": [
-          "twin-linked"
-        ],
-        "range": "Melee",
-        "attacks": "5",
-        "skill": "3+",
-        "strength": "12",
-        "ap": "-3",
-        "damage": "3"
-      }
-    ]
-  },
-  {
-    "name": "Bloodcrushers",
-    "keywords": [
-      "MOUNTED",
-      "CHAOS",
-      "DAEMON",
-      "KHORNE",
-      "SUMMONED"
-    ],
-    "core": [
-      "Deep Strike"
-    ],
-    "faction": [
-      "Pact of Blood"
-    ],
-    "abilities": [
-      "Brass Stampede: Each time this unit ends a Charge move , select one enemy unit within Engagement Range of this unit and roll one D6 for each model in this unit: for each 4+, that enemy unit suffers D3 mortal wounds .",
-      "Daemonic Icon: Models in the bearer’s unit have a Leadership characteristic of 6+.",
-      "Instrument of Chaos: Add 1 to Charge rolls made for the bearer’s unit."
-    ],
-    "stats": [
-      {
-        "stats": {
-          "M": "10",
-          "T": "7",
-          "Sv": "3+",
-          "W": "4",
-          "Ld": "7+",
-          "OC": "2"
-        }
-      }
-    ],
-    "ranged_weapons": [],
-    "melee_weapons": [
-      {
-        "name": "Hellblade",
-        "types": [],
-        "range": "Melee",
-        "attacks": "2",
-        "skill": "3+",
-        "strength": "5",
-        "ap": "-2",
-        "damage": "2"
-      },
-      {
-        "name": "Bladed horn",
-        "types": [
-          "extra attacks",
-          "lance"
-        ],
-        "range": "Melee",
-        "attacks": "4",
-        "skill": "4+",
-        "strength": "6",
-        "ap": "-1",
-        "damage": "1"
-      }
-    ]
-  },
-  {
-    "name": "Bloodletters",
-    "keywords": [
-      "INFANTRY",
-      "BATTLELINE",
-      "CHAOS",
-      "DAEMON",
-      "KHORNE",
-      "SUMMONED"
-    ],
-    "core": [
-      "Deep Strike"
-    ],
-    "faction": [
-      "Pact of Blood"
-    ],
-    "abilities": [
-      "Bane of Cowards: Each time an enemy unit (excluding MONSTERS and VEHICLES ) within Engagement Range of one or more units from your army with this ability Falls Back , models in that enemy unit must take Desperate Escape tests . When doing so, if that enemy unit is also Battle-shocked , subtract 1 from each of those Desperate Escape tests.",
-      "Daemonic Icon: Models in the bearer’s unit have a Leadership characteristic of 6+.",
-      "Instrument of Chaos: Add 1 to Charge rolls made for the bearer’s unit."
-    ],
-    "stats": [
-      {
-        "stats": {
-          "M": "8",
-          "T": "4",
-          "Sv": "7+",
-          "W": "1",
-          "Ld": "7+",
-          "OC": "1"
-        }
-      }
-    ],
-    "ranged_weapons": [],
-    "melee_weapons": [
-      {
-        "name": "Hellblade",
-        "types": [],
-        "range": "Melee",
-        "attacks": "2",
-        "skill": "3+",
-        "strength": "5",
         "ap": "-2",
         "damage": "2"
       }
@@ -267,7 +93,9 @@
           "Sv": "3+",
           "W": "18",
           "Ld": "6+",
-          "OC": "5"
+          "OC": "5",
+          "Inv": "4+",
+          "BaseSize": "(⌀120 x 92mm)"
         }
       }
     ],
@@ -352,103 +180,783 @@
     ]
   },
   {
-    "name": "Cerberus",
+    "name": "Daemon Prince of Khorne",
     "keywords": [
-      "VEHICLE",
+      "MONSTER",
+      "CHARACTER",
       "CHAOS",
       "KHORNE",
-      "SMOKE"
+      "DAEMON",
+      "DAEMON PRINCE"
     ],
     "core": [
-      "Deadly Demise D6"
+      "Deadly Demise D3"
     ],
     "faction": [
       "Blessings of Khorne"
     ],
     "abilities": [
-      "Atomantic Arc-reactor: Each time this unit shoots its Cerberus neutron pulse array in your Shooting phase , provided it Remained Stationary this turn, that weapon has the [LETHAL HITS] ability."
+      "Lord of Murder: While this model is within 3\" of one or more friendly WORLD EATERS INFANTRY units, this model has the Lone Operative ability.",
+      "Devastating Assault: Each time this model makes a Charge move , until the end of the turn, its melee weapons have the [DEVASTATING WOUNDS] ability.",
+      "Direct the Slaughter: Once per battle round , one model from your army with this ability can use it when a friendly WORLD EATERS unit within 12\" of that model is targeted with a Stratagem . If it does, reduce the CP cost of that usage of that Stratagem by 1CP."
     ],
     "stats": [
       {
         "stats": {
           "M": "10",
-          "T": "12",
+          "T": "10",
           "Sv": "2+",
-          "W": "18",
+          "W": "10",
           "Ld": "6+",
-          "OC": "6"
+          "OC": "3",
+          "Inv": "4+",
+          "BaseSize": "(⌀60mm)"
         }
       }
     ],
     "ranged_weapons": [
       {
-        "name": "Cerberus neutron pulse array",
+        "name": "Infernal cannon",
         "types": [
-          "twin-linked"
+          "rapid fire 1"
         ],
-        "range": "48",
-        "attacks": "3",
-        "skill": "3+",
-        "strength": "16",
-        "ap": "-4",
-        "damage": "D6+3"
-      },
-      {
-        "name": "Heavy bolter",
-        "types": [
-          "sustained hits 1"
-        ],
-        "range": "36",
+        "range": "24",
         "attacks": "3",
         "skill": "3+",
         "strength": "5",
         "ap": "-1",
         "damage": "2"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Hellforged weapons – strike",
+        "types": [],
+        "range": "Melee",
+        "attacks": "8",
+        "skill": "2+",
+        "strength": "8",
+        "ap": "-2",
+        "damage": "3"
       },
       {
-        "name": "Heavy flamer",
+        "name": "Hellforged weapons – sweep",
+        "types": [],
+        "range": "Melee",
+        "attacks": "16",
+        "skill": "2+",
+        "strength": "6",
+        "ap": "-1",
+        "damage": "1"
+      }
+    ]
+  },
+  {
+    "name": "Daemon Prince of Khorne",
+    "variant": "with Wings",
+    "keywords": [
+      "MONSTER",
+      "CHARACTER",
+      "FLY",
+      "CHAOS",
+      "KHORNE",
+      "DAEMON",
+      "DAEMON PRINCE"
+    ],
+    "core": [
+      "Deadly Demise D3",
+      "Deep Strike"
+    ],
+    "faction": [
+      "Blessings of Khorne"
+    ],
+    "abilities": [
+      "Bloodied Terror: At the start of the Fight phase , each enemy unit within Engagement Range of this model must take a Battle-shock test , subtracting 1 from that test if that enemy unit is Below Half-strength .",
+      "Swooping Predator: Each time this model ends a Normal or Advance move , you can select one enemy unit that it moved over during that move and roll six D6: for each 4+, that enemy unit suffers 1 mortal wound ."
+    ],
+    "stats": [
+      {
+        "stats": {
+          "M": "14",
+          "T": "9",
+          "Sv": "2+",
+          "W": "10",
+          "Ld": "6+",
+          "OC": "3",
+          "Inv": "4+",
+          "BaseSize": "(⌀60mm)"
+        }
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Infernal cannon",
         "types": [
-          "torrent",
-          "ignores cover"
+          "rapid fire 1"
+        ],
+        "range": "24",
+        "attacks": "3",
+        "skill": "3+",
+        "strength": "5",
+        "ap": "-1",
+        "damage": "2"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Hellforged weapons – strike",
+        "types": [],
+        "range": "Melee",
+        "attacks": "8",
+        "skill": "2+",
+        "strength": "8",
+        "ap": "-2",
+        "damage": "3"
+      },
+      {
+        "name": "Hellforged weapons – sweep",
+        "types": [],
+        "range": "Melee",
+        "attacks": "16",
+        "skill": "2+",
+        "strength": "6",
+        "ap": "-1",
+        "damage": "1"
+      }
+    ]
+  },
+  {
+    "name": "Khârn The Betrayer",
+    "keywords": [
+      "INFANTRY",
+      "CHARACTER",
+      "EPIC HERO",
+      "GRENADES",
+      "CHAOS",
+      "KHORNE"
+    ],
+    "core": [
+      "Leader"
+    ],
+    "faction": [
+      "Blessings of Khorne"
+    ],
+    "abilities": [
+      "Legendary Killer: While this model is leading a unit, each time a model in that unit makes a melee attack, re-roll a Hit roll of 1 and re-roll a Wound roll of 1.",
+      "The Betrayer: At the end of your Charge phase , if this model is leading a unit and that unit is not within Engagement Range of one or more enemy units, you must take a Leadership test for this model. If that test is failed, one Bodyguard model in that unit is destroyed.",
+      "Berzerker Frenzy: The first time this model is destroyed, at the end of the phase, roll one D6: on a 2+, set this model back up on the battlefield as close as possible to where it was destroyed and not within Engagement Range of one or more enemy units, with 3 wounds remaining."
+    ],
+    "stats": [
+      {
+        "stats": {
+          "M": "8",
+          "T": "4",
+          "Sv": "3+",
+          "W": "5",
+          "Ld": "6+",
+          "OC": "1",
+          "Inv": "4+",
+          "BaseSize": "(⌀40mm)"
+        }
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Plasma pistol – standard",
+        "types": [
+          "pistol"
         ],
         "range": "12",
-        "attacks": "D6",
+        "attacks": "1",
+        "skill": "3+",
+        "strength": "7",
+        "ap": "-2",
+        "damage": "1"
+      },
+      {
+        "name": "Plasma pistol – supercharge",
+        "types": [
+          "hazardous",
+          "pistol"
+        ],
+        "range": "12",
+        "attacks": "1",
+        "skill": "3+",
+        "strength": "8",
+        "ap": "-3",
+        "damage": "2"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Gorechild",
+        "types": [],
+        "range": "Melee",
+        "attacks": "8",
+        "skill": "2+",
+        "strength": "7",
+        "ap": "-2",
+        "damage": "3"
+      }
+    ]
+  },
+  {
+    "name": "Lord Invocatus",
+    "keywords": [
+      "MOUNTED",
+      "CHARACTER",
+      "EPIC HERO",
+      "CHAOS",
+      "KHORNE"
+    ],
+    "core": [
+      "Leader",
+      "Deep Strike",
+      "Scouts 6\""
+    ],
+    "faction": [
+      "Blessings of Khorne"
+    ],
+    "abilities": [
+      "Fire Riders: While this model is leading a unit, models in that unit have the Deep Strike ability and each time a model in that unit makes a Normal , Advance , Fall Back or Charge move , it can move horizontally through models and terrain features . When making a Normal, Advance or Fall Back move, models in that unit can move within Engagement Range of enemy models, but cannot end that move within Engagement Range of them and any Desperate Escape test is automatically passed.",
+      "Bloody Stampede: Each time this model’s unit ends a Charge move , select one enemy unit within Engagement Range of this model, then roll one D6: on a 2-3, that enemy unit suffers 1 mortal wound ; on a 4-5, that enemy unit suffers D3 mortal wounds; on a 6, that enemy unit suffers D3+3 mortal wounds."
+    ],
+    "stats": [
+      {
+        "stats": {
+          "M": "10",
+          "T": "6",
+          "Sv": "3+",
+          "W": "8",
+          "Ld": "6+",
+          "OC": "2",
+          "Inv": "4+",
+          "BaseSize": "(⌀90 x 52mm)"
+        }
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Bolt pistol",
+        "types": [
+          "pistol"
+        ],
+        "range": "12",
+        "attacks": "1",
+        "skill": "3+",
+        "strength": "4",
+        "ap": "0",
+        "damage": "1"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Coward’s Bane",
+        "types": [
+          "devastating wounds"
+        ],
+        "range": "Melee",
+        "attacks": "7",
+        "skill": "2+",
+        "strength": "6",
+        "ap": "-2",
+        "damage": "2"
+      },
+      {
+        "name": "Bladed horn",
+        "types": [
+          "extra attacks",
+          "lance"
+        ],
+        "range": "Melee",
+        "attacks": "4",
+        "skill": "3+",
+        "strength": "6",
+        "ap": "-1",
+        "damage": "2"
+      }
+    ]
+  },
+  {
+    "name": "Lord",
+    "variant": "on Juggernaut",
+    "keywords": [
+      "MOUNTED",
+      "CHARACTER",
+      "CHAOS",
+      "KHORNE"
+    ],
+    "core": [
+      "Leader"
+    ],
+    "faction": [
+      "Blessings of Khorne"
+    ],
+    "abilities": [
+      "Aggressive Advance: While this model is leading a unit, models in that unit have a Move characteristic of 10\" and each time a model in that unit makes a Normal , Advance , Fall Back or Charge move , it can move horizontally through terrain features .",
+      "Crush All Who Stand Before Us: Each time this model’s unit is selected to fight, you can use this ability. When determining which models in this unit are eligible to fight, any models in it that are within 3\" of one or more enemy models are eligible to fight. When resolving those attacks, such models can target one of those enemy units that is within 3\" of them and within Engagement Range of their unit."
+    ],
+    "stats": [
+      {
+        "stats": {
+          "M": "10",
+          "T": "6",
+          "Sv": "3+",
+          "W": "7",
+          "Ld": "6+",
+          "OC": "2",
+          "Inv": "4+",
+          "BaseSize": "(⌀90 x 52mm)"
+        }
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Plasma pistol – standard",
+        "types": [
+          "pistol"
+        ],
+        "range": "12",
+        "attacks": "1",
+        "skill": "3+",
+        "strength": "7",
+        "ap": "-2",
+        "damage": "1"
+      },
+      {
+        "name": "Plasma pistol – supercharge",
+        "types": [
+          "hazardous",
+          "pistol"
+        ],
+        "range": "12",
+        "attacks": "1",
+        "skill": "3+",
+        "strength": "8",
+        "ap": "-3",
+        "damage": "2"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Exalted chainblade",
+        "types": [],
+        "range": "Melee",
+        "attacks": "7",
+        "skill": "2+",
+        "strength": "6",
+        "ap": "-1",
+        "damage": "2"
+      },
+      {
+        "name": "Bladed horn",
+        "types": [
+          "extra attacks",
+          "lance"
+        ],
+        "range": "Melee",
+        "attacks": "4",
+        "skill": "3+",
+        "strength": "6",
+        "ap": "-1",
+        "damage": "2"
+      }
+    ]
+  },
+  {
+    "name": "Master of Executions",
+    "keywords": [
+      "INFANTRY",
+      "CHARACTER",
+      "CHAOS",
+      "KHORNE"
+    ],
+    "core": [
+      "Leader"
+    ],
+    "faction": [
+      "Blessings of Khorne"
+    ],
+    "abilities": [
+      "Forwards, for Blood!: While this model is leading a unit, you can re-roll Advance rolls made for that unit and each time that unit makes a Blood Surge move, you can re-roll the D6 used to determine how far models in that unit move.",
+      "A Worthy Skull: Each time this model makes a melee attack that targets a CHARACTER unit, you can re-roll the Hit roll and you can re-roll the Wound roll . Each time this model’s unit destroys a CHARACTER model, you gain 1CP."
+    ],
+    "stats": [
+      {
+        "stats": {
+          "M": "8",
+          "T": "4",
+          "Sv": "3+",
+          "W": "4",
+          "Ld": "6+",
+          "OC": "1",
+          "BaseSize": "(⌀40mm)"
+        }
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Bolt pistol",
+        "types": [
+          "pistol"
+        ],
+        "range": "12",
+        "attacks": "1",
+        "skill": "3+",
+        "strength": "4",
+        "ap": "0",
+        "damage": "1"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Axe of dismemberment",
+        "types": [
+          "devastating wounds",
+          "precision"
+        ],
+        "range": "Melee",
+        "attacks": "5",
+        "skill": "2+",
+        "strength": "7",
+        "ap": "-2",
+        "damage": "2"
+      }
+    ]
+  },
+  {
+    "name": "Skarbrand",
+    "keywords": [
+      "MONSTER",
+      "CHARACTER",
+      "EPIC HERO",
+      "CHAOS",
+      "KHORNE",
+      "DAEMON",
+      "SUMMONED"
+    ],
+    "core": [
+      "Deadly Demise D6",
+      "Deep Strike"
+    ],
+    "faction": [
+      "Pact of Blood"
+    ],
+    "abilities": [
+      "Rage Embodied (Aura): While a friendly BLOOD LEGIONS unit is within 6\" of this model, add 1 to the Attacks characteristic of melee weapons equipped by models in that unit.",
+      "Murderlust: This unit is eligible to declare a charge in a turn in which it Advanced ."
+    ],
+    "stats": [
+      {
+        "stats": {
+          "M": "10",
+          "T": "11",
+          "Sv": "3+",
+          "W": "20",
+          "Ld": "6+",
+          "OC": "5",
+          "Inv": "4+",
+          "BaseSize": "(⌀100mm)"
+        }
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Bellow of endless fury",
+        "types": [
+          "ignores cover",
+          "torrent"
+        ],
+        "range": "12",
+        "attacks": "2D6",
         "skill": "N/A",
+        "strength": "8",
+        "ap": "-1",
+        "damage": "1"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Slaughter and Carnage – strike",
+        "types": [],
+        "range": "Melee",
+        "attacks": "8",
+        "skill": "2+",
+        "strength": "16",
+        "ap": "-4",
+        "damage": "6"
+      },
+      {
+        "name": "Slaughter and Carnage – sweep",
+        "types": [],
+        "range": "Melee",
+        "attacks": "16",
+        "skill": "2+",
+        "strength": "8",
+        "ap": "-2",
+        "damage": "2"
+      }
+    ]
+  },
+  {
+    "name": "Slaughterbound",
+    "keywords": [
+      "INFANTRY",
+      "CHARACTER",
+      "CHAOS",
+      "KHORNE",
+      "DAEMON",
+      "POSSESSED"
+    ],
+    "core": [
+      "Deadly Demise D3",
+      "Leader"
+    ],
+    "faction": [
+      "Blessings of Khorne"
+    ],
+    "abilities": [
+      "Rage Eternal: While this model is leading a unit, in your Command phase , you can return one destroyed Bodyguard model to that unit.",
+      "Possessed Lord: Once per battle, at the start of the Fight phase , this model can use this ability. If it does, until the end of the phase, add 3 to the Attacks characteristic of melee weapons equipped by this model and those weapons have the [DEVASTATING WOUNDS] ability."
+    ],
+    "stats": [
+      {
+        "stats": {
+          "M": "10",
+          "T": "6",
+          "Sv": "3+",
+          "W": "6",
+          "Ld": "6+",
+          "OC": "1",
+          "Inv": "5+",
+          "BaseSize": "(⌀50mm)"
+        }
+      }
+    ],
+    "ranged_weapons": [],
+    "melee_weapons": [
+      {
+        "name": "Lacerator and daemonic claw",
+        "types": [],
+        "range": "Melee",
+        "attacks": "6",
+        "skill": "2+",
+        "strength": "10",
+        "ap": "-2",
+        "damage": "2"
+      }
+    ]
+  },
+  {
+    "name": "Bloodletters",
+    "keywords": [
+      "INFANTRY",
+      "BATTLELINE",
+      "CHAOS",
+      "DAEMON",
+      "KHORNE",
+      "SUMMONED"
+    ],
+    "core": [
+      "Deep Strike"
+    ],
+    "faction": [
+      "Pact of Blood"
+    ],
+    "abilities": [
+      "Bane of Cowards: Each time an enemy unit (excluding MONSTERS and VEHICLES ) within Engagement Range of one or more units from your army with this ability Falls Back , models in that enemy unit must take Desperate Escape tests . When doing so, if that enemy unit is also Battle-shocked , subtract 1 from each of those Desperate Escape tests.",
+      "Daemonic Icon: Models in the bearer’s unit have a Leadership characteristic of 6+.",
+      "Instrument of Chaos: Add 1 to Charge rolls made for the bearer’s unit."
+    ],
+    "stats": [
+      {
+        "stats": {
+          "M": "8",
+          "T": "4",
+          "Sv": "7+",
+          "W": "1",
+          "Ld": "7+",
+          "OC": "1",
+          "Inv": "5+",
+          "BaseSize": "(⌀32mm)"
+        }
+      }
+    ],
+    "ranged_weapons": [],
+    "melee_weapons": [
+      {
+        "name": "Hellblade",
+        "types": [],
+        "range": "Melee",
+        "attacks": "2",
+        "skill": "3+",
         "strength": "5",
+        "ap": "-2",
+        "damage": "2"
+      }
+    ]
+  },
+  {
+    "name": "Khorne Berzerkers",
+    "keywords": [
+      "INFANTRY",
+      "BATTLELINE",
+      "GRENADES",
+      "CHAOS",
+      "KHORNE"
+    ],
+    "core": [],
+    "faction": [
+      "Blessings of Khorne"
+    ],
+    "abilities": [
+      "Blood Surge: In your opponent’s Shooting phase , each time an enemy unit has shot, if any models from this unit were destroyed as a result of those attacks, this unit can make a Blood Surge move. To do so, roll one D6 and add 2 to the roll: models in this unit move a number of inches up to this result, but this unit must end that move as close as possible to the closest enemy unit (excluding AIRCRAFT ), When doing so, those models can be moved within Engagement Range of that enemy unit. This unit cannot make a Blood Surge move while it is Battle-shocked or within Engagement Range of one or more enemy units, and can only make one Blood Surge move per phase.",
+      "Icon of Khorne: If the bearer’s unit contains one or more Icons of Khorne, each time the bearer’s unit destroys an enemy unit, you gain 1 Bloodshed point. Each time you make a Blessings of Khorne roll , roll one additional D6 for each Bloodshed point you have, after which, all your Bloodshed points are lost."
+    ],
+    "stats": [
+      {
+        "stats": {
+          "M": "8",
+          "T": "4",
+          "Sv": "3+",
+          "W": "2",
+          "Ld": "6+",
+          "OC": "2",
+          "BaseSize": "(⌀32mm)"
+        }
+      }
+    ],
+    "ranged_weapons": [
+      {
+        "name": "Bolt pistol",
+        "types": [
+          "pistol"
+        ],
+        "range": "12",
+        "attacks": "1",
+        "skill": "4+",
+        "strength": "4",
+        "ap": "0",
+        "damage": "1"
+      },
+      {
+        "name": "Plasma pistol – standard",
+        "types": [
+          "pistol"
+        ],
+        "range": "12",
+        "attacks": "1",
+        "skill": "4+",
+        "strength": "7",
+        "ap": "-2",
+        "damage": "1"
+      },
+      {
+        "name": "Plasma pistol – supercharge",
+        "types": [
+          "hazardous",
+          "pistol"
+        ],
+        "range": "12",
+        "attacks": "1",
+        "skill": "4+",
+        "strength": "8",
+        "ap": "-3",
+        "damage": "2"
+      }
+    ],
+    "melee_weapons": [
+      {
+        "name": "Chainblade",
+        "types": [],
+        "range": "Melee",
+        "attacks": "4",
+        "skill": "3+",
+        "strength": "4",
         "ap": "-1",
         "damage": "1"
       },
       {
-        "name": "Lascannon",
+        "name": "Khornate eviscerator",
         "types": [],
-        "range": "48",
-        "attacks": "1",
+        "range": "Melee",
+        "attacks": "3",
         "skill": "3+",
-        "strength": "12",
-        "ap": "-3",
-        "damage": "D6+1"
-      },
+        "strength": "8",
+        "ap": "-2",
+        "damage": "2"
+      }
+    ]
+  },
+  {
+    "name": "Chaos Rhino",
+    "keywords": [
+      "VEHICLE",
+      "TRANSPORT",
+      "DEDICATED TRANSPORT",
+      "SMOKE",
+      "CHAOS",
+      "KHORNE"
+    ],
+    "core": [
+      "Deadly Demise D3",
+      "Firing Deck 2"
+    ],
+    "faction": [
+      "Blessings of Khorne"
+    ],
+    "abilities": [
+      "Meet Any Challenge: In your opponent’s Movement phase , each time an enemy unit is set up or ends a Normal , Advance or Fall Back move within 9\" of this model, any units embarked within it can disembark ."
+    ],
+    "stats": [
       {
-        "name": "Multi-melta",
-        "types": [
-          "melta 2"
-        ],
-        "range": "18",
-        "attacks": "2",
-        "skill": "3+",
-        "strength": "9",
-        "ap": "-4",
-        "damage": "D6"
-      },
+        "stats": {
+          "M": "12",
+          "T": "9",
+          "Sv": "3+",
+          "W": "10",
+          "Ld": "6+",
+          "OC": "2",
+          "BaseSize": "(⌀Use model)"
+        }
+      }
+    ],
+    "ranged_weapons": [
       {
-        "name": "Storm bolter",
+        "name": "Combi-bolter",
         "types": [
-          "rapid fire 2"
+          "rapid fire 4"
         ],
         "range": "24",
         "attacks": "2",
-        "skill": "3+",
+        "skill": "4+",
         "strength": "4",
+        "ap": "0",
+        "damage": "1"
+      },
+      {
+        "name": "Combi-weapon",
+        "types": [
+          "anti-infantry 4+",
+          "devastating wounds",
+          "rapid fire 1"
+        ],
+        "range": "24",
+        "attacks": "1",
+        "skill": "4+",
+        "strength": "4",
+        "ap": "0",
+        "damage": "1"
+      },
+      {
+        "name": "Havoc launcher",
+        "types": [
+          "blast"
+        ],
+        "range": "48",
+        "attacks": "D6",
+        "skill": "4+",
+        "strength": "5",
         "ap": "0",
         "damage": "1"
       }
@@ -459,9 +967,70 @@
         "types": [],
         "range": "Melee",
         "attacks": "6",
-        "skill": "4+",
-        "strength": "8",
+        "skill": "3+",
+        "strength": "6",
         "ap": "0",
+        "damage": "1"
+      }
+    ]
+  },
+  {
+    "name": "Bloodcrushers",
+    "keywords": [
+      "MOUNTED",
+      "CHAOS",
+      "DAEMON",
+      "KHORNE",
+      "SUMMONED"
+    ],
+    "core": [
+      "Deep Strike"
+    ],
+    "faction": [
+      "Pact of Blood"
+    ],
+    "abilities": [
+      "Brass Stampede: Each time this unit ends a Charge move , select one enemy unit within Engagement Range of this unit and roll one D6 for each model in this unit: for each 4+, that enemy unit suffers D3 mortal wounds .",
+      "Daemonic Icon: Models in the bearer’s unit have a Leadership characteristic of 6+.",
+      "Instrument of Chaos: Add 1 to Charge rolls made for the bearer’s unit."
+    ],
+    "stats": [
+      {
+        "stats": {
+          "M": "10",
+          "T": "7",
+          "Sv": "3+",
+          "W": "4",
+          "Ld": "7+",
+          "OC": "2",
+          "Inv": "5+",
+          "BaseSize": "(⌀90 x 52mm)"
+        }
+      }
+    ],
+    "ranged_weapons": [],
+    "melee_weapons": [
+      {
+        "name": "Hellblade",
+        "types": [],
+        "range": "Melee",
+        "attacks": "2",
+        "skill": "3+",
+        "strength": "5",
+        "ap": "-2",
+        "damage": "2"
+      },
+      {
+        "name": "Bladed horn",
+        "types": [
+          "extra attacks",
+          "lance"
+        ],
+        "range": "Melee",
+        "attacks": "4",
+        "skill": "4+",
+        "strength": "6",
+        "ap": "-1",
         "damage": "1"
       }
     ]
@@ -492,7 +1061,8 @@
           "Sv": "2+",
           "W": "16",
           "Ld": "6+",
-          "OC": "5"
+          "OC": "5",
+          "BaseSize": "(⌀Use model)"
         }
       }
     ],
@@ -600,7 +1170,8 @@
           "Sv": "3+",
           "W": "11",
           "Ld": "6+",
-          "OC": "3"
+          "OC": "3",
+          "BaseSize": "(⌀Use model)"
         }
       }
     ],
@@ -718,7 +1289,8 @@
           "Sv": "3+",
           "W": "11",
           "Ld": "6+",
-          "OC": "3"
+          "OC": "3",
+          "BaseSize": "(⌀Use model)"
         }
       }
     ],
@@ -811,91 +1383,6 @@
     ]
   },
   {
-    "name": "Chaos Rhino",
-    "keywords": [
-      "VEHICLE",
-      "TRANSPORT",
-      "DEDICATED TRANSPORT",
-      "SMOKE",
-      "CHAOS",
-      "KHORNE"
-    ],
-    "core": [
-      "Deadly Demise D3",
-      "Firing Deck 2"
-    ],
-    "faction": [
-      "Blessings of Khorne"
-    ],
-    "abilities": [
-      "Meet Any Challenge: In your opponent’s Movement phase , each time an enemy unit is set up or ends a Normal , Advance or Fall Back move within 9\" of this model, any units embarked within it can disembark ."
-    ],
-    "stats": [
-      {
-        "stats": {
-          "M": "12",
-          "T": "9",
-          "Sv": "3+",
-          "W": "10",
-          "Ld": "6+",
-          "OC": "2"
-        }
-      }
-    ],
-    "ranged_weapons": [
-      {
-        "name": "Combi-bolter",
-        "types": [
-          "rapid fire 4"
-        ],
-        "range": "24",
-        "attacks": "2",
-        "skill": "4+",
-        "strength": "4",
-        "ap": "0",
-        "damage": "1"
-      },
-      {
-        "name": "Combi-weapon",
-        "types": [
-          "anti-infantry 4+",
-          "devastating wounds",
-          "rapid fire 1"
-        ],
-        "range": "24",
-        "attacks": "1",
-        "skill": "4+",
-        "strength": "4",
-        "ap": "0",
-        "damage": "1"
-      },
-      {
-        "name": "Havoc launcher",
-        "types": [
-          "blast"
-        ],
-        "range": "48",
-        "attacks": "D6",
-        "skill": "4+",
-        "strength": "5",
-        "ap": "0",
-        "damage": "1"
-      }
-    ],
-    "melee_weapons": [
-      {
-        "name": "Armoured tracks",
-        "types": [],
-        "range": "Melee",
-        "attacks": "6",
-        "skill": "3+",
-        "strength": "6",
-        "ap": "0",
-        "damage": "1"
-      }
-    ]
-  },
-  {
     "name": "Chaos Spawn",
     "keywords": [
       "BEAST",
@@ -920,7 +1407,8 @@
           "Sv": "4+",
           "W": "4",
           "Ld": "7+",
-          "OC": "1"
+          "OC": "1",
+          "BaseSize": "(⌀50mm)"
         }
       }
     ],
@@ -962,7 +1450,9 @@
           "Sv": "2+",
           "W": "3",
           "Ld": "6+",
-          "OC": "1"
+          "OC": "1",
+          "Inv": "4+",
+          "BaseSize": "(⌀40mm)"
         }
       }
     ],
@@ -1069,244 +1559,6 @@
     ]
   },
   {
-    "name": "Chaos Thunderhawk",
-    "keywords": [
-      "VEHICLE",
-      "TITANIC",
-      "FLY",
-      "AIRCRAFT",
-      "TRANSPORT",
-      "CHAOS"
-    ],
-    "core": [
-      "Deadly Demise D6+2",
-      "Hover"
-    ],
-    "faction": [
-      "Blessings of Khorne"
-    ],
-    "abilities": [
-      "Aerial Assault: Each time a unit with the Deep Strike ability disembarks from this model after it has made a Normal move , that unit is still eligible to declare a charge this turn.",
-      "Thunderhawk Cluster Bombs: Each time the bearer ends a Normal move , you can select one enemy unit it moved over during that move and roll six D6: for each 3+, that unit suffers 1 mortal wound ."
-    ],
-    "stats": [],
-    "ranged_weapons": [
-      {
-        "name": "Hellstrike missile battery",
-        "types": [
-          "anti-fly 4+"
-        ],
-        "range": "72",
-        "attacks": "4",
-        "skill": "3+",
-        "strength": "8",
-        "ap": "-2",
-        "damage": "3"
-      },
-      {
-        "name": "Lascannon",
-        "types": [],
-        "range": "48",
-        "attacks": "1",
-        "skill": "3+",
-        "strength": "12",
-        "ap": "-3",
-        "damage": "D6+1"
-      },
-      {
-        "name": "Thunderhawk heavy cannon",
-        "types": [
-          "blast"
-        ],
-        "range": "48",
-        "attacks": "D6+6",
-        "skill": "3+",
-        "strength": "10",
-        "ap": "-2",
-        "damage": "3"
-      },
-      {
-        "name": "Turbo-laser destructor",
-        "types": [
-          "blast"
-        ],
-        "range": "96",
-        "attacks": "D3+1",
-        "skill": "3+",
-        "strength": "20",
-        "ap": "-4",
-        "damage": "D6+6"
-      },
-      {
-        "name": "Twin heavy bolter",
-        "types": [
-          "sustained hits 1",
-          "twin-linked"
-        ],
-        "range": "36",
-        "attacks": "3",
-        "skill": "3+",
-        "strength": "5",
-        "ap": "-1",
-        "damage": "2"
-      }
-    ],
-    "melee_weapons": [
-      {
-        "name": "Armoured hull",
-        "types": [],
-        "range": "Melee",
-        "attacks": "6",
-        "skill": "4+",
-        "strength": "8",
-        "ap": "0",
-        "damage": "1"
-      }
-    ]
-  },
-  {
-    "name": "Daemon Prince of Khorne",
-    "keywords": [
-      "MONSTER",
-      "CHARACTER",
-      "CHAOS",
-      "KHORNE",
-      "DAEMON",
-      "DAEMON PRINCE"
-    ],
-    "core": [
-      "Deadly Demise D3"
-    ],
-    "faction": [
-      "Blessings of Khorne"
-    ],
-    "abilities": [
-      "Lord of Murder: While this model is within 3\" of one or more friendly WORLD EATERS INFANTRY units, this model has the Lone Operative ability.",
-      "Devastating Assault: Each time this model makes a Charge move , until the end of the turn, its melee weapons have the [DEVASTATING WOUNDS] ability.",
-      "Direct the Slaughter: Once per battle round , one model from your army with this ability can use it when a friendly WORLD EATERS unit within 12\" of that model is targeted with a Stratagem . If it does, reduce the CP cost of that usage of that Stratagem by 1CP."
-    ],
-    "stats": [
-      {
-        "stats": {
-          "M": "10",
-          "T": "10",
-          "Sv": "2+",
-          "W": "10",
-          "Ld": "6+",
-          "OC": "3"
-        }
-      }
-    ],
-    "ranged_weapons": [
-      {
-        "name": "Infernal cannon",
-        "types": [
-          "rapid fire 1"
-        ],
-        "range": "24",
-        "attacks": "3",
-        "skill": "3+",
-        "strength": "5",
-        "ap": "-1",
-        "damage": "2"
-      }
-    ],
-    "melee_weapons": [
-      {
-        "name": "Hellforged weapons – strike",
-        "types": [],
-        "range": "Melee",
-        "attacks": "8",
-        "skill": "2+",
-        "strength": "8",
-        "ap": "-2",
-        "damage": "3"
-      },
-      {
-        "name": "Hellforged weapons – sweep",
-        "types": [],
-        "range": "Melee",
-        "attacks": "16",
-        "skill": "2+",
-        "strength": "6",
-        "ap": "-1",
-        "damage": "1"
-      }
-    ]
-  },
-  {
-    "name": "Daemon Prince of Khorne",
-    "variant": "with Wings",
-    "keywords": [
-      "MONSTER",
-      "CHARACTER",
-      "FLY",
-      "CHAOS",
-      "KHORNE",
-      "DAEMON",
-      "DAEMON PRINCE"
-    ],
-    "core": [
-      "Deadly Demise D3",
-      "Deep Strike"
-    ],
-    "faction": [
-      "Blessings of Khorne"
-    ],
-    "abilities": [
-      "Bloodied Terror: At the start of the Fight phase , each enemy unit within Engagement Range of this model must take a Battle-shock test , subtracting 1 from that test if that enemy unit is Below Half-strength .",
-      "Swooping Predator: Each time this model ends a Normal or Advance move , you can select one enemy unit that it moved over during that move and roll six D6: for each 4+, that enemy unit suffers 1 mortal wound ."
-    ],
-    "stats": [
-      {
-        "stats": {
-          "M": "14",
-          "T": "9",
-          "Sv": "2+",
-          "W": "10",
-          "Ld": "6+",
-          "OC": "3"
-        }
-      }
-    ],
-    "ranged_weapons": [
-      {
-        "name": "Infernal cannon",
-        "types": [
-          "rapid fire 1"
-        ],
-        "range": "24",
-        "attacks": "3",
-        "skill": "3+",
-        "strength": "5",
-        "ap": "-1",
-        "damage": "2"
-      }
-    ],
-    "melee_weapons": [
-      {
-        "name": "Hellforged weapons – strike",
-        "types": [],
-        "range": "Melee",
-        "attacks": "8",
-        "skill": "2+",
-        "strength": "8",
-        "ap": "-2",
-        "damage": "3"
-      },
-      {
-        "name": "Hellforged weapons – sweep",
-        "types": [],
-        "range": "Melee",
-        "attacks": "16",
-        "skill": "2+",
-        "strength": "6",
-        "ap": "-1",
-        "damage": "1"
-      }
-    ]
-  },
-  {
     "name": "Defiler",
     "keywords": [
       "VEHICLE",
@@ -1334,7 +1586,9 @@
           "Sv": "3+",
           "W": "14",
           "Ld": "6+",
-          "OC": "5"
+          "OC": "5",
+          "Inv": "5+",
+          "BaseSize": "(⌀160mm)"
         }
       }
     ],
@@ -1472,159 +1726,6 @@
     ]
   },
   {
-    "name": "Deredeo Dreadnought",
-    "keywords": [
-      "VEHICLE",
-      "WALKER",
-      "CHAOS",
-      "KHORNE",
-      "SMOKE",
-      "DREADNOUGHT"
-    ],
-    "core": [
-      "Deadly Demise D3"
-    ],
-    "faction": [
-      "Blessings of Khorne"
-    ],
-    "abilities": [
-      "Deredeo Strike: Each time this model makes a ranged attack that targets a unit that is not Below Half-strength , you can re-roll the Hit roll ."
-    ],
-    "stats": [
-      {
-        "stats": {
-          "M": "6",
-          "T": "9",
-          "Sv": "2+",
-          "W": "12",
-          "Ld": "6+",
-          "OC": "3"
-        }
-      }
-    ],
-    "ranged_weapons": [
-      {
-        "name": "Aiolos missile launcher",
-        "types": [
-          "blast"
-        ],
-        "range": "48",
-        "attacks": "D6+3",
-        "skill": "3+",
-        "strength": "5",
-        "ap": "0",
-        "damage": "1"
-      },
-      {
-        "name": "Anvilus autocannon battery",
-        "types": [
-          "twin-linked"
-        ],
-        "range": "48",
-        "attacks": "4",
-        "skill": "3+",
-        "strength": "9",
-        "ap": "-1",
-        "damage": "3"
-      },
-      {
-        "name": "Arachnus heavy lascannon battery",
-        "types": [],
-        "range": "48",
-        "attacks": "2",
-        "skill": "3+",
-        "strength": "12",
-        "ap": "-3",
-        "damage": "D6+1"
-      },
-      {
-        "name": "Boreas air defence missiles",
-        "types": [
-          "anti-fly 2+"
-        ],
-        "range": "48",
-        "attacks": "1",
-        "skill": "3+",
-        "strength": "12",
-        "ap": "-3",
-        "damage": "D6+1"
-      },
-      {
-        "name": "Hellfire plasma cannonade – standard",
-        "types": [],
-        "range": "36",
-        "attacks": "6",
-        "skill": "3+",
-        "strength": "7",
-        "ap": "-2",
-        "damage": "2"
-      },
-      {
-        "name": "Hellfire plasma cannonade – supercharge",
-        "types": [
-          "hazardous"
-        ],
-        "range": "36",
-        "attacks": "6",
-        "skill": "3+",
-        "strength": "8",
-        "ap": "-3",
-        "damage": "3"
-      },
-      {
-        "name": "Twin heavy bolter",
-        "types": [
-          "sustained hits 1",
-          "twin-linked"
-        ],
-        "range": "36",
-        "attacks": "3",
-        "skill": "3+",
-        "strength": "5",
-        "ap": "-1",
-        "damage": "2"
-      },
-      {
-        "name": "Twin heavy flamer",
-        "types": [
-          "ignores cover",
-          "torrent",
-          "twin-linked"
-        ],
-        "range": "12",
-        "attacks": "D6",
-        "skill": "N/A",
-        "strength": "5",
-        "ap": "-1",
-        "damage": "1"
-      },
-      {
-        "name": "Volkite falconet battery",
-        "types": [
-          "devastating wounds"
-        ],
-        "range": "30",
-        "attacks": "6",
-        "skill": "3+",
-        "strength": "9",
-        "ap": "0",
-        "damage": "2"
-      }
-    ],
-    "melee_weapons": [
-      {
-        "name": "Armoured feet",
-        "types": [],
-        "range": "Melee",
-        "attacks": "5",
-        "skill": "3+",
-        "strength": "6",
-        "ap": "0",
-        "damage": "1"
-      }
-    ]
-  },
-  {
     "name": "Eightbound",
     "keywords": [
       "INFANTRY",
@@ -1650,7 +1751,9 @@
           "Sv": "3+",
           "W": "3",
           "Ld": "6+",
-          "OC": "1"
+          "OC": "1",
+          "Inv": "5+",
+          "BaseSize": "(⌀40mm)"
         }
       }
     ],
@@ -1694,7 +1797,9 @@
           "Sv": "3+",
           "W": "3",
           "Ld": "6+",
-          "OC": "1"
+          "OC": "1",
+          "Inv": "5+",
+          "BaseSize": "(⌀40mm)"
         }
       }
     ],
@@ -1712,475 +1817,6 @@
         "strength": "8",
         "ap": "-3",
         "damage": "2"
-      }
-    ]
-  },
-  {
-    "name": "Falchion",
-    "keywords": [
-      "VEHICLE",
-      "TITANIC",
-      "CHAOS",
-      "KHORNE",
-      "SMOKE"
-    ],
-    "core": [
-      "Deadly Demise D6+2"
-    ],
-    "faction": [
-      "Blessings of Khorne"
-    ],
-    "abilities": [
-      "Titan-killer: Each time this model makes a ranged attack with its twin Falchion volcano cannon that targets a MONSTER or VEHICLE unit, that attack has the [DEVASTATING WOUNDS] ability."
-    ],
-    "stats": [
-      {
-        "stats": {
-          "M": "9",
-          "T": "13",
-          "Sv": "2+",
-          "W": "24",
-          "Ld": "6+",
-          "OC": "8"
-        }
-      }
-    ],
-    "ranged_weapons": [
-      {
-        "name": "Heavy bolter",
-        "types": [
-          "sustained hits 1"
-        ],
-        "range": "36",
-        "attacks": "3",
-        "skill": "3+",
-        "strength": "5",
-        "ap": "-1",
-        "damage": "2"
-      },
-      {
-        "name": "Heavy flamer",
-        "types": [
-          "ignores cover",
-          "torrent"
-        ],
-        "range": "12",
-        "attacks": "D6",
-        "skill": "N/A",
-        "strength": "5",
-        "ap": "-1",
-        "damage": "1"
-      },
-      {
-        "name": "Laser destroyer",
-        "types": [
-          "heavy"
-        ],
-        "range": "36",
-        "attacks": "3",
-        "skill": "3+",
-        "strength": "14",
-        "ap": "-4",
-        "damage": "D6+1"
-      },
-      {
-        "name": "Multi-melta",
-        "types": [
-          "melta 2"
-        ],
-        "range": "18",
-        "attacks": "2",
-        "skill": "3+",
-        "strength": "9",
-        "ap": "-4",
-        "damage": "D6"
-      },
-      {
-        "name": "Quad lascannon",
-        "types": [],
-        "range": "48",
-        "attacks": "4",
-        "skill": "3+",
-        "strength": "12",
-        "ap": "-3",
-        "damage": "D6+1"
-      },
-      {
-        "name": "Storm bolter",
-        "types": [
-          "rapid fire 2"
-        ],
-        "range": "24",
-        "attacks": "2",
-        "skill": "3+",
-        "strength": "4",
-        "ap": "0",
-        "damage": "1"
-      },
-      {
-        "name": "Twin Falchion volcano cannon",
-        "types": [
-          "blast",
-          "twin-linked"
-        ],
-        "range": "120",
-        "attacks": "D3+1",
-        "skill": "3+",
-        "strength": "24",
-        "ap": "-5",
-        "damage": "12"
-      },
-      {
-        "name": "Twin heavy bolter",
-        "types": [
-          "sustained hits 1",
-          "twin-linked"
-        ],
-        "range": "36",
-        "attacks": "3",
-        "skill": "3+",
-        "strength": "5",
-        "ap": "-1",
-        "damage": "2"
-      },
-      {
-        "name": "Twin heavy flamer",
-        "types": [
-          "ignores cover",
-          "torrent",
-          "twin-linked"
-        ],
-        "range": "12",
-        "attacks": "D6",
-        "skill": "N/A",
-        "strength": "5",
-        "ap": "-1",
-        "damage": "1"
-      }
-    ],
-    "melee_weapons": [
-      {
-        "name": "Armoured tracks",
-        "types": [],
-        "range": "Melee",
-        "attacks": "6",
-        "skill": "4+",
-        "strength": "8",
-        "ap": "0",
-        "damage": "1"
-      }
-    ]
-  },
-  {
-    "name": "Fellblade",
-    "keywords": [
-      "VEHICLE",
-      "TITANIC",
-      "CHAOS",
-      "KHORNE",
-      "SMOKE"
-    ],
-    "core": [
-      "Deadly Demise D6+2"
-    ],
-    "faction": [
-      "Blessings of Khorne"
-    ],
-    "abilities": [
-      "Rolling Fortress: Each time a ranged attack is allocated to a model from your army, if that model is not fully visible to every model in the attacking unit because of this Fellblade model, that model has the Benefit of Cover against that attack."
-    ],
-    "stats": [
-      {
-        "stats": {
-          "M": "9",
-          "T": "13",
-          "Sv": "2+",
-          "W": "24",
-          "Ld": "6+",
-          "OC": "8"
-        }
-      }
-    ],
-    "ranged_weapons": [
-      {
-        "name": "Combi-weapon",
-        "types": [
-          "anti-infantry 4+",
-          "devastating wounds",
-          "rapid fire 1"
-        ],
-        "range": "24",
-        "attacks": "1",
-        "skill": "3+",
-        "strength": "4",
-        "ap": "0",
-        "damage": "1"
-      },
-      {
-        "name": "Demolisher cannon",
-        "types": [
-          "blast"
-        ],
-        "range": "24",
-        "attacks": "D6+3",
-        "skill": "3+",
-        "strength": "14",
-        "ap": "-3",
-        "damage": "D6"
-      },
-      {
-        "name": "Fellblade accelerator cannon – AP shells",
-        "types": [],
-        "range": "72",
-        "attacks": "2",
-        "skill": "3+",
-        "strength": "14",
-        "ap": "-3",
-        "damage": "6"
-      },
-      {
-        "name": "Fellblade accelerator cannon – HE shells",
-        "types": [
-          "blast"
-        ],
-        "range": "72",
-        "attacks": "2D6",
-        "skill": "3+",
-        "strength": "8",
-        "ap": "-1",
-        "damage": "2"
-      },
-      {
-        "name": "Havoc launcher",
-        "types": [
-          "blast"
-        ],
-        "range": "48",
-        "attacks": "D6",
-        "skill": "3+",
-        "strength": "5",
-        "ap": "0",
-        "damage": "1"
-      },
-      {
-        "name": "Heavy bolter",
-        "types": [
-          "sustained hits 1"
-        ],
-        "range": "36",
-        "attacks": "3",
-        "skill": "3+",
-        "strength": "5",
-        "ap": "-1",
-        "damage": "2"
-      },
-      {
-        "name": "Heavy flamer",
-        "types": [
-          "ignores cover",
-          "torrent"
-        ],
-        "range": "12",
-        "attacks": "D6",
-        "skill": "N/A",
-        "strength": "5",
-        "ap": "-1",
-        "damage": "1"
-      },
-      {
-        "name": "Laser destroyer",
-        "types": [
-          "heavy"
-        ],
-        "range": "36",
-        "attacks": "3",
-        "skill": "3+",
-        "strength": "14",
-        "ap": "-4",
-        "damage": "D6+1"
-      },
-      {
-        "name": "Multi-melta",
-        "types": [
-          "melta 2"
-        ],
-        "range": "18",
-        "attacks": "2",
-        "skill": "3+",
-        "strength": "9",
-        "ap": "-4",
-        "damage": "D6"
-      },
-      {
-        "name": "Quad heavy bolter",
-        "types": [
-          "sustained hits 1",
-          "twin-linked"
-        ],
-        "range": "36",
-        "attacks": "6",
-        "skill": "3+",
-        "strength": "5",
-        "ap": "-1",
-        "damage": "2"
-      },
-      {
-        "name": "Quad lascannon",
-        "types": [],
-        "range": "48",
-        "attacks": "4",
-        "skill": "3+",
-        "strength": "12",
-        "ap": "-3",
-        "damage": "D6+1"
-      },
-      {
-        "name": "Storm bolter",
-        "types": [
-          "rapid fire 2"
-        ],
-        "range": "24",
-        "attacks": "2",
-        "skill": "3+",
-        "strength": "4",
-        "ap": "0",
-        "damage": "1"
-      },
-      {
-        "name": "Twin heavy bolter",
-        "types": [
-          "sustained hits 1",
-          "twin-linked"
-        ],
-        "range": "36",
-        "attacks": "3",
-        "skill": "3+",
-        "strength": "5",
-        "ap": "-1",
-        "damage": "2"
-      },
-      {
-        "name": "Twin heavy flamer",
-        "types": [
-          "ignores cover",
-          "torrent",
-          "twin-linked"
-        ],
-        "range": "12",
-        "attacks": "D6",
-        "skill": "N/A",
-        "strength": "5",
-        "ap": "-1",
-        "damage": "1"
-      }
-    ],
-    "melee_weapons": [
-      {
-        "name": "Armoured tracks",
-        "types": [],
-        "range": "Melee",
-        "attacks": "6",
-        "skill": "4+",
-        "strength": "8",
-        "ap": "0",
-        "damage": "1"
-      }
-    ]
-  },
-  {
-    "name": "Fire Raptor Gunship",
-    "keywords": [
-      "VEHICLE",
-      "FLY",
-      "AIRCRAFT",
-      "CHAOS",
-      "KHORNE"
-    ],
-    "core": [
-      "Deadly Demise D6",
-      "Hover"
-    ],
-    "faction": [
-      "Blessings of Khorne"
-    ],
-    "abilities": [
-      "Strafing Run: Each time this model makes a ranged attack that targets a unit that cannot Fly , add 1 to the Hit roll ."
-    ],
-    "stats": [],
-    "ranged_weapons": [
-      {
-        "name": "Quad heavy bolter",
-        "types": [
-          "twin-linked",
-          "sustained hits 1"
-        ],
-        "range": "36",
-        "attacks": "6",
-        "skill": "3+",
-        "strength": "5",
-        "ap": "-1",
-        "damage": "2"
-      },
-      {
-        "name": "Twin autocannon",
-        "types": [
-          "twin-linked"
-        ],
-        "range": "48",
-        "attacks": "2",
-        "skill": "3+",
-        "strength": "9",
-        "ap": "-1",
-        "damage": "3"
-      },
-      {
-        "name": "Twin avenger bolt cannon",
-        "types": [
-          "twin-linked"
-        ],
-        "range": "36",
-        "attacks": "10",
-        "skill": "3+",
-        "strength": "6",
-        "ap": "-1",
-        "damage": "2"
-      },
-      {
-        "name": "Twin hellstrike launcher",
-        "types": [
-          "anti-fly 2+",
-          "twin-linked"
-        ],
-        "range": "72",
-        "attacks": "2",
-        "skill": "3+",
-        "strength": "10",
-        "ap": "-3",
-        "damage": "D6"
-      },
-      {
-        "name": "Twin lascannon",
-        "types": [
-          "twin-linked"
-        ],
-        "range": "48",
-        "attacks": "1",
-        "skill": "3+",
-        "strength": "12",
-        "ap": "-3",
-        "damage": "D6+1"
-      }
-    ],
-    "melee_weapons": [
-      {
-        "name": "Armoured hull",
-        "types": [],
-        "range": "Melee",
-        "attacks": "6",
-        "skill": "4+",
-        "strength": "8",
-        "ap": "0",
-        "damage": "1"
       }
     ]
   },
@@ -2211,7 +1847,9 @@
           "Sv": "7+",
           "W": "2",
           "Ld": "7+",
-          "OC": "1"
+          "OC": "1",
+          "Inv": "5+",
+          "BaseSize": "(⌀60 x 35.5mm)"
         }
       }
     ],
@@ -2269,7 +1907,9 @@
           "Sv": "3+",
           "W": "12",
           "Ld": "6+",
-          "OC": "3"
+          "OC": "3",
+          "Inv": "5+",
+          "BaseSize": "(⌀120 x 92mm)"
         }
       }
     ],
@@ -2348,7 +1988,8 @@
           "Sv": "6+",
           "W": "1",
           "Ld": "7+",
-          "OC": "1"
+          "OC": "1",
+          "BaseSize": "(⌀32mm)"
         }
       }
     ],
@@ -2405,100 +2046,6 @@
     ]
   },
   {
-    "name": "Greater Brass Scorpion",
-    "keywords": [
-      "VEHICLE",
-      "TITANIC",
-      "WALKER",
-      "CHAOS",
-      "KHORNE",
-      "DAEMON"
-    ],
-    "core": [
-      "Deadly Demise D6+2"
-    ],
-    "faction": [
-      "Blessings of Khorne"
-    ],
-    "abilities": [
-      "Super-heavy Walker: Each time a model with this ability makes a Normal , Advance or Fall Back move, it can move over models (excluding TITANIC models) and terrain features that are 4\" or less in height as if they were not there.",
-      "Runes of the Blood God: This model has the Feel No Pain 4+ ability against mortal wounds and Psychic Attacks ."
-    ],
-    "stats": [
-      {
-        "stats": {
-          "M": "12",
-          "T": "12",
-          "Sv": "3+",
-          "W": "26",
-          "Ld": "6+",
-          "OC": "10"
-        }
-      }
-    ],
-    "ranged_weapons": [
-      {
-        "name": "Demolisher cannon",
-        "types": [
-          "blast"
-        ],
-        "range": "24",
-        "attacks": "D6+3",
-        "skill": "3+",
-        "strength": "14",
-        "ap": "-3",
-        "damage": "D6"
-      },
-      {
-        "name": "Hellmaw flame cannons",
-        "types": [
-          "ignores cover",
-          "torrent"
-        ],
-        "range": "12",
-        "attacks": "2D6",
-        "skill": "N/A",
-        "strength": "8",
-        "ap": "-1",
-        "damage": "1"
-      },
-      {
-        "name": "Scorpion cannon",
-        "types": [
-          "sustained hits 1"
-        ],
-        "range": "36",
-        "attacks": "15",
-        "skill": "3+",
-        "strength": "5",
-        "ap": "-1",
-        "damage": "2"
-      }
-    ],
-    "melee_weapons": [
-      {
-        "name": "Hellcrusher claws – strike",
-        "types": [],
-        "range": "Melee",
-        "attacks": "6",
-        "skill": "3+",
-        "strength": "14",
-        "ap": "-3",
-        "damage": "6"
-      },
-      {
-        "name": "Hellcrusher claws – sweep",
-        "types": [],
-        "range": "Melee",
-        "attacks": "18",
-        "skill": "3+",
-        "strength": "8",
-        "ap": "-2",
-        "damage": "2"
-      }
-    ]
-  },
-  {
     "name": "Helbrute",
     "keywords": [
       "VEHICLE",
@@ -2524,7 +2071,8 @@
           "Sv": "2+",
           "W": "8",
           "Ld": "6+",
-          "OC": "3"
+          "OC": "3",
+          "BaseSize": "(⌀60mm)"
         }
       }
     ],
@@ -2710,7 +2258,14 @@
     "abilities": [
       "Airborne Predator: Each time this model makes an attack that targets a unit that can FLY , add 1 to the Hit roll ."
     ],
-    "stats": [],
+    "stats": [
+      {
+        "stats": {
+          "Inv": "5+",
+          "BaseSize": "(⌀120 x 92mm flying base)"
+        }
+      }
+    ],
     "ranged_weapons": [
       {
         "name": "Baleflamer",
@@ -2755,132 +2310,6 @@
     ]
   },
   {
-    "name": "Hell Blade",
-    "keywords": [
-      "VEHICLE",
-      "CHAOS",
-      "AIRCRAFT",
-      "FLY",
-      "KHORNE"
-    ],
-    "core": [
-      "Deadly Demise D3"
-    ],
-    "faction": [
-      "Blessings of Khorne"
-    ],
-    "abilities": [
-      "Interceptor: Each time this model makes a ranged attack that targets a unit that can FLY , add 1 to the Hit roll ."
-    ],
-    "stats": [],
-    "ranged_weapons": [
-      {
-        "name": "Twin autocannon",
-        "types": [
-          "twin-linked"
-        ],
-        "range": "48",
-        "attacks": "2",
-        "skill": "3+",
-        "strength": "9",
-        "ap": "-3",
-        "damage": "3"
-      },
-      {
-        "name": "Twin lascannon",
-        "types": [
-          "twin-linked"
-        ],
-        "range": "48",
-        "attacks": "1",
-        "skill": "3+",
-        "strength": "12",
-        "ap": "-3",
-        "damage": "D6+1"
-      }
-    ],
-    "melee_weapons": [
-      {
-        "name": "Armoured hull",
-        "types": [],
-        "range": "Melee",
-        "attacks": "3",
-        "skill": "4+",
-        "strength": "6",
-        "ap": "0",
-        "damage": "1"
-      }
-    ]
-  },
-  {
-    "name": "Hell Talon",
-    "keywords": [
-      "VEHICLE",
-      "CHAOS",
-      "AIRCRAFT",
-      "FLY",
-      "KHORNE"
-    ],
-    "core": [
-      "Deadly Demise D3"
-    ],
-    "faction": [
-      "Blessings of Khorne"
-    ],
-    "abilities": [
-      "Bomb Rack: Each time this model ends a Normal move , you can select one enemy unit it moved across during that move and roll six D6: for each 3+, that unit suffers 1 mortal wound ."
-    ],
-    "stats": [],
-    "ranged_weapons": [
-      {
-        "name": "Autocannon",
-        "types": [],
-        "range": "48",
-        "attacks": "2",
-        "skill": "3+",
-        "strength": "9",
-        "ap": "-1",
-        "damage": "3"
-      },
-      {
-        "name": "Havoc launcher",
-        "types": [
-          "blast"
-        ],
-        "range": "48",
-        "attacks": "D6",
-        "skill": "3+",
-        "strength": "5",
-        "ap": "0",
-        "damage": "1"
-      },
-      {
-        "name": "Twin lascannon",
-        "types": [
-          "twin-linked"
-        ],
-        "range": "48",
-        "attacks": "1",
-        "skill": "3+",
-        "strength": "12",
-        "ap": "-3",
-        "damage": "D6+1"
-      }
-    ],
-    "melee_weapons": [
-      {
-        "name": "Armoured hull",
-        "types": [],
-        "range": "Melee",
-        "attacks": "6",
-        "skill": "4+",
-        "strength": "6",
-        "ap": "0",
-        "damage": "1"
-      }
-    ]
-  },
-  {
     "name": "Jakhals",
     "keywords": [
       "INFANTRY",
@@ -2904,7 +2333,8 @@
           "Sv": "6+",
           "W": "1",
           "Ld": "7+",
-          "OC": "1"
+          "OC": "1",
+          "BaseSize": "(⌀28.5mmDishonoured model 40mm)"
         }
       }
     ],
@@ -2966,170 +2396,6 @@
     ]
   },
   {
-    "name": "Khârn The Betrayer",
-    "keywords": [
-      "INFANTRY",
-      "CHARACTER",
-      "EPIC HERO",
-      "GRENADES",
-      "CHAOS",
-      "KHORNE"
-    ],
-    "core": [
-      "Leader"
-    ],
-    "faction": [
-      "Blessings of Khorne"
-    ],
-    "abilities": [
-      "Legendary Killer: While this model is leading a unit, each time a model in that unit makes a melee attack, re-roll a Hit roll of 1 and re-roll a Wound roll of 1.",
-      "The Betrayer: At the end of your Charge phase , if this model is leading a unit and that unit is not within Engagement Range of one or more enemy units, you must take a Leadership test for this model. If that test is failed, one Bodyguard model in that unit is destroyed.",
-      "Berzerker Frenzy: The first time this model is destroyed, at the end of the phase, roll one D6: on a 2+, set this model back up on the battlefield as close as possible to where it was destroyed and not within Engagement Range of one or more enemy units, with 3 wounds remaining."
-    ],
-    "stats": [
-      {
-        "stats": {
-          "M": "8",
-          "T": "4",
-          "Sv": "3+",
-          "W": "5",
-          "Ld": "6+",
-          "OC": "1"
-        }
-      }
-    ],
-    "ranged_weapons": [
-      {
-        "name": "Plasma pistol – standard",
-        "types": [
-          "pistol"
-        ],
-        "range": "12",
-        "attacks": "1",
-        "skill": "3+",
-        "strength": "7",
-        "ap": "-2",
-        "damage": "1"
-      },
-      {
-        "name": "Plasma pistol – supercharge",
-        "types": [
-          "hazardous",
-          "pistol"
-        ],
-        "range": "12",
-        "attacks": "1",
-        "skill": "3+",
-        "strength": "8",
-        "ap": "-3",
-        "damage": "2"
-      }
-    ],
-    "melee_weapons": [
-      {
-        "name": "Gorechild",
-        "types": [],
-        "range": "Melee",
-        "attacks": "8",
-        "skill": "2+",
-        "strength": "7",
-        "ap": "-2",
-        "damage": "3"
-      }
-    ]
-  },
-  {
-    "name": "Khorne Berzerkers",
-    "keywords": [
-      "INFANTRY",
-      "BATTLELINE",
-      "GRENADES",
-      "CHAOS",
-      "KHORNE"
-    ],
-    "core": [],
-    "faction": [
-      "Blessings of Khorne"
-    ],
-    "abilities": [
-      "Blood Surge: In your opponent’s Shooting phase , each time an enemy unit has shot, if any models from this unit were destroyed as a result of those attacks, this unit can make a Blood Surge move. To do so, roll one D6 and add 2 to the roll: models in this unit move a number of inches up to this result, but this unit must end that move as close as possible to the closest enemy unit (excluding AIRCRAFT ), When doing so, those models can be moved within Engagement Range of that enemy unit. This unit cannot make a Blood Surge move while it is Battle-shocked or within Engagement Range of one or more enemy units, and can only make one Blood Surge move per phase.",
-      "Icon of Khorne: If the bearer’s unit contains one or more Icons of Khorne, each time the bearer’s unit destroys an enemy unit, you gain 1 Bloodshed point. Each time you make a Blessings of Khorne roll , roll one additional D6 for each Bloodshed point you have, after which, all your Bloodshed points are lost."
-    ],
-    "stats": [
-      {
-        "stats": {
-          "M": "8",
-          "T": "4",
-          "Sv": "3+",
-          "W": "2",
-          "Ld": "6+",
-          "OC": "2"
-        }
-      }
-    ],
-    "ranged_weapons": [
-      {
-        "name": "Bolt pistol",
-        "types": [
-          "pistol"
-        ],
-        "range": "12",
-        "attacks": "1",
-        "skill": "4+",
-        "strength": "4",
-        "ap": "0",
-        "damage": "1"
-      },
-      {
-        "name": "Plasma pistol – standard",
-        "types": [
-          "pistol"
-        ],
-        "range": "12",
-        "attacks": "1",
-        "skill": "4+",
-        "strength": "7",
-        "ap": "-2",
-        "damage": "1"
-      },
-      {
-        "name": "Plasma pistol – supercharge",
-        "types": [
-          "hazardous",
-          "pistol"
-        ],
-        "range": "12",
-        "attacks": "1",
-        "skill": "4+",
-        "strength": "8",
-        "ap": "-3",
-        "damage": "2"
-      }
-    ],
-    "melee_weapons": [
-      {
-        "name": "Chainblade",
-        "types": [],
-        "range": "Melee",
-        "attacks": "4",
-        "skill": "3+",
-        "strength": "4",
-        "ap": "-1",
-        "damage": "1"
-      },
-      {
-        "name": "Khornate eviscerator",
-        "types": [],
-        "range": "Melee",
-        "attacks": "3",
-        "skill": "3+",
-        "strength": "8",
-        "ap": "-2",
-        "damage": "2"
-      }
-    ]
-  },
-  {
     "name": "Khorne Lord of Skulls",
     "keywords": [
       "VEHICLE",
@@ -3156,7 +2422,9 @@
           "Sv": "3+",
           "W": "24",
           "Ld": "6+",
-          "OC": "8"
+          "OC": "8",
+          "Inv": "5+",
+          "BaseSize": "(⌀Use model)"
         }
       }
     ],
@@ -3250,1030 +2518,6 @@
     ]
   },
   {
-    "name": "Kratos",
-    "keywords": [
-      "VEHICLE",
-      "CHAOS",
-      "KHORNE",
-      "SMOKE"
-    ],
-    "core": [
-      "Deadly Demise D6"
-    ],
-    "faction": [
-      "Blessings of Khorne"
-    ],
-    "abilities": [
-      "Line-breaker: When making ranged attacks, this model can target enemy units within Engagement Range of it with Blast weapons (provided no other friendly units are also within Engagement Range of that enemy unit). In addition, when making ranged attacks, this model does not suffer the penalty to its Hit rolls for being within Engagement Range of one or more enemy units."
-    ],
-    "stats": [
-      {
-        "stats": {
-          "M": "10",
-          "T": "12",
-          "Sv": "2+",
-          "W": "18",
-          "Ld": "6+",
-          "OC": "6"
-        }
-      }
-    ],
-    "ranged_weapons": [
-      {
-        "name": "Autocannon",
-        "types": [],
-        "range": "48",
-        "attacks": "2",
-        "skill": "3+",
-        "strength": "9",
-        "ap": "-1",
-        "damage": "3"
-      },
-      {
-        "name": "Combi-weapon",
-        "types": [
-          "ANTI-INFANTRY 4+",
-          "DEVASTATING WOUNDS",
-          "RAPID FIRE 1"
-        ],
-        "range": "24",
-        "attacks": "1",
-        "skill": "3+",
-        "strength": "4",
-        "ap": "0",
-        "damage": "1"
-      },
-      {
-        "name": "Havoc launcher",
-        "types": [
-          "blast"
-        ],
-        "range": "48",
-        "attacks": "D6",
-        "skill": "3+",
-        "strength": "5",
-        "ap": "0",
-        "damage": "1"
-      },
-      {
-        "name": "Heavy bolter",
-        "types": [
-          "SUSTAINED HITS 1"
-        ],
-        "range": "36",
-        "attacks": "3",
-        "skill": "3+",
-        "strength": "5",
-        "ap": "-1",
-        "damage": "2"
-      },
-      {
-        "name": "Heavy flamer",
-        "types": [
-          "IGNORES COVER",
-          "TORRENT"
-        ],
-        "range": "12",
-        "attacks": "D6",
-        "skill": "N/A",
-        "strength": "5",
-        "ap": "-1",
-        "damage": "1"
-      },
-      {
-        "name": "Hunter-killer missile",
-        "types": [],
-        "range": "48",
-        "attacks": "1",
-        "skill": "2+",
-        "strength": "14",
-        "ap": "-3",
-        "damage": "D6"
-      },
-      {
-        "name": "Kratos battle cannon – AP",
-        "types": [
-          "heavy"
-        ],
-        "range": "36",
-        "attacks": "1",
-        "skill": "3+",
-        "strength": "18",
-        "ap": "-4",
-        "damage": "D6+3"
-      },
-      {
-        "name": "Kratos battle cannon – HE",
-        "types": [
-          "blast"
-        ],
-        "range": "36",
-        "attacks": "D6+3",
-        "skill": "3+",
-        "strength": "10",
-        "ap": "-1",
-        "damage": "3"
-      },
-      {
-        "name": "Lascannons",
-        "types": [],
-        "range": "48",
-        "attacks": "1",
-        "skill": "3+",
-        "strength": "12",
-        "ap": "-3",
-        "damage": "D6+1"
-      },
-      {
-        "name": "Melta blast-gun",
-        "types": [
-          "melta 2"
-        ],
-        "range": "24",
-        "attacks": "4",
-        "skill": "3+",
-        "strength": "12",
-        "ap": "-4",
-        "damage": "D6"
-      },
-      {
-        "name": "Multi-melta",
-        "types": [
-          "MELTA 2"
-        ],
-        "range": "18",
-        "attacks": "2",
-        "skill": "3+",
-        "strength": "9",
-        "ap": "-4",
-        "damage": "D6"
-      },
-      {
-        "name": "Twin boltgun",
-        "types": [
-          "twin-linked"
-        ],
-        "range": "24",
-        "attacks": "2",
-        "skill": "3+",
-        "strength": "4",
-        "ap": "0",
-        "damage": "1"
-      },
-      {
-        "name": "Volkite caliver",
-        "types": [
-          "devastating wounds"
-        ],
-        "range": "24",
-        "attacks": "2",
-        "skill": "3+",
-        "strength": "5",
-        "ap": "0",
-        "damage": "2"
-      },
-      {
-        "name": "Volkite cardanelle",
-        "types": [
-          "devastating wounds"
-        ],
-        "range": "36",
-        "attacks": "9",
-        "skill": "3+",
-        "strength": "9",
-        "ap": "0",
-        "damage": "3"
-      },
-      {
-        "name": "Volkite culverin",
-        "types": [
-          "devastating wounds"
-        ],
-        "range": "36",
-        "attacks": "4",
-        "skill": "3+",
-        "strength": "6",
-        "ap": "0",
-        "damage": "2"
-      }
-    ],
-    "melee_weapons": [
-      {
-        "name": "Armoured tracks",
-        "types": [],
-        "range": "Melee",
-        "attacks": "6",
-        "skill": "4+",
-        "strength": "8",
-        "ap": "0",
-        "damage": "1"
-      }
-    ]
-  },
-  {
-    "name": "Kytan Ravager",
-    "keywords": [
-      "VEHICLE",
-      "TITANIC",
-      "WALKER",
-      "CHAOS",
-      "KHORNE",
-      "DAEMON"
-    ],
-    "core": [
-      "Deadly Demise D6+2"
-    ],
-    "faction": [
-      "Blessings of Khorne"
-    ],
-    "abilities": [
-      "Super-heavy Walker: Each time a model with this ability makes a Normal , Advance or Fall Back move, it can move over models (excluding TITANIC models) and terrain features that are 4\" or less in height as if they were not there.",
-      "Bloodlust: Each time this model makes a Charge move , until the end of the turn, its melee weapons have the [SUSTAINED HITS 1] ability. In addition, once per battle, this model is eligible to declare a charge in a turn in which it Advanced ."
-    ],
-    "stats": [
-      {
-        "stats": {
-          "M": "10",
-          "T": "12",
-          "Sv": "3+",
-          "W": "24",
-          "Ld": "6+",
-          "OC": "10"
-        }
-      }
-    ],
-    "ranged_weapons": [
-      {
-        "name": "Kytan gatling cannon",
-        "types": [],
-        "range": "36",
-        "attacks": "18",
-        "skill": "3+",
-        "strength": "6",
-        "ap": "-2",
-        "damage": "2"
-      }
-    ],
-    "melee_weapons": [
-      {
-        "name": "Kytan cleaver – strike",
-        "types": [],
-        "range": "Melee",
-        "attacks": "4",
-        "skill": "3+",
-        "strength": "14",
-        "ap": "-4",
-        "damage": "6"
-      },
-      {
-        "name": "Kytan cleaver – sweep",
-        "types": [],
-        "range": "Melee",
-        "attacks": "12",
-        "skill": "3+",
-        "strength": "9",
-        "ap": "-3",
-        "damage": "2"
-      }
-    ]
-  },
-  {
-    "name": "Land Raider Achilles",
-    "keywords": [
-      "VEHICLE",
-      "TRANSPORT",
-      "SMOKE",
-      "CHAOS",
-      "KHORNE"
-    ],
-    "core": [
-      "Deadly Demise D6"
-    ],
-    "faction": [
-      "Blessings of Khorne"
-    ],
-    "abilities": [
-      "Assault Ramp: Each time a unit disembarks from this model after it has made a Normal move , that unit is still eligible to declare a charge this turn."
-    ],
-    "stats": [
-      {
-        "stats": {
-          "M": "10",
-          "T": "12",
-          "Sv": "2+",
-          "W": "16",
-          "Ld": "6+",
-          "OC": "5"
-        }
-      }
-    ],
-    "ranged_weapons": [
-      {
-        "name": "Hunter-killer missile",
-        "types": [],
-        "range": "48",
-        "attacks": "1",
-        "skill": "2+",
-        "strength": "14",
-        "ap": "-3",
-        "damage": "D6"
-      },
-      {
-        "name": "Quad launcher – shatter shells",
-        "types": [],
-        "range": "24",
-        "attacks": "4",
-        "skill": "3+",
-        "strength": "9",
-        "ap": "-2",
-        "damage": "3"
-      },
-      {
-        "name": "Quad launcher – thunderfire shells",
-        "types": [
-          "blast",
-          "indirect fire"
-        ],
-        "range": "60",
-        "attacks": "D6+4",
-        "skill": "3+",
-        "strength": "5",
-        "ap": "0",
-        "damage": "1"
-      },
-      {
-        "name": "Storm bolter",
-        "types": [
-          "rapid fire 2"
-        ],
-        "range": "24",
-        "attacks": "2",
-        "skill": "3+",
-        "strength": "4",
-        "ap": "0",
-        "damage": "1"
-      },
-      {
-        "name": "Twin multi-melta",
-        "types": [
-          "melta 2",
-          "twin-linked"
-        ],
-        "range": "18",
-        "attacks": "2",
-        "skill": "3+",
-        "strength": "9",
-        "ap": "-4",
-        "damage": "D6"
-      },
-      {
-        "name": "Twin volkite culverin",
-        "types": [
-          "devastating wounds",
-          "twin-linked"
-        ],
-        "range": "36",
-        "attacks": "4",
-        "skill": "3+",
-        "strength": "6",
-        "ap": "0",
-        "damage": "2"
-      }
-    ],
-    "melee_weapons": [
-      {
-        "name": "Armoured tracks",
-        "types": [],
-        "range": "Melee",
-        "attacks": "6",
-        "skill": "4+",
-        "strength": "8",
-        "ap": "0",
-        "damage": "1"
-      }
-    ]
-  },
-  {
-    "name": "Land Raider Proteus",
-    "keywords": [
-      "VEHICLE",
-      "TRANSPORT",
-      "SMOKE",
-      "CHAOS",
-      "KHORNE"
-    ],
-    "core": [
-      "Deadly Demise D6"
-    ],
-    "faction": [
-      "Blessings of Khorne"
-    ],
-    "abilities": [
-      "Assault Ramp: Each time a unit disembarks from this model after it has made a Normal move , that unit is still eligible to declare a charge this turn.",
-      "Explorator Augury Web: Enemy units that are set up on the battlefield as Reinforcements cannot be set up within 12\" of this bearer, but the bearer must halve its Transport Capacity ."
-    ],
-    "stats": [
-      {
-        "stats": {
-          "M": "12",
-          "T": "12",
-          "Sv": "2+",
-          "W": "16",
-          "Ld": "6+",
-          "OC": "5"
-        }
-      }
-    ],
-    "ranged_weapons": [
-      {
-        "name": "Heavy bolter",
-        "types": [
-          "sustained hits 1"
-        ],
-        "range": "36",
-        "attacks": "3",
-        "skill": "3+",
-        "strength": "5",
-        "ap": "-1",
-        "damage": "2"
-      },
-      {
-        "name": "Hunter-killer missile",
-        "types": [],
-        "range": "48",
-        "attacks": "1",
-        "skill": "2+",
-        "strength": "14",
-        "ap": "-3",
-        "damage": "D6"
-      },
-      {
-        "name": "Multi-melta",
-        "types": [
-          "melta 2"
-        ],
-        "range": "18",
-        "attacks": "2",
-        "skill": "3+",
-        "strength": "9",
-        "ap": "-4",
-        "damage": "D6"
-      },
-      {
-        "name": "Storm bolter",
-        "types": [
-          "rapid fire 2"
-        ],
-        "range": "24",
-        "attacks": "2",
-        "skill": "3+",
-        "strength": "4",
-        "ap": "0",
-        "damage": "1"
-      },
-      {
-        "name": "Twin heavy bolter",
-        "types": [
-          "twin-linked",
-          "sustained hits 1"
-        ],
-        "range": "36",
-        "attacks": "3",
-        "skill": "3+",
-        "strength": "5",
-        "ap": "-1",
-        "damage": "2"
-      },
-      {
-        "name": "Twin heavy flamer",
-        "types": [
-          "ignores cover",
-          "torrent",
-          "twin-linked"
-        ],
-        "range": "12",
-        "attacks": "D6",
-        "skill": "N/A",
-        "strength": "5",
-        "ap": "-1",
-        "damage": "1"
-      },
-      {
-        "name": "Twin lascannon",
-        "types": [
-          "twin-linked"
-        ],
-        "range": "48",
-        "attacks": "1",
-        "skill": "3+",
-        "strength": "12",
-        "ap": "-3",
-        "damage": "D6+1"
-      }
-    ],
-    "melee_weapons": [
-      {
-        "name": "Armoured tracks",
-        "types": [],
-        "range": "Melee",
-        "attacks": "6",
-        "skill": "4+",
-        "strength": "8",
-        "ap": "0",
-        "damage": "1"
-      }
-    ]
-  },
-  {
-    "name": "Leviathan Dreadnought",
-    "keywords": [
-      "VEHICLE",
-      "WALKER",
-      "CHAOS",
-      "KHORNE",
-      "SMOKE",
-      "DREADNOUGHT"
-    ],
-    "core": [
-      "Deadly Demise D3"
-    ],
-    "faction": [
-      "Blessings of Khorne"
-    ],
-    "abilities": [
-      "Duty Eternal: Each time an attack is allocated to this model, subtract 1 from the Damage characteristic of that attack."
-    ],
-    "stats": [
-      {
-        "stats": {
-          "M": "8",
-          "T": "10",
-          "Sv": "2+",
-          "W": "12",
-          "Ld": "6+",
-          "OC": "4"
-        }
-      }
-    ],
-    "ranged_weapons": [
-      {
-        "name": "Cyclonic melta lance",
-        "types": [
-          "melta 2"
-        ],
-        "range": "18",
-        "attacks": "D6",
-        "skill": "3+",
-        "strength": "9",
-        "ap": "-4",
-        "damage": "D6"
-      },
-      {
-        "name": "Grav-flux bombard",
-        "types": [
-          "anti-vehicle 2+",
-          "blast"
-        ],
-        "range": "24",
-        "attacks": "2D3",
-        "skill": "3+",
-        "strength": "8",
-        "ap": "-1",
-        "damage": "2"
-      },
-      {
-        "name": "Heavy flamer",
-        "types": [
-          "ignores cover",
-          "torrent"
-        ],
-        "range": "12",
-        "attacks": "D6",
-        "skill": "N/A",
-        "strength": "5",
-        "ap": "-1",
-        "damage": "1"
-      },
-      {
-        "name": "Hunter-killer missile",
-        "types": [],
-        "range": "48",
-        "attacks": "1",
-        "skill": "2+",
-        "strength": "14",
-        "ap": "-3",
-        "damage": "D6"
-      },
-      {
-        "name": "Meltagun",
-        "types": [
-          "melta 2"
-        ],
-        "range": "12",
-        "attacks": "1",
-        "skill": "3+",
-        "strength": "9",
-        "ap": "-4",
-        "damage": "D6"
-      },
-      {
-        "name": "Storm cannon",
-        "types": [
-          "twin-linked"
-        ],
-        "range": "36",
-        "attacks": "4",
-        "skill": "3+",
-        "strength": "9",
-        "ap": "-1",
-        "damage": "3"
-      },
-      {
-        "name": "Twin volkite caliver",
-        "types": [
-          "devastating wounds",
-          "twin-linked"
-        ],
-        "range": "24",
-        "attacks": "2",
-        "skill": "3+",
-        "strength": "5",
-        "ap": "0",
-        "damage": "2"
-      }
-    ],
-    "melee_weapons": [
-      {
-        "name": "Armoured feet",
-        "types": [],
-        "range": "Melee",
-        "attacks": "5",
-        "skill": "3+",
-        "strength": "6",
-        "ap": "0",
-        "damage": "1"
-      },
-      {
-        "name": "Leviathan siege claw",
-        "types": [],
-        "range": "Melee",
-        "attacks": "5",
-        "skill": "3+",
-        "strength": "12",
-        "ap": "-2",
-        "damage": "3"
-      },
-      {
-        "name": "Leviathan siege drill",
-        "types": [
-          "anti-vehicle 3+"
-        ],
-        "range": "Melee",
-        "attacks": "4",
-        "skill": "3+",
-        "strength": "12",
-        "ap": "-2",
-        "damage": "3"
-      }
-    ]
-  },
-  {
-    "name": "Lord",
-    "variant": "on Juggernaut",
-    "keywords": [
-      "MOUNTED",
-      "CHARACTER",
-      "CHAOS",
-      "KHORNE"
-    ],
-    "core": [
-      "Leader"
-    ],
-    "faction": [
-      "Blessings of Khorne"
-    ],
-    "abilities": [
-      "Aggressive Advance: While this model is leading a unit, models in that unit have a Move characteristic of 10\" and each time a model in that unit makes a Normal , Advance , Fall Back or Charge move , it can move horizontally through terrain features .",
-      "Crush All Who Stand Before Us: Each time this model’s unit is selected to fight, you can use this ability. When determining which models in this unit are eligible to fight, any models in it that are within 3\" of one or more enemy models are eligible to fight. When resolving those attacks, such models can target one of those enemy units that is within 3\" of them and within Engagement Range of their unit."
-    ],
-    "stats": [
-      {
-        "stats": {
-          "M": "10",
-          "T": "6",
-          "Sv": "3+",
-          "W": "7",
-          "Ld": "6+",
-          "OC": "2"
-        }
-      }
-    ],
-    "ranged_weapons": [
-      {
-        "name": "Plasma pistol – standard",
-        "types": [
-          "pistol"
-        ],
-        "range": "12",
-        "attacks": "1",
-        "skill": "3+",
-        "strength": "7",
-        "ap": "-2",
-        "damage": "1"
-      },
-      {
-        "name": "Plasma pistol – supercharge",
-        "types": [
-          "hazardous",
-          "pistol"
-        ],
-        "range": "12",
-        "attacks": "1",
-        "skill": "3+",
-        "strength": "8",
-        "ap": "-3",
-        "damage": "2"
-      }
-    ],
-    "melee_weapons": [
-      {
-        "name": "Exalted chainblade",
-        "types": [],
-        "range": "Melee",
-        "attacks": "7",
-        "skill": "2+",
-        "strength": "6",
-        "ap": "-1",
-        "damage": "2"
-      },
-      {
-        "name": "Bladed horn",
-        "types": [
-          "extra attacks",
-          "lance"
-        ],
-        "range": "Melee",
-        "attacks": "4",
-        "skill": "3+",
-        "strength": "6",
-        "ap": "-1",
-        "damage": "2"
-      }
-    ]
-  },
-  {
-    "name": "Lord Invocatus",
-    "keywords": [
-      "MOUNTED",
-      "CHARACTER",
-      "EPIC HERO",
-      "CHAOS",
-      "KHORNE"
-    ],
-    "core": [
-      "Leader",
-      "Deep Strike",
-      "Scouts 6\""
-    ],
-    "faction": [
-      "Blessings of Khorne"
-    ],
-    "abilities": [
-      "Fire Riders: While this model is leading a unit, models in that unit have the Deep Strike ability and each time a model in that unit makes a Normal , Advance , Fall Back or Charge move , it can move horizontally through models and terrain features . When making a Normal, Advance or Fall Back move, models in that unit can move within Engagement Range of enemy models, but cannot end that move within Engagement Range of them and any Desperate Escape test is automatically passed.",
-      "Bloody Stampede: Each time this model’s unit ends a Charge move , select one enemy unit within Engagement Range of this model, then roll one D6: on a 2-3, that enemy unit suffers 1 mortal wound ; on a 4-5, that enemy unit suffers D3 mortal wounds; on a 6, that enemy unit suffers D3+3 mortal wounds."
-    ],
-    "stats": [
-      {
-        "stats": {
-          "M": "10",
-          "T": "6",
-          "Sv": "3+",
-          "W": "8",
-          "Ld": "6+",
-          "OC": "2"
-        }
-      }
-    ],
-    "ranged_weapons": [
-      {
-        "name": "Bolt pistol",
-        "types": [
-          "pistol"
-        ],
-        "range": "12",
-        "attacks": "1",
-        "skill": "3+",
-        "strength": "4",
-        "ap": "0",
-        "damage": "1"
-      }
-    ],
-    "melee_weapons": [
-      {
-        "name": "Coward’s Bane",
-        "types": [
-          "devastating wounds"
-        ],
-        "range": "Melee",
-        "attacks": "7",
-        "skill": "2+",
-        "strength": "6",
-        "ap": "-2",
-        "damage": "2"
-      },
-      {
-        "name": "Bladed horn",
-        "types": [
-          "extra attacks",
-          "lance"
-        ],
-        "range": "Melee",
-        "attacks": "4",
-        "skill": "3+",
-        "strength": "6",
-        "ap": "-1",
-        "damage": "2"
-      }
-    ]
-  },
-  {
-    "name": "Master of Executions",
-    "keywords": [
-      "INFANTRY",
-      "CHARACTER",
-      "CHAOS",
-      "KHORNE"
-    ],
-    "core": [
-      "Leader"
-    ],
-    "faction": [
-      "Blessings of Khorne"
-    ],
-    "abilities": [
-      "Forwards, for Blood!: While this model is leading a unit, you can re-roll Advance rolls made for that unit and each time that unit makes a Blood Surge move, you can re-roll the D6 used to determine how far models in that unit move.",
-      "A Worthy Skull: Each time this model makes a melee attack that targets a CHARACTER unit, you can re-roll the Hit roll and you can re-roll the Wound roll . Each time this model’s unit destroys a CHARACTER model, you gain 1CP."
-    ],
-    "stats": [
-      {
-        "stats": {
-          "M": "8",
-          "T": "4",
-          "Sv": "3+",
-          "W": "4",
-          "Ld": "6+",
-          "OC": "1"
-        }
-      }
-    ],
-    "ranged_weapons": [
-      {
-        "name": "Bolt pistol",
-        "types": [
-          "pistol"
-        ],
-        "range": "12",
-        "attacks": "1",
-        "skill": "3+",
-        "strength": "4",
-        "ap": "0",
-        "damage": "1"
-      }
-    ],
-    "melee_weapons": [
-      {
-        "name": "Axe of dismemberment",
-        "types": [
-          "devastating wounds",
-          "precision"
-        ],
-        "range": "Melee",
-        "attacks": "5",
-        "skill": "2+",
-        "strength": "7",
-        "ap": "-2",
-        "damage": "2"
-      }
-    ]
-  },
-  {
-    "name": "Mastodon",
-    "keywords": [
-      "VEHICLE",
-      "TITANIC",
-      "CHAOS",
-      "KHORNE",
-      "TRANSPORT",
-      "SMOKE"
-    ],
-    "core": [
-      "Deadly Demise 2D6"
-    ],
-    "faction": [
-      "Blessings of Khorne"
-    ],
-    "abilities": [
-      "Inviolable Transport: Once per battle round , when an attack is allocated to this model, you can change the Damage characteristic of that attack to 0."
-    ],
-    "stats": [
-      {
-        "stats": {
-          "M": "9",
-          "T": "14",
-          "Sv": "2+",
-          "W": "30",
-          "Ld": "6+",
-          "OC": "12"
-        }
-      }
-    ],
-    "ranged_weapons": [
-      {
-        "name": "Heavy bolter",
-        "types": [
-          "sustained hits 1"
-        ],
-        "range": "36",
-        "attacks": "3",
-        "skill": "3+",
-        "strength": "5",
-        "ap": "-1",
-        "damage": "2"
-      },
-      {
-        "name": "Heavy flamer",
-        "types": [
-          "ignores cover",
-          "torrent"
-        ],
-        "range": "12",
-        "attacks": "D6",
-        "skill": "N/A",
-        "strength": "5",
-        "ap": "-1",
-        "damage": "1"
-      },
-      {
-        "name": "Lascannon",
-        "types": [],
-        "range": "48",
-        "attacks": "1",
-        "skill": "3+",
-        "strength": "12",
-        "ap": "-3",
-        "damage": "D6+1"
-      },
-      {
-        "name": "Siege melta array",
-        "types": [
-          "melta 2"
-        ],
-        "range": "24",
-        "attacks": "6",
-        "skill": "3+",
-        "strength": "9",
-        "ap": "-4",
-        "damage": "D6"
-      },
-      {
-        "name": "Skyreaper battery",
-        "types": [
-          "anti-fly 4+"
-        ],
-        "range": "48",
-        "attacks": "8",
-        "skill": "3+",
-        "strength": "7",
-        "ap": "-1",
-        "damage": "2"
-      },
-      {
-        "name": "Volkite culverin",
-        "types": [
-          "devastating wounds"
-        ],
-        "range": "36",
-        "attacks": "4",
-        "skill": "3+",
-        "strength": "6",
-        "ap": "0",
-        "damage": "2"
-      }
-    ],
-    "melee_weapons": [
-      {
-        "name": "Armoured tracks",
-        "types": [],
-        "range": "Melee",
-        "attacks": "6",
-        "skill": "4+",
-        "strength": "8",
-        "ap": "0",
-        "damage": "1"
-      }
-    ]
-  },
-  {
     "name": "Maulerfiend",
     "keywords": [
       "VEHICLE",
@@ -4300,7 +2544,9 @@
           "Sv": "3+",
           "W": "12",
           "Ld": "6+",
-          "OC": "3"
+          "OC": "3",
+          "Inv": "5+",
+          "BaseSize": "(⌀120 x 92mm)"
         }
       }
     ],
@@ -4341,1489 +2587,6 @@
         "strength": "14",
         "ap": "-2",
         "damage": "D6+1"
-      }
-    ]
-  },
-  {
-    "name": "Rapier Carrier",
-    "keywords": [
-      "VEHICLE",
-      "CHAOS",
-      "KHORNE"
-    ],
-    "core": [],
-    "faction": [
-      "Blessings of Khorne"
-    ],
-    "abilities": [
-      "Powerful Volley: Each time this model shoots in your Shooting phase , provided it Remained Stationary this turn, all [HEAVY] weapons equipped by models in this unit have the [LETHAL HITS] ability."
-    ],
-    "stats": [
-      {
-        "stats": {
-          "M": "3",
-          "T": "6",
-          "Sv": "2+",
-          "W": "6",
-          "Ld": "6+",
-          "OC": "2"
-        }
-      }
-    ],
-    "ranged_weapons": [
-      {
-        "name": "Boltgun",
-        "types": [],
-        "range": "24",
-        "attacks": "2",
-        "skill": "3+",
-        "strength": "4",
-        "ap": "0",
-        "damage": "1"
-      },
-      {
-        "name": "Graviton cannon",
-        "types": [
-          "anti-vehicle 2+",
-          "blast",
-          "heavy"
-        ],
-        "range": "36",
-        "attacks": "D6",
-        "skill": "3+",
-        "strength": "6",
-        "ap": "-2",
-        "damage": "2"
-      },
-      {
-        "name": "Laser destroyer",
-        "types": [
-          "heavy"
-        ],
-        "range": "36",
-        "attacks": "3",
-        "skill": "3+",
-        "strength": "14",
-        "ap": "-4",
-        "damage": "D6+1"
-      },
-      {
-        "name": "Quad heavy bolter",
-        "types": [
-          "heavy",
-          "twin-linked",
-          "sustained hits 1"
-        ],
-        "range": "36",
-        "attacks": "6",
-        "skill": "3+",
-        "strength": "5",
-        "ap": "-1",
-        "damage": "2"
-      },
-      {
-        "name": "Quad launcher – shatter shells",
-        "types": [
-          "heavy"
-        ],
-        "range": "24",
-        "attacks": "4",
-        "skill": "3+",
-        "strength": "9",
-        "ap": "-2",
-        "damage": "3"
-      },
-      {
-        "name": "Quad launcher – thunderfire shells",
-        "types": [
-          "blast",
-          "heavy",
-          "indirect fire"
-        ],
-        "range": "60",
-        "attacks": "D6+4",
-        "skill": "3+",
-        "strength": "5",
-        "ap": "0",
-        "damage": "1"
-      }
-    ],
-    "melee_weapons": [
-      {
-        "name": "Close combat weapon",
-        "types": [],
-        "range": "Melee",
-        "attacks": "2",
-        "skill": "3+",
-        "strength": "4",
-        "ap": "0",
-        "damage": "1"
-      }
-    ]
-  },
-  {
-    "name": "Relic Contemptor Dreadnought",
-    "keywords": [
-      "VEHICLE",
-      "WALKER",
-      "CHAOS",
-      "KHORNE",
-      "DREADNOUGHT"
-    ],
-    "core": [
-      "Deadly Demise 1"
-    ],
-    "faction": [
-      "Blessings of Khorne"
-    ],
-    "abilities": [
-      "Even In Death I Serve: The first time this model is destroyed, remove it from play without resolving its Deadly Demise ability. Then, at the end of the phase, roll one D6: on a 2+, set this model back up on the battlefield as close as possible to where it was destroyed and not within Engagement Range of any enemy units, with D6 wounds remaining."
-    ],
-    "stats": [
-      {
-        "stats": {
-          "M": "6",
-          "T": "9",
-          "Sv": "2+",
-          "W": "10",
-          "Ld": "6+",
-          "OC": "3"
-        }
-      }
-    ],
-    "ranged_weapons": [
-      {
-        "name": "Combi-bolter",
-        "types": [
-          "rapid fire 2"
-        ],
-        "range": "24",
-        "attacks": "2",
-        "skill": "3+",
-        "strength": "4",
-        "ap": "0",
-        "damage": "1"
-      },
-      {
-        "name": "Conversion beam cannon",
-        "types": [
-          "sustained hits d3"
-        ],
-        "range": "24",
-        "attacks": "1",
-        "skill": "3+",
-        "strength": "7",
-        "ap": "-1",
-        "damage": "3"
-      },
-      {
-        "name": "Cyclone missile launcher – frag",
-        "types": [
-          "BLAST"
-        ],
-        "range": "36",
-        "attacks": "2D6",
-        "skill": "3+",
-        "strength": "4",
-        "ap": "0",
-        "damage": "1"
-      },
-      {
-        "name": "Cyclone missile launcher – krak",
-        "types": [],
-        "range": "36",
-        "attacks": "2",
-        "skill": "3+",
-        "strength": "9",
-        "ap": "-2",
-        "damage": "D6"
-      },
-      {
-        "name": "Graviton blaster",
-        "types": [
-          "anti-vehicle 2+"
-        ],
-        "range": "18",
-        "attacks": "2",
-        "skill": "3+",
-        "strength": "5",
-        "ap": "-1",
-        "damage": "1"
-      },
-      {
-        "name": "Twin autocannon",
-        "types": [
-          "TWIN-LINKED"
-        ],
-        "range": "48",
-        "attacks": "2",
-        "skill": "3+",
-        "strength": "9",
-        "ap": "-1",
-        "damage": "3"
-      },
-      {
-        "name": "Twin heavy bolter",
-        "types": [
-          "TWIN-LINKED",
-          "SUSTAINED HITS 1"
-        ],
-        "range": "36",
-        "attacks": "3",
-        "skill": "3+",
-        "strength": "5",
-        "ap": "-1",
-        "damage": "2"
-      },
-      {
-        "name": "Twin lascannon",
-        "types": [
-          "TWIN-LINKED"
-        ],
-        "range": "48",
-        "attacks": "1",
-        "skill": "3+",
-        "strength": "12",
-        "ap": "-3",
-        "damage": "D6+1"
-      },
-      {
-        "name": "Heavy flamer",
-        "types": [
-          "IGNORES COVER",
-          "TORRENT"
-        ],
-        "range": "12",
-        "attacks": "D6",
-        "skill": "N/A",
-        "strength": "5",
-        "ap": "-1",
-        "damage": "1"
-      },
-      {
-        "name": "Heavy plasma cannon – standard",
-        "types": [
-          "blast"
-        ],
-        "range": "36",
-        "attacks": "D3",
-        "skill": "3+",
-        "strength": "7",
-        "ap": "-2",
-        "damage": "2"
-      },
-      {
-        "name": "Heavy plasma cannon – supercharge",
-        "types": [
-          "blast",
-          "hazardous"
-        ],
-        "range": "36",
-        "attacks": "D3",
-        "skill": "3+",
-        "strength": "8",
-        "ap": "-3",
-        "damage": "3"
-      },
-      {
-        "name": "Kheres-pattern assault cannon",
-        "types": [
-          "devastating wounds"
-        ],
-        "range": "24",
-        "attacks": "6",
-        "skill": "3+",
-        "strength": "7",
-        "ap": "-1",
-        "damage": "1"
-      },
-      {
-        "name": "Multi-melta",
-        "types": [
-          "MELTA 2"
-        ],
-        "range": "18",
-        "attacks": "2",
-        "skill": "3+",
-        "strength": "9",
-        "ap": "-4",
-        "damage": "D6"
-      },
-      {
-        "name": "Plasma blaster – standard",
-        "types": [],
-        "range": "18",
-        "attacks": "2",
-        "skill": "3+",
-        "strength": "7",
-        "ap": "-2",
-        "damage": "1"
-      },
-      {
-        "name": "Plasma blaster – supercharge",
-        "types": [
-          "HAZARDOUS"
-        ],
-        "range": "18",
-        "attacks": "2",
-        "skill": "3+",
-        "strength": "8",
-        "ap": "-3",
-        "damage": "2"
-      },
-      {
-        "name": "Twin volkite culverin",
-        "types": [
-          "devastating wounds",
-          "twin-linked"
-        ],
-        "range": "36",
-        "attacks": "4",
-        "skill": "3+",
-        "strength": "6",
-        "ap": "0",
-        "damage": "2"
-      }
-    ],
-    "melee_weapons": [
-      {
-        "name": "Armoured feet",
-        "types": [],
-        "range": "Melee",
-        "attacks": "5",
-        "skill": "3+",
-        "strength": "6",
-        "ap": "0",
-        "damage": "1"
-      },
-      {
-        "name": "Dreadnought chainfist",
-        "types": [
-          "anti-vehicle 3+"
-        ],
-        "range": "Melee",
-        "attacks": "4",
-        "skill": "3+",
-        "strength": "12",
-        "ap": "-2",
-        "damage": "3"
-      },
-      {
-        "name": "Dreadnought combat weapon",
-        "types": [],
-        "range": "Melee",
-        "attacks": "5",
-        "skill": "3+",
-        "strength": "12",
-        "ap": "-2",
-        "damage": "3"
-      }
-    ]
-  },
-  {
-    "name": "Sicaran Battle Tank",
-    "keywords": [
-      "VEHICLE",
-      "CHAOS",
-      "KHORNE",
-      "SMOKE"
-    ],
-    "core": [
-      "Deadly Demise D3"
-    ],
-    "faction": [
-      "Blessings of Khorne"
-    ],
-    "abilities": [
-      "Armoured Spearhead: Each time this model makes an attack that targets an enemy unit, re-roll a Hit roll of 1 and, if that unit is within range of an objective marker you do not control, you can re-roll the Hit roll instead."
-    ],
-    "stats": [
-      {
-        "stats": {
-          "M": "10",
-          "T": "11",
-          "Sv": "2+",
-          "W": "14",
-          "Ld": "6+",
-          "OC": "4"
-        }
-      }
-    ],
-    "ranged_weapons": [
-      {
-        "name": "Heavy bolter",
-        "types": [
-          "sustained hits 1"
-        ],
-        "range": "36",
-        "attacks": "3",
-        "skill": "3+",
-        "strength": "5",
-        "ap": "-1",
-        "damage": "2"
-      },
-      {
-        "name": "Herakles-pattern autocannon",
-        "types": [
-          "rapid fire 2"
-        ],
-        "range": "48",
-        "attacks": "6",
-        "skill": "3+",
-        "strength": "9",
-        "ap": "-1",
-        "damage": "3"
-      },
-      {
-        "name": "Hunter-killer missile",
-        "types": [],
-        "range": "48",
-        "attacks": "1",
-        "skill": "2+",
-        "strength": "14",
-        "ap": "-3",
-        "damage": "D6"
-      },
-      {
-        "name": "Lascannon",
-        "types": [],
-        "range": "48",
-        "attacks": "1",
-        "skill": "3+",
-        "strength": "12",
-        "ap": "-3",
-        "damage": "D6+1"
-      },
-      {
-        "name": "Storm bolter",
-        "types": [
-          "rapid fire 2"
-        ],
-        "range": "24",
-        "attacks": "2",
-        "skill": "3+",
-        "strength": "4",
-        "ap": "0",
-        "damage": "1"
-      }
-    ],
-    "melee_weapons": [
-      {
-        "name": "Armoured tracks",
-        "types": [],
-        "range": "Melee",
-        "attacks": "6",
-        "skill": "4+",
-        "strength": "8",
-        "ap": "0",
-        "damage": "1"
-      }
-    ]
-  },
-  {
-    "name": "Sicaran Punisher",
-    "keywords": [
-      "VEHICLE",
-      "CHAOS",
-      "KHORNE",
-      "SMOKE"
-    ],
-    "core": [
-      "Deadly Demise D3"
-    ],
-    "faction": [
-      "Blessings of Khorne"
-    ],
-    "abilities": [
-      "Rotating Death: This model’s Punisher rotary cannon has the [SUSTAINED HITS 1] ability when targeting INFANTRY units."
-    ],
-    "stats": [
-      {
-        "stats": {
-          "M": "10",
-          "T": "11",
-          "Sv": "2+",
-          "W": "14",
-          "Ld": "6+",
-          "OC": "4"
-        }
-      }
-    ],
-    "ranged_weapons": [
-      {
-        "name": "Heavy bolter",
-        "types": [
-          "sustained hits 1"
-        ],
-        "range": "36",
-        "attacks": "3",
-        "skill": "3+",
-        "strength": "5",
-        "ap": "-1",
-        "damage": "2"
-      },
-      {
-        "name": "Hunter-killer missile",
-        "types": [],
-        "range": "48",
-        "attacks": "1",
-        "skill": "2+",
-        "strength": "14",
-        "ap": "-3",
-        "damage": "D6"
-      },
-      {
-        "name": "Lascannon",
-        "types": [],
-        "range": "48",
-        "attacks": "1",
-        "skill": "3+",
-        "strength": "12",
-        "ap": "-3",
-        "damage": "D6+1"
-      },
-      {
-        "name": "Punisher rotary cannon",
-        "types": [
-          "devastating wounds"
-        ],
-        "range": "36",
-        "attacks": "18",
-        "skill": "4+",
-        "strength": "6",
-        "ap": "0",
-        "damage": "1"
-      },
-      {
-        "name": "Storm bolter",
-        "types": [
-          "rapid fire 2"
-        ],
-        "range": "24",
-        "attacks": "2",
-        "skill": "3+",
-        "strength": "4",
-        "ap": "0",
-        "damage": "1"
-      }
-    ],
-    "melee_weapons": [
-      {
-        "name": "Armoured tracks",
-        "types": [],
-        "range": "Melee",
-        "attacks": "6",
-        "skill": "4+",
-        "strength": "8",
-        "ap": "0",
-        "damage": "1"
-      }
-    ]
-  },
-  {
-    "name": "Sicaran Venator",
-    "keywords": [
-      "VEHICLE",
-      "CHAOS",
-      "KHORNE",
-      "SMOKE"
-    ],
-    "core": [
-      "Deadly Demise D3"
-    ],
-    "faction": [
-      "Blessings of Khorne"
-    ],
-    "abilities": [
-      "Ferocious Assault: Each time this model makes a ranged attack that targets the closest eligible MONSTER or VEHICLE unit, add 1 to the Hit roll ."
-    ],
-    "stats": [
-      {
-        "stats": {
-          "M": "10",
-          "T": "11",
-          "Sv": "2+",
-          "W": "14",
-          "Ld": "6+",
-          "OC": "4"
-        }
-      }
-    ],
-    "ranged_weapons": [
-      {
-        "name": "Heavy bolter",
-        "types": [
-          "sustained hits 1"
-        ],
-        "range": "36",
-        "attacks": "3",
-        "skill": "3+",
-        "strength": "5",
-        "ap": "-1",
-        "damage": "2"
-      },
-      {
-        "name": "Hunter-killer missile",
-        "types": [],
-        "range": "48",
-        "attacks": "1",
-        "skill": "2+",
-        "strength": "14",
-        "ap": "-3",
-        "damage": "D6"
-      },
-      {
-        "name": "Lascannon",
-        "types": [],
-        "range": "48",
-        "attacks": "1",
-        "skill": "3+",
-        "strength": "12",
-        "ap": "-3",
-        "damage": "D6+1"
-      },
-      {
-        "name": "Storm bolter",
-        "types": [
-          "rapid fire 2"
-        ],
-        "range": "24",
-        "attacks": "2",
-        "skill": "3+",
-        "strength": "4",
-        "ap": "0",
-        "damage": "1"
-      },
-      {
-        "name": "Venator neutron laser",
-        "types": [
-          "heavy"
-        ],
-        "range": "48",
-        "attacks": "3",
-        "skill": "3+",
-        "strength": "16",
-        "ap": "-4",
-        "damage": "D3+3"
-      }
-    ],
-    "melee_weapons": [
-      {
-        "name": "Armoured tracks",
-        "types": [],
-        "range": "Melee",
-        "attacks": "6",
-        "skill": "4+",
-        "strength": "8",
-        "ap": "0",
-        "damage": "1"
-      }
-    ]
-  },
-  {
-    "name": "Skarbrand",
-    "keywords": [
-      "MONSTER",
-      "CHARACTER",
-      "EPIC HERO",
-      "CHAOS",
-      "KHORNE",
-      "DAEMON",
-      "SUMMONED"
-    ],
-    "core": [
-      "Deadly Demise D6",
-      "Deep Strike"
-    ],
-    "faction": [
-      "Pact of Blood"
-    ],
-    "abilities": [
-      "Rage Embodied (Aura): While a friendly BLOOD LEGIONS unit is within 6\" of this model, add 1 to the Attacks characteristic of melee weapons equipped by models in that unit.",
-      "Murderlust: This unit is eligible to declare a charge in a turn in which it Advanced ."
-    ],
-    "stats": [
-      {
-        "stats": {
-          "M": "10",
-          "T": "11",
-          "Sv": "3+",
-          "W": "20",
-          "Ld": "6+",
-          "OC": "5"
-        }
-      }
-    ],
-    "ranged_weapons": [
-      {
-        "name": "Bellow of endless fury",
-        "types": [
-          "ignores cover",
-          "torrent"
-        ],
-        "range": "12",
-        "attacks": "2D6",
-        "skill": "N/A",
-        "strength": "8",
-        "ap": "-1",
-        "damage": "1"
-      }
-    ],
-    "melee_weapons": [
-      {
-        "name": "Slaughter and Carnage – strike",
-        "types": [],
-        "range": "Melee",
-        "attacks": "8",
-        "skill": "2+",
-        "strength": "16",
-        "ap": "-4",
-        "damage": "6"
-      },
-      {
-        "name": "Slaughter and Carnage – sweep",
-        "types": [],
-        "range": "Melee",
-        "attacks": "16",
-        "skill": "2+",
-        "strength": "8",
-        "ap": "-2",
-        "damage": "2"
-      }
-    ]
-  },
-  {
-    "name": "Slaughterbound",
-    "keywords": [
-      "INFANTRY",
-      "CHARACTER",
-      "CHAOS",
-      "KHORNE",
-      "DAEMON",
-      "POSSESSED"
-    ],
-    "core": [
-      "Deadly Demise D3",
-      "Leader"
-    ],
-    "faction": [
-      "Blessings of Khorne"
-    ],
-    "abilities": [
-      "Rage Eternal: While this model is leading a unit, in your Command phase , you can return one destroyed Bodyguard model to that unit.",
-      "Possessed Lord: Once per battle, at the start of the Fight phase , this model can use this ability. If it does, until the end of the phase, add 3 to the Attacks characteristic of melee weapons equipped by this model and those weapons have the [DEVASTATING WOUNDS] ability."
-    ],
-    "stats": [
-      {
-        "stats": {
-          "M": "10",
-          "T": "6",
-          "Sv": "3+",
-          "W": "6",
-          "Ld": "6+",
-          "OC": "1"
-        }
-      }
-    ],
-    "ranged_weapons": [],
-    "melee_weapons": [
-      {
-        "name": "Lacerator and daemonic claw",
-        "types": [],
-        "range": "Melee",
-        "attacks": "6",
-        "skill": "2+",
-        "strength": "10",
-        "ap": "-2",
-        "damage": "2"
-      }
-    ]
-  },
-  {
-    "name": "Sokar-pattern Stormbird",
-    "keywords": [
-      "VEHICLE",
-      "TITANIC",
-      "FLY",
-      "AIRCRAFT",
-      "TRANSPORT",
-      "CHAOS",
-      "KHORNE"
-    ],
-    "core": [
-      "Deadly Demise 2D6",
-      "Hover"
-    ],
-    "faction": [
-      "Blessings of Khorne"
-    ],
-    "abilities": [
-      "Aerial Assault: Each time a unit with the Deep Strike ability disembarks from this model after it has made a Normal move , that unit is still eligible to declare a charge this turn."
-    ],
-    "stats": [],
-    "ranged_weapons": [
-      {
-        "name": "Hellstrike missile battery",
-        "types": [
-          "anti-fly 3+"
-        ],
-        "range": "48",
-        "attacks": "4",
-        "skill": "3+",
-        "strength": "10",
-        "ap": "-3",
-        "damage": "D6"
-      },
-      {
-        "name": "Twin heavy bolter",
-        "types": [
-          "sustained hits 1",
-          "twin-linked"
-        ],
-        "range": "36",
-        "attacks": "3",
-        "skill": "3+",
-        "strength": "5",
-        "ap": "-1",
-        "damage": "2"
-      },
-      {
-        "name": "Twin lascannon",
-        "types": [
-          "twin-linked"
-        ],
-        "range": "48",
-        "attacks": "1",
-        "skill": "3+",
-        "strength": "12",
-        "ap": "-3",
-        "damage": "D6+1"
-      }
-    ],
-    "melee_weapons": [
-      {
-        "name": "Armoured hull",
-        "types": [],
-        "range": "Melee",
-        "attacks": "9",
-        "skill": "4+",
-        "strength": "9",
-        "ap": "0",
-        "damage": "1"
-      }
-    ]
-  },
-  {
-    "name": "Spartan",
-    "keywords": [
-      "VEHICLE",
-      "CHAOS",
-      "KHORNE",
-      "TRANSPORT",
-      "SMOKE"
-    ],
-    "core": [
-      "Deadly Demise D6"
-    ],
-    "faction": [
-      "Blessings of Khorne"
-    ],
-    "abilities": [
-      "Assault Ramp: Each time a unit disembarks from this model after it has made a Normal move , that unit is still eligible to declare a charge this turn."
-    ],
-    "stats": [
-      {
-        "stats": {
-          "M": "10",
-          "T": "12",
-          "Sv": "2+",
-          "W": "18",
-          "Ld": "6+",
-          "OC": "6"
-        }
-      }
-    ],
-    "ranged_weapons": [
-      {
-        "name": "Heavy bolter",
-        "types": [
-          "sustained hits 1"
-        ],
-        "range": "36",
-        "attacks": "3",
-        "skill": "3+",
-        "strength": "5",
-        "ap": "-1",
-        "damage": "2"
-      },
-      {
-        "name": "Heavy flamer",
-        "types": [
-          "torrent",
-          "ignores cover"
-        ],
-        "range": "12",
-        "attacks": "D6",
-        "skill": "N/A",
-        "strength": "5",
-        "ap": "-1",
-        "damage": "1"
-      },
-      {
-        "name": "Laser destroyer",
-        "types": [
-          "heavy"
-        ],
-        "range": "36",
-        "attacks": "3",
-        "skill": "3+",
-        "strength": "14",
-        "ap": "-4",
-        "damage": "D6+1"
-      },
-      {
-        "name": "Multi-melta",
-        "types": [
-          "melta 2"
-        ],
-        "range": "18",
-        "attacks": "2",
-        "skill": "3+",
-        "strength": "9",
-        "ap": "-4",
-        "damage": "D6"
-      },
-      {
-        "name": "Quad lascannon",
-        "types": [],
-        "range": "48",
-        "attacks": "4",
-        "skill": "3+",
-        "strength": "12",
-        "ap": "-3",
-        "damage": "D6+1"
-      },
-      {
-        "name": "Storm bolter",
-        "types": [
-          "rapid fire 2"
-        ],
-        "range": "24",
-        "attacks": "2",
-        "skill": "3+",
-        "strength": "4",
-        "ap": "0",
-        "damage": "1"
-      },
-      {
-        "name": "Twin heavy bolter",
-        "types": [
-          "sustained hits 1",
-          "twin-linked"
-        ],
-        "range": "36",
-        "attacks": "3",
-        "skill": "3+",
-        "strength": "5",
-        "ap": "-1",
-        "damage": "2"
-      },
-      {
-        "name": "Twin heavy flamer",
-        "types": [
-          "ignores cover",
-          "torrent",
-          "twin-linked"
-        ],
-        "range": "12",
-        "attacks": "D6",
-        "skill": "N/A",
-        "strength": "5",
-        "ap": "-1",
-        "damage": "1"
-      }
-    ],
-    "melee_weapons": [
-      {
-        "name": "Armoured tracks",
-        "types": [],
-        "range": "Melee",
-        "attacks": "6",
-        "skill": "4+",
-        "strength": "8",
-        "ap": "0",
-        "damage": "1"
-      }
-    ]
-  },
-  {
-    "name": "Storm Eagle Gunship",
-    "keywords": [
-      "VEHICLE",
-      "FLY",
-      "AIRCRAFT",
-      "TRANSPORT",
-      "CHAOS",
-      "KHORNE"
-    ],
-    "core": [
-      "Deadly Demise D6",
-      "Hover"
-    ],
-    "faction": [
-      "Blessings of Khorne"
-    ],
-    "abilities": [
-      "Armoured Resilience: Each time an attack is allocated to this model, subtract 1 from the Damage characteristic of that attack."
-    ],
-    "stats": [],
-    "ranged_weapons": [
-      {
-        "name": "Twin heavy bolter",
-        "types": [
-          "sustained hits 1",
-          "twin-linked"
-        ],
-        "range": "36",
-        "attacks": "3",
-        "skill": "3+",
-        "strength": "5",
-        "ap": "-1",
-        "damage": "2"
-      },
-      {
-        "name": "Twin hellstrike launcher",
-        "types": [
-          "anti-fly 2+",
-          "twin-linked"
-        ],
-        "range": "72",
-        "attacks": "2",
-        "skill": "3+",
-        "strength": "10",
-        "ap": "-3",
-        "damage": "D6"
-      },
-      {
-        "name": "Twin lascannon",
-        "types": [
-          "twin-linked"
-        ],
-        "range": "48",
-        "attacks": "1",
-        "skill": "3+",
-        "strength": "12",
-        "ap": "-3",
-        "damage": "D6+1"
-      },
-      {
-        "name": "Twin multi-melta",
-        "types": [
-          "melta 2",
-          "twin-linked"
-        ],
-        "range": "18",
-        "attacks": "2",
-        "skill": "3+",
-        "strength": "9",
-        "ap": "-4",
-        "damage": "D6"
-      },
-      {
-        "name": "Typhoon missile launcher – frag",
-        "types": [
-          "blast"
-        ],
-        "range": "48",
-        "attacks": "2D6",
-        "skill": "3+",
-        "strength": "4",
-        "ap": "0",
-        "damage": "1"
-      },
-      {
-        "name": "Typhoon missile launcher – krak",
-        "types": [],
-        "range": "48",
-        "attacks": "2",
-        "skill": "3+",
-        "strength": "9",
-        "ap": "-2",
-        "damage": "D6"
-      },
-      {
-        "name": "Vengeance launcher",
-        "types": [
-          "blast"
-        ],
-        "range": "48",
-        "attacks": "2D6",
-        "skill": "3+",
-        "strength": "6",
-        "ap": "0",
-        "damage": "1"
-      }
-    ],
-    "melee_weapons": [
-      {
-        "name": "Armoured hull",
-        "types": [],
-        "range": "Melee",
-        "attacks": "6",
-        "skill": "4+",
-        "strength": "8",
-        "ap": "0",
-        "damage": "1"
-      }
-    ]
-  },
-  {
-    "name": "Terrax-pattern Termite",
-    "keywords": [
-      "VEHICLE",
-      "CHAOS",
-      "KHORNE",
-      "TRANSPORT",
-      "DEDICATED TRANSPORT"
-    ],
-    "core": [
-      "Deadly Demise D3",
-      "Deep Strike"
-    ],
-    "faction": [
-      "Blessings of Khorne"
-    ],
-    "abilities": [
-      "Termite Assault: This model must start the battle in Reserves , but neither it nor any units embarked within it are counted towards any limits placed on the maximum number of Reserves units you can start the battle with. This model can be set up in the Reinforcements step of your first, second or third Movement phase , regardless of any mission rules. Any units embarked within this model can disembark after it has been set up on the battlefield, and if they do they must be set up more than 9\" away from all enemy models."
-    ],
-    "stats": [
-      {
-        "stats": {
-          "M": "8",
-          "T": "10",
-          "Sv": "3+",
-          "W": "14",
-          "Ld": "6+",
-          "OC": "2"
-        }
-      }
-    ],
-    "ranged_weapons": [
-      {
-        "name": "Combi-bolter",
-        "types": [
-          "rapid fire 2"
-        ],
-        "range": "24",
-        "attacks": "2",
-        "skill": "3+",
-        "strength": "4",
-        "ap": "0",
-        "damage": "1"
-      },
-      {
-        "name": "Heavy flamer",
-        "types": [
-          "torrent",
-          "ignores cover"
-        ],
-        "range": "12",
-        "attacks": "D6",
-        "skill": "N/A",
-        "strength": "5",
-        "ap": "-1",
-        "damage": "1"
-      },
-      {
-        "name": "Terrax melta cutter",
-        "types": [
-          "melta 2"
-        ],
-        "range": "12",
-        "attacks": "5",
-        "skill": "3+",
-        "strength": "9",
-        "ap": "-4",
-        "damage": "D6"
-      },
-      {
-        "name": "Twin volkite charger",
-        "types": [
-          "devastating wounds",
-          "twin-linked"
-        ],
-        "range": "18",
-        "attacks": "2",
-        "skill": "3+",
-        "strength": "5",
-        "ap": "0",
-        "damage": "2"
-      }
-    ],
-    "melee_weapons": [
-      {
-        "name": "Termite drill",
-        "types": [
-          "anti-vehicle 3+"
-        ],
-        "range": "Melee",
-        "attacks": "6",
-        "skill": "4+",
-        "strength": "14",
-        "ap": "-2",
-        "damage": "D3+3"
-      }
-    ]
-  },
-  {
-    "name": "Typhon",
-    "keywords": [
-      "VEHICLE",
-      "CHAOS",
-      "KHORNE",
-      "SMOKE"
-    ],
-    "core": [
-      "Deadly Demise D6"
-    ],
-    "faction": [
-      "Blessings of Khorne"
-    ],
-    "abilities": [
-      "Sunderer of Fortresses: Each time this model makes an attack that targets a VEHICLE , improve the Strength and Damage characteristic of that attack by 1 (if that attack targets a FORTIFICATION unit, improve the Strength and Damage characteristics of that attack by 2 instead)."
-    ],
-    "stats": [
-      {
-        "stats": {
-          "M": "10",
-          "T": "12",
-          "Sv": "2+",
-          "W": "18",
-          "Ld": "6+",
-          "OC": "6"
-        }
-      }
-    ],
-    "ranged_weapons": [
-      {
-        "name": "Dreadhammer siege cannon",
-        "types": [
-          "blast"
-        ],
-        "range": "24",
-        "attacks": "D6+6",
-        "skill": "3+",
-        "strength": "14",
-        "ap": "-3",
-        "damage": "D6"
-      },
-      {
-        "name": "Heavy bolter",
-        "types": [
-          "sustained hits 1"
-        ],
-        "range": "36",
-        "attacks": "3",
-        "skill": "3+",
-        "strength": "5",
-        "ap": "-1",
-        "damage": "2"
-      },
-      {
-        "name": "Heavy flamer",
-        "types": [
-          "torrent",
-          "ignores cover"
-        ],
-        "range": "12",
-        "attacks": "D6",
-        "skill": "N/A",
-        "strength": "5",
-        "ap": "-1",
-        "damage": "1"
-      },
-      {
-        "name": "Lascannon",
-        "types": [],
-        "range": "48",
-        "attacks": "1",
-        "skill": "3+",
-        "strength": "12",
-        "ap": "-3",
-        "damage": "D6+1"
-      },
-      {
-        "name": "Multi-melta",
-        "types": [
-          "melta 2"
-        ],
-        "range": "18",
-        "attacks": "2",
-        "skill": "3+",
-        "strength": "9",
-        "ap": "-4",
-        "damage": "D6"
-      },
-      {
-        "name": "Storm bolter",
-        "types": [
-          "rapid fire 2"
-        ],
-        "range": "24",
-        "attacks": "2",
-        "skill": "3+",
-        "strength": "4",
-        "ap": "0",
-        "damage": "1"
-      }
-    ],
-    "melee_weapons": [
-      {
-        "name": "Armoured tracks",
-        "types": [],
-        "range": "Melee",
-        "attacks": "6",
-        "skill": "4+",
-        "strength": "8",
-        "ap": "0",
-        "damage": "1"
-      }
-    ]
-  },
-  {
-    "name": "Whirlwind Scorpius",
-    "keywords": [
-      "VEHICLE",
-      "SMOKE",
-      "CHAOS",
-      "KHORNE"
-    ],
-    "core": [
-      "Deadly Demise D3"
-    ],
-    "faction": [
-      "Blessings of Khorne"
-    ],
-    "abilities": [
-      "Pinning Bombardment: In your Shooting phase , after this model has shot, if one or more of those attacks made with its Scorpius multi-launcher scored a hit against an enemy INFANTRY unit, that unit must take a Battle-shock test ."
-    ],
-    "stats": [
-      {
-        "stats": {
-          "M": "10",
-          "T": "10",
-          "Sv": "3+",
-          "W": "11",
-          "Ld": "6+",
-          "OC": "3"
-        }
-      }
-    ],
-    "ranged_weapons": [
-      {
-        "name": "Hunter-killer missile",
-        "types": [],
-        "range": "48",
-        "attacks": "1",
-        "skill": "2+",
-        "strength": "14",
-        "ap": "-3",
-        "damage": "D6"
-      },
-      {
-        "name": "Scorpius multi-launcher",
-        "types": [
-          "blast",
-          "indirect fire"
-        ],
-        "range": "48",
-        "attacks": "2D3+3",
-        "skill": "3+",
-        "strength": "6",
-        "ap": "-1",
-        "damage": "2"
-      },
-      {
-        "name": "Storm bolter",
-        "types": [
-          "rapid fire 2"
-        ],
-        "range": "24",
-        "attacks": "2",
-        "skill": "3+",
-        "strength": "4",
-        "ap": "0",
-        "damage": "1"
-      }
-    ],
-    "melee_weapons": [
-      {
-        "name": "Armoured tracks",
-        "types": [],
-        "range": "Melee",
-        "attacks": "3",
-        "skill": "4+",
-        "strength": "6",
-        "ap": "0",
-        "damage": "1"
-      }
-    ]
-  },
-  {
-    "name": "Xiphon Interceptor",
-    "keywords": [
-      "VEHICLE",
-      "FLY",
-      "AIRCRAFT",
-      "CHAOS",
-      "KHORNE"
-    ],
-    "core": [
-      "Deadly Demise D3"
-    ],
-    "faction": [
-      "Blessings of Khorne"
-    ],
-    "abilities": [
-      "Interceptor: Each time this model makes a ranged attack that targets a unit that can Fly , add 1 to the Hit roll ."
-    ],
-    "stats": [],
-    "ranged_weapons": [
-      {
-        "name": "Twin lascannon",
-        "types": [
-          "twin-linked"
-        ],
-        "range": "48",
-        "attacks": "1",
-        "skill": "3+",
-        "strength": "12",
-        "ap": "-3",
-        "damage": "D6+1"
-      },
-      {
-        "name": "Xiphon missile battery",
-        "types": [
-          "anti-fly 2+"
-        ],
-        "range": "60",
-        "attacks": "3",
-        "skill": "3+",
-        "strength": "7",
-        "ap": "-1",
-        "damage": "3"
-      }
-    ],
-    "melee_weapons": [
-      {
-        "name": "Armoured hull",
-        "types": [],
-        "range": "Melee",
-        "attacks": "3",
-        "skill": "4+",
-        "strength": "6",
-        "ap": "0",
-        "damage": "1"
       }
     ]
   }
