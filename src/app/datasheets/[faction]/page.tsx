@@ -5,8 +5,8 @@ import Link from 'next/link';
 import { useParams } from 'next/navigation';
 import UnitDisplay from '../../components/UnitDisplay';
 import LanguageSwitcher from '../../components/common/LanguageSwitcher';
+import UnitSearchSelector from '../../components/common/UnitSearchSelector';
 import { factionData } from '../factionData';
-import UnitSearchSelector from './UnitSearchSelector';
 
 export default function DatasheetPage() {
   const params = useParams();

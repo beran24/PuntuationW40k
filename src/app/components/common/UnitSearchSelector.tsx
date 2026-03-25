@@ -2,13 +2,16 @@
 
 import { useEffect, useRef, useState } from 'react';
 import { getFactionColor } from '../../constants/factionColors';
-import { type Unit } from '../../components/UnitDisplay';
+import { type Unit } from '../UnitDisplay';
 
 type UnitSearchSelectorProps = {
   units: Unit[];
   selectedUnitIndex: number;
   onSelectUnit: (index: number) => void;
 };
+
+const getUnitLabel = (unit: Unit) =>
+  `${unit.name}${unit.variant ? ` ${unit.variant}` : ''}`;
 
 export default function UnitSearchSelector({
   units,
@@ -21,6 +24,17 @@ export default function UnitSearchSelector({
 
   const selectedUnit = units[selectedUnitIndex];
 
+  const restoreSelectedUnitLabel = () => {
+    if (selectedUnit) {
+      setSearchTerm(getUnitLabel(selectedUnit));
+    }
+  };
+
+  const openDropdown = () => {
+    setSearchTerm('');
+    setIsDropdownOpen(true);
+  };
+
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (
@@ -28,28 +42,26 @@ export default function UnitSearchSelector({
         !dropdownRef.current.contains(event.target as Node)
       ) {
         setIsDropdownOpen(false);
+        restoreSelectedUnitLabel();
       }
     };
 
     document.addEventListener('mousedown', handleClickOutside);
     return () => document.removeEventListener('mousedown', handleClickOutside);
-  }, []);
+  }, [selectedUnit]);
 
   useEffect(() => {
-    if (selectedUnit) {
-      setSearchTerm(
-        `${selectedUnit.name}${selectedUnit.variant ? ` ${selectedUnit.variant}` : ''}`
-      );
+    if (selectedUnit && !isDropdownOpen) {
+      setSearchTerm(getUnitLabel(selectedUnit));
     }
-  }, [selectedUnitIndex, selectedUnit]);
+  }, [isDropdownOpen, selectedUnitIndex, selectedUnit]);
 
   const normalizedSearch = searchTerm.trim().toLowerCase();
   const filteredUnits = units
     .map((unit, idx) => ({ unit, idx }))
     .filter(({ unit }) => {
       if (!normalizedSearch) return true;
-      const fullName = `${unit.name}${unit.variant ? ` ${unit.variant}` : ''}`;
-      return fullName.toLowerCase().includes(normalizedSearch);
+      return getUnitLabel(unit).toLowerCase().includes(normalizedSearch);
     });
 
   if (!selectedUnit) {
@@ -77,7 +89,8 @@ export default function UnitSearchSelector({
           <input
             type="text"
             value={searchTerm}
-            onFocus={() => setIsDropdownOpen(true)}
+            onFocus={openDropdown}
+            onClick={openDropdown}
             onChange={(e) => {
               setSearchTerm(e.target.value);
               if (!isDropdownOpen) {
@@ -101,7 +114,14 @@ export default function UnitSearchSelector({
                 X
               </button>
             )}
-            <span className="text-gray-600 pointer-events-none">▼</span>
+            <button
+              type="button"
+              onClick={openDropdown}
+              className="text-gray-600 hover:text-black text-sm leading-none"
+              aria-label="Open unit selector"
+            >
+              ▼
+            </button>
           </div>
         </div>
 
@@ -113,9 +133,7 @@ export default function UnitSearchSelector({
                   key={idx}
                   onClick={() => {
                     onSelectUnit(idx);
-                    setSearchTerm(
-                      `${unit.name}${unit.variant ? ` ${unit.variant}` : ''}`
-                    );
+                    setSearchTerm(getUnitLabel(unit));
                     setIsDropdownOpen(false);
                   }}
                   className={`w-full px-4 py-2 text-left hover:bg-custom-light-green hover:text-white transition flex items-center gap-2 ${

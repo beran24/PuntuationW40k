@@ -1,5 +1,7 @@
 'use client';
 
+import { getFactionColor } from '../constants/factionColors';
+
 type Stats = Record<string, string>;
 type UnitStatBlock = {
   stats: Stats;
@@ -17,13 +19,22 @@ interface Weapon {
   damage: string;
 }
 
+type WargearOption = {
+  text: string;
+  list_options?: string[];
+  list?: string[];
+};
+
 export interface Unit {
   name: string;
   variant?: string;
   keywords?: string[];
+  faction_keywords?: string[];
   core?: string[];
   faction?: string[];
   abilities?: string[];
+  points?: Record<string, string>;
+  wargear_options?: WargearOption[];
   stats?: UnitStatBlock[];
   ranged_weapons?: Weapon[];
   melee_weapons?: Weapon[];
@@ -315,19 +326,74 @@ export default function UnitDisplay({ unit }: { unit: Unit }) {
             </div>
           )}
 
+          {/* Points */}
+          {unit.points && Object.keys(unit.points).length > 0 && (
+            <div className="bg-custom-beige rounded p-4">
+              <h3 className="font-bold text-black mb-2 text-lg">Points</h3>
+              <div className="space-y-2">
+                {Object.entries(unit.points).map(([points, models]) => (
+                  <p key={`${models}-${points}`} className="text-xs text-black">
+                    {models}: {points}
+                  </p>
+                ))}
+              </div>
+            </div>
+          )}
+
           {/* Keywords */}
-          {unit.keywords && unit.keywords.length > 0 && (
+          {((unit.keywords && unit.keywords.length > 0) ||
+            (unit.faction_keywords && unit.faction_keywords.length > 0)) && (
             <div className="bg-custom-beige rounded p-4">
               <h3 className="font-bold text-black mb-2 text-lg">Keywords</h3>
               <div className="flex flex-wrap gap-2">
-                {unit.keywords.map((keyword, idx) => (
+                {unit.keywords?.map((keyword, idx) => (
                   <span
-                    key={idx}
+                    key={`keyword-${idx}`}
                     className="bg-custom-green text-white px-2 py-1 rounded text-xs font-medium"
                   >
                     {keyword}
                   </span>
                 ))}
+                {unit.faction_keywords?.map((keyword, idx) => (
+                  <span
+                    key={`faction-keyword-${idx}`}
+                    className="text-white px-2 py-1 rounded text-xs font-medium"
+                    style={{
+                      backgroundColor: getFactionColor(unit.sourceFaction),
+                    }}
+                  >
+                    {keyword}
+                  </span>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {/* Wargear Options */}
+          {unit.wargear_options && unit.wargear_options.length > 0 && (
+            <div className="bg-custom-beige rounded p-4">
+              <h3 className="font-bold text-black mb-2 text-lg">
+                Wargear Options
+              </h3>
+              <div className="space-y-3">
+                {unit.wargear_options.map((option, idx) => {
+                  const optionList = option.list_options ?? option.list;
+
+                  return (
+                    <div key={idx} className="text-xs text-black">
+                      <p className="leading-tight">{option.text}</p>
+                      {optionList && optionList.length > 0 && (
+                        <ul className="list-disc pl-5 mt-1 space-y-1">
+                          {optionList.map((item, itemIdx) => (
+                            <li key={itemIdx} className="leading-tight">
+                              {item}
+                            </li>
+                          ))}
+                        </ul>
+                      )}
+                    </div>
+                  );
+                })}
               </div>
             </div>
           )}
