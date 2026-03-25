@@ -33,7 +33,7 @@ export interface Unit {
   core?: string[];
   faction?: string[];
   abilities?: string[];
-  points?: Record<string, string>;
+  points?: Partial<Record<string, string>>;
   wargear_options?: WargearOption[];
   stats?: UnitStatBlock[];
   ranged_weapons?: Weapon[];
@@ -331,11 +331,18 @@ export default function UnitDisplay({ unit }: { unit: Unit }) {
             <div className="bg-custom-beige rounded p-4">
               <h3 className="font-bold text-black mb-2 text-lg">Points</h3>
               <div className="space-y-2">
-                {Object.entries(unit.points).map(([points, models]) => (
-                  <p key={`${models}-${points}`} className="text-xs text-black">
-                    {models}: {points}
-                  </p>
-                ))}
+                {Object.entries(unit.points).map(([points, models]) => {
+                  if (!models) return null;
+
+                  return (
+                    <p
+                      key={`${models}-${points}`}
+                      className="text-xs text-black"
+                    >
+                      {models}: {points}
+                    </p>
+                  );
+                })}
               </div>
             </div>
           )}
